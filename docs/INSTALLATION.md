@@ -1,5 +1,22 @@
 # Installation and first launch
 
+## Ready-to-play Windows download
+
+1. Download **Pokemon-Survivors-1.0.0-rc.6.5-Windows-x64.zip** from the
+   [release page](https://github.com/CheswickDEV/Pokemon-Survivors/releases/tag/v1.0.0-rc.6.5).
+2. Right-click the ZIP and choose **Extract All**.
+3. Double-click **Pokemon Survivors.exe** in the extracted folder.
+
+No Node.js installation, npm, Git, terminal commands or administrator access
+is required. The game opens in your browser at **http://127.0.0.1:4173/**.
+Keep the small launcher window open while playing. Use **Save & return to camp**,
+then **Stop game** to stop its local server. Closing an extra launcher leaves
+the original server running; unrelated applications are never stopped.
+
+Requires Windows 10/11 x64 and current Edge/Chrome. The launcher uses the
+Windows-supplied .NET Framework; the game runtime is included. The package is
+unsigned and remains a prerelease. See [player instructions](WINDOWS-PLAYER.txt).
+
 ## Complete developer project
 
 The **developer.zip** contains the current source code, images, cries, local
@@ -56,7 +73,7 @@ CI. Interactive play on macOS/Linux and ARM64 has not been separately accepted.
 A keyboard and mouse are required; no measured minimum RAM/GPU specification
 is claimed.
 
-## Windows player test package
+## Older local test packages
 
 Extract the complete `Windows-x64-LOCAL-ONLY.zip` and double-click
 **Start game.cmd**. The legacy **Spiel starten.cmd** filename remains available.
@@ -99,7 +116,8 @@ see [Release readiness](RELEASE-READINESS.md).
 
 PowerShell checksum: `Get-FileHash .\FILENAME.zip -Algorithm SHA256`.
 Compare developer archives with `DEVELOPER-SHA256SUMS.txt`, other packages with
-`SHA256SUMS.txt`. A hash is not an independent signature.
+`WINDOWS-SHA256SUMS.txt` for the Windows player (or `SHA256SUMS.txt` for older
+local packages). A hash is not an independent signature.
 
 Keep the [third-party notices](../THIRD-PARTY-NOTICES.md). A complete developer
 download does not place third-party media under the project's GPL license.

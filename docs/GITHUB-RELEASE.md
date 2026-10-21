@@ -48,6 +48,13 @@ The developer download is `release/*-developer.zip`. Its checksum is in
 GitHub's **Code → Download ZIP** also includes media in the full repository,
 but Node.js must be installed separately. Git LFS is not needed.
 
+`npm run release:windows` (on Windows) creates the ready-to-play prerelease ZIP
+with a graphical launcher, the pinned runtime and exact corresponding source.
+Checksums are in `WINDOWS-SHA256SUMS.txt`; metadata is in `windows-manifest.json`.
+This command requires publication approval and a prerelease version/channel.
+It preserves the separate media-rights and full-acceptance status fields.
+The owner explicitly requested this Windows prerelease on October 21, 2026.
+
 `npm run release:local` creates the local Windows player test package with
 build, runtime, launcher and corresponding code. The separate developer
 archive also includes all available editing sources and tools.
@@ -55,7 +62,12 @@ archive also includes all available editing sources and tools.
 The open items in [Release readiness](RELEASE-READINESS.md) must be resolved
 before labeling a player release as publicly cleared. `release:public`
 checks those status fields. Creating a complete developer export does not
-silently change them.
+silently change them. The Windows prerelease is not a cleared stable release.
+
+The rc.6.5 Windows package was added after the original developer release.
+The original tag and downloads stay unchanged. The Windows ZIP includes its
+exact corresponding source, including the added launcher and build scripts;
+this source is also available as a separate Windows-player-source.zip asset.
 
 CI checks Windows and Linux, runs all tests for a full developer checkout,
 and produces an additional code-only artifact. It does not publish releases

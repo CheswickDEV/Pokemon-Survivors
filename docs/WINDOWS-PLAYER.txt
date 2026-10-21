@@ -1,0 +1,50 @@
+POKEMON SURVIVORS 1.0.0-rc.6.5 — WINDOWS PLAYER PRERELEASE
+
+1. Right-click the downloaded ZIP and choose Extract All.
+2. Open the extracted folder and double-click "Pokemon Survivors.exe".
+3. The game opens in your default browser at http://127.0.0.1:4173/
+4. Choose your partner, trainer, mode and difficulty.
+5. English is the default. Choose Deutsch in the main menu or Settings.
+
+No Node.js installation, terminal commands, administrator access or internet
+connection is required to play. The runtime is included in runtime/.
+Requires Windows 10/11 x64, a current Edge or Chrome, keyboard and mouse.
+The launcher uses the .NET Framework supplied with Windows 10/11.
+Touch controls, gamepads and native Windows ARM64 are not supported.
+
+Keep the small launcher window open while playing. "Open game" reopens the
+browser. Use "Save & return to camp" in the game, then "Stop game" in the
+launcher. Closing the launcher also stops its own local server. Closing the
+browser alone leaves the launcher running. A second launcher detects the
+running game; closing that extra window leaves the original game running.
+No service, startup task, registry setting or system-wide runtime is installed.
+
+CONTROLS
+WASD / arrows: move. Space: dodge. E: interact.
+Tab: team / evolutions. M: map. Esc: pause / save.
+Press Esc to pause before switching windows.
+
+SAVES
+Saves stay in your browser profile at the same local address, including after
+you replace the game folder. Back up everything from camp before updating.
+Use that JSON backup when moving to another browser or computer.
+Never clear browser site data without a backup.
+
+TROUBLESHOOTING
+Extract the entire ZIP; starting inside the ZIP does not work.
+Keep runtime/, dist/ and server.mjs beside Pokemon Survivors.exe.
+If the browser does not open, click Open game or open the displayed address.
+If the port is busy, close your previous game launcher. Unrelated programs
+are never terminated. An older game version must be closed before updating.
+The package and launcher are unsigned. Verify the release and its SHA-256;
+do not disable Windows security features.
+To remove the game, close its launcher and delete the extracted folder.
+Existing saves remain in the browser until you clear its site data.
+
+DEVELOPMENT AND LICENSES
+The exact corresponding code, launcher source and build scripts are included
+in source/. The separate developer.zip contains the editable project and
+all available media sources. Original project code is GPL-3.0-only.
+Third-party media retain their own rights and are not covered by that grant.
+This remains a prerelease. Third-party redistribution permissions and an
+independent full gameplay acceptance are not claimed by this package.

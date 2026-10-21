@@ -1,6 +1,6 @@
 # Acceptance for 1.0
 
-**Current version: 1.0.0-rc.6.5. Published as a developer prerelease;
+**Current version: 1.0.0-rc.6.5. Published with developer and Windows player prerelease downloads;
 not a fully accepted stable 1.0.**
 
 The full developer download includes current media and available editing sources.
@@ -26,7 +26,7 @@ This project does not claim to reproduce all Vampire Survivors features/rules.
 | Maps | Endless forest; Kanto with 51 locations, 57 connections and 58 buildings; original FR/LG region map, terrain-faithful local minimap, zoom/pan and fixed Trial Arena. Complex buildings remain compressed rooms. |
 | Long-term progress | Ten achievements, boss journal, evolution collection and wins by mode/difficulty |
 | Saves | Separate forest/story/boss slots, alternating copies, full profile/slot backup, formats 1–5 migrate to 6 |
-| Installation | Local Windows x64 test ZIP with hash-verified runtime and double-click launcher; developer archive with full sources/media |
+| Installation | Windows x64 prerelease ZIP with hash-verified runtime and graphical double-click launcher; developer archive with full sources/media |
 | GitHub | Reviewed allowlists, GPL-3.0-only code, third-party notices, Windows/Linux CI, bug form, changelog and checksums |
 | Languages | English by default; German selectable and saved locally; English public documentation |
 
@@ -56,7 +56,8 @@ objectives and unlockable modes. This real-time Kanto campaign is a separate des
 
 `release-config/status.json` records these separately. `release:public`
 refuses a cleared player package while a gate remains open. Local testing and
-developer/code exports remain available.
+developer/code exports remain available. The explicitly requested Windows
+prerelease uses `release:windows`, retaining the unresolved status fields.
 
 ## Possible later work, not promises for 1.0
 

@@ -147,3 +147,24 @@ a historical inventory; the next export regenerates it.
 GitHub CI checks Windows and Linux and produces a smaller code-only artifact.
 It does not download original media or publish releases. See
 [Contributing](../CONTRIBUTING.md) for pull requests.
+
+## Build the graphical Windows player
+
+On Windows, run `npm run release:windows`. The build compiles
+`platform/windows/Launcher.cs` with the .NET Framework compiler already supplied
+with Windows, verifies all runtime media and packages the pinned Node runtime.
+The launcher is a small Windows Forms application; it starts the bundled server
+without a console and opens the default browser. A Windows Job Object ensures
+its server exits if the launcher closes or is terminated. It never terminates
+an existing server that it did not start.
+
+The package includes a corresponding-source ZIP with all original code and
+launcher build scripts. Runtime media are in `dist/`; editing sources are in
+the complete developer archive. `release:public` still checks stable-release
+acceptance and media rights separately. No signing certificate is included.
+
+To repeat the Windows launcher integration checks, extract the player ZIP and
+run `node tests/windows-player-smoke.mjs "path/to/extracted/game-folder"` from
+the repository. Tests use disposable local ports and synthetic servers, remove
+Node from the child PATH, verify duplicate/blocked launches and stop only their
+own processes. The graphical launcher is also compiled in Windows CI.

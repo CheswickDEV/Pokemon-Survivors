@@ -5,6 +5,7 @@
 | Component | Version / requirement | Included in the Windows package? |
 |---|---|---|
 | Node.js | 22.23.3, Windows x64; official archive pinned by SHA-256 | Yes, `runtime/node.exe` and its full license |
+| .NET Framework | Supplied with Windows 10/11; used by the graphical launcher | Windows component; no separate installer in this package |
 | Browser | Current Edge or Chrome with JavaScript and local browser storage | No; required on the computer |
 | Phaser | 3.90.0, MIT | Bundled into the built JavaScript |
 | eventemitter3 | 5.0.4, MIT; indirect Phaser dependency | Bundled into the built JavaScript |
@@ -23,6 +24,7 @@ intended external network requests or telemetry.
 | npm | Version supplied with Node.js; lockfile format 3 | `npm ci`, scripts and advisory checks |
 | TypeScript | 5.9.3, Apache-2.0 | Type checking |
 | Vite | 8.3.4, MIT | Development server and build |
+| Windows .NET Framework C# compiler | Windows-only; built-in Framework64 csc.exe | Compiling the optional graphical Windows launcher; no Visual Studio install required |
 | Git | Optional | Cloning, commits and pull requests |
 
 `package-lock.json` records exact transitive packages, platform variants,

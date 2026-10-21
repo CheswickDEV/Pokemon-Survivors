@@ -20,7 +20,8 @@
     "test:available": "node scripts/test-available.mjs",
     "check:developer": "node scripts/developer-package.mjs --check",
     "release:developer": "node scripts/developer-package.mjs",
-    "assets:refresh": "node scripts/update-runtime-assets.mjs"
+    "assets:refresh": "node scripts/update-runtime-assets.mjs",
+    "release:windows": "npm run build && node scripts/windows-player.mjs"
   },
   "dependencies": {
     "phaser": "3.90.0"

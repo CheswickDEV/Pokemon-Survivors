@@ -1,0 +1,38 @@
+// SPDX-License-Identifier: GPL-3.0-only
+import {mkdir,writeFile} from 'node:fs/promises';
+import {buildLauncher} from './build-launcher.mjs';
+import {fileURLToPath} from 'node:url';
+import path from 'node:path';
+import {collectSource,readSafe,scanPublicFile,sha256} from './release-policy.mjs';
+import {verifyBuild} from './verify-build.mjs';
+import {prepareRuntime} from './runtime.mjs';
+import {makeZip} from './zip.mjs';
+const root=fileURLToPath(new URL('../',import.meta.url));
+if(process.platform!=='win32'||process.argv.length!==2)throw Error('Build the Windows player package on Windows without extra arguments.');
+const source=await collectSource(root),pkg=JSON.parse(source.get('package.json')),status=JSON.parse(source.get('release-config/status.json'));
+if(!/^\d+\.\d+\.\d+-[0-9A-Za-z.-]+$/.test(pkg.version)||status.version!==pkg.version||status.publicReleaseApproved!==true||status.releaseChannel!=='prerelease')throw Error('This command requires an explicitly approved prerelease; it does not approve a stable release.');
+const files=await verifyBuild(root,{requireAssets:true});
+await buildLauncher(root);
+files.set('Pokemon Survivors.exe',await readSafe(root,'.cache/launcher/Pokemon Survivors.exe'));
+for(const name of ['server.mjs','LICENSE','THIRD-PARTY-NOTICES.md','SECURITY.md'])files.set(name,await readSafe(root,name));
+files.set('READ ME FIRST.txt',await readSafe(root,'docs/WINDOWS-PLAYER.txt'));
+const runtime=await prepareRuntime(root);
+files.set('runtime/node.exe',runtime.exe);files.set('runtime/LICENSE',runtime.license);
+files.set('runtime/verification.json',Buffer.from(JSON.stringify(runtime.proof,null,2)+'\n'));
+for(const [name,bytes] of source)if(name.startsWith('docs/asset-sources/'))files.set('notices/'+path.basename(name),bytes);
+const base='Pokemon-Survivors-'+pkg.version,wrap=(map,prefix)=>new Map([...map].map(([name,bytes])=>[prefix+'/'+name,bytes]));
+// Include exact corresponding code, launcher source and build instructions.
+source.set('ASSETS-NOT-INCLUDED.txt',Buffer.from('This corresponding-source archive excludes binary game media. The Windows player ZIP includes the reviewed runtime media in dist/.\n'));
+const sourceName=base+'-Windows-player-source.zip',sourceZip=makeZip(wrap(source,base+'-Windows-player-source'));
+files.set('source/'+sourceName,sourceZip);
+files.set('PLAYER-PACKAGE.json',Buffer.from(JSON.stringify({version:pkg.version,packagingRevision:1,prerelease:true,publicationApproved:true,assetRedistributionCleared:status.assetRedistributionCleared===true,manualAcceptanceComplete:status.manualAcceptanceComplete===true,platform:'Windows 10/11 x64',launcher:'Pokemon Survivors.exe',runtime:runtime.proof.version},null,2)+'\n'));
+for(const [name,bytes] of files)if(!name.endsWith('.exe'))scanPublicFile(name,bytes);
+files.set('FILES.json',Buffer.from(JSON.stringify([...files].map(([file,bytes])=>({file,bytes:bytes.length,sha256:sha256(bytes)})),null,2)+'\n'));
+const filename=base+'-Windows-x64.zip',archive=makeZip(wrap(files,base));
+const output=path.join(root,'release');await mkdir(output,{recursive:true});
+await writeFile(path.join(output,filename),archive);
+await writeFile(path.join(output,sourceName),sourceZip);
+const artifacts=[{file:filename,bytes:archive.length,sha256:sha256(archive)},{file:sourceName,bytes:sourceZip.length,sha256:sha256(sourceZip)}];
+await writeFile(path.join(output,'WINDOWS-SHA256SUMS.txt'),artifacts.map(a=>a.sha256+'  '+a.file).join('\n')+'\n');
+await writeFile(path.join(output,'windows-manifest.json'),JSON.stringify({version:pkg.version,packagingRevision:1,prerelease:true,entries:files.size,runtime:runtime.proof,artifacts},null,2)+'\n');
+console.log(JSON.stringify({version:pkg.version,entries:files.size,artifacts},null,2));

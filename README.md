@@ -22,7 +22,17 @@ not been documented. [Asset status](docs/ASSET-STATUS.md) ·
 [Complete download (prerelease)](https://github.com/CheswickDEV/Pokemon-Survivors/releases/tag/v1.0.0-rc.6.5) ·
 [Repository](https://github.com/CheswickDEV/Pokemon-Survivors)
 
-## Quick start
+## Play on Windows — no installation
+
+Download **Pokemon-Survivors-1.0.0-rc.6.5-Windows-x64.zip** from the
+[release page](https://github.com/CheswickDEV/Pokemon-Survivors/releases/tag/v1.0.0-rc.6.5).
+Choose **Extract All**, then double-click **Pokemon Survivors.exe**. The game
+opens in your browser. No Node.js installation or terminal commands are needed.
+Keep the small launcher window open; save in the game, then click **Stop game**.
+Requires Windows 10/11 x64, current Edge/Chrome, keyboard and mouse.
+English is the default; German remains selectable.
+
+## Develop locally
 
 Install [Node.js 22.x](https://nodejs.org/en/download), **22.23.3 or later in the
 22.x line**, including npm. Use a current Edge or Chrome browser. Git is useful
@@ -83,17 +93,17 @@ npm run build
 |---|---|
 | **developer.zip** | Complete editable project with current media, source credits and optional import tools; install Node.js separately |
 | **source.zip** | Smaller code export without Pokémon images or cries; useful for code review, not playable on its own |
-| **Windows-x64-LOCAL-ONLY.zip** | Local player test package with a bundled runtime; extract and double-click **Start game.cmd** |
+| **Windows-x64.zip** | Ready-to-play Windows prerelease with bundled runtime; extract and double-click **Pokemon Survivors.exe** |
+| **Windows-player-source.zip** | Exact corresponding code and launcher build scripts for the Windows package; also included inside the player ZIP |
 
 The GitHub release provides the complete developer archive as a prerelease
 for local development. Publishing it does not confirm third-party media
-permissions or an independent full playthrough. The Windows package remains
-a local test package. To create packages yourself:
+permissions or an independent full playthrough. The Windows player package is also a prerelease. To create packages yourself:
 
 ```text
 npm run release:developer
 npm run release:source
-npm run release:local
+npm run release:windows
 ```
 
 File inventories and SHA-256 checksums are written to `release/`.

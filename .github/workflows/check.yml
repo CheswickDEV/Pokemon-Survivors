@@ -25,6 +25,9 @@ jobs:
       - run: npm run check
       - run: npm run test:available
       - run: npm run build
+      - name: Compile the graphical Windows launcher
+        if: runner.os == 'Windows'
+        run: node --input-type=module -e "import {buildLauncher} from './scripts/build-launcher.mjs'; await buildLauncher(process.cwd());"
       - run: npm run release:source
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
         with:

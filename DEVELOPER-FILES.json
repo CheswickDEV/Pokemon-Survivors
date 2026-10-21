@@ -16,8 +16,8 @@
   },
   {
     "file": ".github/workflows/check.yml",
-    "bytes": 1170,
-    "sha256": "6f69c265b3dc63a32b83231f3df1149f0e15bcfcbbd6e3fb99112858633764e8"
+    "bytes": 1397,
+    "sha256": "88a51186e7d5cf09ffdc4aab75232f608792cf4b82cac56af868efcf7d8f5bf8"
   },
   {
     "file": ".gitignore",
@@ -41,8 +41,8 @@
   },
   {
     "file": "CHANGELOG.md",
-    "bytes": 7025,
-    "sha256": "f74ccd086974feb3cdc7907a936a549fb02d87bf8e334cd1ebd38e0567e7b757"
+    "bytes": 7537,
+    "sha256": "05bd250ea26c4c524c65d6ae2fc5f885411928d9d93dda733c704e55dde94b90"
   },
   {
     "file": "CONTRIBUTING.md",
@@ -171,8 +171,8 @@
   },
   {
     "file": "docs/DEPENDENCIES.md",
-    "bytes": 4090,
-    "sha256": "7f16072e9640f911cb5f00ce469422b8f6aa89ab53823fcd31d7c7e723890b59"
+    "bytes": 4401,
+    "sha256": "63db5207cc14e48051b2b87031cc0b4e7577edcd90d42968312defc274e72533"
   },
   {
     "file": "docs/DEVELOPER-VALIDATION.md",
@@ -181,8 +181,8 @@
   },
   {
     "file": "docs/DEVELOPMENT.md",
-    "bytes": 7082,
-    "sha256": "a602eba42d7c2f6886c95d89d4d0227f698c35eac6e777a21c654279fb7ad3e6"
+    "bytes": 8315,
+    "sha256": "f5824ce4928015e918a1af5a48b3dd8a748c17b47d88d300548bcb03e5111d94"
   },
   {
     "file": "docs/FOREST-BALANCE.md",
@@ -196,13 +196,13 @@
   },
   {
     "file": "docs/GITHUB-RELEASE.md",
-    "bytes": 3638,
-    "sha256": "e6a926660cc943b398444afebc4b21c56ee5cbd8d952ca032b79ee30d09e392c"
+    "bytes": 4468,
+    "sha256": "365d2f5809410a09b9c206c8c895d896bcebf8d7f73bdc6c16c13af6f0ccc115"
   },
   {
     "file": "docs/INSTALLATION.md",
-    "bytes": 5123,
-    "sha256": "c563826c67d9f03d31a3f58118923b7f72ed4582044b4b147f7a9cc8f393f6cc"
+    "bytes": 6140,
+    "sha256": "cf2e0f3039c1d2cee214a379a75b7a711701faa9b92810de1ead8f160c163f22"
   },
   {
     "file": "docs/INTERIOR-VISUAL-AUDIT.md",
@@ -231,8 +231,8 @@
   },
   {
     "file": "docs/RELEASE-READINESS.md",
-    "bytes": 5632,
-    "sha256": "b375f297dd23dfe4fdc2878ca48a46c78d948a0e2dadf3bf6da86d370260523f"
+    "bytes": 5779,
+    "sha256": "e584f1771b3bcca263944d00fc29b3277aa47fac09629b9280a5bbdecb8c7844"
   },
   {
     "file": "docs/SECURITY-AUDIT.md",
@@ -248,6 +248,11 @@
     "file": "docs/VALIDATION.md",
     "bytes": 3530,
     "sha256": "c96a0e6614d9423e170ee8a54584f16988746337854a7c0619a32d64e860c4c2"
+  },
+  {
+    "file": "docs/WINDOWS-PLAYER.txt",
+    "bytes": 2716,
+    "sha256": "786146a4d66528449e5d3bfb75cd201baaae71cd6d2090cc6fca9e8ee2aff073"
   },
   {
     "file": "docs/WORLD-POLISH.md",
@@ -276,8 +281,13 @@
   },
   {
     "file": "package.json",
-    "bytes": 1377,
-    "sha256": "a182b8397108eb5cb1b53a5f5afc2082481c7d14a15c919e5c4e4bfe576b42d6"
+    "bytes": 1452,
+    "sha256": "fd1fdeac623eb61bbd9868ed4d69d9e88eec7956df8b639592f4a6f8b6ef91b8"
+  },
+  {
+    "file": "platform/windows/Launcher.cs",
+    "bytes": 11099,
+    "sha256": "66233a21100f8ae0fbe5c4bc4727e6816a0f85992dc8ef0b9b3a146d14774535"
   },
   {
     "file": "public/art/data/PokeAPI-LICENSE.txt",
@@ -11886,8 +11896,8 @@
   },
   {
     "file": "README.md",
-    "bytes": 3926,
-    "sha256": "d1edfff13142654ac04fb610d4af103685fe751cf9591a02437049187cfaf5e1"
+    "bytes": 4643,
+    "sha256": "1cc7a561f03f177e7c520bc606ea7d63c4df1f71686de5088939b66787f13e6b"
   },
   {
     "file": "release-config/developer-files.json",
@@ -11906,8 +11916,8 @@
   },
   {
     "file": "release-config/source-files.json",
-    "bytes": 6545,
-    "sha256": "e31f29fd7c84323b88a91124e4599ef43e7ff676c5eec7bd20d434298e3fe030"
+    "bytes": 6751,
+    "sha256": "27c5cf682b91813722e4e91c9b361e51e87fd4b4004bb2586694c130df5547ce"
   },
   {
     "file": "release-config/status.json",
@@ -11928,6 +11938,11 @@
     "file": "scripts/build-kanto-catalog.py",
     "bytes": 23023,
     "sha256": "5d9886178452113dcd76dc8fbee345e5ae8614f552b054325a68cc45bdb5c189"
+  },
+  {
+    "file": "scripts/build-launcher.mjs",
+    "bytes": 1119,
+    "sha256": "630cb6bc1270776e4e6a82dd30c07ba1c9f82690713a7592d00dbf38d12d2cb4"
   },
   {
     "file": "scripts/check-release.mjs",
@@ -11998,6 +12013,11 @@
     "file": "scripts/verify-build.mjs",
     "bytes": 1997,
     "sha256": "080730d3f1fe242bdf40be537bc194b1525511cd516b13d434c8753c2c5b256c"
+  },
+  {
+    "file": "scripts/windows-player.mjs",
+    "bytes": 3742,
+    "sha256": "6f7ea9a5640ae88299ba26d1bde03e9b3736edc3b082b74e7f4be22614b94ce3"
   },
   {
     "file": "scripts/zip.mjs",
@@ -12588,6 +12608,16 @@
     "file": "tests/visual-upgrade.test.ts",
     "bytes": 3998,
     "sha256": "f491c53647f28950d41a92ab2f7c607357595ffa99762d7602ce7961a0722486"
+  },
+  {
+    "file": "tests/windows-player-smoke.mjs",
+    "bytes": 5165,
+    "sha256": "1d4f0048d4d5237860e5d06aad005eb36dcb7d476b0ff3b1e6b473d3d33b2d33"
+  },
+  {
+    "file": "tests/windows-ui-probe.cs",
+    "bytes": 2927,
+    "sha256": "51be1c93690f8f5b5ee41c354031633c35af04b23e60519f6b6eded2b4ad5f3e"
   },
   {
     "file": "tests/world-polish.test.ts",

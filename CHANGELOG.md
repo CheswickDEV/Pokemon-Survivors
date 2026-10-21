@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.0.0-rc.6.5 — Windows player addition
+
+- Ready-to-play Windows x64 ZIP added to the existing prerelease, with the runtime included.
+- Graphical double-click launcher opens the browser and offers Open game / Stop game without a terminal.
+- Launcher stops only its own server; duplicate launches and occupied ports preserve other processes.
+- Exact launcher/game source, build scripts, checksums and instructions accompany the Windows package.
+- Original rc.6.5 tag and developer download remain unchanged.
+
 ## 1.0.0-rc.6.5
 
 - English by default, with a persistent English/German selector in camp and Settings.
