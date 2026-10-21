@@ -1,0 +1,21 @@
+{
+  "species": 151,
+  "frames": 26472,
+  "actions": 453,
+  "allEightDirections": true,
+  "minimumDistinctWalkFramesPerDirection": 3,
+  "originalSinglePoseIdleSpecies": [
+    53,
+    59
+  ],
+  "largestAtlas": [
+    928800,
+    109,
+    "Attack",
+    [
+      1350,
+      688
+    ]
+  ],
+  "pngBytes": 4890823
+}

@@ -1,0 +1,1516 @@
+{
+  "fullImage": {
+    "file": "kanto-region-map.png",
+    "width": 240,
+    "height": 160
+  },
+  "croppedImage": {
+    "file": "kanto-region-map-cropped.png",
+    "width": 192,
+    "height": 144
+  },
+  "points": {
+    "MAPSEC_ROUTE_24": {
+      "layer": "MAP",
+      "cells": [
+        {
+          "x": 14,
+          "y": 1,
+          "pixelX": 148,
+          "pixelY": 44,
+          "cropX": 124,
+          "cropY": 28
+        },
+        {
+          "x": 14,
+          "y": 2,
+          "pixelX": 148,
+          "pixelY": 52,
+          "cropX": 124,
+          "cropY": 36
+        }
+      ],
+      "name": "ROUTE 24",
+      "center": {
+        "x": 14,
+        "y": 1,
+        "pixelX": 148,
+        "pixelY": 44,
+        "cropX": 124,
+        "cropY": 28
+      }
+    },
+    "MAPSEC_ROUTE_25": {
+      "layer": "MAP",
+      "cells": [
+        {
+          "x": 15,
+          "y": 1,
+          "pixelX": 156,
+          "pixelY": 44,
+          "cropX": 132,
+          "cropY": 28
+        },
+        {
+          "x": 16,
+          "y": 1,
+          "pixelX": 164,
+          "pixelY": 44,
+          "cropX": 140,
+          "cropY": 28
+        }
+      ],
+      "name": "ROUTE 25",
+      "center": {
+        "x": 15,
+        "y": 1,
+        "pixelX": 156,
+        "pixelY": 44,
+        "cropX": 132,
+        "cropY": 28
+      }
+    },
+    "MAPSEC_INDIGO_PLATEAU": {
+      "layer": "MAP",
+      "cells": [
+        {
+          "x": 2,
+          "y": 3,
+          "pixelX": 52,
+          "pixelY": 60,
+          "cropX": 28,
+          "cropY": 44
+        }
+      ],
+      "name": "INDIGO PLATEAU",
+      "center": {
+        "x": 2,
+        "y": 3,
+        "pixelX": 52,
+        "pixelY": 60,
+        "cropX": 28,
+        "cropY": 44
+      }
+    },
+    "MAPSEC_ROUTE_4_POKECENTER": {
+      "layer": "MAP",
+      "cells": [
+        {
+          "x": 8,
+          "y": 3,
+          "pixelX": 100,
+          "pixelY": 60,
+          "cropX": 76,
+          "cropY": 44
+        }
+      ],
+      "name": "ROUTE 4",
+      "center": {
+        "x": 8,
+        "y": 3,
+        "pixelX": 100,
+        "pixelY": 60,
+        "cropX": 76,
+        "cropY": 44
+      }
+    },
+    "MAPSEC_ROUTE_4": {
+      "layer": "MAP",
+      "cells": [
+        {
+          "x": 9,
+          "y": 3,
+          "pixelX": 108,
+          "pixelY": 60,
+          "cropX": 84,
+          "cropY": 44
+        },
+        {
+          "x": 10,
+          "y": 3,
+          "pixelX": 116,
+          "pixelY": 60,
+          "cropX": 92,
+          "cropY": 44
+        },
+        {
+          "x": 11,
+          "y": 3,
+          "pixelX": 124,
+          "pixelY": 60,
+          "cropX": 100,
+          "cropY": 44
+        },
+        {
+          "x": 12,
+          "y": 3,
+          "pixelX": 132,
+          "pixelY": 60,
+          "cropX": 108,
+          "cropY": 44
+        },
+        {
+          "x": 13,
+          "y": 3,
+          "pixelX": 140,
+          "pixelY": 60,
+          "cropX": 116,
+          "cropY": 44
+        }
+      ],
+      "name": "ROUTE 4",
+      "center": {
+        "x": 11,
+        "y": 3,
+        "pixelX": 124,
+        "pixelY": 60,
+        "cropX": 100,
+        "cropY": 44
+      }
+    },
+    "MAPSEC_CERULEAN_CITY": {
+      "layer": "MAP",
+      "cells": [
+        {
+          "x": 14,
+          "y": 3,
+          "pixelX": 148,
+          "pixelY": 60,
+          "cropX": 124,
+          "cropY": 44
+        }
+      ],
+      "name": "CERULEAN CITY",
+      "center": {
+        "x": 14,
+        "y": 3,
+        "pixelX": 148,
+        "pixelY": 60,
+        "cropX": 124,
+        "cropY": 44
+      }
+    },
+    "MAPSEC_ROUTE_9": {
+      "layer": "MAP",
+      "cells": [
+        {
+          "x": 15,
+          "y": 3,
+          "pixelX": 156,
+          "pixelY": 60,
+          "cropX": 132,
+          "cropY": 44
+        },
+        {
+          "x": 16,
+          "y": 3,
+          "pixelX": 164,
+          "pixelY": 60,
+          "cropX": 140,
+          "cropY": 44
+        },
+        {
+          "x": 17,
+          "y": 3,
+          "pixelX": 172,
+          "pixelY": 60,
+          "cropX": 148,
+          "cropY": 44
+        }
+      ],
+      "name": "ROUTE 9",
+      "center": {
+        "x": 16,
+        "y": 3,
+        "pixelX": 164,
+        "pixelY": 60,
+        "cropX": 140,
+        "cropY": 44
+      }
+    },
+    "MAPSEC_ROUTE_10_POKECENTER": {
+      "layer": "MAP",
+      "cells": [
+        {
+          "x": 18,
+          "y": 3,
+          "pixelX": 180,
+          "pixelY": 60,
+          "cropX": 156,
+          "cropY": 44
+        }
+      ],
+      "name": "ROUTE 10",
+      "center": {
+        "x": 18,
+        "y": 3,
+        "pixelX": 180,
+        "pixelY": 60,
+        "cropX": 156,
+        "cropY": 44
+      }
+    },
+    "MAPSEC_ROUTE_23": {
+      "layer": "MAP",
+      "cells": [
+        {
+          "x": 2,
+          "y": 4,
+          "pixelX": 52,
+          "pixelY": 68,
+          "cropX": 28,
+          "cropY": 52
+        },
+        {
+          "x": 2,
+          "y": 5,
+          "pixelX": 52,
+          "pixelY": 76,
+          "cropX": 28,
+          "cropY": 60
+        },
+        {
+          "x": 2,
+          "y": 6,
+          "pixelX": 52,
+          "pixelY": 84,
+          "cropX": 28,
+          "cropY": 68
+        },
+        {
+          "x": 2,
+          "y": 7,
+          "pixelX": 52,
+          "pixelY": 92,
+          "cropX": 28,
+          "cropY": 76
+        }
+      ],
+      "name": "ROUTE 23",
+      "center": {
+        "x": 2,
+        "y": 5,
+        "pixelX": 52,
+        "pixelY": 76,
+        "cropX": 28,
+        "cropY": 60
+      }
+    },
+    "MAPSEC_PEWTER_CITY": {
+      "layer": "MAP",
+      "cells": [
+        {
+          "x": 4,
+          "y": 4,
+          "pixelX": 68,
+          "pixelY": 68,
+          "cropX": 44,
+          "cropY": 52
+        }
+      ],
+      "name": "PEWTER CITY",
+      "center": {
+        "x": 4,
+        "y": 4,
+        "pixelX": 68,
+        "pixelY": 68,
+        "cropX": 44,
+        "cropY": 52
+      }
+    },
+    "MAPSEC_ROUTE_3": {
+      "layer": "MAP",
+      "cells": [
+        {
+          "x": 5,
+          "y": 4,
+          "pixelX": 76,
+          "pixelY": 68,
+          "cropX": 52,
+          "cropY": 52
+        },
+        {
+          "x": 6,
+          "y": 4,
+          "pixelX": 84,
+          "pixelY": 68,
+          "cropX": 60,
+          "cropY": 52
+        },
+        {
+          "x": 7,
+          "y": 4,
+          "pixelX": 92,
+          "pixelY": 68,
+          "cropX": 68,
+          "cropY": 52
+        },
+        {
+          "x": 8,
+          "y": 4,
+          "pixelX": 100,
+          "pixelY": 68,
+          "cropX": 76,
+          "cropY": 52
+        }
+      ],
+      "name": "ROUTE 3",
+      "center": {
+        "x": 6,
+        "y": 4,
+        "pixelX": 84,
+        "pixelY": 68,
+        "cropX": 60,
+        "cropY": 52
+      }
+    },
+    "MAPSEC_ROUTE_5": {
+      "layer": "MAP",
+      "cells": [
+        {
+          "x": 14,
+          "y": 4,
+          "pixelX": 148,
+          "pixelY": 68,
+          "cropX": 124,
+          "cropY": 52
+        },
+        {
+          "x": 14,
+          "y": 5,
+          "pixelX": 148,
+          "pixelY": 76,
+          "cropX": 124,
+          "cropY": 60
+        }
+      ],
+      "name": "ROUTE 5",
+      "center": {
+        "x": 14,
+        "y": 4,
+        "pixelX": 148,
+        "pixelY": 68,
+        "cropX": 124,
+        "cropY": 52
+      }
+    },
+    "MAPSEC_ROUTE_10": {
+      "layer": "MAP",
+      "cells": [
+        {
+          "x": 18,
+          "y": 4,
+          "pixelX": 180,
+          "pixelY": 68,
+          "cropX": 156,
+          "cropY": 52
+        },
+        {
+          "x": 18,
+          "y": 5,
+          "pixelX": 180,
+          "pixelY": 76,
+          "cropX": 156,
+          "cropY": 60
+        }
+      ],
+      "name": "ROUTE 10",
+      "center": {
+        "x": 18,
+        "y": 4,
+        "pixelX": 180,
+        "pixelY": 68,
+        "cropX": 156,
+        "cropY": 52
+      }
+    },
+    "MAPSEC_ROUTE_2": {
+      "layer": "MAP",
+      "cells": [
+        {
+          "x": 4,
+          "y": 5,
+          "pixelX": 68,
+          "pixelY": 76,
+          "cropX": 44,
+          "cropY": 60
+        },
+        {
+          "x": 4,
+          "y": 6,
+          "pixelX": 68,
+          "pixelY": 84,
+          "cropX": 44,
+          "cropY": 68
+        },
+        {
+          "x": 4,
+          "y": 7,
+          "pixelX": 68,
+          "pixelY": 92,
+          "cropX": 44,
+          "cropY": 76
+        }
+      ],
+      "name": "ROUTE 2",
+      "center": {
+        "x": 4,
+        "y": 6,
+        "pixelX": 68,
+        "pixelY": 84,
+        "cropX": 44,
+        "cropY": 68
+      }
+    },
+    "MAPSEC_ROUTE_16": {
+      "layer": "MAP",
+      "cells": [
+        {
+          "x": 7,
+          "y": 6,
+          "pixelX": 92,
+          "pixelY": 84,
+          "cropX": 68,
+          "cropY": 68
+        },
+        {
+          "x": 8,
+          "y": 6,
+          "pixelX": 100,
+          "pixelY": 84,
+          "cropX": 76,
+          "cropY": 68
+        },
+        {
+          "x": 9,
+          "y": 6,
+          "pixelX": 108,
+          "pixelY": 84,
+          "cropX": 84,
+          "cropY": 68
+        },
+        {
+          "x": 10,
+          "y": 6,
+          "pixelX": 116,
+          "pixelY": 84,
+          "cropX": 92,
+          "cropY": 68
+        }
+      ],
+      "name": "ROUTE 16",
+      "center": {
+        "x": 8,
+        "y": 6,
+        "pixelX": 100,
+        "pixelY": 84,
+        "cropX": 76,
+        "cropY": 68
+      }
+    },
+    "MAPSEC_CELADON_CITY": {
+      "layer": "MAP",
+      "cells": [
+        {
+          "x": 11,
+          "y": 6,
+          "pixelX": 124,
+          "pixelY": 84,
+          "cropX": 100,
+          "cropY": 68
+        }
+      ],
+      "name": "CELADON CITY",
+      "center": {
+        "x": 11,
+        "y": 6,
+        "pixelX": 124,
+        "pixelY": 84,
+        "cropX": 100,
+        "cropY": 68
+      }
+    },
+    "MAPSEC_ROUTE_7": {
+      "layer": "MAP",
+      "cells": [
+        {
+          "x": 12,
+          "y": 6,
+          "pixelX": 132,
+          "pixelY": 84,
+          "cropX": 108,
+          "cropY": 68
+        },
+        {
+          "x": 13,
+          "y": 6,
+          "pixelX": 140,
+          "pixelY": 84,
+          "cropX": 116,
+          "cropY": 68
+        }
+      ],
+      "name": "ROUTE 7",
+      "center": {
+        "x": 12,
+        "y": 6,
+        "pixelX": 132,
+        "pixelY": 84,
+        "cropX": 108,
+        "cropY": 68
+      }
+    },
+    "MAPSEC_SAFFRON_CITY": {
+      "layer": "MAP",
+      "cells": [
+        {
+          "x": 14,
+          "y": 6,
+          "pixelX": 148,
+          "pixelY": 84,
+          "cropX": 124,
+          "cropY": 68
+        }
+      ],
+      "name": "SAFFRON CITY",
+      "center": {
+        "x": 14,
+        "y": 6,
+        "pixelX": 148,
+        "pixelY": 84,
+        "cropX": 124,
+        "cropY": 68
+      }
+    },
+    "MAPSEC_ROUTE_8": {
+      "layer": "MAP",
+      "cells": [
+        {
+          "x": 15,
+          "y": 6,
+          "pixelX": 156,
+          "pixelY": 84,
+          "cropX": 132,
+          "cropY": 68
+        },
+        {
+          "x": 16,
+          "y": 6,
+          "pixelX": 164,
+          "pixelY": 84,
+          "cropX": 140,
+          "cropY": 68
+        },
+        {
+          "x": 17,
+          "y": 6,
+          "pixelX": 172,
+          "pixelY": 84,
+          "cropX": 148,
+          "cropY": 68
+        }
+      ],
+      "name": "ROUTE 8",
+      "center": {
+        "x": 16,
+        "y": 6,
+        "pixelX": 164,
+        "pixelY": 84,
+        "cropX": 140,
+        "cropY": 68
+      }
+    },
+    "MAPSEC_LAVENDER_TOWN": {
+      "layer": "MAP",
+      "cells": [
+        {
+          "x": 18,
+          "y": 6,
+          "pixelX": 180,
+          "pixelY": 84,
+          "cropX": 156,
+          "cropY": 68
+        }
+      ],
+      "name": "LAVENDER TOWN",
+      "center": {
+        "x": 18,
+        "y": 6,
+        "pixelX": 180,
+        "pixelY": 84,
+        "cropX": 156,
+        "cropY": 68
+      }
+    },
+    "MAPSEC_ROUTE_17": {
+      "layer": "MAP",
+      "cells": [
+        {
+          "x": 7,
+          "y": 7,
+          "pixelX": 92,
+          "pixelY": 92,
+          "cropX": 68,
+          "cropY": 76
+        },
+        {
+          "x": 7,
+          "y": 8,
+          "pixelX": 92,
+          "pixelY": 100,
+          "cropX": 68,
+          "cropY": 84
+        },
+        {
+          "x": 7,
+          "y": 9,
+          "pixelX": 92,
+          "pixelY": 108,
+          "cropX": 68,
+          "cropY": 92
+        },
+        {
+          "x": 7,
+          "y": 10,
+          "pixelX": 92,
+          "pixelY": 116,
+          "cropX": 68,
+          "cropY": 100
+        },
+        {
+          "x": 7,
+          "y": 11,
+          "pixelX": 92,
+          "pixelY": 124,
+          "cropX": 68,
+          "cropY": 108
+        }
+      ],
+      "name": "ROUTE 17",
+      "center": {
+        "x": 7,
+        "y": 9,
+        "pixelX": 92,
+        "pixelY": 108,
+        "cropX": 68,
+        "cropY": 92
+      }
+    },
+    "MAPSEC_ROUTE_6": {
+      "layer": "MAP",
+      "cells": [
+        {
+          "x": 14,
+          "y": 7,
+          "pixelX": 148,
+          "pixelY": 92,
+          "cropX": 124,
+          "cropY": 76
+        },
+        {
+          "x": 14,
+          "y": 8,
+          "pixelX": 148,
+          "pixelY": 100,
+          "cropX": 124,
+          "cropY": 84
+        }
+      ],
+      "name": "ROUTE 6",
+      "center": {
+        "x": 14,
+        "y": 7,
+        "pixelX": 148,
+        "pixelY": 92,
+        "cropX": 124,
+        "cropY": 76
+      }
+    },
+    "MAPSEC_ROUTE_12": {
+      "layer": "MAP",
+      "cells": [
+        {
+          "x": 18,
+          "y": 7,
+          "pixelX": 180,
+          "pixelY": 92,
+          "cropX": 156,
+          "cropY": 76
+        },
+        {
+          "x": 18,
+          "y": 8,
+          "pixelX": 180,
+          "pixelY": 100,
+          "cropX": 156,
+          "cropY": 84
+        },
+        {
+          "x": 18,
+          "y": 9,
+          "pixelX": 180,
+          "pixelY": 108,
+          "cropX": 156,
+          "cropY": 92
+        },
+        {
+          "x": 18,
+          "y": 10,
+          "pixelX": 180,
+          "pixelY": 116,
+          "cropX": 156,
+          "cropY": 100
+        },
+        {
+          "x": 18,
+          "y": 11,
+          "pixelX": 180,
+          "pixelY": 124,
+          "cropX": 156,
+          "cropY": 108
+        }
+      ],
+      "name": "ROUTE 12",
+      "center": {
+        "x": 18,
+        "y": 9,
+        "pixelX": 180,
+        "pixelY": 108,
+        "cropX": 156,
+        "cropY": 92
+      }
+    },
+    "MAPSEC_ROUTE_22": {
+      "layer": "MAP",
+      "cells": [
+        {
+          "x": 2,
+          "y": 8,
+          "pixelX": 52,
+          "pixelY": 100,
+          "cropX": 28,
+          "cropY": 84
+        },
+        {
+          "x": 3,
+          "y": 8,
+          "pixelX": 60,
+          "pixelY": 100,
+          "cropX": 36,
+          "cropY": 84
+        }
+      ],
+      "name": "ROUTE 22",
+      "center": {
+        "x": 2,
+        "y": 8,
+        "pixelX": 52,
+        "pixelY": 100,
+        "cropX": 28,
+        "cropY": 84
+      }
+    },
+    "MAPSEC_VIRIDIAN_CITY": {
+      "layer": "MAP",
+      "cells": [
+        {
+          "x": 4,
+          "y": 8,
+          "pixelX": 68,
+          "pixelY": 100,
+          "cropX": 44,
+          "cropY": 84
+        }
+      ],
+      "name": "VIRIDIAN CITY",
+      "center": {
+        "x": 4,
+        "y": 8,
+        "pixelX": 68,
+        "pixelY": 100,
+        "cropX": 44,
+        "cropY": 84
+      }
+    },
+    "MAPSEC_ROUTE_1": {
+      "layer": "MAP",
+      "cells": [
+        {
+          "x": 4,
+          "y": 9,
+          "pixelX": 68,
+          "pixelY": 108,
+          "cropX": 44,
+          "cropY": 92
+        },
+        {
+          "x": 4,
+          "y": 10,
+          "pixelX": 68,
+          "pixelY": 116,
+          "cropX": 44,
+          "cropY": 100
+        }
+      ],
+      "name": "ROUTE 1",
+      "center": {
+        "x": 4,
+        "y": 9,
+        "pixelX": 68,
+        "pixelY": 108,
+        "cropX": 44,
+        "cropY": 92
+      }
+    },
+    "MAPSEC_VERMILION_CITY": {
+      "layer": "MAP",
+      "cells": [
+        {
+          "x": 14,
+          "y": 9,
+          "pixelX": 148,
+          "pixelY": 108,
+          "cropX": 124,
+          "cropY": 92
+        }
+      ],
+      "name": "VERMILION CITY",
+      "center": {
+        "x": 14,
+        "y": 9,
+        "pixelX": 148,
+        "pixelY": 108,
+        "cropX": 124,
+        "cropY": 92
+      }
+    },
+    "MAPSEC_ROUTE_11": {
+      "layer": "MAP",
+      "cells": [
+        {
+          "x": 15,
+          "y": 9,
+          "pixelX": 156,
+          "pixelY": 108,
+          "cropX": 132,
+          "cropY": 92
+        },
+        {
+          "x": 16,
+          "y": 9,
+          "pixelX": 164,
+          "pixelY": 108,
+          "cropX": 140,
+          "cropY": 92
+        },
+        {
+          "x": 17,
+          "y": 9,
+          "pixelX": 172,
+          "pixelY": 108,
+          "cropX": 148,
+          "cropY": 92
+        }
+      ],
+      "name": "ROUTE 11",
+      "center": {
+        "x": 16,
+        "y": 9,
+        "pixelX": 164,
+        "pixelY": 108,
+        "cropX": 140,
+        "cropY": 92
+      }
+    },
+    "MAPSEC_PALLET_TOWN": {
+      "layer": "MAP",
+      "cells": [
+        {
+          "x": 4,
+          "y": 11,
+          "pixelX": 68,
+          "pixelY": 124,
+          "cropX": 44,
+          "cropY": 108
+        }
+      ],
+      "name": "PALLET TOWN",
+      "center": {
+        "x": 4,
+        "y": 11,
+        "pixelX": 68,
+        "pixelY": 124,
+        "cropX": 44,
+        "cropY": 108
+      }
+    },
+    "MAPSEC_ROUTE_14": {
+      "layer": "MAP",
+      "cells": [
+        {
+          "x": 15,
+          "y": 11,
+          "pixelX": 156,
+          "pixelY": 124,
+          "cropX": 132,
+          "cropY": 108
+        },
+        {
+          "x": 15,
+          "y": 12,
+          "pixelX": 156,
+          "pixelY": 132,
+          "cropX": 132,
+          "cropY": 116
+        }
+      ],
+      "name": "ROUTE 14",
+      "center": {
+        "x": 15,
+        "y": 11,
+        "pixelX": 156,
+        "pixelY": 124,
+        "cropX": 132,
+        "cropY": 108
+      }
+    },
+    "MAPSEC_ROUTE_13": {
+      "layer": "MAP",
+      "cells": [
+        {
+          "x": 16,
+          "y": 11,
+          "pixelX": 164,
+          "pixelY": 124,
+          "cropX": 140,
+          "cropY": 108
+        },
+        {
+          "x": 17,
+          "y": 11,
+          "pixelX": 172,
+          "pixelY": 124,
+          "cropX": 148,
+          "cropY": 108
+        }
+      ],
+      "name": "ROUTE 13",
+      "center": {
+        "x": 16,
+        "y": 11,
+        "pixelX": 164,
+        "pixelY": 124,
+        "cropX": 140,
+        "cropY": 108
+      }
+    },
+    "MAPSEC_ROUTE_21": {
+      "layer": "MAP",
+      "cells": [
+        {
+          "x": 4,
+          "y": 12,
+          "pixelX": 68,
+          "pixelY": 132,
+          "cropX": 44,
+          "cropY": 116
+        },
+        {
+          "x": 4,
+          "y": 13,
+          "pixelX": 68,
+          "pixelY": 140,
+          "cropX": 44,
+          "cropY": 124
+        }
+      ],
+      "name": "ROUTE 21",
+      "center": {
+        "x": 4,
+        "y": 12,
+        "pixelX": 68,
+        "pixelY": 132,
+        "cropX": 44,
+        "cropY": 116
+      }
+    },
+    "MAPSEC_ROUTE_18": {
+      "layer": "MAP",
+      "cells": [
+        {
+          "x": 7,
+          "y": 12,
+          "pixelX": 92,
+          "pixelY": 132,
+          "cropX": 68,
+          "cropY": 116
+        },
+        {
+          "x": 8,
+          "y": 12,
+          "pixelX": 100,
+          "pixelY": 132,
+          "cropX": 76,
+          "cropY": 116
+        },
+        {
+          "x": 9,
+          "y": 12,
+          "pixelX": 108,
+          "pixelY": 132,
+          "cropX": 84,
+          "cropY": 116
+        },
+        {
+          "x": 10,
+          "y": 12,
+          "pixelX": 116,
+          "pixelY": 132,
+          "cropX": 92,
+          "cropY": 116
+        },
+        {
+          "x": 11,
+          "y": 12,
+          "pixelX": 124,
+          "pixelY": 132,
+          "cropX": 100,
+          "cropY": 116
+        }
+      ],
+      "name": "ROUTE 18",
+      "center": {
+        "x": 9,
+        "y": 12,
+        "pixelX": 108,
+        "pixelY": 132,
+        "cropX": 84,
+        "cropY": 116
+      }
+    },
+    "MAPSEC_FUCHSIA_CITY": {
+      "layer": "MAP",
+      "cells": [
+        {
+          "x": 12,
+          "y": 12,
+          "pixelX": 132,
+          "pixelY": 132,
+          "cropX": 108,
+          "cropY": 116
+        }
+      ],
+      "name": "FUCHSIA CITY",
+      "center": {
+        "x": 12,
+        "y": 12,
+        "pixelX": 132,
+        "pixelY": 132,
+        "cropX": 108,
+        "cropY": 116
+      }
+    },
+    "MAPSEC_ROUTE_15": {
+      "layer": "MAP",
+      "cells": [
+        {
+          "x": 13,
+          "y": 12,
+          "pixelX": 140,
+          "pixelY": 132,
+          "cropX": 116,
+          "cropY": 116
+        },
+        {
+          "x": 14,
+          "y": 12,
+          "pixelX": 148,
+          "pixelY": 132,
+          "cropX": 124,
+          "cropY": 116
+        }
+      ],
+      "name": "ROUTE 15",
+      "center": {
+        "x": 13,
+        "y": 12,
+        "pixelX": 140,
+        "pixelY": 132,
+        "cropX": 116,
+        "cropY": 116
+      }
+    },
+    "MAPSEC_ROUTE_19": {
+      "layer": "MAP",
+      "cells": [
+        {
+          "x": 12,
+          "y": 13,
+          "pixelX": 132,
+          "pixelY": 140,
+          "cropX": 108,
+          "cropY": 124
+        },
+        {
+          "x": 12,
+          "y": 14,
+          "pixelX": 132,
+          "pixelY": 148,
+          "cropX": 108,
+          "cropY": 132
+        }
+      ],
+      "name": "ROUTE 19",
+      "center": {
+        "x": 12,
+        "y": 13,
+        "pixelX": 132,
+        "pixelY": 140,
+        "cropX": 108,
+        "cropY": 124
+      }
+    },
+    "MAPSEC_CINNABAR_ISLAND": {
+      "layer": "MAP",
+      "cells": [
+        {
+          "x": 4,
+          "y": 14,
+          "pixelX": 68,
+          "pixelY": 148,
+          "cropX": 44,
+          "cropY": 132
+        }
+      ],
+      "name": "CINNABAR ISLAND",
+      "center": {
+        "x": 4,
+        "y": 14,
+        "pixelX": 68,
+        "pixelY": 148,
+        "cropX": 44,
+        "cropY": 132
+      }
+    },
+    "MAPSEC_ROUTE_20": {
+      "layer": "MAP",
+      "cells": [
+        {
+          "x": 5,
+          "y": 14,
+          "pixelX": 76,
+          "pixelY": 148,
+          "cropX": 52,
+          "cropY": 132
+        },
+        {
+          "x": 6,
+          "y": 14,
+          "pixelX": 84,
+          "pixelY": 148,
+          "cropX": 60,
+          "cropY": 132
+        },
+        {
+          "x": 7,
+          "y": 14,
+          "pixelX": 92,
+          "pixelY": 148,
+          "cropX": 68,
+          "cropY": 132
+        },
+        {
+          "x": 8,
+          "y": 14,
+          "pixelX": 100,
+          "pixelY": 148,
+          "cropX": 76,
+          "cropY": 132
+        },
+        {
+          "x": 9,
+          "y": 14,
+          "pixelX": 108,
+          "pixelY": 148,
+          "cropX": 84,
+          "cropY": 132
+        },
+        {
+          "x": 10,
+          "y": 14,
+          "pixelX": 116,
+          "pixelY": 148,
+          "cropX": 92,
+          "cropY": 132
+        },
+        {
+          "x": 11,
+          "y": 14,
+          "pixelX": 124,
+          "pixelY": 148,
+          "cropX": 100,
+          "cropY": 132
+        }
+      ],
+      "name": "ROUTE 20",
+      "center": {
+        "x": 8,
+        "y": 14,
+        "pixelX": 100,
+        "pixelY": 148,
+        "cropX": 76,
+        "cropY": 132
+      }
+    },
+    "MAPSEC_MT_MOON": {
+      "layer": "DUNGEON",
+      "cells": [
+        {
+          "x": 9,
+          "y": 3,
+          "pixelX": 108,
+          "pixelY": 60,
+          "cropX": 84,
+          "cropY": 44
+        }
+      ],
+      "name": "MT. MOON",
+      "center": {
+        "x": 9,
+        "y": 3,
+        "pixelX": 108,
+        "pixelY": 60,
+        "cropX": 84,
+        "cropY": 44
+      }
+    },
+    "MAPSEC_CERULEAN_CAVE": {
+      "layer": "DUNGEON",
+      "cells": [
+        {
+          "x": 14,
+          "y": 3,
+          "pixelX": 148,
+          "pixelY": 60,
+          "cropX": 124,
+          "cropY": 44
+        }
+      ],
+      "name": "CERULEAN CAVE",
+      "center": {
+        "x": 14,
+        "y": 3,
+        "pixelX": 148,
+        "pixelY": 60,
+        "cropX": 124,
+        "cropY": 44
+      }
+    },
+    "MAPSEC_ROCK_TUNNEL": {
+      "layer": "DUNGEON",
+      "cells": [
+        {
+          "x": 18,
+          "y": 3,
+          "pixelX": 180,
+          "pixelY": 60,
+          "cropX": 156,
+          "cropY": 44
+        }
+      ],
+      "name": "ROCK TUNNEL",
+      "center": {
+        "x": 18,
+        "y": 3,
+        "pixelX": 180,
+        "pixelY": 60,
+        "cropX": 156,
+        "cropY": 44
+      }
+    },
+    "MAPSEC_KANTO_VICTORY_ROAD": {
+      "layer": "DUNGEON",
+      "cells": [
+        {
+          "x": 2,
+          "y": 4,
+          "pixelX": 52,
+          "pixelY": 68,
+          "cropX": 28,
+          "cropY": 52
+        }
+      ],
+      "name": "VICTORY ROAD",
+      "center": {
+        "x": 2,
+        "y": 4,
+        "pixelX": 52,
+        "pixelY": 68,
+        "cropX": 28,
+        "cropY": 52
+      }
+    },
+    "MAPSEC_POWER_PLANT": {
+      "layer": "DUNGEON",
+      "cells": [
+        {
+          "x": 18,
+          "y": 4,
+          "pixelX": 180,
+          "pixelY": 68,
+          "cropX": 156,
+          "cropY": 52
+        }
+      ],
+      "name": "POWER PLANT",
+      "center": {
+        "x": 18,
+        "y": 4,
+        "pixelX": 180,
+        "pixelY": 68,
+        "cropX": 156,
+        "cropY": 52
+      }
+    },
+    "MAPSEC_DIGLETTS_CAVE": {
+      "layer": "DUNGEON",
+      "cells": [
+        {
+          "x": 4,
+          "y": 5,
+          "pixelX": 68,
+          "pixelY": 76,
+          "cropX": 44,
+          "cropY": 60
+        },
+        {
+          "x": 15,
+          "y": 9,
+          "pixelX": 156,
+          "pixelY": 108,
+          "cropX": 132,
+          "cropY": 92
+        }
+      ],
+      "name": "DIGLETT'S CAVE",
+      "center": {
+        "x": 4,
+        "y": 5,
+        "pixelX": 68,
+        "pixelY": 76,
+        "cropX": 44,
+        "cropY": 60
+      }
+    },
+    "MAPSEC_VIRIDIAN_FOREST": {
+      "layer": "DUNGEON",
+      "cells": [
+        {
+          "x": 4,
+          "y": 6,
+          "pixelX": 68,
+          "pixelY": 84,
+          "cropX": 44,
+          "cropY": 68
+        }
+      ],
+      "name": "VIRIDIAN FOREST",
+      "center": {
+        "x": 4,
+        "y": 6,
+        "pixelX": 68,
+        "pixelY": 84,
+        "cropX": 44,
+        "cropY": 68
+      }
+    },
+    "MAPSEC_POKEMON_TOWER": {
+      "layer": "DUNGEON",
+      "cells": [
+        {
+          "x": 18,
+          "y": 6,
+          "pixelX": 180,
+          "pixelY": 84,
+          "cropX": 156,
+          "cropY": 68
+        }
+      ],
+      "name": "POKéMON TOWER",
+      "center": {
+        "x": 18,
+        "y": 6,
+        "pixelX": 180,
+        "pixelY": 84,
+        "cropX": 156,
+        "cropY": 68
+      }
+    },
+    "MAPSEC_KANTO_SAFARI_ZONE": {
+      "layer": "DUNGEON",
+      "cells": [
+        {
+          "x": 12,
+          "y": 12,
+          "pixelX": 132,
+          "pixelY": 132,
+          "cropX": 108,
+          "cropY": 116
+        }
+      ],
+      "name": "SAFARI ZONE",
+      "center": {
+        "x": 12,
+        "y": 12,
+        "pixelX": 132,
+        "pixelY": 132,
+        "cropX": 108,
+        "cropY": 116
+      }
+    },
+    "MAPSEC_POKEMON_MANSION": {
+      "layer": "DUNGEON",
+      "cells": [
+        {
+          "x": 4,
+          "y": 14,
+          "pixelX": 68,
+          "pixelY": 148,
+          "cropX": 44,
+          "cropY": 132
+        }
+      ],
+      "name": "POKéMON MANSION",
+      "center": {
+        "x": 4,
+        "y": 14,
+        "pixelX": 68,
+        "pixelY": 148,
+        "cropX": 44,
+        "cropY": 132
+      }
+    },
+    "MAPSEC_SEAFOAM_ISLANDS": {
+      "layer": "DUNGEON",
+      "cells": [
+        {
+          "x": 8,
+          "y": 14,
+          "pixelX": 100,
+          "pixelY": 148,
+          "cropX": 76,
+          "cropY": 132
+        }
+      ],
+      "name": "SEAFOAM ISLANDS",
+      "center": {
+        "x": 8,
+        "y": 14,
+        "pixelX": 100,
+        "pixelY": 148,
+        "cropX": 76,
+        "cropY": 132
+      }
+    }
+  }
+}

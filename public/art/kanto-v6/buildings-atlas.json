@@ -1,0 +1,253 @@
+{
+  "frames": {
+    "house-red": {
+      "frame": {
+        "x": 68,
+        "y": 143,
+        "w": 152,
+        "h": 121
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 152,
+        "h": 121
+      },
+      "sourceSize": {
+        "w": 152,
+        "h": 121
+      }
+    },
+    "house-blue": {
+      "frame": {
+        "x": 356,
+        "y": 145,
+        "w": 152,
+        "h": 119
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 152,
+        "h": 119
+      },
+      "sourceSize": {
+        "w": 152,
+        "h": 119
+      }
+    },
+    "oak-lab": {
+      "frame": {
+        "x": 611,
+        "y": 147,
+        "w": 218,
+        "h": 117
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 218,
+        "h": 117
+      },
+      "sourceSize": {
+        "w": 218,
+        "h": 117
+      }
+    },
+    "pokemon-center": {
+      "frame": {
+        "x": 914,
+        "y": 131,
+        "w": 188,
+        "h": 133
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 188,
+        "h": 133
+      },
+      "sourceSize": {
+        "w": 188,
+        "h": 133
+      }
+    },
+    "mart": {
+      "frame": {
+        "x": 54,
+        "y": 426,
+        "w": 180,
+        "h": 126
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 180,
+        "h": 126
+      },
+      "sourceSize": {
+        "w": 180,
+        "h": 126
+      }
+    },
+    "gym": {
+      "frame": {
+        "x": 314,
+        "y": 417,
+        "w": 236,
+        "h": 135
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 236,
+        "h": 135
+      },
+      "sourceSize": {
+        "w": 236,
+        "h": 135
+      }
+    },
+    "department-store": {
+      "frame": {
+        "x": 604,
+        "y": 369,
+        "w": 232,
+        "h": 183
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 232,
+        "h": 183
+      },
+      "sourceSize": {
+        "w": 232,
+        "h": 183
+      }
+    },
+    "silph-office": {
+      "frame": {
+        "x": 888,
+        "y": 358,
+        "w": 240,
+        "h": 194
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 240,
+        "h": 194
+      },
+      "sourceSize": {
+        "w": 240,
+        "h": 194
+      }
+    },
+    "lavender-tower": {
+      "frame": {
+        "x": 43,
+        "y": 600,
+        "w": 202,
+        "h": 240
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 202,
+        "h": 240
+      },
+      "sourceSize": {
+        "w": 202,
+        "h": 240
+      }
+    },
+    "mansion": {
+      "frame": {
+        "x": 309,
+        "y": 686,
+        "w": 246,
+        "h": 154
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 246,
+        "h": 154
+      },
+      "sourceSize": {
+        "w": 246,
+        "h": 154
+      }
+    },
+    "league": {
+      "frame": {
+        "x": 589,
+        "y": 681,
+        "w": 262,
+        "h": 159
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 262,
+        "h": 159
+      },
+      "sourceSize": {
+        "w": 262,
+        "h": 159
+      }
+    },
+    "cave": {
+      "frame": {
+        "x": 911,
+        "y": 731,
+        "w": 194,
+        "h": 109
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 194,
+        "h": 109
+      },
+      "sourceSize": {
+        "w": 194,
+        "h": 109
+      }
+    }
+  },
+  "meta": {
+    "image": "buildings-atlas.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 1152,
+      "h": 864
+    },
+    "scale": "1"
+  }
+}

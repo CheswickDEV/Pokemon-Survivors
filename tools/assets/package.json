@@ -1,0 +1,9 @@
+{
+  "name": "pokemon-survivors-asset-tools",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Optional local image conversion tools; not a game runtime dependency",
+  "dependencies": { "sharp": "0.35.5" },
+  "engines": { "node": ">=22.23.3 <23" }
+}

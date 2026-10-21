@@ -1,0 +1,23 @@
+{
+  "species": 151,
+  "actions": 453,
+  "frames": 26472,
+  "allEightDirections": true,
+  "allPixelIdenticalToUpstream": true,
+  "normalDimensionsMatches": 453,
+  "normalAlphaMatches": 453,
+  "colorChanges": 451,
+  "identicalToNormalActions": [
+    {
+      "id": 50,
+      "animation": "Walk"
+    },
+    {
+      "id": 51,
+      "animation": "Walk"
+    }
+  ],
+  "minimumDistinctWalkFramesPerDirection": 3,
+  "pngBytes": 5138273,
+  "unavailableSpecies": []
+}

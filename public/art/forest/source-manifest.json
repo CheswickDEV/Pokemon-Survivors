@@ -1,0 +1,182 @@
+{
+  "repository": "https://github.com/pret/pokefirered",
+  "commit": "037335f4c725d7c9aecdac87066f2002b4bd7e14",
+  "retrieved": "2026-10-19",
+  "files": [
+    {
+      "file": "00.pal",
+      "sha256": "757529e794c7fb9c333b1c2ef83704f6b03bb0fe756443b80025b2bc55dbe7f0",
+      "bytes": 186
+    },
+    {
+      "file": "01.pal",
+      "sha256": "baec95e65952c79e6ceb9cf8306995379982dc9253e67797b350556e1db83bfb",
+      "bytes": 192
+    },
+    {
+      "file": "02.pal",
+      "sha256": "ea0310019345ea29e2196c4326182e32cbddf0e5fc2c4d010e8c40794c78852b",
+      "bytes": 192
+    },
+    {
+      "file": "03.pal",
+      "sha256": "117156779971950f6693bbefa2e92c373662209f2e39e4716f1e37a4f72ba022",
+      "bytes": 195
+    },
+    {
+      "file": "04.pal",
+      "sha256": "7fed8601788c83852288c2395afd84a2c9ca6717c1eb38b762ad8ae7a9d61c5d",
+      "bytes": 199
+    },
+    {
+      "file": "05.pal",
+      "sha256": "f8497b9b541ebe7ba0a80b0ac865135410d9cf6324f13949f3285c70b1119e07",
+      "bytes": 198
+    },
+    {
+      "file": "06.pal",
+      "sha256": "4d2d0cfdc068acb9bc2adc9d4d762bcee527fd0cf045c30728632e15b0590582",
+      "bytes": 198
+    },
+    {
+      "file": "07.pal",
+      "sha256": "9fd961331b3d93c934ae2606e4c71e915af26bdefdded710b3992d047360fc3e",
+      "bytes": 117
+    },
+    {
+      "file": "08.pal",
+      "sha256": "9fd961331b3d93c934ae2606e4c71e915af26bdefdded710b3992d047360fc3e",
+      "bytes": 117
+    },
+    {
+      "file": "09.pal",
+      "sha256": "9fd961331b3d93c934ae2606e4c71e915af26bdefdded710b3992d047360fc3e",
+      "bytes": 117
+    },
+    {
+      "file": "10.pal",
+      "sha256": "9fd961331b3d93c934ae2606e4c71e915af26bdefdded710b3992d047360fc3e",
+      "bytes": 117
+    },
+    {
+      "file": "11.pal",
+      "sha256": "9fd961331b3d93c934ae2606e4c71e915af26bdefdded710b3992d047360fc3e",
+      "bytes": 117
+    },
+    {
+      "file": "12.pal",
+      "sha256": "226f0ddc9a6d3b26b78e138333dfde67d39aa7ac95a257e9e53c766fb6035675",
+      "bytes": 113
+    },
+    {
+      "file": "13.pal",
+      "sha256": "226f0ddc9a6d3b26b78e138333dfde67d39aa7ac95a257e9e53c766fb6035675",
+      "bytes": 113
+    },
+    {
+      "file": "14.pal",
+      "sha256": "226f0ddc9a6d3b26b78e138333dfde67d39aa7ac95a257e9e53c766fb6035675",
+      "bytes": 113
+    },
+    {
+      "file": "15.pal",
+      "sha256": "226f0ddc9a6d3b26b78e138333dfde67d39aa7ac95a257e9e53c766fb6035675",
+      "bytes": 113
+    },
+    {
+      "file": "flower-0.png",
+      "sha256": "7196fa1936dea03f7aa0693f3ac7ee63f7caf87c7b6f55133e10cb6e75c893b4",
+      "bytes": 219
+    },
+    {
+      "file": "flower-1.png",
+      "sha256": "56b7b97e3e05c4d36395e1a75430a9f0bce26f01dcd71a670df022cbb7caf99d",
+      "bytes": 221
+    },
+    {
+      "file": "flower-2.png",
+      "sha256": "cda8d10a44dff6e0fab7cdc660910d00dcc42ccf46d50244bcb960e3aded10ad",
+      "bytes": 219
+    },
+    {
+      "file": "flower-3.png",
+      "sha256": "512afc7073b9fba5b926002e9498795fc4178e32c9b62f884b0854fed5fd648f",
+      "bytes": 218
+    },
+    {
+      "file": "flower-4.png",
+      "sha256": "b81ea7b895fd3ad95f60f075de88e901496c172325121116df8ee83dad1cf8b3",
+      "bytes": 219
+    },
+    {
+      "file": "metatile_attributes.bin",
+      "sha256": "1f62a949da41adca90ad36ca3597754bee953a8f21781f32aedf6158922c89cb",
+      "bytes": 2560
+    },
+    {
+      "file": "metatiles.bin",
+      "sha256": "8d950c1a1f151f5e1bded1ecee165b815c3a4d62b69a4a9cec4f676283f9041e",
+      "bytes": 10240
+    },
+    {
+      "file": "npc_white.pal",
+      "sha256": "31668dbee587a2e6c7238d4ff94a090e753ddcc06336649a186ab124ad4a6c97",
+      "bytes": 186
+    },
+    {
+      "file": "strength_boulder.png",
+      "sha256": "60c4e11133c8c23419cbdd41a9a3d80fb316914566431fb63948a782f4039762",
+      "bytes": 222
+    },
+    {
+      "file": "tiles.png",
+      "sha256": "9ff889d1b9da5383a0cd0c85ac7b791812867804f3a38566b46172087419e0b9",
+      "bytes": 8671
+    },
+    {
+      "file": "tileset_anims.c",
+      "sha256": "36921e1d59fc8332bcb8c20ac25a15644d3c14d70fde5cd120dba2ae06acbe63",
+      "bytes": 15026
+    },
+    {
+      "file": "water-0.png",
+      "sha256": "6d6e97d10cb8a0a8e7c5635c7e641a41ec947696f6ac0d666714f7efaa712927",
+      "bytes": 629
+    },
+    {
+      "file": "water-1.png",
+      "sha256": "7170ba98d59e8e895b2c9d475b8933965b6ddc2c7a8352fc725fbb6ad848921a",
+      "bytes": 634
+    },
+    {
+      "file": "water-2.png",
+      "sha256": "75f1040ab3775c7757fa18fb5130cbd7eb63771bc3c849e34000a3cc386155fc",
+      "bytes": 821
+    },
+    {
+      "file": "water-3.png",
+      "sha256": "44e80621d9b4cd503f2cec23f23c4114855c957ed4667840ecf5f3ef0c670bed",
+      "bytes": 834
+    },
+    {
+      "file": "water-4.png",
+      "sha256": "20b3b45cb97fe75c6c7ad5b3474d595decc54590b2a0b429f3feb057261f408b",
+      "bytes": 883
+    },
+    {
+      "file": "water-5.png",
+      "sha256": "18deff08c810376455ce3f9372313945f678e747071936ef4be95e417bf69631",
+      "bytes": 910
+    },
+    {
+      "file": "water-6.png",
+      "sha256": "cd0937992eed69745357b11356600ebb63abd2f317c6b39160b84158adc62f45",
+      "bytes": 864
+    },
+    {
+      "file": "water-7.png",
+      "sha256": "4c132b2f5d7201dec2269507b19a3b4fea4434523964efc1fca0a956dda20e48",
+      "bytes": 806
+    }
+  ]
+}

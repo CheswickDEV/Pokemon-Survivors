@@ -1,0 +1,1138 @@
+{
+  "version": 1,
+  "commit": "ce6406d8c2eaf46d543c8a2606de0c3cb1951982",
+  "assets": [
+    {
+      "id": "npc-nurse",
+      "file": "npc-nurse.png",
+      "width": 16,
+      "height": 32,
+      "ground": {
+        "x": 8,
+        "y": 32
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 1
+      },
+      "recommendedScale": 2.2,
+      "source": "graphics/object_events/pics/people/nurse.png",
+      "sha256": "bd31dd6c2ba916d73fac3ff1154f6f8addfae0f64457f971a51651f6a73afeb6"
+    },
+    {
+      "id": "npc-clerk",
+      "file": "npc-clerk.png",
+      "width": 16,
+      "height": 32,
+      "ground": {
+        "x": 8,
+        "y": 32
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 1
+      },
+      "recommendedScale": 2.2,
+      "source": "graphics/object_events/pics/people/clerk.png",
+      "sha256": "b02a21d49ab6b73686c4a14dfcfcd48f3a9277e459e2f36147f788a7ac331aaa"
+    },
+    {
+      "id": "npc-professor",
+      "file": "npc-professor.png",
+      "width": 16,
+      "height": 32,
+      "ground": {
+        "x": 8,
+        "y": 32
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 1
+      },
+      "recommendedScale": 2.2,
+      "source": "graphics/object_events/pics/people/prof_oak.png",
+      "sha256": "00191d96dcf912834738024efc694f4d1576941103867e851e28451637928ea3"
+    },
+    {
+      "id": "npc-civilian",
+      "file": "npc-civilian.png",
+      "width": 16,
+      "height": 32,
+      "ground": {
+        "x": 8,
+        "y": 32
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 1
+      },
+      "recommendedScale": 2.2,
+      "source": "graphics/object_events/pics/people/woman_1.png",
+      "sha256": "8bf97b0624691a5e3ba578b6cdbad71ad95535b5070fcb9740efdb03ff329949"
+    },
+    {
+      "id": "npc-mom",
+      "file": "npc-mom.png",
+      "width": 16,
+      "height": 32,
+      "ground": {
+        "x": 8,
+        "y": 32
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 1
+      },
+      "recommendedScale": 2.2,
+      "source": "graphics/object_events/pics/people/mom.png",
+      "sha256": "0062de3f321621de07fc9edb4bbb1310e9c8729fbee0d6e6fed1c5680789cf9d"
+    },
+    {
+      "id": "npc-scientist",
+      "file": "npc-scientist.png",
+      "width": 16,
+      "height": 32,
+      "ground": {
+        "x": 8,
+        "y": 32
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 1
+      },
+      "recommendedScale": 2.2,
+      "source": "graphics/object_events/pics/people/scientist.png",
+      "sha256": "71ed1a9f03e6c7271ffc3d8cd137ce5904052315be5c14b8799978cd9707f56b"
+    },
+    {
+      "id": "npc-brock",
+      "file": "npc-brock.png",
+      "width": 16,
+      "height": 32,
+      "ground": {
+        "x": 8,
+        "y": 32
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 1
+      },
+      "recommendedScale": 2.2,
+      "source": "graphics/object_events/pics/people/brock.png",
+      "sha256": "afed4c7ed8aa9eb58eb5a20ac06d476bdf32b2041ce8cd1c04ed5f3c2a6e5b37"
+    },
+    {
+      "id": "npc-misty",
+      "file": "npc-misty.png",
+      "width": 16,
+      "height": 32,
+      "ground": {
+        "x": 8,
+        "y": 32
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 1
+      },
+      "recommendedScale": 2.2,
+      "source": "graphics/object_events/pics/people/misty.png",
+      "sha256": "5faf43a5eed314e011c69353d3704af77f1d7aab797406c0e2d2e0ef19ab91dc"
+    },
+    {
+      "id": "npc-surge",
+      "file": "npc-surge.png",
+      "width": 16,
+      "height": 32,
+      "ground": {
+        "x": 8,
+        "y": 32
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 1
+      },
+      "recommendedScale": 2.2,
+      "source": "graphics/object_events/pics/people/lt_surge.png",
+      "sha256": "b65db2a9dd80d2655387317e6fab17f36feb77423c9b8c3d917905d47eb6d616"
+    },
+    {
+      "id": "npc-erika",
+      "file": "npc-erika.png",
+      "width": 16,
+      "height": 32,
+      "ground": {
+        "x": 8,
+        "y": 32
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 1
+      },
+      "recommendedScale": 2.2,
+      "source": "graphics/object_events/pics/people/erika.png",
+      "sha256": "a522bcf006d119fca1866cafb8a2d531bf5ed7787f68735a11c0f798596f0b3a"
+    },
+    {
+      "id": "npc-koga",
+      "file": "npc-koga.png",
+      "width": 16,
+      "height": 32,
+      "ground": {
+        "x": 8,
+        "y": 32
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 1
+      },
+      "recommendedScale": 2.2,
+      "source": "graphics/object_events/pics/people/koga.png",
+      "sha256": "9902b44cd5038be367b0f6e3a6ab87cca4f8ac02b5ab30e67e7ff44b59d3f543"
+    },
+    {
+      "id": "npc-sabrina",
+      "file": "npc-sabrina.png",
+      "width": 16,
+      "height": 32,
+      "ground": {
+        "x": 8,
+        "y": 32
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 1
+      },
+      "recommendedScale": 2.2,
+      "source": "graphics/object_events/pics/people/sabrina.png",
+      "sha256": "f80473905e9c8e51308344e57584db3211cc86737ded95ed5f3beb908c2afb32"
+    },
+    {
+      "id": "npc-blaine",
+      "file": "npc-blaine.png",
+      "width": 16,
+      "height": 32,
+      "ground": {
+        "x": 8,
+        "y": 32
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 1
+      },
+      "recommendedScale": 2.2,
+      "source": "graphics/object_events/pics/people/blaine.png",
+      "sha256": "f21e99b8a5fbcac29535776b90494fc86de6b7907ff8dbab3141f72636756bab"
+    },
+    {
+      "id": "npc-giovanni",
+      "file": "npc-giovanni.png",
+      "width": 16,
+      "height": 32,
+      "ground": {
+        "x": 8,
+        "y": 32
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 1
+      },
+      "recommendedScale": 2.2,
+      "source": "graphics/object_events/pics/people/giovanni.png",
+      "sha256": "28fcfed9f9799b2dd3adf09bdc2d44ec65af05b951da9ab81a934259b17bc822"
+    },
+    {
+      "id": "npc-fuji",
+      "file": "npc-fuji.png",
+      "width": 16,
+      "height": 32,
+      "ground": {
+        "x": 8,
+        "y": 32
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 1
+      },
+      "recommendedScale": 2.2,
+      "source": "graphics/object_events/pics/people/mr_fuji.png",
+      "sha256": "fc2bb2cc172cd7ac61814a873e6a855e5d0907f084be6978fc08f8bcea9f6744"
+    },
+    {
+      "id": "npc-bill",
+      "file": "npc-bill.png",
+      "width": 16,
+      "height": 32,
+      "ground": {
+        "x": 8,
+        "y": 32
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 1
+      },
+      "recommendedScale": 2.2,
+      "source": "graphics/object_events/pics/people/bill.png",
+      "sha256": "61c1459a094b3fc8c4553fd6283667c3af1eb8c89b8bff511f53b0c4e64d6356"
+    },
+    {
+      "id": "npc-rocket",
+      "file": "npc-rocket.png",
+      "width": 16,
+      "height": 32,
+      "ground": {
+        "x": 8,
+        "y": 32
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 1
+      },
+      "recommendedScale": 2.2,
+      "source": "graphics/object_events/pics/people/rocket_m.png",
+      "sha256": "0e9fe72c6b5179ba63984f3c41e1e345f139ad2457b05aa03d9641bd3b59e5dd"
+    },
+    {
+      "id": "npc-guide",
+      "file": "npc-guide.png",
+      "width": 16,
+      "height": 32,
+      "ground": {
+        "x": 8,
+        "y": 32
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 1
+      },
+      "recommendedScale": 2.2,
+      "source": "graphics/object_events/pics/people/gym_guy.png",
+      "sha256": "74ec907aa90456ef62501e660daaefdadac05cde1852cce934779478de31c0a6"
+    },
+    {
+      "id": "prop-healing-station",
+      "file": "prop-healing-station.png",
+      "width": 112,
+      "height": 48,
+      "ground": {
+        "x": 56,
+        "y": 48
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 1
+      },
+      "recommendedScale": 2,
+      "footprint": {
+        "x": -55,
+        "y": -16,
+        "width": 110,
+        "height": 16
+      },
+      "solidBaseHeight": 16,
+      "sourceRoom": "PokemonCenter_1F_Layout",
+      "sourceRect": [
+        4,
+        1,
+        7,
+        3
+      ]
+    },
+    {
+      "id": "prop-center-reception",
+      "file": "prop-center-reception.png",
+      "width": 112,
+      "height": 64,
+      "ground": {
+        "x": 56,
+        "y": 64
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 1
+      },
+      "recommendedScale": 2,
+      "footprint": {
+        "x": -56,
+        "y": -48,
+        "width": 112,
+        "height": 48
+      },
+      "solidBaseHeight": 48,
+      "sourceRoom": "PokemonCenter_1F_Layout",
+      "sourceRect": [
+        4,
+        0,
+        7,
+        4
+      ]
+    },
+    {
+      "id": "prop-market-shelf",
+      "file": "prop-market-shelf.png",
+      "width": 48,
+      "height": 32,
+      "ground": {
+        "x": 24,
+        "y": 32
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 1
+      },
+      "recommendedScale": 2,
+      "footprint": {
+        "x": -24,
+        "y": -10,
+        "width": 48,
+        "height": 10
+      },
+      "solidBaseHeight": 10,
+      "sourceRoom": "Mart_Layout",
+      "sourceRect": [
+        7,
+        1,
+        3,
+        2
+      ]
+    },
+    {
+      "id": "prop-market-counter",
+      "file": "prop-market-counter.png",
+      "width": 48,
+      "height": 32,
+      "ground": {
+        "x": 24,
+        "y": 32
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 1
+      },
+      "recommendedScale": 2,
+      "footprint": {
+        "x": -24,
+        "y": -14,
+        "width": 48,
+        "height": 14
+      },
+      "solidBaseHeight": 14,
+      "sourceRoom": "Mart_Layout",
+      "sourceRect": [
+        0,
+        3,
+        3,
+        2
+      ]
+    },
+    {
+      "id": "prop-lab-console",
+      "file": "prop-lab-console.png",
+      "width": 32,
+      "height": 48,
+      "ground": {
+        "x": 16,
+        "y": 48
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 1
+      },
+      "recommendedScale": 2,
+      "footprint": {
+        "x": -14,
+        "y": -14,
+        "width": 28,
+        "height": 14
+      },
+      "solidBaseHeight": 14,
+      "sourceRoom": "PalletTown_ProfessorOaksLab_Layout",
+      "sourceRect": [
+        1,
+        3,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "prop-bookshelf",
+      "file": "prop-bookshelf.png",
+      "width": 32,
+      "height": 48,
+      "ground": {
+        "x": 16,
+        "y": 48
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 1
+      },
+      "recommendedScale": 2,
+      "footprint": {
+        "x": -16,
+        "y": -12,
+        "width": 32,
+        "height": 12
+      },
+      "solidBaseHeight": 12,
+      "sourceRoom": "PalletTown_ProfessorOaksLab_Layout",
+      "sourceRect": [
+        9,
+        0,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "prop-table",
+      "file": "prop-table.png",
+      "width": 48,
+      "height": 32,
+      "ground": {
+        "x": 24,
+        "y": 32
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 1
+      },
+      "recommendedScale": 2,
+      "footprint": {
+        "x": -24,
+        "y": -14,
+        "width": 48,
+        "height": 14
+      },
+      "solidBaseHeight": 14,
+      "sourceRoom": "PalletTown_ProfessorOaksLab_Layout",
+      "sourceRect": [
+        8,
+        4,
+        3,
+        2
+      ]
+    },
+    {
+      "id": "prop-home-table",
+      "file": "prop-home-table.png",
+      "width": 64,
+      "height": 32,
+      "ground": {
+        "x": 32,
+        "y": 32
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 1
+      },
+      "recommendedScale": 2,
+      "footprint": {
+        "x": -32,
+        "y": -24,
+        "width": 64,
+        "height": 24
+      },
+      "solidBaseHeight": 24,
+      "sourceRoom": "PalletTown_PlayersHouse_1F_Layout",
+      "sourceRect": [
+        5,
+        4,
+        4,
+        2
+      ]
+    },
+    {
+      "id": "prop-bed",
+      "file": "prop-bed.png",
+      "width": 48,
+      "height": 32,
+      "ground": {
+        "x": 24,
+        "y": 32
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 1
+      },
+      "recommendedScale": 2,
+      "footprint": {
+        "x": -12,
+        "y": -28,
+        "width": 24,
+        "height": 28
+      },
+      "solidBaseHeight": 28,
+      "sourceRoom": "PalletTown_PlayersHouse_2F_Layout",
+      "sourceRect": [
+        1,
+        5,
+        3,
+        2
+      ]
+    },
+    {
+      "id": "prop-plant",
+      "file": "prop-plant.png",
+      "width": 16,
+      "height": 32,
+      "ground": {
+        "x": 8,
+        "y": 32
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 1
+      },
+      "recommendedScale": 2,
+      "footprint": {
+        "x": -6,
+        "y": -8,
+        "width": 12,
+        "height": 8
+      },
+      "solidBaseHeight": 8,
+      "sourceRoom": "PalletTown_ProfessorOaksLab_Layout",
+      "sourceRect": [
+        0,
+        11,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "prop-gym-statue",
+      "file": "prop-gym-statue.png",
+      "width": 32,
+      "height": 48,
+      "ground": {
+        "x": 16,
+        "y": 48
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 1
+      },
+      "recommendedScale": 2,
+      "footprint": {
+        "x": -14,
+        "y": -16,
+        "width": 16,
+        "height": 16
+      },
+      "solidBaseHeight": 16,
+      "sourceRoom": "PewterCity_Gym_Layout",
+      "sourceRect": [
+        4,
+        11,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "tile-floor-home",
+      "file": "tile-floor-home.png",
+      "width": 16,
+      "height": 16,
+      "recommendedScale": 2,
+      "sourceTileset": "generic_building_1",
+      "metatile": 1
+    },
+    {
+      "id": "tile-floor-center",
+      "file": "tile-floor-center.png",
+      "width": 16,
+      "height": 16,
+      "recommendedScale": 2,
+      "sourceTileset": "pokemon_center",
+      "metatile": 641
+    },
+    {
+      "id": "tile-floor-mart",
+      "file": "tile-floor-mart.png",
+      "width": 16,
+      "height": 16,
+      "recommendedScale": 2,
+      "sourceTileset": "mart",
+      "metatile": 641
+    },
+    {
+      "id": "tile-floor-lab",
+      "file": "tile-floor-lab.png",
+      "width": 16,
+      "height": 16,
+      "recommendedScale": 2,
+      "sourceTileset": "lab",
+      "metatile": 649
+    },
+    {
+      "id": "tile-floor-gym",
+      "file": "tile-floor-gym.png",
+      "width": 16,
+      "height": 16,
+      "recommendedScale": 2,
+      "sourceTileset": "pewter_gym",
+      "metatile": 660
+    },
+    {
+      "id": "tile-wall-home-top",
+      "file": "tile-wall-home-top.png",
+      "width": 16,
+      "height": 16,
+      "recommendedScale": 2,
+      "sourceTileset": "generic_building_1",
+      "metatile": 32
+    },
+    {
+      "id": "tile-wall-home-bottom",
+      "file": "tile-wall-home-bottom.png",
+      "width": 16,
+      "height": 16,
+      "recommendedScale": 2,
+      "sourceTileset": "generic_building_1",
+      "metatile": 40
+    },
+    {
+      "id": "tile-wall-center-top",
+      "file": "tile-wall-center-top.png",
+      "width": 16,
+      "height": 16,
+      "recommendedScale": 2,
+      "sourceTileset": "pokemon_center",
+      "metatile": 644
+    },
+    {
+      "id": "tile-wall-center-bottom",
+      "file": "tile-wall-center-bottom.png",
+      "width": 16,
+      "height": 16,
+      "recommendedScale": 2,
+      "sourceTileset": "pokemon_center",
+      "metatile": 40
+    },
+    {
+      "id": "tile-wall-mart-top",
+      "file": "tile-wall-mart-top.png",
+      "width": 16,
+      "height": 16,
+      "recommendedScale": 2,
+      "sourceTileset": "mart",
+      "metatile": 645
+    },
+    {
+      "id": "tile-wall-mart-bottom",
+      "file": "tile-wall-mart-bottom.png",
+      "width": 16,
+      "height": 16,
+      "recommendedScale": 2,
+      "sourceTileset": "mart",
+      "metatile": 653
+    },
+    {
+      "id": "tile-wall-lab-top",
+      "file": "tile-wall-lab-top.png",
+      "width": 16,
+      "height": 16,
+      "recommendedScale": 2,
+      "sourceTileset": "lab",
+      "metatile": 32
+    },
+    {
+      "id": "tile-wall-lab-bottom",
+      "file": "tile-wall-lab-bottom.png",
+      "width": 16,
+      "height": 16,
+      "recommendedScale": 2,
+      "sourceTileset": "lab",
+      "metatile": 40
+    },
+    {
+      "id": "tile-wall-gym-top",
+      "file": "tile-wall-gym-top.png",
+      "width": 16,
+      "height": 16,
+      "recommendedScale": 2,
+      "sourceTileset": "pewter_gym",
+      "metatile": 642
+    },
+    {
+      "id": "tile-wall-gym-bottom",
+      "file": "tile-wall-gym-bottom.png",
+      "width": 16,
+      "height": 16,
+      "recommendedScale": 2,
+      "sourceTileset": "pewter_gym",
+      "metatile": 650
+    }
+  ],
+  "sources": [
+    {
+      "path": "graphics/object_events/pics/people/nurse.png",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/graphics/object_events/pics/people/nurse.png",
+      "sha256": "bdc75f7b4711bd12c8949cef034233914fbdabe431d752761f538b6d5616a94b"
+    },
+    {
+      "path": "graphics/object_events/pics/people/clerk.png",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/graphics/object_events/pics/people/clerk.png",
+      "sha256": "dc08770288111df9ae0b49ef88c568746e156a635d137a9348385ed7cb61a12b"
+    },
+    {
+      "path": "graphics/object_events/pics/people/prof_oak.png",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/graphics/object_events/pics/people/prof_oak.png",
+      "sha256": "9ac53f6e5615d0cc4f78da06dd03c3d62808d60e634f051deaf3152411f83599"
+    },
+    {
+      "path": "graphics/object_events/pics/people/woman_1.png",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/graphics/object_events/pics/people/woman_1.png",
+      "sha256": "cc6508fdb301902362bf094b11270acdb5fc98e99150503c96a81e0038ced77a"
+    },
+    {
+      "path": "graphics/object_events/pics/people/mom.png",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/graphics/object_events/pics/people/mom.png",
+      "sha256": "4b64b41488923367f9989beda6e49f6413aadf01f0dff0af158c97f0bef884d5"
+    },
+    {
+      "path": "graphics/object_events/pics/people/scientist.png",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/graphics/object_events/pics/people/scientist.png",
+      "sha256": "0421b6307c965839a0d074a5e52e0d0a39b1f024f370f9dac512fa285655785e"
+    },
+    {
+      "path": "graphics/object_events/pics/people/brock.png",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/graphics/object_events/pics/people/brock.png",
+      "sha256": "6fede6fe6aae9e23af78efee0e55a0012c84a1ea80e5d13e2827e37772a21963"
+    },
+    {
+      "path": "graphics/object_events/pics/people/misty.png",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/graphics/object_events/pics/people/misty.png",
+      "sha256": "a21a6f1283fc93f32f1a62b7c11132df253e4f649bd76214eed48a3571a29414"
+    },
+    {
+      "path": "graphics/object_events/pics/people/lt_surge.png",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/graphics/object_events/pics/people/lt_surge.png",
+      "sha256": "84a863136b514b01ed6bba2ca418392ebdd2ec1b052d23cb50967cd73ff28573"
+    },
+    {
+      "path": "graphics/object_events/pics/people/erika.png",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/graphics/object_events/pics/people/erika.png",
+      "sha256": "593c9a80d241f5eff8f495406b57cacb587b6f1a646ca8a332678e2e4df51744"
+    },
+    {
+      "path": "graphics/object_events/pics/people/koga.png",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/graphics/object_events/pics/people/koga.png",
+      "sha256": "6b75213fa8df086d93c253088b820df0df1931e251d79591013c2757b9e542d9"
+    },
+    {
+      "path": "graphics/object_events/pics/people/sabrina.png",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/graphics/object_events/pics/people/sabrina.png",
+      "sha256": "8a4c54fa32b572647b1098c85b597d327ca4c578ace20221dc8981a786665fbb"
+    },
+    {
+      "path": "graphics/object_events/pics/people/blaine.png",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/graphics/object_events/pics/people/blaine.png",
+      "sha256": "65acf68645ad1d3b6256fd97e6a73e63042f80eddb9d9571c0bfd2cef61a163a"
+    },
+    {
+      "path": "graphics/object_events/pics/people/giovanni.png",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/graphics/object_events/pics/people/giovanni.png",
+      "sha256": "fa7cc4b067c0dc5271af3832dcb2353edeb8ed51b0a2b279de462265a1ec50d2"
+    },
+    {
+      "path": "graphics/object_events/pics/people/mr_fuji.png",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/graphics/object_events/pics/people/mr_fuji.png",
+      "sha256": "73c1976564feebf915a856cfdc48a423157c1c0ca080ab47043d194fe7e7fe95"
+    },
+    {
+      "path": "graphics/object_events/pics/people/bill.png",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/graphics/object_events/pics/people/bill.png",
+      "sha256": "e7c34d2705c008c1cce64cd09ad6ba5e7967c8b788d4227c744162b533753ffc"
+    },
+    {
+      "path": "graphics/object_events/pics/people/rocket_m.png",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/graphics/object_events/pics/people/rocket_m.png",
+      "sha256": "df9978edee318b6193fc85be4a88fa85202bbd6e689bb21e602c181dab3b6e12"
+    },
+    {
+      "path": "graphics/object_events/pics/people/gym_guy.png",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/graphics/object_events/pics/people/gym_guy.png",
+      "sha256": "c2d38e05a6c45b6d7d4f66358df48ec354603010cc9d74a0e6bb12d70647359e"
+    },
+    {
+      "path": "data/tilesets/primary/building/tiles.png",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/tilesets/primary/building/tiles.png",
+      "sha256": "0c6faa0058210ffd5794613c28969d1982737cc3b7d4feeab03a13895c8363f2"
+    },
+    {
+      "path": "data/tilesets/primary/building/metatiles.bin",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/tilesets/primary/building/metatiles.bin",
+      "sha256": "6b53b219dcacf26af58c7174279c24a44ad13194c7292c74fcf24c48a1be4b4b"
+    },
+    {
+      "path": "data/tilesets/primary/building/palettes/02.pal",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/tilesets/primary/building/palettes/02.pal",
+      "sha256": "220932f7bc7c1a6ef2dfa2efdc47d6b0f238440361400b629c441acd89306bea"
+    },
+    {
+      "path": "data/tilesets/primary/building/palettes/01.pal",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/tilesets/primary/building/palettes/01.pal",
+      "sha256": "93c52f1deab53435356361fe1c47de7d6a038ae6f393adc8650a1641ed10846c"
+    },
+    {
+      "path": "data/tilesets/primary/building/palettes/03.pal",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/tilesets/primary/building/palettes/03.pal",
+      "sha256": "103665f17a67f4a83acfefdfa04a4e1ce736927dd65a9b6b64867ecbb9437c6c"
+    },
+    {
+      "path": "data/tilesets/primary/building/palettes/00.pal",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/tilesets/primary/building/palettes/00.pal",
+      "sha256": "6d8396ee26f5d12f993004066251e5b0b578adad04740aa17745a70853a1a725"
+    },
+    {
+      "path": "data/tilesets/primary/building/palettes/04.pal",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/tilesets/primary/building/palettes/04.pal",
+      "sha256": "7a205e7a627e475e0f110f4082c221c39fb10c7b543cf4c90f1e6817831f30a1"
+    },
+    {
+      "path": "data/tilesets/primary/building/palettes/06.pal",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/tilesets/primary/building/palettes/06.pal",
+      "sha256": "a88e85688071309411a19eea8f42792b69e073af41b5be6be6743f7e36b435f0"
+    },
+    {
+      "path": "data/tilesets/primary/building/palettes/05.pal",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/tilesets/primary/building/palettes/05.pal",
+      "sha256": "63c7f7fc52611a66b6371ea09da8d30ab1e9763136aceeb93bcae1016ba42211"
+    },
+    {
+      "path": "data/tilesets/secondary/lab/tiles.png",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/tilesets/secondary/lab/tiles.png",
+      "sha256": "7c05a9933ef15e1d04329734feb135d402d9d7711ea2b9a3d8957c2366bf6bde"
+    },
+    {
+      "path": "data/tilesets/secondary/generic_building_1/metatiles.bin",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/tilesets/secondary/generic_building_1/metatiles.bin",
+      "sha256": "f73d826f0ea271ecc32785c45b04697fb507b061259e9f0ce3dbd665fc928990"
+    },
+    {
+      "path": "data/tilesets/secondary/lab/metatiles.bin",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/tilesets/secondary/lab/metatiles.bin",
+      "sha256": "ad20e1e58ccf29a884170d612fb6e2fef253688678b06dae43ac3e2942a2e8cf"
+    },
+    {
+      "path": "data/tilesets/secondary/generic_building_1/tiles.png",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/tilesets/secondary/generic_building_1/tiles.png",
+      "sha256": "efff402dbbe15d908c73aed857c19ca61ea5cdc5347c2815f81304746cd5ac4f"
+    },
+    {
+      "path": "data/tilesets/secondary/pokemon_center/tiles.png",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/tilesets/secondary/pokemon_center/tiles.png",
+      "sha256": "6aeb12ed0248b4b241ec687cb06dd37ab9a89c3f7804413668bcf4e6c6ef1774"
+    },
+    {
+      "path": "data/tilesets/secondary/pokemon_center/metatiles.bin",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/tilesets/secondary/pokemon_center/metatiles.bin",
+      "sha256": "032e59dca08e16d5ff1c92b9720e3172005984b9e587436dd98d3bb468650e21"
+    },
+    {
+      "path": "data/tilesets/secondary/mart/tiles.png",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/tilesets/secondary/mart/tiles.png",
+      "sha256": "d3db888db856f7d3987c5365db580e9f43c2889c2c9e04ae4b0a1eb3e2afc3c7"
+    },
+    {
+      "path": "data/tilesets/secondary/mart/metatiles.bin",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/tilesets/secondary/mart/metatiles.bin",
+      "sha256": "ba42fc92f0e14255aae6ae13a45f59bc5a9d5835e2e7f4f71575d54c59e2b0db"
+    },
+    {
+      "path": "data/tilesets/secondary/pewter_gym/tiles.png",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/tilesets/secondary/pewter_gym/tiles.png",
+      "sha256": "9021ded64abd9eba7f13475f56a0f9eb88b05128f6ac5e1a17523e0386ff10f9"
+    },
+    {
+      "path": "data/tilesets/secondary/lab/palettes/10.pal",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/tilesets/secondary/lab/palettes/10.pal",
+      "sha256": "9fd961331b3d93c934ae2606e4c71e915af26bdefdded710b3992d047360fc3e"
+    },
+    {
+      "path": "data/tilesets/secondary/lab/palettes/09.pal",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/tilesets/secondary/lab/palettes/09.pal",
+      "sha256": "9fd961331b3d93c934ae2606e4c71e915af26bdefdded710b3992d047360fc3e"
+    },
+    {
+      "path": "data/tilesets/secondary/lab/palettes/08.pal",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/tilesets/secondary/lab/palettes/08.pal",
+      "sha256": "7abdc06329b1ae362b64e0f631490f07cb1e38b1ec0cdf67840573e21c41d899"
+    },
+    {
+      "path": "data/tilesets/secondary/lab/palettes/07.pal",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/tilesets/secondary/lab/palettes/07.pal",
+      "sha256": "2b3c5a339f0cec846d0bfbbd35792a448298c626c04a3dc55e249a3ab758e525"
+    },
+    {
+      "path": "data/tilesets/secondary/pewter_gym/metatiles.bin",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/tilesets/secondary/pewter_gym/metatiles.bin",
+      "sha256": "29d934ea7908be5ebfdfcde6a2680dbbd0a1a96880403bf5c41a13dfe7025287"
+    },
+    {
+      "path": "data/tilesets/secondary/lab/palettes/11.pal",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/tilesets/secondary/lab/palettes/11.pal",
+      "sha256": "9fd961331b3d93c934ae2606e4c71e915af26bdefdded710b3992d047360fc3e"
+    },
+    {
+      "path": "data/tilesets/secondary/generic_building_1/palettes/07.pal",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/tilesets/secondary/generic_building_1/palettes/07.pal",
+      "sha256": "86e55272f3d9823763f6b4345297787f060aa3974efa53fa83ddea93ae4dc0c6"
+    },
+    {
+      "path": "data/tilesets/secondary/generic_building_1/palettes/08.pal",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/tilesets/secondary/generic_building_1/palettes/08.pal",
+      "sha256": "fcb5aa6ea392db03980cb83438f7858f01f22ec5655b38cb6057b1c20c35368a"
+    },
+    {
+      "path": "data/tilesets/secondary/lab/palettes/12.pal",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/tilesets/secondary/lab/palettes/12.pal",
+      "sha256": "65cb1d632b0b4feeaff0da45ce2da43fe89e2b3d7c1160e7829955b81c480c3e"
+    },
+    {
+      "path": "data/tilesets/secondary/generic_building_1/palettes/11.pal",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/tilesets/secondary/generic_building_1/palettes/11.pal",
+      "sha256": "9fd961331b3d93c934ae2606e4c71e915af26bdefdded710b3992d047360fc3e"
+    },
+    {
+      "path": "data/tilesets/secondary/generic_building_1/palettes/09.pal",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/tilesets/secondary/generic_building_1/palettes/09.pal",
+      "sha256": "9fd961331b3d93c934ae2606e4c71e915af26bdefdded710b3992d047360fc3e"
+    },
+    {
+      "path": "data/tilesets/secondary/generic_building_1/palettes/10.pal",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/tilesets/secondary/generic_building_1/palettes/10.pal",
+      "sha256": "9fd961331b3d93c934ae2606e4c71e915af26bdefdded710b3992d047360fc3e"
+    },
+    {
+      "path": "data/tilesets/secondary/generic_building_1/palettes/12.pal",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/tilesets/secondary/generic_building_1/palettes/12.pal",
+      "sha256": "9fd961331b3d93c934ae2606e4c71e915af26bdefdded710b3992d047360fc3e"
+    },
+    {
+      "path": "data/tilesets/secondary/pokemon_center/palettes/07.pal",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/tilesets/secondary/pokemon_center/palettes/07.pal",
+      "sha256": "7d7027eff6ba37acc79bbd65a132a5640e1009bba9e5763a11750e25a0e2ec49"
+    },
+    {
+      "path": "data/tilesets/secondary/pokemon_center/palettes/08.pal",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/tilesets/secondary/pokemon_center/palettes/08.pal",
+      "sha256": "5eba9f700f511e27b38b51ee74d936109baa0f79d194a180448f95379b2027f4"
+    },
+    {
+      "path": "data/tilesets/secondary/pokemon_center/palettes/09.pal",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/tilesets/secondary/pokemon_center/palettes/09.pal",
+      "sha256": "41ffca803f819a83425152042e3c573e777cb63ff40851237832d0286da5ed02"
+    },
+    {
+      "path": "data/tilesets/secondary/pokemon_center/palettes/10.pal",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/tilesets/secondary/pokemon_center/palettes/10.pal",
+      "sha256": "83b9a21486fae105f03f4f36d3f9543be857f901074a5d8d3de27423fe66ddf6"
+    },
+    {
+      "path": "data/tilesets/secondary/pokemon_center/palettes/11.pal",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/tilesets/secondary/pokemon_center/palettes/11.pal",
+      "sha256": "0e4c1818c9bcf8d74c6a4aea2010067f268c22b6b7a4ba9177bd8479b0b42ec9"
+    },
+    {
+      "path": "data/tilesets/secondary/pokemon_center/palettes/12.pal",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/tilesets/secondary/pokemon_center/palettes/12.pal",
+      "sha256": "e7cab4b6790208f652f8e94a0494d66a1cfa3f84e1a876d88857281bde7314c4"
+    },
+    {
+      "path": "data/tilesets/secondary/mart/palettes/08.pal",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/tilesets/secondary/mart/palettes/08.pal",
+      "sha256": "8c2193213389f558a59e346a62bb853f8e20734ce8fe7fc55f1b1054a64e79a9"
+    },
+    {
+      "path": "data/tilesets/secondary/mart/palettes/07.pal",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/tilesets/secondary/mart/palettes/07.pal",
+      "sha256": "c243110031a6a8a4e7c42d0c80e4a7f8cadca4c3dee6c8cb594d9e2fe6770b94"
+    },
+    {
+      "path": "data/tilesets/secondary/mart/palettes/09.pal",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/tilesets/secondary/mart/palettes/09.pal",
+      "sha256": "5e101354a6cc25baec6777d1645934e135545d278acce0f34936c591273bf5ef"
+    },
+    {
+      "path": "data/tilesets/secondary/mart/palettes/10.pal",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/tilesets/secondary/mart/palettes/10.pal",
+      "sha256": "9fd961331b3d93c934ae2606e4c71e915af26bdefdded710b3992d047360fc3e"
+    },
+    {
+      "path": "data/tilesets/secondary/mart/palettes/11.pal",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/tilesets/secondary/mart/palettes/11.pal",
+      "sha256": "9fd961331b3d93c934ae2606e4c71e915af26bdefdded710b3992d047360fc3e"
+    },
+    {
+      "path": "data/tilesets/secondary/mart/palettes/12.pal",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/tilesets/secondary/mart/palettes/12.pal",
+      "sha256": "226f0ddc9a6d3b26b78e138333dfde67d39aa7ac95a257e9e53c766fb6035675"
+    },
+    {
+      "path": "data/tilesets/secondary/pewter_gym/palettes/07.pal",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/tilesets/secondary/pewter_gym/palettes/07.pal",
+      "sha256": "cd0b58b384ea44f9c7f87f4c47ee660e7ed50bdc8432aba34273a70db43c7582"
+    },
+    {
+      "path": "data/tilesets/secondary/pewter_gym/palettes/09.pal",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/tilesets/secondary/pewter_gym/palettes/09.pal",
+      "sha256": "98458feca2320a83a2637479cb04e3eeba4a39d768beff6567a5b6ea2838701f"
+    },
+    {
+      "path": "data/tilesets/secondary/pewter_gym/palettes/10.pal",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/tilesets/secondary/pewter_gym/palettes/10.pal",
+      "sha256": "95a5d9c3e8bb980bd59b9a6082fca01d88230a01cd175956980976c0d74f1829"
+    },
+    {
+      "path": "data/tilesets/secondary/pewter_gym/palettes/08.pal",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/tilesets/secondary/pewter_gym/palettes/08.pal",
+      "sha256": "86413e197128480812eb04d8d00d18a6aec40cf05dd430985fbebd0c57c9bb76"
+    },
+    {
+      "path": "data/tilesets/secondary/pewter_gym/palettes/11.pal",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/tilesets/secondary/pewter_gym/palettes/11.pal",
+      "sha256": "95a5d9c3e8bb980bd59b9a6082fca01d88230a01cd175956980976c0d74f1829"
+    },
+    {
+      "path": "data/tilesets/secondary/pewter_gym/palettes/12.pal",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/tilesets/secondary/pewter_gym/palettes/12.pal",
+      "sha256": "432641519018225e30818af455c74c4b7ec99aa95b333bfaf5dc9e5fc84a51f3"
+    },
+    {
+      "path": "data/layouts/layouts.json",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/layouts/layouts.json",
+      "sha256": "1e8fdf737b31d269d0b918d4ed88bec8c2701bc7b1cbae2b2e3938bdea3de394"
+    },
+    {
+      "path": "data/layouts/PalletTown_PlayersHouse_1F/map.bin",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/layouts/PalletTown_PlayersHouse_1F/map.bin",
+      "sha256": "f485f064e2464ebc81bb525960529e4222c2613c55addf8be5b8f8a06891d93c"
+    },
+    {
+      "path": "data/layouts/PalletTown_PlayersHouse_2F/map.bin",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/layouts/PalletTown_PlayersHouse_2F/map.bin",
+      "sha256": "2519a15ac22fc281fc5a8843c7e515b2915d1f44871a2b463961b6c192473569"
+    },
+    {
+      "path": "data/layouts/PalletTown_ProfessorOaksLab/map.bin",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/layouts/PalletTown_ProfessorOaksLab/map.bin",
+      "sha256": "a1ca472215cd91f5128360af49880035be67b82fb43120758826a21e6a8d803f"
+    },
+    {
+      "path": "data/layouts/PokemonCenter_1F/map.bin",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/layouts/PokemonCenter_1F/map.bin",
+      "sha256": "32a6f854088ca261ed410ebff549e73d7e732aa1143223377e8f290e8df52e0d"
+    },
+    {
+      "path": "data/layouts/Mart/map.bin",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/layouts/Mart/map.bin",
+      "sha256": "8f5493928d1f5f834f6ea39e055a23f49ae04a132d452ce7846607780a53d082"
+    },
+    {
+      "path": "data/layouts/PewterCity_Gym/map.bin",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/layouts/PewterCity_Gym/map.bin",
+      "sha256": "25b90a0b26d8eb64df48dc047d075cadde5dfab1e32c96e98236749fd6d90bd1"
+    }
+  ]
+}

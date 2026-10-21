@@ -1,0 +1,121 @@
+{
+  "passed": true,
+  "assets": 12,
+  "checks": [
+    "PNG dimensions match metadata",
+    "genuine alpha channel",
+    "two-pixel transparent border",
+    "nonempty whole-building image",
+    "source and final SHA-256 recorded"
+  ],
+  "items": [
+    {
+      "id": "house-red",
+      "width": 152,
+      "height": 121,
+      "transparentBorder": true,
+      "nonTransparentPixels": 15240,
+      "sha256": "3fb6e597ccbf1d014e045e8912d57ce2f58e7298e5813a3c3aa1bd849251337b",
+      "sourceSha256": "965ebb54617f8e0046fcda868796b76c039ed8677ed9885b41f146f8930ebcc4"
+    },
+    {
+      "id": "house-blue",
+      "width": 152,
+      "height": 119,
+      "transparentBorder": true,
+      "nonTransparentPixels": 14741,
+      "sha256": "ee1d9371722a8283979450cf61ca892ec891f8f9de65aadeae1ceef18b646c35",
+      "sourceSha256": "f6bf304bb732129058d8e75ea67f851484ebab1242851685a6b292f663b192a2"
+    },
+    {
+      "id": "oak-lab",
+      "width": 218,
+      "height": 117,
+      "transparentBorder": true,
+      "nonTransparentPixels": 21422,
+      "sha256": "c80c0f06d76aa186325756959105a96e869e96467a6e332ead5b69e25e5d1198",
+      "sourceSha256": "6c31e7caf6579830eed7ee8f55a69b78b15551b4620a859ceb8e7db7298e99c1"
+    },
+    {
+      "id": "pokemon-center",
+      "width": 188,
+      "height": 133,
+      "transparentBorder": true,
+      "nonTransparentPixels": 21638,
+      "sha256": "da009bd320e4689f5b5081a6013ed9afcfa2ac2ac5cd6bcc2302b34c86a33903",
+      "sourceSha256": "2c5aee8625408179291b217cd1bb7088dcc3e1ba893930d416f2007804aed239"
+    },
+    {
+      "id": "mart",
+      "width": 180,
+      "height": 126,
+      "transparentBorder": true,
+      "nonTransparentPixels": 20025,
+      "sha256": "9debcf979b9000ff5c0c1d3935a0c02ce23753b554316b4997fba99141e2b2b4",
+      "sourceSha256": "7d1149e08d14c6e4f1eb9cdf294083d06c18e400459930f6c4a232999b8d18be"
+    },
+    {
+      "id": "gym",
+      "width": 236,
+      "height": 135,
+      "transparentBorder": true,
+      "nonTransparentPixels": 26671,
+      "sha256": "a9d8f35d79ce3d5a23b287069345f7b295da5f5b1ca655c3dae2a86b666392bc",
+      "sourceSha256": "504d0b5a9b28498965518632baa0ce508603518ea0f35089f7b5398b5e47a2a0"
+    },
+    {
+      "id": "department-store",
+      "width": 232,
+      "height": 183,
+      "transparentBorder": true,
+      "nonTransparentPixels": 37798,
+      "sha256": "9cc42176a113a4b7148f028daeb27b588d8d82c545228d1bddfc4cc444e5a663",
+      "sourceSha256": "2683a4b0c4e7e94f2e4318bdeece6fdcc02f3c3cf391016a0fcc6245f830fd1a"
+    },
+    {
+      "id": "silph-office",
+      "width": 240,
+      "height": 194,
+      "transparentBorder": true,
+      "nonTransparentPixels": 40759,
+      "sha256": "370eecbcfc286fd0e3eb19ffc5791589b4d20dd4aa355a372ed5efe0ea232234",
+      "sourceSha256": "5e58913f89b82c4cb9e097757f4804441c1febfed67c66c1eae28da90ccc7237"
+    },
+    {
+      "id": "lavender-tower",
+      "width": 202,
+      "height": 240,
+      "transparentBorder": true,
+      "nonTransparentPixels": 28893,
+      "sha256": "a435656b1c318895e3ca8baa38bf312aa6ee8e080622f2efbe624281fe989f74",
+      "sourceSha256": "309501d4c2c7627c8115803419b80af19399cac345286ac58ca9293907d9fc14"
+    },
+    {
+      "id": "mansion",
+      "width": 246,
+      "height": 154,
+      "transparentBorder": true,
+      "nonTransparentPixels": 32619,
+      "sha256": "64032da8b1bb0bdb2b74d78bbb20cb63a377beb64ce254cef45d61490d7f7152",
+      "sourceSha256": "d95fd75ebc1dc45b5269c25737c9f066edc68670407c3c3ccfb56b4cd0a1d800"
+    },
+    {
+      "id": "league",
+      "width": 262,
+      "height": 159,
+      "transparentBorder": true,
+      "nonTransparentPixels": 36245,
+      "sha256": "0c4dd32558e5736311bd51abd7f7d4b98ab0cc826e4bac019476dbf9cefd9a4d",
+      "sourceSha256": "6e22c03b54fffea5e5c4af9e3e4e8a4ccb3a1a06408a6e227b089b6379edbac6"
+    },
+    {
+      "id": "cave",
+      "width": 194,
+      "height": 109,
+      "transparentBorder": true,
+      "nonTransparentPixels": 15496,
+      "sha256": "e5cf091ee80289b56bdf9c9639d2e3c720819427a72239ed368b4a54c5fbe1ce",
+      "sourceSha256": "623ea72fb8a408ecfd807184c9b71bfc9a66ca683eadaebf032c8cc97773ca9e"
+    }
+  ]
+}

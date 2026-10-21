@@ -1,0 +1,358 @@
+{
+  "ok": true,
+  "count": 44,
+  "checks": [
+    {
+      "id": "npc-nurse",
+      "width": 16,
+      "height": 32,
+      "transparentPixels": 292,
+      "visiblePixels": 220,
+      "sha256": "bd31dd6c2ba916d73fac3ff1154f6f8addfae0f64457f971a51651f6a73afeb6"
+    },
+    {
+      "id": "npc-clerk",
+      "width": 16,
+      "height": 32,
+      "transparentPixels": 294,
+      "visiblePixels": 218,
+      "sha256": "b02a21d49ab6b73686c4a14dfcfcd48f3a9277e459e2f36147f788a7ac331aaa"
+    },
+    {
+      "id": "npc-professor",
+      "width": 16,
+      "height": 32,
+      "transparentPixels": 292,
+      "visiblePixels": 220,
+      "sha256": "00191d96dcf912834738024efc694f4d1576941103867e851e28451637928ea3"
+    },
+    {
+      "id": "npc-civilian",
+      "width": 16,
+      "height": 32,
+      "transparentPixels": 302,
+      "visiblePixels": 210,
+      "sha256": "8bf97b0624691a5e3ba578b6cdbad71ad95535b5070fcb9740efdb03ff329949"
+    },
+    {
+      "id": "npc-mom",
+      "width": 16,
+      "height": 32,
+      "transparentPixels": 298,
+      "visiblePixels": 214,
+      "sha256": "0062de3f321621de07fc9edb4bbb1310e9c8729fbee0d6e6fed1c5680789cf9d"
+    },
+    {
+      "id": "npc-scientist",
+      "width": 16,
+      "height": 32,
+      "transparentPixels": 294,
+      "visiblePixels": 218,
+      "sha256": "71ed1a9f03e6c7271ffc3d8cd137ce5904052315be5c14b8799978cd9707f56b"
+    },
+    {
+      "id": "npc-brock",
+      "width": 16,
+      "height": 32,
+      "transparentPixels": 290,
+      "visiblePixels": 222,
+      "sha256": "afed4c7ed8aa9eb58eb5a20ac06d476bdf32b2041ce8cd1c04ed5f3c2a6e5b37"
+    },
+    {
+      "id": "npc-misty",
+      "width": 16,
+      "height": 32,
+      "transparentPixels": 297,
+      "visiblePixels": 215,
+      "sha256": "5faf43a5eed314e011c69353d3704af77f1d7aab797406c0e2d2e0ef19ab91dc"
+    },
+    {
+      "id": "npc-surge",
+      "width": 16,
+      "height": 32,
+      "transparentPixels": 292,
+      "visiblePixels": 220,
+      "sha256": "b65db2a9dd80d2655387317e6fab17f36feb77423c9b8c3d917905d47eb6d616"
+    },
+    {
+      "id": "npc-erika",
+      "width": 16,
+      "height": 32,
+      "transparentPixels": 318,
+      "visiblePixels": 194,
+      "sha256": "a522bcf006d119fca1866cafb8a2d531bf5ed7787f68735a11c0f798596f0b3a"
+    },
+    {
+      "id": "npc-koga",
+      "width": 16,
+      "height": 32,
+      "transparentPixels": 292,
+      "visiblePixels": 220,
+      "sha256": "9902b44cd5038be367b0f6e3a6ab87cca4f8ac02b5ab30e67e7ff44b59d3f543"
+    },
+    {
+      "id": "npc-sabrina",
+      "width": 16,
+      "height": 32,
+      "transparentPixels": 320,
+      "visiblePixels": 192,
+      "sha256": "f80473905e9c8e51308344e57584db3211cc86737ded95ed5f3beb908c2afb32"
+    },
+    {
+      "id": "npc-blaine",
+      "width": 16,
+      "height": 32,
+      "transparentPixels": 312,
+      "visiblePixels": 200,
+      "sha256": "f21e99b8a5fbcac29535776b90494fc86de6b7907ff8dbab3141f72636756bab"
+    },
+    {
+      "id": "npc-giovanni",
+      "width": 16,
+      "height": 32,
+      "transparentPixels": 296,
+      "visiblePixels": 216,
+      "sha256": "28fcfed9f9799b2dd3adf09bdc2d44ec65af05b951da9ab81a934259b17bc822"
+    },
+    {
+      "id": "npc-fuji",
+      "width": 16,
+      "height": 32,
+      "transparentPixels": 312,
+      "visiblePixels": 200,
+      "sha256": "fc2bb2cc172cd7ac61814a873e6a855e5d0907f084be6978fc08f8bcea9f6744"
+    },
+    {
+      "id": "npc-bill",
+      "width": 16,
+      "height": 32,
+      "transparentPixels": 291,
+      "visiblePixels": 221,
+      "sha256": "61c1459a094b3fc8c4553fd6283667c3af1eb8c89b8bff511f53b0c4e64d6356"
+    },
+    {
+      "id": "npc-rocket",
+      "width": 16,
+      "height": 32,
+      "transparentPixels": 296,
+      "visiblePixels": 216,
+      "sha256": "0e9fe72c6b5179ba63984f3c41e1e345f139ad2457b05aa03d9641bd3b59e5dd"
+    },
+    {
+      "id": "npc-guide",
+      "width": 16,
+      "height": 32,
+      "transparentPixels": 298,
+      "visiblePixels": 214,
+      "sha256": "74ec907aa90456ef62501e660daaefdadac05cde1852cce934779478de31c0a6"
+    },
+    {
+      "id": "prop-healing-station",
+      "width": 112,
+      "height": 48,
+      "transparentPixels": 2410,
+      "visiblePixels": 2966,
+      "sha256": "345cf83b84839ac7c64fac8f8ef7523b58586854f29812dc92a60ebba0738e88"
+    },
+    {
+      "id": "prop-center-reception",
+      "width": 112,
+      "height": 64,
+      "transparentPixels": 0,
+      "visiblePixels": 7168,
+      "sha256": "9e1e031fd99f93b76533e3f75b4cc67460dec3d04e043e598b5b449f2557318b"
+    },
+    {
+      "id": "prop-market-shelf",
+      "width": 48,
+      "height": 32,
+      "transparentPixels": 384,
+      "visiblePixels": 1152,
+      "sha256": "a884ec3d9dbb3189a7c2633e3ad283866c921b601c9dea8e064a232386ca148c"
+    },
+    {
+      "id": "prop-market-counter",
+      "width": 48,
+      "height": 32,
+      "transparentPixels": 578,
+      "visiblePixels": 958,
+      "sha256": "7df99e8c22db9cd12293f3db2bdc178afdfb1fb3dbb4b6738a0aad7a1ee024e9"
+    },
+    {
+      "id": "prop-lab-console",
+      "width": 32,
+      "height": 48,
+      "transparentPixels": 472,
+      "visiblePixels": 1064,
+      "sha256": "a0f4b284d5af08bd69a9fc57a787a3df1127ae2ececce39f3a86899a2c721206"
+    },
+    {
+      "id": "prop-bookshelf",
+      "width": 32,
+      "height": 48,
+      "transparentPixels": 608,
+      "visiblePixels": 928,
+      "sha256": "ffa9d99ff35b28faf27307552ab33fb38562d3d9c63e18ee2de237453a4fc70e"
+    },
+    {
+      "id": "prop-table",
+      "width": 48,
+      "height": 32,
+      "transparentPixels": 414,
+      "visiblePixels": 1122,
+      "sha256": "cddcc9b3f12d3af610a397193deadc9b608d3636d91035fa89424fbf509e20fb"
+    },
+    {
+      "id": "prop-home-table",
+      "width": 64,
+      "height": 32,
+      "transparentPixels": 546,
+      "visiblePixels": 1502,
+      "sha256": "a830c89c5e83e82aa9bba6f62a96f6f3861cae06e18371f4712d949bdbeeebf6"
+    },
+    {
+      "id": "prop-bed",
+      "width": 48,
+      "height": 32,
+      "transparentPixels": 937,
+      "visiblePixels": 599,
+      "sha256": "20b083b6f0de7db5aefa11b35836aa395cec9b0ca221667a5efe328d16c240de"
+    },
+    {
+      "id": "prop-plant",
+      "width": 16,
+      "height": 32,
+      "transparentPixels": 220,
+      "visiblePixels": 292,
+      "sha256": "a6b5a203d645a8d4ee5cc402b9fcc04528f0d24a1c257cc3e317438e5e0e2340"
+    },
+    {
+      "id": "prop-gym-statue",
+      "width": 32,
+      "height": 48,
+      "transparentPixels": 1062,
+      "visiblePixels": 474,
+      "sha256": "b3c767a93f9469abdd9953750e0c0532fc3fc3e8fb6269dae1c9a03466bbb8a7"
+    },
+    {
+      "id": "tile-floor-home",
+      "width": 16,
+      "height": 16,
+      "transparentPixels": 0,
+      "visiblePixels": 256,
+      "sha256": "e662713a94b394b205fd37a132cdfa08022dd618c27ee1a85e8da3a60bd023a3"
+    },
+    {
+      "id": "tile-floor-center",
+      "width": 16,
+      "height": 16,
+      "transparentPixels": 0,
+      "visiblePixels": 256,
+      "sha256": "fdd8b5e52c7f646a075ec9532716d47701652807c4a2dcc75a283b1654ceffb4"
+    },
+    {
+      "id": "tile-floor-mart",
+      "width": 16,
+      "height": 16,
+      "transparentPixels": 0,
+      "visiblePixels": 256,
+      "sha256": "d0546c5cff74fbf0d4ed4133973455d1224c7e7045fc75b534394abee728b96f"
+    },
+    {
+      "id": "tile-floor-lab",
+      "width": 16,
+      "height": 16,
+      "transparentPixels": 0,
+      "visiblePixels": 256,
+      "sha256": "2df96cd1da20f97006ef8d49093bab529b4cef5209c25fe79cc84c492603c171"
+    },
+    {
+      "id": "tile-floor-gym",
+      "width": 16,
+      "height": 16,
+      "transparentPixels": 0,
+      "visiblePixels": 256,
+      "sha256": "f3b8de9362d47aa5e323418db95eb310cda0d7ae439bddf0607fcdd29f4e7c15"
+    },
+    {
+      "id": "tile-wall-home-top",
+      "width": 16,
+      "height": 16,
+      "transparentPixels": 0,
+      "visiblePixels": 256,
+      "sha256": "69e86b37d87be51c9510c2a0720b61845bb4ab0e86e248611f68e79b223761ed"
+    },
+    {
+      "id": "tile-wall-home-bottom",
+      "width": 16,
+      "height": 16,
+      "transparentPixels": 0,
+      "visiblePixels": 256,
+      "sha256": "fe23a472cc75b734f251c80d50e0fc2606ed5a2abbc62bb7d0f4b4a4a242fc6f"
+    },
+    {
+      "id": "tile-wall-center-top",
+      "width": 16,
+      "height": 16,
+      "transparentPixels": 0,
+      "visiblePixels": 256,
+      "sha256": "70eabe90c57a54ed11c02cfd4addf133f3f1908be4cbf98e300b0505f1a1a587"
+    },
+    {
+      "id": "tile-wall-center-bottom",
+      "width": 16,
+      "height": 16,
+      "transparentPixels": 0,
+      "visiblePixels": 256,
+      "sha256": "fe23a472cc75b734f251c80d50e0fc2606ed5a2abbc62bb7d0f4b4a4a242fc6f"
+    },
+    {
+      "id": "tile-wall-mart-top",
+      "width": 16,
+      "height": 16,
+      "transparentPixels": 0,
+      "visiblePixels": 256,
+      "sha256": "236aba9495f6b7bbe4f58e74819ea1e8e9c85145d83a940a862e15c6e76ba66f"
+    },
+    {
+      "id": "tile-wall-mart-bottom",
+      "width": 16,
+      "height": 16,
+      "transparentPixels": 0,
+      "visiblePixels": 256,
+      "sha256": "ec722edde57dbb0315ad11f92fa3422ce0689a237e00534a04d77e6e737f5929"
+    },
+    {
+      "id": "tile-wall-lab-top",
+      "width": 16,
+      "height": 16,
+      "transparentPixels": 0,
+      "visiblePixels": 256,
+      "sha256": "69e86b37d87be51c9510c2a0720b61845bb4ab0e86e248611f68e79b223761ed"
+    },
+    {
+      "id": "tile-wall-lab-bottom",
+      "width": 16,
+      "height": 16,
+      "transparentPixels": 0,
+      "visiblePixels": 256,
+      "sha256": "fe23a472cc75b734f251c80d50e0fc2606ed5a2abbc62bb7d0f4b4a4a242fc6f"
+    },
+    {
+      "id": "tile-wall-gym-top",
+      "width": 16,
+      "height": 16,
+      "transparentPixels": 0,
+      "visiblePixels": 256,
+      "sha256": "48933086028b6a64cdc54f97faa466dad50557c70730ff7b9c4abdf00f567b49"
+    },
+    {
+      "id": "tile-wall-gym-bottom",
+      "width": 16,
+      "height": 16,
+      "transparentPixels": 0,
+      "visiblePixels": 256,
+      "sha256": "808e1543955d9497b9020b0487ecb0658534121884a42b15180fcd1486906a57"
+    }
+  ]
+}

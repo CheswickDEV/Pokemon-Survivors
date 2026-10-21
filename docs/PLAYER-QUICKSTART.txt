@@ -1,0 +1,45 @@
+POKEMON SURVIVORS 1.0.0-rc.6.3 — LOKALE TESTFASSUNG
+
+1. Rechtsklick auf das ZIP -> Alle extrahieren.
+2. Im entpackten Ordner "Spiel starten.cmd" doppelklicken.
+3. Der Browser oeffnet http://127.0.0.1:4173/
+4. Partner, Trainer, Laufart und Schwierigkeit auswaehlen.
+
+Keine Installation. Keine Administratorrechte. Kein Internet zum Spielen.
+Die benoetigte Laufzeit liegt unveraendert im Ordner runtime.
+Fuer Windows 10/11 mit 64-Bit-x64-Prozessor und aktuellem Edge oder Chrome.
+Tastatur und Maus erforderlich. Touch/Gamepad sind noch nicht unterstuetzt.
+
+Das Startfenster offen lassen. Nach "Speichern & ins Camp" das Startfenster
+schliessen oder Strg+C druecken. Ein erneuter Start erkennt eine bereits
+laufende Fassung. Wird Port 4173 von einem anderen Programm verwendet,
+beendet der Starter dieses Programm nicht.
+
+STEUERUNG
+WASD / Pfeile: laufen. Leertaste: ausweichen. E: interagieren.
+Tab: Team / Entwicklungen. M: Karte. Esc: Pause / Speichern.
+Beim Raustabben laeuft das Spiel weiter. Zum sicheren Pausieren Esc.
+
+SPEICHERSTAENDE
+Wald, Kanto und Bossansturm besitzen getrennte Speicherplaetze.
+Im Camp oder Pausenmenue "Alles sichern" / "Alle Spielstaende & Profil
+sichern" waehlen. Die JSON-Datei nimmt auch Pokedex und Einstellungen mit.
+In einem neuen Browser diese Sicherung importieren.
+Browserdaten loeschen oder andere Adresse/anderer Browser = anderer Speicher.
+Einfaches Ersetzen dieses Spielordners loescht den Browserspeicher nicht.
+Vor einem Versionswechsel trotzdem eine komplette Sicherung exportieren.
+
+PROBLEME
+Kein Browserfenster: http://127.0.0.1:4173/ manuell oeffnen.
+Port belegt: Altes Spiel-Startfenster schliessen und erneut starten.
+Fehlende Dateien: Das ganze ZIP erneut in einen neuen Ordner entpacken.
+Leere Bilder: Browserseite neu laden; nicht dist/index.html doppelklicken.
+Windows-Hinweis bei heruntergeladenen Programmen: Das Paket ist nicht
+zusaetzlich als Installer signiert. Sicherheitsfunktionen nicht abschalten.
+
+VEROEFFENTLICHUNGSSTATUS
+Dieses Paket enthaelt Original-Pokemon-Medien, deren oeffentliche
+Weiterverteilungsfreigabe nicht dokumentiert ist. Es dient dem lokalen Test.
+Nicht als bereits freigegebenen Github-Release weiterverteilen.
+Eigener Code: GPL-3.0-only. Fremdmedien sind davon ausgenommen.
+Lizenz, Quellen und korrespondierender Code liegen im Paket.

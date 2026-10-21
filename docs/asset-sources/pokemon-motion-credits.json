@@ -1,0 +1,912 @@
+{
+  "repository": "https://github.com/PMDCollab/SpriteCollab",
+  "revision": "0d0eb9d415a3f648c0df49de72a24a6d46ce3fab",
+  "items": [
+    {
+      "id": 1,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0001/credits.txt",
+      "sha256": "2f679733e9ac56ed51dd2cb1efd9376abc3b69f1993cc1d5f1fadec402faec47",
+      "credit": "2020-10-07 17:58:43.323442\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,Dance,Shake,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate,EventSleep,Wake,Eat,Tumble,Pose,Pull,Pain,Float,DeepBreath,Nod,Sit,LookUp,Sink,Trip,Laying,LeapForth,Head,Cringe,LostBalance,TumbleBack,Faint,HitGround\n"
+    },
+    {
+      "id": 2,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0002/credits.txt",
+      "sha256": "e88df37b264785baaa6cb9755bb5d32bb7b2b6e8834957a9fa062f50f92ebcdd",
+      "credit": "2020-10-07 17:58:43.328428\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,Dance,Shake,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 3,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0003/credits.txt",
+      "sha256": "a0f0cc61b3bb93661a1eda2d526f07660bb1d735d298fb74a091ea46aeb5b608",
+      "credit": "2020-10-07 17:58:43.332418\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,Dance,Shake,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 4,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0004/credits.txt",
+      "sha256": "cc37827c20b6eff5f8fb6218cda14d008257980c4db66d9ef49527484bb7e2cf",
+      "credit": "2020-10-07 17:58:43.337405\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Kick,Shoot,Strike,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate,EventSleep,Wake,Eat,Tumble,Pose,Pull,Pain,Float,DeepBreath,Nod,Sit,LookUp,Sink,Trip,Laying,LeapForth,Head,Cringe,LostBalance,TumbleBack,Faint,HitGround\n"
+    },
+    {
+      "id": 5,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0005/credits.txt",
+      "sha256": "d55df22912ec9d65baec27efab03f777ab1488396b5abc3ecfd859e1a8873b7d",
+      "credit": "2020-10-07 17:58:43.341392\tCHUNSOFT\tCUR\tUnspecified\tAttack,Charge,Double,Hop,Hurt,Idle,Rotate,Shoot,Sleep,Strike,Swing,Walk\n2021-01-26 01:22:03.704417\t<@!199989579682414592>\tCUR\tPMDCollab_1\tCringe,DeepBreath,Double,Eat,EventSleep,Faint,Float,Head,HitGround,Laying,LeapForth,LookUp,LostBalance,Nod,Pain,Pose,Pull,Sink,Sit,Trip,Tumble,TumbleBack,Wake\n2021-01-26 11:30:34.384747\t<@!199989579682414592>\tCUR\tPMDCollab_1\tDouble\n2024-10-22 04:27:26.367585\t<@!193530896211509248>\tCUR\tCC_BY-NC_4\tEat,Pose,Pull,Pain,DeepBreath,Nod,Sink,Trip,Head,LostBalance,HitGround,Faint\n2024-10-24 22:08:25.766375\t<@!217653022094786560>\tCUR\tCC_BY-NC_4\tEventSleep,Wake,Eat,Tumble,Pose,Float,Nod,Sit,LookUp,Laying,LeapForth,Cringe,TumbleBack\n2026-03-30 00:05:36.049897\t<@!217653022094786560>\tCUR\tCC_BY-NC_4\tEventSleep,Wake,Tumble,Float,Trip,Laying,TumbleBack,HitGround,Faint\n"
+    },
+    {
+      "id": 6,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0006/credits.txt",
+      "sha256": "3a275f456ec2bc3fa899ce4b84bd584f27daab8d5e04101435b2db5c39088088",
+      "credit": "2020-10-07 17:58:43.345381\tCHUNSOFT\tCUR\tUnspecified\tAttack,Charge,Double,Hop,Hurt,Idle,Rotate,Shoot,Sleep,Strike,Swing,Walk\n2021-10-01 08:17:01.621356\t<@!237286997645983744>\tCUR\tPMDCollab_1\tCharge,Double,Faint,Hop,Hurt,Rotate,Shoot,Sleep,Strike,Swing\n2023-03-19 18:54:53.170665\t<@!237286997645983744>\tCUR\tPMDCollab_1\tFaint\n"
+    },
+    {
+      "id": 7,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0007/credits.txt",
+      "sha256": "b21862e27005032445b4c380713439f4908e72fbd2c6f881c9585931b03af0fb",
+      "credit": "2020-10-07 17:58:43.349371\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,Withdraw,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate,EventSleep,Wake,Eat,Tumble,Pose,Pull,Pain,Float,DeepBreath,Nod,Sit,LookUp,Sink,Trip,Laying,LeapForth,Head,Cringe,LostBalance,TumbleBack,Faint,HitGround\n"
+    },
+    {
+      "id": 8,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0008/credits.txt",
+      "sha256": "f6584e33621120bc23eb53a95cc370c460465744b3296555faf239d96dba52c9",
+      "credit": "2020-10-07 17:58:43.353362\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Ricochet,Shoot,Withdraw,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 9,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0009/credits.txt",
+      "sha256": "2fc33440148a7c3cc3211c2ad517af3613750b3ff8cb3cb44db8200e9cb04276",
+      "credit": "2020-10-07 17:58:43.356353\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Ricochet,Shoot,Withdraw,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 10,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0010/credits.txt",
+      "sha256": "cef72539781e8f44564f1ffcdca300821f37094f9fcc4bf5ea59009f7a4cdfba",
+      "credit": "2020-10-07 17:58:43.360347\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,Twirl,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 11,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0011/credits.txt",
+      "sha256": "ce7ff557dcf4204f93401b3e2d2d05d400c25de4b502c9b02a1d67325d04661b",
+      "credit": "2020-10-07 17:58:43.364330\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,SpAttack,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 12,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0012/credits.txt",
+      "sha256": "8bf440ca74ce2ddb7f907216f15d8e73638fe3d18890b3fa670683380bac0717",
+      "credit": "2020-10-07 17:58:43.367322\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,FlapAround,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 13,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0013/credits.txt",
+      "sha256": "77d3d4c7301ca66d7cede0604649516d7d191a8d2b4031f6455503c7c57baaf8",
+      "credit": "2020-10-07 17:58:43.371313\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,Jab,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 14,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0014/credits.txt",
+      "sha256": "f049fa651c26aa0a4cb5500671275460969bfd1ee68c9cb59da78bbe643dd50a",
+      "credit": "2020-10-07 17:58:43.374304\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,Twirl,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 15,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0015/credits.txt",
+      "sha256": "1a9a06986a6895ec217513479bdf125d483c010624d63117aabad77cc2011dff",
+      "credit": "2020-10-07 17:58:43.377297\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Jab,Shoot,Hover,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 16,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0016/credits.txt",
+      "sha256": "6481b0d0dc5fe5867e138f25a8f7fbe29e642f67bd14af1c258b46a7bcbdbcd0",
+      "credit": "2020-10-07 17:58:43.381290\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,FlapAround,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n2024-12-04 23:02:08.634038\t<@!702275233125630042>\tCUR\tCC_BY-NC_4\tEventSleep,Wake,Eat,Tumble,Pose,Pull,Pain,Float,DeepBreath,Nod,Sit,LookUp,Sink,Trip,Laying,LeapForth,Head,Cringe,LostBalance,TumbleBack,HitGround,Faint\n2024-12-24 02:58:20.250215\t<@!702275233125630042>\tCUR\tCC_BY-NC_4\tEventSleep,Wake,Eat,Tumble,Pose,Pull,Pain,Float,DeepBreath,Nod,Sit,LookUp,Sink,Trip,Laying,LeapForth,Head,LostBalance,TumbleBack,HitGround,Faint\n"
+    },
+    {
+      "id": 17,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0017/credits.txt",
+      "sha256": "7a6f0a9716dfa4cfb66b16cfae4354f20986d2df3490744d887f3ffbb8b5b9f8",
+      "credit": "2020-10-07 17:58:43.385275\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,FlapAround,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 18,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0018/credits.txt",
+      "sha256": "93e2662ad74a1803c0b00082b078fbeae092478d7ac23694713dbfa8075799b0",
+      "credit": "2020-10-07 17:58:43.388267\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,FlapAround,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 19,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0019/credits.txt",
+      "sha256": "23794e8016b3e013b4ed892f2e33fb4e514f4a689c77bafb23939f072c0e1614",
+      "credit": "2020-10-07 17:58:43.392257\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,TailWhip,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 20,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0020/credits.txt",
+      "sha256": "ccb22fe9d24bb2f1395838183a99d1b199e6bf95621c42908eb603f184a2114a",
+      "credit": "2020-10-07 17:58:43.398241\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,TailWhip,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 21,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0021/credits.txt",
+      "sha256": "0e76044a3c91ddd9969c508fc0cf122a1f35ac171c6b5e8ea9047b6fd5eeff04",
+      "credit": "2020-10-07 17:58:43.403228\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,Hover,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 22,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0022/credits.txt",
+      "sha256": "4163fd63943c45286e66f12af4054d11ebe3a2b3957a26c74942f3e1ae928c6e",
+      "credit": "2020-10-07 17:58:43.407216\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,Hover,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 23,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0023/credits.txt",
+      "sha256": "667c194c10f4b0cfa92cf2e4e12a444b07463a265bdeab83424d040e38bb4055",
+      "credit": "2020-10-07 17:58:43.411209\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,SpAttack,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n2026-05-10 01:47:17.896026\t<@!356635814668664832>\tCUR\tCC_BY-NC_4\tEventSleep,Wake,Eat,Tumble,Pose,Pull,Pain,Float,DeepBreath,Nod,Sit,LookUp,Sink,Trip,Laying,LeapForth,Head,Cringe,LostBalance,TumbleBack,HitGround,Faint\n"
+    },
+    {
+      "id": 24,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0024/credits.txt",
+      "sha256": "390738cfc36e34336db9c07e636188b2208031d1f2f1cd300914909da12aa3fd",
+      "credit": "2022-12-16 19:40:57.548341\tCHUNSOFT\tCUR\tUnspecified\tIdle,Walk,Sleep,Hurt,Attack,Charge,Shoot,Strike,Twirl,Swing,Double,Rotate,Hop\n"
+    },
+    {
+      "id": 25,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0025/credits.txt",
+      "sha256": "e5868696fdb34c89de896f1b6b0c4e7c874281ce8de8e1853186e44b337860e9",
+      "credit": "2020-10-07 17:58:43.416193\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,QuickStrike,Shoot,Shock,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate,EventSleep,Wake,Eat,Tumble,Pose,Pull,Pain,Float,DeepBreath,Nod,Sit,LookUp,Sink,Trip,Laying,LeapForth,Head,Cringe,LostBalance,TumbleBack,Faint,HitGround\n"
+    },
+    {
+      "id": 26,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0026/credits.txt",
+      "sha256": "08c60c70039e35d247d06e181bc9f800bd932c518faf085741f1174bde12927a",
+      "credit": "2020-10-07 17:58:43.421179\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,QuickStrike,Shoot,Shock,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n2025-12-23 02:47:04.237398\t<@!217653022094786560>\tCUR\tCC_BY-NC_4\tEventSleep,Wake,Eat,Tumble,Pose,Pull,Pain,Float,DeepBreath,Nod,Sit,LookUp,Sink,Trip,Laying,LeapForth,Head,Cringe,LostBalance,TumbleBack,HitGround,Faint\n2025-12-23 02:50:14.012801\t<@!276369635304275968>\tCUR\tCC_BY-NC_4\tTrip,HitGround,Faint\n"
+    },
+    {
+      "id": 27,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0027/credits.txt",
+      "sha256": "448753b3321adfc13559e0da7236257976423922a6d822d11e49a04161b5c7cb",
+      "credit": "2020-10-07 17:58:43.425171\tCHUNSOFT\tCUR\tUnspecified\tAttack,Charge,Double,Hop,Hurt,Idle,Rotate,Sleep,Strike,Swing,Walk,Withdraw\n2021-11-08 23:42:12.507887\t<@!237286997645983744>\tCUR\tPMDCollab_1\tEventSleep,Laying,Wake\n2023-09-27 03:52:56.017938\t<@!169247379453640706>\tCUR\tPMDCollab_2\tEventSleep,Wake,Eat,Tumble,Pose,Pull,Pain,Float,DeepBreath,Nod,Sit,LookUp,Sink,Trip,Laying,LeapForth,Head,Cringe,LostBalance,TumbleBack,HitGround,Faint\n2023-10-05 00:08:19.400287\t<@!169247379453640706>\tCUR\tPMDCollab_2\tEat,Sit\n2023-10-05 01:31:41.533822\t<@!169247379453640706>\tCUR\tPMDCollab_2\tPull,Sit\n"
+    },
+    {
+      "id": 28,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0028/credits.txt",
+      "sha256": "b04b1ed95e60bb9546856d0bcbc44f1b9cbcd74afdf07d00e610d3f336a162fa",
+      "credit": "2020-10-07 17:58:43.429159\tCHUNSOFT\tCUR\tUnspecified\tAttack,Charge,Double,Hop,Hurt,Idle,Rotate,Sleep,Strike,Swing,Walk,Withdraw\n2021-10-10 13:15:42.860541\t<@!356635814668664832>\tCUR\tPMDCollab_1\tAttack,Charge,Cringe,DeepBreath,Double,Eat,EventSleep,Faint,Float,Head,HitGround,Hop,Hurt,Idle,Laying,LeapForth,LookUp,LostBalance,Nod,Pain,Pose,Pull,Rotate,Sink,Sit,Sleep,Strike,Swing,Trip,Tumble,TumbleBack,Wake,Walk,Withdraw\n2022-01-13 02:05:13.806016\t<@!365627932888268800>\tOLD\tPMDCollab_1\tNod\n2022-04-23 04:26:34.345263\t<@!356635814668664832>\tCUR\tPMDCollab_1\tEat,Sit\n"
+    },
+    {
+      "id": 29,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0029/credits.txt",
+      "sha256": "6a68ac9f77a6597bdbdd7e74e64b267f5d79490dc256b74c93a41a382a426a91",
+      "credit": "2020-10-07 17:58:43.432151\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,MultiScratch,Shoot,Twirl,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 30,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0030/credits.txt",
+      "sha256": "dec5d24d15a9779ea22337661ddc7a1c892e738fedea8c05ee7e8e0be2d8bdf7",
+      "credit": "2020-10-07 17:58:43.434146\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,MultiScratch,Shoot,Twirl,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 31,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0031/credits.txt",
+      "sha256": "1069a8a5971957df592d8bcdf088c1fb31454fa12bcd6736d2f2f66125fb0d3e",
+      "credit": "2020-10-07 17:58:43.437137\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,MultiScratch,Shoot,Twirl,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 32,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0032/credits.txt",
+      "sha256": "9dcaa1ec7a3a13fa91f6ab26e612d0fc329c1acf57760bb1eb8981cf1e0c3393",
+      "credit": "2020-10-07 17:58:43.439130\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,Appeal,SpAttack,Emit,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 33,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0033/credits.txt",
+      "sha256": "0574833949b45f83a346d15e2f8b9a8a292321856db2d97d9797e461199b4d6e",
+      "credit": "2020-10-07 17:58:43.441125\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,Appeal,SpAttack,Emit,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 34,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0034/credits.txt",
+      "sha256": "928c290f10ae900e4cbeb220ada8745ec5ae92d13037caf5f69c57857aab7e84",
+      "credit": "2020-10-07 17:58:43.445116\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,Rumble,Sound,RearUp,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 35,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0035/credits.txt",
+      "sha256": "3cbf35c324ff57c0d0e8a5485328c1c7c2eefd979e41384c93156c31d2f24095",
+      "credit": "2020-10-07 17:58:43.447108\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Withdraw,Dance,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 36,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0036/credits.txt",
+      "sha256": "3a39d266ac77625435a74833cc10efc791b8ecf902677aeb9d12f7f2eb27ad64",
+      "credit": "2020-10-07 17:58:43.449104\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Withdraw,Dance,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 37,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0037/credits.txt",
+      "sha256": "1ce879fcef8a4e0fd1c6ac4921a321505fc613837dfad81a31f1a7f38f3eacc5",
+      "credit": "2020-10-07 17:58:43.452098\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,Appeal,SpAttack,RearUp,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate,EventSleep,Wake,Eat,Tumble,Pose,Pull,Pain,Float,DeepBreath,Nod,Sit,LookUp,Sink,Trip,Laying,LeapForth,Head,Cringe,LostBalance,TumbleBack,Faint,HitGround\n"
+    },
+    {
+      "id": 38,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0038/credits.txt",
+      "sha256": "a48e29d57c340da9b840c9bef1d56e72ee08dc3ad4b8b1f828c0e784dbb6eff9",
+      "credit": "2022-12-17 00:12:55.888411\tCHUNSOFT\tCUR\tUnspecified\tIdle,Walk,Sleep,Hurt,Attack,Charge,Shoot,Strike,Appeal,SpAttack,RearUp,Swing,Double,Rotate,Hop\n2022-12-17 20:31:06.098012\t<@!544245909639397378>\tCUR\tPMDCollab_1\tWalk,Attack,EventSleep,Wake,Eat,Tumble,Pose,Pull,Pain,Float,DeepBreath,Nod,Sit,LookUp,Sink,Trip,Laying,LeapForth,Head,Cringe,LostBalance,TumbleBack,HitGround,Faint\n"
+    },
+    {
+      "id": 39,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0039/credits.txt",
+      "sha256": "8150e6b196bb7687d65d9d0d2b0791e3f26b9ef80bfbadd48b50292aaffb5f9c",
+      "credit": "2020-10-07 17:58:43.456087\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Slam,Shoot,Withdraw,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n2025-03-11 02:56:35.847602\t<@!702275233125630042>\tCUR\tCC_BY-NC_4\tEventSleep,Wake,Eat,Tumble,Pose,Pull,Pain,Float,DeepBreath,Nod,Sit,LookUp,Sink,Trip,Laying,LeapForth,Head,Cringe,LostBalance,TumbleBack,HitGround,Faint\n2025-03-16 10:21:23.990862\t<@!702275233125630042>\tCUR\tCC_BY-NC_4\tNod\n"
+    },
+    {
+      "id": 40,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0040/credits.txt",
+      "sha256": "75b9ba1a671c774df78daa83d5fd4b53ab5aeaf240ce457f3c9858e702b1344f",
+      "credit": "2022-12-16 19:40:53.548733\tCHUNSOFT\tCUR\tUnspecified\tIdle,Walk,Sleep,Hurt,Attack,Charge,Shoot,Slam,Withdraw,Swing,Double,Rotate,Hop\n"
+    },
+    {
+      "id": 41,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0041/credits.txt",
+      "sha256": "3bdb9dddb1e840df8ff59efdc9bdb04a84720bd1d83b79813b68da8eabfdf018",
+      "credit": "2022-12-16 19:41:09.853923\tCHUNSOFT\tCUR\tUnspecified\tIdle,Walk,Sleep,Hurt,Attack,Charge,Shoot,Strike,Swing,Double,Rotate,Hop,Hover\n"
+    },
+    {
+      "id": 42,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0042/credits.txt",
+      "sha256": "2da8ca63344535b1315491032b8813e389e17e79fa4de10fa415ce51a58c26d5",
+      "credit": "2020-10-07 17:58:43.464065\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,Hover,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 43,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0043/credits.txt",
+      "sha256": "6a71d6853de76532d2f34ff5274492d723b5c6b10908de3ebd974f4c4dd0e778",
+      "credit": "2020-10-07 17:58:43.468055\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,Twirl,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 44,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0044/credits.txt",
+      "sha256": "bc32553aa544bb7776034d89e784c3c663fa4933599042032102cbb1a252ae72",
+      "credit": "2020-10-07 17:58:43.470049\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,Twirl,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 45,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0045/credits.txt",
+      "sha256": "90a02e745847e5be1796b11a95e56a938de5d7212ffabb47d02c9c69aa7a9539",
+      "credit": "2020-10-07 17:58:43.474038\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,Twirl,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 46,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0046/credits.txt",
+      "sha256": "f17d1f3d931ad2c1d2de5846384309306ce2881f6f11aa36fc5452829cb97886",
+      "credit": "2020-10-07 17:58:43.478026\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,Twirl,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 47,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0047/credits.txt",
+      "sha256": "e6b885e1d127f92385e1bb6b7c62ed32e6a651d2d01cd26ba33e4d9a41a69c24",
+      "credit": "2020-10-07 17:58:43.481018\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,Twirl,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 48,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0048/credits.txt",
+      "sha256": "49bd274f585e7e18c234b0dfea4c84dab70b21650d8b8acf1b4b8701f57190ad",
+      "credit": "2020-10-07 17:58:43.483018\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,Twirl,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n2026-01-25 18:03:05.145792\t<@!275075929905168384>\tCUR\tCC_BY-NC_4\tEventSleep,Wake,Eat,Tumble,Pose,Pull,Pain,Float,DeepBreath,Nod,Sit,LookUp,Sink,Trip,Laying,LeapForth,Head,Cringe,LostBalance,TumbleBack,HitGround,Faint\n"
+    },
+    {
+      "id": 49,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0049/credits.txt",
+      "sha256": "419f4cb7b2d3b98b9cb3cb34cf86483ab2acd866a30c530c56942d2238e45ee7",
+      "credit": "2020-10-07 17:58:43.485007\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,FlapAround,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 50,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0050/credits.txt",
+      "sha256": "f86586f477cf8b8406bf35da3f96b9bacab5393a43825b071aaa59919a9347b9",
+      "credit": "2022-12-16 20:06:33.182862\tCHUNSOFT\tCUR\tUnspecified\tIdle,Walk,Sleep,Hurt,Attack,Charge,Shoot,Strike,Twirl,Swing,Double,Rotate,Hop\n2025-09-12 21:14:30.049805\t<@!117780585635643396>\tOLD\tCC_BY-NC_4\tPose\n"
+    },
+    {
+      "id": 51,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0051/credits.txt",
+      "sha256": "980dd12841ed2ebe2038669c5efbb51b1cf62b252af21ba2e5a5de240852b181",
+      "credit": "2022-12-16 20:06:37.767376\tCHUNSOFT\tCUR\tUnspecified\tIdle,Walk,Sleep,Hurt,Attack,Charge,Shoot,Strike,SpAttack,Swing,Double,Rotate,Hop\n2025-09-12 21:14:37.896970\t<@!117780585635643396>\tOLD\tCC_BY-NC_4\tPose\n"
+    },
+    {
+      "id": 52,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0052/credits.txt",
+      "sha256": "1cfc2cd33eac91b445fc8a04fd47692f56318a81934c8873601b2dcb239efe51",
+      "credit": "2020-10-07 17:58:43.491989\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,MultiStrike,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate,EventSleep,Wake,Eat,Tumble,Pose,Pull,Pain,Float,DeepBreath,Nod,Sit,LookUp,Sink,Trip,Laying,LeapForth,Head,Cringe,LostBalance,TumbleBack,Faint,HitGround\n"
+    },
+    {
+      "id": 53,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0053/credits.txt",
+      "sha256": "0683d5be7148c3e33274c5cb7d50e83951879b50dcc481662ab92e8290b4b981",
+      "credit": "2020-10-07 17:58:43.493985\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,SpAttack,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 54,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0054/credits.txt",
+      "sha256": "1867720cd98b0685c28743bc8bc8bce82b09326cd8a1bd083c1e1a11196434bb",
+      "credit": "2022-12-16 20:06:38.135514\tCHUNSOFT\tCUR\tUnspecified\tIdle,Walk,Sleep,Hurt,Attack,Charge,Shoot,MultiScratch,Twirl,Swing,Double,Rotate,Hop,Pose\n"
+    },
+    {
+      "id": 55,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0055/credits.txt",
+      "sha256": "d9880f171831c7ee6b76e05b566fe602f3a0921d9f62e51ab8d941cd3c822e21",
+      "credit": "2020-10-07 17:58:43.498972\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,MultiScratch,Shoot,Twirl,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 56,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0056/credits.txt",
+      "sha256": "72ac3af949580ff14651e66f1ee425e153a5f8dab10bc17ccd57a4bc800275c6",
+      "credit": "2020-10-07 17:58:43.500964\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Chop,MultiStrike,Shoot,Twirl,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 57,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0057/credits.txt",
+      "sha256": "c34544811904b5d4889c11574579e98640ab9e3923d88381c077e520bd18857f",
+      "credit": "2020-10-07 17:58:43.504955\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,MultiStrike,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 58,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0058/credits.txt",
+      "sha256": "ce2914a43b4658a88c8a33e23052a9d0c2df6d025c2013de76e5e4d38633c238",
+      "credit": "2020-10-07 17:58:43.507947\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,SpAttack,Rumble,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n2024-04-24 10:39:15.896788\t<@!356635814668664832>\tCUR\tCC_BY-NC_4\tEat,Cringe\n2026-07-28 00:43:16.483827\t<@!1377429093997477928>\tCUR\tCC_BY-NC_4\tEventSleep\n"
+    },
+    {
+      "id": 59,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0059/credits.txt",
+      "sha256": "2544e869a0ef06af1690e063445de946f182622aae3d2747b88c900ee1ba60fa",
+      "credit": "2020-10-07 17:58:43.511936\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,QuickStrike,Shoot,SpAttack,Rumble,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 60,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0060/credits.txt",
+      "sha256": "0c0ab54cac8a57f6c4a2cfb984f40d498d9b16e419d5eca36af908bce9f773c3",
+      "credit": "2020-10-07 17:58:43.513930\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,RearUp,Appeal,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 61,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0061/credits.txt",
+      "sha256": "f1871d03c0a48d852683dbb40db76a9d54628bf85f300f77c7fe93f2e3106e6c",
+      "credit": "2020-10-07 17:58:43.515924\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,RearUp,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 62,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0062/credits.txt",
+      "sha256": "73c798f2de5ccaa33f3370be249bc846003cacb335976c4e34953d981356dad5",
+      "credit": "2020-10-07 17:58:43.517919\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,RearUp,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 63,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0063/credits.txt",
+      "sha256": "cda14edb16346a1602a1297745f3d51933893003ef0a8cc138801ebe5f707ed8",
+      "credit": "2020-10-07 17:58:43.520911\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Jab,Strike,SpAttack,Shoot,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n2024-04-20 08:37:17.096204\t<@!356635814668664832>\tCUR\tCC_BY-NC_4\tEventSleep,Wake,Eat,Tumble,Pose,Pull,Pain,Float,DeepBreath,Nod,Sit,LookUp,Sink,Trip,Laying,LeapForth,Head,Cringe,LostBalance,TumbleBack,HitGround,Faint\n2024-04-24 10:38:58.753469\t<@!356635814668664832>\tCUR\tCC_BY-NC_4\tEventSleep,Wake,Float,Laying\n"
+    },
+    {
+      "id": 64,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0064/credits.txt",
+      "sha256": "da027fd4eb552d32e5346a723fb2f22d105030e54548296aa1dcee0d5be94dec",
+      "credit": "2020-10-07 17:58:43.522906\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,SpAttack,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 65,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0065/credits.txt",
+      "sha256": "1353007bbf4de6233a149b9758f52221e5be5064ff3f6fe59db0e54a622cca10",
+      "credit": "2022-12-16 20:06:45.260653\tCHUNSOFT\tCUR\tUnspecified\tIdle,Walk,Sleep,Hurt,Attack,Charge,Shoot,Strike,SpAttack,Swing,Double,Rotate,Hop\n"
+    },
+    {
+      "id": 66,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0066/credits.txt",
+      "sha256": "37ce381c6366ae82c4e84014218788e852376612f4e585eccab600ad124e2305",
+      "credit": "2022-12-17 00:12:51.188119\tCHUNSOFT\tCUR\tUnspecified\tIdle,Walk,Sleep,Hurt,Attack,Charge,Shoot,Strike,Kick,Swing,Double,Rotate,Hop,Pose\n2022-12-20 11:53:56.258311\t<@!237286997645983744>\tCUR\tPMDCollab_1\tEventSleep,Wake,Eat,Tumble,Pull,Pain,Float,Nod,Sit,LookUp,Sink,Trip,Laying,LeapForth,Head,Cringe,LostBalance,TumbleBack,HitGround,Faint\n"
+    },
+    {
+      "id": 67,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0067/credits.txt",
+      "sha256": "df258ccb5d3ceba778ce9aeee0273398a1df61092ade82723023a47a0b47e1f4",
+      "credit": "2020-10-07 17:58:43.531884\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Punch,Shoot,Kick,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 68,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0068/credits.txt",
+      "sha256": "9ddf1801bea9fd4d20fceefaad843350ae72f9d2a2193db47745b19511b5c72f",
+      "credit": "2020-10-07 17:58:43.533877\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Punch,Shoot,Kick,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 69,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0069/credits.txt",
+      "sha256": "42b8c134f4f2d0881356999a3b9a423107d9872f89f832a7305c51f3ca5dd846",
+      "credit": "2020-10-07 17:58:43.535873\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,Twirl,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 70,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0070/credits.txt",
+      "sha256": "2c46d945eb7799658dae93f1a7967539f38dba8d0837a93a3734ac7676156e28",
+      "credit": "2020-10-07 17:58:43.537866\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,MultiStrike,Shoot,Twirl,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 71,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0071/credits.txt",
+      "sha256": "a76fa5254ae54763e7901124d1da2f8f383962d3533cde445d0efde1f2c9c404",
+      "credit": "2020-10-07 17:58:43.539863\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,Twirl,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 72,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0072/credits.txt",
+      "sha256": "c1985d4891ae9989df0ff4bc6a5dec11c6cdb57ae3e8db435458d0ba2698ac1d",
+      "credit": "2020-10-07 17:58:43.542853\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Slam,Shoot,Twirl,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 73,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0073/credits.txt",
+      "sha256": "8b7836e878d1fd56454d90c44e28c689bdd4c50cfcd3b3b19529d72a1edf4e74",
+      "credit": "2020-10-07 17:58:43.546843\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Slam,Shoot,Twirl,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 74,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0074/credits.txt",
+      "sha256": "9fa93fd45cce8581d83373f822597dbc4e33a00d749a7d183951f36dc6b2af33",
+      "credit": "2020-10-07 17:58:43.548838\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Punch,Shoot,Twirl,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 75,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0075/credits.txt",
+      "sha256": "fbb985f756cd5f4564d31ee5ba4db8c905e07eb13aea2091b04c3c960c50459a",
+      "credit": "2020-10-07 17:58:43.550832\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Slam,SpAttack,Rumble,Shoot,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n2024-03-08 03:18:31.185092\t<@!356635814668664832>\tCUR\tCC_BY-NC_4\tSpecial0\n2024-03-13 02:27:37.813866\t<@!356635814668664832>\tCUR\tCC_BY-NC_4\tTumble,Cringe,TumbleBack\n"
+    },
+    {
+      "id": 76,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0076/credits.txt",
+      "sha256": "0dd43a7a6e5173f6bf61ef66cc7654ff03ee1dc3324df2e5ec2740aa655fc87e",
+      "credit": "2022-12-16 23:48:21.416574\tCHUNSOFT\tCUR\tUnspecified\tIdle,Walk,Sleep,Hurt,Attack,Charge,Shoot,Strike,Withdraw,Swing,Double,Rotate,Hop\n2024-12-18 09:55:51.875707\t<@!356635814668664832>\tCUR\tCC_BY-NC_4\tSpecial0\n"
+    },
+    {
+      "id": 77,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0077/credits.txt",
+      "sha256": "e9292e1a379196af1ec0a8519dfb8e6ce086ebd3342ce8fdf94fcd9ff8e87ad3",
+      "credit": "2020-10-07 17:58:43.554821\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,RearUp,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n2025-03-11 05:13:10.454377\t<@!702275233125630042>\tCUR\tCC_BY-NC_4\tEventSleep,Wake,Eat,Tumble,Pose,Pull,Pain,Float,DeepBreath,Nod,Sit,LookUp,Sink,Trip,Laying,LeapForth,Head,Cringe,LostBalance,TumbleBack,HitGround,Faint\n2025-03-18 05:33:22.818298\t<@!702275233125630042>\tCUR\tCC_BY-NC_4\tWake,Nod,HitGround,Faint\n"
+    },
+    {
+      "id": 78,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0078/credits.txt",
+      "sha256": "24c6547f2556bdb1a5a7420ed8244115060975c44e6f9ae6600970c56698adf0",
+      "credit": "2020-10-07 17:58:43.556816\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,RearUp,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 79,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0079/credits.txt",
+      "sha256": "93d80ccea661563c147654c34649fa075e53cbfd8a2a00d48ba48e5c504efb6b",
+      "credit": "2020-10-07 17:58:43.559808\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,Twirl,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 80,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0080/credits.txt",
+      "sha256": "0ed506ba1f521919e5e152835111cefdb37084d76c803d33730e98a903cb0433",
+      "credit": "2020-10-07 17:58:43.562800\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,Appeal,Shake,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 81,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0081/credits.txt",
+      "sha256": "5abc7e0813b0c73e69dc521dc695640b5d847d0e1f0f26f8811f999d1c10f7c9",
+      "credit": "2022-12-16 20:06:45.473215\tCHUNSOFT\tCUR\tUnspecified\tIdle,Walk,Sleep,Hurt,Attack,Charge,Shoot,Strike,SpAttack,Swing,Double,Rotate,Hop\n"
+    },
+    {
+      "id": 82,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0082/credits.txt",
+      "sha256": "6c392ea4ccd9bd0f14aafcc85aacedfbcf3e0e841375070e7200cf8f3af123d8",
+      "credit": "2020-10-07 17:58:43.567786\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,SpAttack,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 83,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0083/credits.txt",
+      "sha256": "f7fed6a0b91dc61b2765a6ec023c2e609fca638ff6f3b02113900c5bd29e242b",
+      "credit": "2020-10-07 17:58:43.569782\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,Twirl,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 84,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0084/credits.txt",
+      "sha256": "047e313843f6c7bbdde5f91bd553c940d3b02c71213a2faecd43de13220e2c40",
+      "credit": "2020-10-07 17:58:43.571775\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,MultiStrike,Shoot,Jab,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 85,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0085/credits.txt",
+      "sha256": "7751c3217882b465b64bd498efb42e32df30fb2a175ebc4bf65ee98534fec7a6",
+      "credit": "2020-10-07 17:58:43.576765\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,MultiStrike,Shoot,Jab,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 86,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0086/credits.txt",
+      "sha256": "d5b256c9678656862ceac3309244bfd99b3ae8230ab98bedd2fa214b9e02dc17",
+      "credit": "2020-10-07 17:58:43.581749\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,Twirl,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 87,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0087/credits.txt",
+      "sha256": "822cde66e41f7f7efdf1b896b142e77cc996d7a8acfbd3363531dd3d8ec895c9",
+      "credit": "2020-10-07 17:58:43.583744\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,Twirl,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 88,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0088/credits.txt",
+      "sha256": "8302bac043aa03bcac57ba2a02f5a97a413850b8a20b7498c7a99c53602da45f",
+      "credit": "2024-05-06 05:41:25.438424\tCHUNSOFT\tCUR\tCC_BY-NC_4\tIdle,Walk,Sleep,Hurt,Attack,Charge,Shoot,Strike,Twirl,Swing,Double,Rotate,Hop\n"
+    },
+    {
+      "id": 89,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0089/credits.txt",
+      "sha256": "4ec272c4dc26af0f76434224e6f3d96a94b77c5945c7ed55167f918126acd3b5",
+      "credit": "2023-09-08 17:19:11.478244\tCHUNSOFT\tCUR\tUnspecified\tIdle,Walk,Sleep,Hurt,Attack,Charge,Shoot,Strike,Twirl,Swing,Double,Rotate,Hop\n"
+    },
+    {
+      "id": 90,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0090/credits.txt",
+      "sha256": "38756738b8233d103a52d0e3a5606c2bb81a6e44f35c9efdc4e5c747360b6443",
+      "credit": "2020-10-07 17:58:43.590725\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,Withdraw,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 91,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0091/credits.txt",
+      "sha256": "dd60b49164a1cc4b3a94e96c5e685c3a11535debdb2467363a51a87dbb169249",
+      "credit": "2020-10-07 17:58:43.594715\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,Withdraw,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 92,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0092/credits.txt",
+      "sha256": "7c23ffa99b6376d5650df4b47ba248844e4dd93046b09cef19c021d99a1dacca",
+      "credit": "2020-10-07 17:58:43.596710\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,Lick,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 93,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0093/credits.txt",
+      "sha256": "9739f3b33b30a7697acf7ba7bcb9502d3ed28dbd35050721ba47b0df6eccb143",
+      "credit": "2022-12-16 20:06:58.019393\tCHUNSOFT\tCUR\tUnspecified\tIdle,Walk,Sleep,Hurt,Attack,Charge,Shoot,MultiStrike,Lick,Swing,Double,Rotate,Hop\n"
+    },
+    {
+      "id": 94,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0094/credits.txt",
+      "sha256": "b585d7d7c723801ec276f228f44610d390c42d04f873985d6ffe83303d89ef47",
+      "credit": "2022-12-17 00:13:11.432426\tCHUNSOFT\tCUR\tUnspecified\tIdle,Walk,Sleep,Hurt,Attack,Charge,Shoot,Strike,Lick,Twirl,Swing,Double,Rotate,Hop\n2023-04-22 22:29:17.717502\t<@!237286997645983744>\tCUR\tPMDCollab_1\tEventSleep,Wake,Eat,Tumble,Pose,Pull,Pain,Float,DeepBreath,Nod,Sit,LookUp,Sink,Trip,Laying,LeapForth,Head,Cringe,LostBalance,TumbleBack,HitGround,Faint\n"
+    },
+    {
+      "id": 95,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0095/credits.txt",
+      "sha256": "1975948437d6b6b148172cfb79dcec512dfac58ce90e7e79b740c63cec2b8df7",
+      "credit": "2020-10-07 17:58:43.602694\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Slam,Shoot,Twirl,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 96,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0096/credits.txt",
+      "sha256": "67bf8e8d6ee2ff909bf3f2d3dfe0ea35d8dd117560e97f33f7f020f9c2aba721",
+      "credit": "2022-12-16 20:06:54.472920\tCHUNSOFT\tCUR\tUnspecified\tIdle,Walk,Sleep,Hurt,Attack,Charge,Shoot,Slam,Twirl,Swing,Double,Rotate,Hop\n"
+    },
+    {
+      "id": 97,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0097/credits.txt",
+      "sha256": "5fca7d6d15311053430c7686db370719b6b217238bee0258d43951b971821795",
+      "credit": "2020-10-07 17:58:43.608677\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Punch,Shoot,SpAttack,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 98,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0098/credits.txt",
+      "sha256": "a3362cc27c0e672dd8933578d6cff47e0bb855cae0b145d52529f5d82dee64f7",
+      "credit": "2020-10-07 17:58:43.613663\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Slam,Shoot,Twirl,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 99,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0099/credits.txt",
+      "sha256": "3d1d32d33151ac290aaf536636782088f310ff4322dbccb983f2c43612803c66",
+      "credit": "2020-10-07 17:58:43.615658\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,Twirl,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 100,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0100/credits.txt",
+      "sha256": "5bd920f438c3d973910d5ac14c461049838c5e623b41c547278e072bf2d18f76",
+      "credit": "2020-10-07 17:58:43.618650\tCHUNSOFT\tCUR\tUnspecified\tAttack,Charge,Double,Hop,Hurt,Idle,Rotate,Sleep,Swing,Twirl,Walk\n2022-06-05 04:07:40.969287\t<@!237286997645983744>\tCUR\tPMDCollab_1\tEventSleep,Wake,Eat,Tumble,Pose,Pull,Pain,Float,DeepBreath,Nod,Sit,LookUp,Sink,Trip,Laying,LeapForth,Head,Cringe,LostBalance,TumbleBack,HitGround,Faint\n2023-03-13 02:49:36.058081\t<@!237286997645983744>\tCUR\tPMDCollab_1\tEventSleep,Wake,Tumble,Pose,Pull,Pain,Float,DeepBreath,Nod,Sit,LookUp,Sink,Trip,Laying,LeapForth,Head,Cringe,LostBalance,TumbleBack,HitGround,Faint\n"
+    },
+    {
+      "id": 101,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0101/credits.txt",
+      "sha256": "17d42770d871df78c94b72e7245fdfa191326cfb9265bb30cb840ef6798d2375",
+      "credit": "2020-10-07 17:58:43.621644\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,RearUp,Twirl,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 102,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0102/credits.txt",
+      "sha256": "57538bd65841216c7defd6950dc1d1648e6f0983760ef1ac21e3d06b2528ba43",
+      "credit": "2020-10-07 17:58:43.623636\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,Twirl,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 103,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0103/credits.txt",
+      "sha256": "4854245a5d3c9a8151eda23afc0a1ee9de66352aeff185d96eeb024416d83ebf",
+      "credit": "2020-10-07 17:58:43.626631\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,Shake,Dance,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 104,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0104/credits.txt",
+      "sha256": "8e267d700250a7cc5babb2a6858e90f57dbddd46046f10d3610d6bd6502bc349",
+      "credit": "2022-12-17 00:12:56.028560\tCHUNSOFT\tCUR\tUnspecified\tIdle,Walk,Sleep,Hurt,Attack,Charge,Shoot,Strike,SpAttack,Swing,Double,Rotate,Hop,Pose\n2023-01-02 22:54:59.449267\t<@!356635814668664832>\tCUR\tPMDCollab_1\tEventSleep,Wake,Eat,Tumble,Pose,Pull,Float,Nod,Sit,LookUp,Sink,Trip,Laying,LeapForth,Head,Cringe,LostBalance,TumbleBack,HitGround,Faint\n2023-03-18 06:05:50.508814\t<@!965734014604410990>\tCUR\tPMDCollab_1\tDeepBreath\n2026-10-11 21:52:15.062676\t<@!965734014604410990>\tCUR\tCC_BY-NC_4\tDeepBreath\n"
+    },
+    {
+      "id": 105,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0105/credits.txt",
+      "sha256": "99205a57c5519aa0ce3bc4a5cf6920620cbdf7bacd71197dbdef8c09ea2443f6",
+      "credit": "2020-10-07 17:58:43.631617\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Punch,Shoot,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 106,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0106/credits.txt",
+      "sha256": "217d150393652cfb62e30d685be2f047277fc6cd2d87b86b90b3bbbd21cdf9be",
+      "credit": "2020-10-07 17:58:43.634608\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Kick,Shoot,Withdraw,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 107,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0107/credits.txt",
+      "sha256": "212d7a76481f7ab4ad6e813ba9390d2e6f45cb17bfef7e56ef8bcb86f8e952ae",
+      "credit": "2020-10-07 17:58:43.636603\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Punch,Shoot,Uppercut,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 108,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0108/credits.txt",
+      "sha256": "a3b36d92951c8921a77ff6d2784c497d6c4ec8fd5fa6f21ffca3e65f858cf5a2",
+      "credit": "2020-10-07 17:58:43.638598\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,Lick,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 109,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0109/credits.txt",
+      "sha256": "8793f639ea8397f8f40a1596d43fb305adefbd6330a46f44b2d3be23e9b8ee35",
+      "credit": "2022-12-16 20:07:09.282889\tCHUNSOFT\tCUR\tUnspecified\tIdle,Walk,Sleep,Hurt,Attack,Charge,Shoot,Twirl,Gas,Swing,Double,Rotate,Hop\n"
+    },
+    {
+      "id": 110,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0110/credits.txt",
+      "sha256": "2e9d32cbb48247ffd13d071e5198e1d14c180a17c685077010ad332344786f6d",
+      "credit": "2020-10-07 17:58:43.645579\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,Swell,Gas,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 111,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0111/credits.txt",
+      "sha256": "4e73c4d6d59df2f34d2814fda0dccb7c0a473c78a0a1073f9d1ce84c220b1127",
+      "credit": "2020-10-07 17:58:43.648570\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Stomp,Shoot,Twirl,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 112,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0112/credits.txt",
+      "sha256": "7039175bedb49cf8fa1330d5adf4d88f9198b8007bf2f4521552d00dee0de35d",
+      "credit": "2020-10-07 17:58:43.651562\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Stomp,Shoot,Twirl,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 113,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0113/credits.txt",
+      "sha256": "72cc87920398d3a2ef461b13c39afafeca6daa6a00a772db3ba9ccec8704f7a5",
+      "credit": "2020-10-07 17:58:43.655551\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,SpAttack,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 114,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0114/credits.txt",
+      "sha256": "06bdcdef27ed39743414165670c0a7446aa309cd5f49b8bd018ae182b1219256",
+      "credit": "2020-10-07 17:58:43.657547\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,Shake,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 115,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0115/credits.txt",
+      "sha256": "0135e3e0c481382dbec06cdfde7809deca16c49b1559ab41ce1f53d15c1f6887",
+      "credit": "2020-10-07 17:58:43.661535\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,SpAttack,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 116,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0116/credits.txt",
+      "sha256": "35fa7c31f8df283295b3cc12f893ff51d36d74dcaea7aaa3250547d8bbb8ff12",
+      "credit": "2020-10-07 17:58:43.664528\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,Twirl,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 117,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0117/credits.txt",
+      "sha256": "afc93624c8329dd13937dc8661c49bb2cab7b51c319929ad57759c86ab1b8d07",
+      "credit": "2020-10-07 17:58:43.666523\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,Twirl,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 118,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0118/credits.txt",
+      "sha256": "b4e46fef742345ac72f53c0e13194d52ffd3b62c7c3b79dff357c81ee30956b1",
+      "credit": "2020-10-07 17:58:43.668517\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,RearUp,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 119,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0119/credits.txt",
+      "sha256": "4e38c4f51815ea6f22d1eaa9a611fb2cd57a34009e347107494fd0f2ed9c2710",
+      "credit": "2020-10-07 17:58:43.672508\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,RearUp,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 120,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0120/credits.txt",
+      "sha256": "55d5a8d359f43a35ccbb1ea7829cdbcd43876033bf1ca935ed616e647656ef76",
+      "credit": "2020-10-07 17:58:43.676497\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,Twirl,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 121,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0121/credits.txt",
+      "sha256": "1d5f75a787109a4b4cea7b89dedaded289870e76b33542100992ded6938230b4",
+      "credit": "2020-10-07 17:58:43.679488\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,Twirl,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 122,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0122/credits.txt",
+      "sha256": "6a0560013072fd7b6b1831cb0d2d9d5a5275e5956f6c42c077950401ac689a0f",
+      "credit": "2020-10-07 17:58:43.681482\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,Twirl,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 123,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0123/credits.txt",
+      "sha256": "12513c82cb6470b80aab06105ba0710cd46f19a5e3fd70d45b94eae352a16ac7",
+      "credit": "2020-10-07 17:58:43.683476\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Slice,Shoot,Twirl,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 124,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0124/credits.txt",
+      "sha256": "7c05f472fbaa730b8c322615006029da3576c8260d859d9d37243753487e1626",
+      "credit": "2020-10-07 17:58:43.685471\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Slap,Shoot,Twirl,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 125,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0125/credits.txt",
+      "sha256": "3bf41e6389633511493a4e870008f9a64fe63f2db18210faa69600ef1449d9ee",
+      "credit": "2020-10-07 17:58:43.687465\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Punch,Shoot,Twirl,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 126,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0126/credits.txt",
+      "sha256": "0a489141a13d71a7ab79ae1cdb1db0fc45549dec3ecb6a4df14dd3be6d1ca643",
+      "credit": "2020-10-07 17:58:43.689460\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,Twirl,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 127,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0127/credits.txt",
+      "sha256": "911fa08ac4e17156ff790a0f13f2947e533d61e4557f9d67b06d11803516317e",
+      "credit": "2020-10-07 17:58:43.691455\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Slice,Shoot,Twirl,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 128,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0128/credits.txt",
+      "sha256": "8f8954febe90e9bb2045a01925cd84a0bdfa00620005c465346c6ee7ecfc6dec",
+      "credit": "2020-10-07 17:58:43.695446\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Stomp,Shoot,Twirl,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 129,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0129/credits.txt",
+      "sha256": "82fa0eae97287b86c49f2cd2c0e1a2a6d7577960cd6701ca3a363368c3751905",
+      "credit": "2020-10-07 17:58:43.697441\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,SpAttack,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 130,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0130/credits.txt",
+      "sha256": "e9c2ff0fba42ad3d36907c873c922bb9e17e9d4e2c611d7051a41c83b2bae4bb",
+      "credit": "2023-05-04 14:55:15.921758\tCHUNSOFT\tCUR\tUnspecified\tIdle,Walk,Sleep,Hurt,Attack,Charge,Shoot,Strike,Rumble,RearUp,Swing,Double,Rotate,Hop\n"
+    },
+    {
+      "id": 131,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0131/credits.txt",
+      "sha256": "bfa85d8b3082673c7d0c40953c8e5d0ed5e28fc9182e61ab2d95a9f97ee56e83",
+      "credit": "2020-10-07 17:58:43.706416\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,Sound,RearUp,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 132,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0132/credits.txt",
+      "sha256": "acfca87efc083b12724a42eaf2050e31c69d7fdc7b9b6d7228f8ac2cd95bfafd",
+      "credit": "2020-10-07 17:58:43.709410\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,Twirl,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 133,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0133/credits.txt",
+      "sha256": "b60cb07a46c6f701f6098300f2860e09e5619dd71eef529fd4643f22536942ca",
+      "credit": "2020-10-07 17:58:43.712400\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,Appeal,TailWhip,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate,EventSleep,Wake,Eat,Tumble,Pose,Pull,Pain,Float,DeepBreath,Nod,Sit,LookUp,Sink,Trip,Laying,LeapForth,Head,Cringe,LostBalance,TumbleBack,Faint,HitGround\n"
+    },
+    {
+      "id": 134,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0134/credits.txt",
+      "sha256": "e63220ddc9a129a74d7f7f5ea5d081d0429f09e8ef83d355929708e2a97bfe00",
+      "credit": "2020-10-07 17:58:43.716391\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,SpAttack,RearUp,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 135,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0135/credits.txt",
+      "sha256": "24e47e1fa7f38c9c0fbc4901162d7b39b1d25044cf9752be44f4eec23cbed83d",
+      "credit": "2020-10-07 17:58:43.719381\tCHUNSOFT\tCUR\tUnspecified\tAttack,Charge,Double,Hop,Hurt,Idle,Rotate,Shock,Shoot,Sleep,Swing,Walk\n2021-05-09 08:03:16.469247\t<@!474262233442942995>\tCUR\tPMDCollab_1\tAttack,Charge,Cringe,DeepBreath,Double,Eat,EventSleep,Faint,Float,Head,HitGround,Hop,Hurt,Idle,Laying,LeapForth,LookUp,LostBalance,Nod,Pain,Pose,Pull,Rotate,Shock,Shoot,Sink,Sit,Sleep,Swing,Trip,Tumble,TumbleBack,Wake,Walk\n"
+    },
+    {
+      "id": 136,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0136/credits.txt",
+      "sha256": "bc58f8c33c99a26f19a79cadfd6da68b738c41b6cbab3ade3b8b162ebf23955f",
+      "credit": "2020-10-07 17:58:43.722373\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,Appeal,TailWhip,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n2024-06-13 09:55:30.372631\t<@!722542425196724289>\tCUR\tCC_BY-NC_4\tEventSleep,Wake,Eat,Pose,Pull,Pain,Float,DeepBreath,Nod,Sink,Laying,Head,Cringe,LostBalance\n2024-07-06 07:30:13.316346\t<@!702275233125630042>\tCUR\tCC_BY-NC_4\tEventSleep,Wake,Tumble,Pose,Pull,Pain,Float,DeepBreath,Nod,Sit,LookUp,Sink,Trip,Laying,LeapForth,Head,Cringe,LostBalance,TumbleBack,HitGround,Faint\n2024-07-15 15:25:49.675866\t<@!702275233125630042>\tCUR\tCC_BY-NC_4\tTumble,Sink,LostBalance,TumbleBack\n"
+    },
+    {
+      "id": 137,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0137/credits.txt",
+      "sha256": "30b2ef143c758de0e7e7dd319157a107b4ca554aa310ce74928259826ff1f6ad",
+      "credit": "2020-10-07 17:58:43.724368\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,SpAttack,RearUp,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 138,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0138/credits.txt",
+      "sha256": "0818ba58112f8ae17e62ea4dd844c7d0e02e3d2d8d0864c966fdc4a286e5e352",
+      "credit": "2020-10-07 17:58:43.727360\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,Withdraw,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 139,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0139/credits.txt",
+      "sha256": "23e7a04281455899978a083a5a4fff9f76dedbd5265c6851ea73077b1eab32dc",
+      "credit": "2020-10-07 17:58:43.730353\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,Withdraw,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 140,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0140/credits.txt",
+      "sha256": "287a00dbbd735db70b1ae0d50bb85cb9491e5c7888d846f250ae850b62babb8b",
+      "credit": "2020-10-07 17:58:43.732347\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,Twirl,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n2026-03-05 06:39:22.234932\t<@!275075929905168384>\tCUR\tCC_BY-NC_4\tEventSleep,Wake,Eat,Tumble,Pose,Pull,Pain,Float,DeepBreath,Nod,Sit,LookUp,Sink,Trip,Laying,LeapForth,Head,Cringe,LostBalance,TumbleBack,HitGround,Faint\n2026-03-15 04:09:04.552415\t<@!275075929905168384>\tCUR\tCC_BY-NC_4\tPose,Nod,Sit,LookUp,Sink,LeapForth,Head,HitGround,Faint\n"
+    },
+    {
+      "id": 141,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0141/credits.txt",
+      "sha256": "50d47c1664c2efee8f255b852420510e4709073ac9513ba9dde18b36faaa99eb",
+      "credit": "2020-10-07 17:58:43.734340\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,MultiStrike,Shoot,Twirl,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 142,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0142/credits.txt",
+      "sha256": "a0b81ef6cadcee2508a8dac8149671822b49adff298d5b7bc1c5a37aba46c22b",
+      "credit": "2020-10-07 17:58:43.736336\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,Hover,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 143,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0143/credits.txt",
+      "sha256": "d28bdc9fa1236c8fe59e37b2923bd0568b504cc43e7bf5893ea00d18b0ccc11e",
+      "credit": "2020-10-07 17:58:43.739327\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Stomp,Shoot,Twirl,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 144,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0144/credits.txt",
+      "sha256": "90f1a456a6f9467b25e5061e03e8c8cb1017eb40bd9dc53e773846330cac10d0",
+      "credit": "2023-05-04 17:21:45.663338\tCHUNSOFT\tCUR\tUnspecified\tIdle,Walk,Sleep,Hurt,Attack,Charge,Shoot,Strike,SpAttack,RearUp,Swing,Double,Rotate,Hop\n"
+    },
+    {
+      "id": 145,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0145/credits.txt",
+      "sha256": "c3d9318bdc898b08ad05c1d2de5f725190104fc5bf7742825097bf9998282b2e",
+      "credit": "2023-05-04 17:22:01.976723\tCHUNSOFT\tCUR\tUnspecified\tIdle,Walk,Sleep,Hurt,Attack,Charge,Shoot,Strike,Emit,SpAttack,Swing,Double,Rotate,Hop\n"
+    },
+    {
+      "id": 146,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0146/credits.txt",
+      "sha256": "667c182aa24b795143964040b0588910ccef8005b2b5fc7ed82b2d304d797d99",
+      "credit": "2023-05-04 17:21:54.081407\tCHUNSOFT\tCUR\tUnspecified\tIdle,Walk,Sleep,Hurt,Attack,Charge,Shoot,Strike,Swing,Double,Rotate,Hop,Hover\n"
+    },
+    {
+      "id": 147,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0147/credits.txt",
+      "sha256": "34c4f794a14cc323451a2ab19d45bb6a5aa8362913aebd930c3469f82e9087aa",
+      "credit": "2020-10-07 17:58:43.748303\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,SpAttack,RearUp,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n2024-07-18 23:05:22.804957\t<@!702275233125630042>\tCUR\tCC_BY-NC_4\tEventSleep,Wake,Tumble,Pain,Float,Laying,TumbleBack\n"
+    },
+    {
+      "id": 148,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0148/credits.txt",
+      "sha256": "32e76183cfaa614b3047c0f9cc66407bc2c1ab8181cd2983cf152b2d11bc4588",
+      "credit": "2020-10-07 17:58:43.750299\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,MultiStrike,Shoot,Ricochet,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n"
+    },
+    {
+      "id": 149,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0149/credits.txt",
+      "sha256": "8d6fd3fcecdbbcbb447fc6d03cdc49512c2f86c78ec2b1efffe409c357de41a4",
+      "credit": "2020-10-07 17:58:43.752293\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,Withdraw,Emit,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n2025-11-09 03:55:24.114365\t<@!268261643178344448>\tCUR\tCC_BY-NC_4\tSpecial0\n2025-11-09 03:58:59.331082\t<@!157796074457661440>\tCUR\tCC_BY-NC_4\tSpecial0\n2025-11-09 03:59:05.496762\t<@!157796074457661440>\tCUR\tCC_BY-NC_4\tSpecial0\n"
+    },
+    {
+      "id": 150,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0150/credits.txt",
+      "sha256": "fb1d1fc3a5759e211ff1c2c371ce9941869d4dec9401b5c45cf384158c41cef4",
+      "credit": "2020-10-07 17:58:43.755287\tCHUNSOFT\tCUR\tUnspecified\tAttack,Charge,Double,Hop,Hover,Hurt,Idle,Punch,Rotate,Shoot,Sleep,Swing,Walk\n2022-04-14 00:56:01.712419\t<@!702275233125630042>\tCUR\tPMDCollab_1\tAttack,Charge,Cringe,DeepBreath,Double,Eat,EventSleep,Faint,Float,Head,HitGround,Hop,Hover,Hurt,Idle,Laying,LeapForth,LookUp,LostBalance,Nod,Pain,Pose,Pull,Punch,Rotate,Shoot,Sink,Sit,Sleep,Swing,Trip,Tumble,TumbleBack,Wake,Walk\n"
+    },
+    {
+      "id": 151,
+      "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab/sprite/0151/credits.txt",
+      "sha256": "a907150b862c95dc217e93f12cbcf3b32a21f646bcfddd9ecf5dd6cfd619fea9",
+      "credit": "2020-10-07 17:58:43.757279\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,Twirl,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n2024-07-02 16:38:18.898184\t<@!702275233125630042>\tCUR\tCC_BY-NC_4\tEventSleep,Wake,Eat,Tumble,Pose,Pull,Pain,Float,DeepBreath,Nod,Sit,LookUp,Sink,Trip,Laying,LeapForth,Head,Cringe,LostBalance,TumbleBack,HitGround,Faint\n"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "tool": "built-in image_gen",
+  "date": "2026-10-20",
+  "purpose": "Matching whole-character cardinal walk poses for complete eight-direction atlases.",
+  "prompt": "Use case: identity-preserve. Asset type: supplemental walking animation sprite sheet for a top-down pixel-art game. The reference image shows the exact character design and pixel-art rendering style to retain. Create new complete whole-character cardinal-direction poses that match the reference character perfectly in head size, body proportions, clothing, accessories, palette and pixel detail. Transparent background. Exact grid: THREE ROWS and SIX COLUMNS, 18 sprites total. ROW ONE has SIX consecutive poses of a full smooth walk cycle facing STRAIGHT DOWN toward the viewer, perfectly frontal, both eyes and both shoulders visible symmetrically. ROW TWO has SIX consecutive poses of a full smooth walk cycle facing STRAIGHT UP away from the viewer, completely rear view, back of hat/hair and backpack visible, no face. ROW THREE has SIX consecutive poses of a full smooth walk cycle facing STRAIGHT RIGHT, genuine 90-degree side profile, body and face in profile. All cells have exactly the same dimensions, each complete sprite is centered with feet on an identical baseline and ample transparent margins. Head and torso keep their row's exact fixed direction. Six poses go through alternating left foot contact, down/passing, right foot contact, down/passing to loop smoothly. Real swinging arms and alternating legs, no duplicated neutral pose throughout. Crisp low-resolution pixel-art clusters and dark outline matching the reference, clean consistent forms, no gradients or anti-aliased painting. Do not draw diagonal views in this new sheet. Do not split a character or assemble strips. No labels, no grid lines, no background, no ground shadow, no text or watermark.",
+  "assets": [
+    {
+      "id": "red",
+      "sourcePath": "generated/red-cardinal.png",
+      "reference": "generated/red.png"
+    },
+    {
+      "id": "leaf",
+      "sourcePath": "generated/leaf-cardinal.png",
+      "reference": "generated/leaf.png"
+    },
+    {
+      "id": "ethan",
+      "sourcePath": "generated/ethan-cardinal.png",
+      "reference": "generated/ethan.png"
+    },
+    {
+      "id": "kris",
+      "sourcePath": "generated/kris-cardinal.png",
+      "reference": "generated/kris.png"
+    },
+    {
+      "id": "brendan",
+      "sourcePath": "generated/brendan-cardinal.png",
+      "reference": "generated/brendan.png"
+    },
+    {
+      "id": "may",
+      "sourcePath": "generated/may-cardinal.png",
+      "reference": "generated/may.png"
+    }
+  ]
+}

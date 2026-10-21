@@ -1,0 +1,38 @@
+[
+  {
+    "id": "red",
+    "path": "graphics/object_events/pics/people/red_normal.png",
+    "sha": "037335f4c725d7c9aecdac87066f2002b4bd7e14",
+    "repo": "pokefirered"
+  },
+  {
+    "id": "leaf",
+    "path": "graphics/object_events/pics/people/green_normal.png",
+    "sha": "037335f4c725d7c9aecdac87066f2002b4bd7e14",
+    "repo": "pokefirered"
+  },
+  {
+    "id": "brendan",
+    "path": "graphics/object_events/pics/people/brendan/walking.png",
+    "sha": "731ad5bfd6e6f265508d0efcca0ba42f9dcf5881",
+    "repo": "pokeemerald"
+  },
+  {
+    "id": "may",
+    "path": "graphics/object_events/pics/people/may/walking.png",
+    "sha": "731ad5bfd6e6f265508d0efcca0ba42f9dcf5881",
+    "repo": "pokeemerald"
+  },
+  {
+    "id": "ethan",
+    "path": "gfx/sprites/chris.png",
+    "sha": "97187cd21b15e9a266a786318c851848f2fac24b",
+    "repo": "pokecrystal"
+  },
+  {
+    "id": "kris",
+    "path": "gfx/sprites/kris.png",
+    "sha": "97187cd21b15e9a266a786318c851848f2fac24b",
+    "repo": "pokecrystal"
+  }
+]

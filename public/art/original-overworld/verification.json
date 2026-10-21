@@ -1,0 +1,56 @@
+{
+  "passed": true,
+  "sha256VerifiedAssets": 11,
+  "sourceCount": 28,
+  "mapSections": 49,
+  "edition": "Pokemon FireRed / LeafGreen",
+  "commit": "ce6406d8c2eaf46d543c8a2606de0c3cb1951982",
+  "visibleWorker": {
+    "x": 1,
+    "y": 11,
+    "width": 14,
+    "height": 20
+  },
+  "visibleFence": [
+    {
+      "file": "fence-frlg-horizontal.png",
+      "width": 16,
+      "height": 16,
+      "sha256": "98c9449e89c784d2b3262248e0994654f78163cd4e006543b8bb29d8bec8cf3a",
+      "visibleBounds": {
+        "x": 0,
+        "y": 2,
+        "width": 16,
+        "height": 14
+      },
+      "source": "data/tilesets/primary/general/metatiles.bin",
+      "metatile": 231,
+      "layer": 1,
+      "origin": {
+        "x": 0.5,
+        "y": 1
+      },
+      "scale": 2
+    },
+    {
+      "file": "fence-frlg-vertical.png",
+      "width": 16,
+      "height": 16,
+      "sha256": "0fd91e5facb21ae3a1ed5bad08f347ce4954d590365f74acc998c34266da22ff",
+      "visibleBounds": {
+        "x": 2,
+        "y": 0,
+        "width": 6,
+        "height": 16
+      },
+      "source": "data/tilesets/primary/general/metatiles.bin",
+      "metatile": 244,
+      "layer": 1,
+      "origin": {
+        "x": 0.5,
+        "y": 1
+      },
+      "scale": 2
+    }
+  ]
+}

@@ -1,0 +1,463 @@
+{
+  "version": 1,
+  "style": "Kanto-inspired original pixel artwork; whole building sprites",
+  "units": "World pixels at scale 1; footprint, door, interact relative to bottom-centre image origin.",
+  "sprites": [
+    {
+      "id": "house-red",
+      "file": "house-red.png",
+      "width": 152,
+      "height": 121,
+      "worldWidth": 152,
+      "worldHeight": 121,
+      "origin": {
+        "x": 0.5,
+        "y": 1
+      },
+      "ground": {
+        "x": 76,
+        "y": 119
+      },
+      "door": {
+        "x": 0,
+        "y": -2
+      },
+      "interact": {
+        "x": 0,
+        "y": 24
+      },
+      "footprint": {
+        "x": -64,
+        "y": -57,
+        "width": 127,
+        "height": 53
+      },
+      "sourceCrop": {
+        "left": 237,
+        "top": 86,
+        "width": 1095,
+        "height": 865
+      },
+      "sourceSha256": "965ebb54617f8e0046fcda868796b76c039ed8677ed9885b41f146f8930ebcc4",
+      "sha256": "3fb6e597ccbf1d014e045e8912d57ce2f58e7298e5813a3c3aa1bd849251337b"
+    },
+    {
+      "id": "house-blue",
+      "file": "house-blue.png",
+      "width": 152,
+      "height": 119,
+      "worldWidth": 152,
+      "worldHeight": 119,
+      "origin": {
+        "x": 0.5,
+        "y": 1
+      },
+      "ground": {
+        "x": 76,
+        "y": 117
+      },
+      "door": {
+        "x": 0,
+        "y": -2
+      },
+      "interact": {
+        "x": 0,
+        "y": 24
+      },
+      "footprint": {
+        "x": -64,
+        "y": -57,
+        "width": 127,
+        "height": 53
+      },
+      "sourceCrop": {
+        "left": 227,
+        "top": 85,
+        "width": 1115,
+        "height": 868
+      },
+      "sourceSha256": "f6bf304bb732129058d8e75ea67f851484ebab1242851685a6b292f663b192a2",
+      "sha256": "ee1d9371722a8283979450cf61ca892ec891f8f9de65aadeae1ceef18b646c35"
+    },
+    {
+      "id": "oak-lab",
+      "file": "oak-lab.png",
+      "width": 218,
+      "height": 117,
+      "worldWidth": 218,
+      "worldHeight": 117,
+      "origin": {
+        "x": 0.5,
+        "y": 1
+      },
+      "ground": {
+        "x": 109,
+        "y": 115
+      },
+      "door": {
+        "x": 0,
+        "y": -2
+      },
+      "interact": {
+        "x": 0,
+        "y": 24
+      },
+      "footprint": {
+        "x": -92,
+        "y": -81,
+        "width": 184,
+        "height": 77
+      },
+      "sourceCrop": {
+        "left": 51,
+        "top": 141,
+        "width": 1466,
+        "height": 774
+      },
+      "sourceSha256": "6c31e7caf6579830eed7ee8f55a69b78b15551b4620a859ceb8e7db7298e99c1",
+      "sha256": "c80c0f06d76aa186325756959105a96e869e96467a6e332ead5b69e25e5d1198"
+    },
+    {
+      "id": "pokemon-center",
+      "file": "pokemon-center.png",
+      "width": 188,
+      "height": 133,
+      "worldWidth": 188,
+      "worldHeight": 133,
+      "origin": {
+        "x": 0.5,
+        "y": 1
+      },
+      "ground": {
+        "x": 94,
+        "y": 131
+      },
+      "door": {
+        "x": 0,
+        "y": -2
+      },
+      "interact": {
+        "x": 0,
+        "y": 24
+      },
+      "footprint": {
+        "x": -79,
+        "y": -70,
+        "width": 158,
+        "height": 66
+      },
+      "sourceCrop": {
+        "left": 174,
+        "top": 103,
+        "width": 1220,
+        "height": 858
+      },
+      "sourceSha256": "2c5aee8625408179291b217cd1bb7088dcc3e1ba893930d416f2007804aed239",
+      "sha256": "da009bd320e4689f5b5081a6013ed9afcfa2ac2ac5cd6bcc2302b34c86a33903"
+    },
+    {
+      "id": "mart",
+      "file": "mart.png",
+      "width": 180,
+      "height": 126,
+      "worldWidth": 180,
+      "worldHeight": 126,
+      "origin": {
+        "x": 0.5,
+        "y": 1
+      },
+      "ground": {
+        "x": 90,
+        "y": 124
+      },
+      "door": {
+        "x": 0,
+        "y": -2
+      },
+      "interact": {
+        "x": 0,
+        "y": 24
+      },
+      "footprint": {
+        "x": -76,
+        "y": -67,
+        "width": 151,
+        "height": 63
+      },
+      "sourceCrop": {
+        "left": 203,
+        "top": 139,
+        "width": 1162,
+        "height": 804
+      },
+      "sourceSha256": "7d1149e08d14c6e4f1eb9cdf294083d06c18e400459930f6c4a232999b8d18be",
+      "sha256": "9debcf979b9000ff5c0c1d3935a0c02ce23753b554316b4997fba99141e2b2b4"
+    },
+    {
+      "id": "gym",
+      "file": "gym.png",
+      "width": 236,
+      "height": 135,
+      "worldWidth": 236,
+      "worldHeight": 135,
+      "origin": {
+        "x": 0.5,
+        "y": 1
+      },
+      "ground": {
+        "x": 118,
+        "y": 133
+      },
+      "door": {
+        "x": 0,
+        "y": -2
+      },
+      "interact": {
+        "x": 0,
+        "y": 24
+      },
+      "footprint": {
+        "x": -100,
+        "y": -88,
+        "width": 200,
+        "height": 84
+      },
+      "sourceCrop": {
+        "left": 69,
+        "top": 119,
+        "width": 1431,
+        "height": 810
+      },
+      "sourceSha256": "504d0b5a9b28498965518632baa0ce508603518ea0f35089f7b5398b5e47a2a0",
+      "sha256": "a9d8f35d79ce3d5a23b287069345f7b295da5f5b1ca655c3dae2a86b666392bc"
+    },
+    {
+      "id": "department-store",
+      "file": "department-store.png",
+      "width": 232,
+      "height": 183,
+      "worldWidth": 232,
+      "worldHeight": 183,
+      "origin": {
+        "x": 0.5,
+        "y": 1
+      },
+      "ground": {
+        "x": 116,
+        "y": 181
+      },
+      "door": {
+        "x": 0,
+        "y": -2
+      },
+      "interact": {
+        "x": 0,
+        "y": 24
+      },
+      "footprint": {
+        "x": -98,
+        "y": -86,
+        "width": 196,
+        "height": 82
+      },
+      "sourceCrop": {
+        "left": 226,
+        "top": 63,
+        "width": 1113,
+        "height": 874
+      },
+      "sourceSha256": "2683a4b0c4e7e94f2e4318bdeece6fdcc02f3c3cf391016a0fcc6245f830fd1a",
+      "sha256": "9cc42176a113a4b7148f028daeb27b588d8d82c545228d1bddfc4cc444e5a663"
+    },
+    {
+      "id": "silph-office",
+      "file": "silph-office.png",
+      "width": 240,
+      "height": 194,
+      "worldWidth": 240,
+      "worldHeight": 194,
+      "origin": {
+        "x": 0.5,
+        "y": 1
+      },
+      "ground": {
+        "x": 120,
+        "y": 192
+      },
+      "door": {
+        "x": 0,
+        "y": -2
+      },
+      "interact": {
+        "x": 0,
+        "y": 24
+      },
+      "footprint": {
+        "x": -102,
+        "y": -89,
+        "width": 203,
+        "height": 85
+      },
+      "sourceCrop": {
+        "left": 217,
+        "top": 43,
+        "width": 1134,
+        "height": 915
+      },
+      "sourceSha256": "5e58913f89b82c4cb9e097757f4804441c1febfed67c66c1eae28da90ccc7237",
+      "sha256": "370eecbcfc286fd0e3eb19ffc5791589b4d20dd4aa355a372ed5efe0ea232234"
+    },
+    {
+      "id": "lavender-tower",
+      "file": "lavender-tower.png",
+      "width": 202,
+      "height": 240,
+      "worldWidth": 202,
+      "worldHeight": 240,
+      "origin": {
+        "x": 0.5,
+        "y": 1
+      },
+      "ground": {
+        "x": 101,
+        "y": 238
+      },
+      "door": {
+        "x": 0,
+        "y": -2
+      },
+      "interact": {
+        "x": 0,
+        "y": 24
+      },
+      "footprint": {
+        "x": -85,
+        "y": -75,
+        "width": 170,
+        "height": 71
+      },
+      "sourceCrop": {
+        "left": 226,
+        "top": 30,
+        "width": 922,
+        "height": 1097
+      },
+      "sourceSha256": "309501d4c2c7627c8115803419b80af19399cac345286ac58ca9293907d9fc14",
+      "sha256": "a435656b1c318895e3ca8baa38bf312aa6ee8e080622f2efbe624281fe989f74"
+    },
+    {
+      "id": "mansion",
+      "file": "mansion.png",
+      "width": 246,
+      "height": 154,
+      "worldWidth": 246,
+      "worldHeight": 154,
+      "origin": {
+        "x": 0.5,
+        "y": 1
+      },
+      "ground": {
+        "x": 123,
+        "y": 152
+      },
+      "door": {
+        "x": 0,
+        "y": -2
+      },
+      "interact": {
+        "x": 0,
+        "y": 24
+      },
+      "footprint": {
+        "x": -104,
+        "y": -91,
+        "width": 208,
+        "height": 87
+      },
+      "sourceCrop": {
+        "left": 101,
+        "top": 101,
+        "width": 1367,
+        "height": 849
+      },
+      "sourceSha256": "d95fd75ebc1dc45b5269c25737c9f066edc68670407c3c3ccfb56b4cd0a1d800",
+      "sha256": "64032da8b1bb0bdb2b74d78bbb20cb63a377beb64ce254cef45d61490d7f7152"
+    },
+    {
+      "id": "league",
+      "file": "league.png",
+      "width": 262,
+      "height": 159,
+      "worldWidth": 262,
+      "worldHeight": 159,
+      "origin": {
+        "x": 0.5,
+        "y": 1
+      },
+      "ground": {
+        "x": 131,
+        "y": 157
+      },
+      "door": {
+        "x": 0,
+        "y": -2
+      },
+      "interact": {
+        "x": 0,
+        "y": 24
+      },
+      "footprint": {
+        "x": -111,
+        "y": -97,
+        "width": 222,
+        "height": 93
+      },
+      "sourceCrop": {
+        "left": 72,
+        "top": 94,
+        "width": 1425,
+        "height": 857
+      },
+      "sourceSha256": "6e22c03b54fffea5e5c4af9e3e4e8a4ccb3a1a06408a6e227b089b6379edbac6",
+      "sha256": "0c4dd32558e5736311bd51abd7f7d4b98ab0cc826e4bac019476dbf9cefd9a4d"
+    },
+    {
+      "id": "cave",
+      "file": "cave.png",
+      "width": 194,
+      "height": 109,
+      "worldWidth": 194,
+      "worldHeight": 109,
+      "origin": {
+        "x": 0.5,
+        "y": 1
+      },
+      "ground": {
+        "x": 97,
+        "y": 107
+      },
+      "door": {
+        "x": 0,
+        "y": -2
+      },
+      "interact": {
+        "x": 0,
+        "y": 24
+      },
+      "footprint": {
+        "x": -84,
+        "y": -67,
+        "width": 167,
+        "height": 63
+      },
+      "sourceCrop": {
+        "left": 66,
+        "top": 140,
+        "width": 1438,
+        "height": 795
+      },
+      "sourceSha256": "623ea72fb8a408ecfd807184c9b71bfc9a66ca683eadaebf032c8cc97773ca9e",
+      "sha256": "e5cf091ee80289b56bdf9c9639d2e3c720819427a72239ed368b4a54c5fbe1ce"
+    }
+  ]
+}

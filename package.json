@@ -1,0 +1,36 @@
+{
+  "name": "pokemon-survivors-auenwald",
+  "version": "1.0.0-rc.6.4",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "check": "tsc --noEmit",
+    "build": "tsc --noEmit && vite build && node scripts/verify-build.mjs",
+    "start": "node server.mjs",
+    "test": "node --experimental-strip-types --test tests/*.test.ts",
+    "test:core": "node scripts/test-core.mjs",
+    "test:security": "node --experimental-strip-types --test tests/security.test.ts tests/server.test.ts",
+    "check:release": "node scripts/check-release.mjs",
+    "doctor": "node scripts/doctor.mjs",
+    "release:local": "npm run build && node scripts/release.mjs --local",
+    "release:source": "node scripts/release.mjs --source",
+    "release:public": "npm run build && node scripts/release.mjs --public",
+    "test:forest-balance": "node --experimental-strip-types tests/forest-balance-probe.ts",
+    "test:available": "node scripts/test-available.mjs",
+    "check:developer": "node scripts/developer-package.mjs --check",
+    "release:developer": "node scripts/developer-package.mjs",
+    "assets:refresh": "node scripts/update-runtime-assets.mjs"
+  },
+  "dependencies": {
+    "phaser": "3.90.0"
+  },
+  "devDependencies": {
+    "typescript": "5.9.3",
+    "vite": "8.3.4"
+  },
+  "license": "GPL-3.0-only",
+  "engines": {
+    "node": ">=22.23.3 <23"
+  }
+}

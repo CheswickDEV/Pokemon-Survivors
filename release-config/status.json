@@ -1,0 +1,13 @@
+{
+  "version": "1.0.0-rc.6.4",
+  "publicReleaseApproved": true,
+  "assetRedistributionCleared": false,
+  "manualAcceptanceComplete": false,
+  "supportedPlayerPackage": "Windows 10/11 x64; current Edge or Chrome; keyboard and mouse",
+  "blockers": [
+    "Original Pokemon media have no documented redistribution permission.",
+    "Independent complete playthrough and clean Windows user acceptance remain open."
+  ],
+  "releaseChannel": "prerelease",
+  "repository": "https://github.com/CheswickDEV/Pokemon-Survivors"
+}

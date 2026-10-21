@@ -1,0 +1,3 @@
+# Optional expert media tools only; never installed by npm or the game.
+# Python >=3.11. No media redistribution permission is granted by this file.
+Pillow==13.0.0

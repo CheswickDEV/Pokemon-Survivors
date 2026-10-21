@@ -1,0 +1,370 @@
+{
+  "version": 1,
+  "edition": "Pokemon FireRed / LeafGreen",
+  "commit": "ce6406d8c2eaf46d543c8a2606de0c3cb1951982",
+  "assets": [
+    {
+      "file": "worker-frlg-sheet.png",
+      "width": 160,
+      "height": 32,
+      "sha256": "24d580342bc633230c444415a431020a6e050e7b5738c09f3281b1f9a92310d9",
+      "visibleBounds": {
+        "x": 1,
+        "y": 11,
+        "width": 142,
+        "height": 21
+      },
+      "source": "graphics/object_events/pics/people/worker_m.png",
+      "frameWidth": 16,
+      "frameHeight": 32,
+      "origin": {
+        "x": 0.5,
+        "y": 1
+      },
+      "scale": 2
+    },
+    {
+      "file": "worker-frlg.png",
+      "width": 16,
+      "height": 32,
+      "sha256": "51744867e79e6dd1b768adabfb14b6fb7e0e20590de39060616ec403fdef4d9e",
+      "visibleBounds": {
+        "x": 1,
+        "y": 11,
+        "width": 14,
+        "height": 20
+      },
+      "source": "graphics/object_events/pics/people/worker_m.png",
+      "sourceRect": [
+        0,
+        0,
+        16,
+        32
+      ],
+      "origin": {
+        "x": 0.5,
+        "y": 1
+      },
+      "scale": 2
+    },
+    {
+      "file": "kanto-region-map.png",
+      "width": 240,
+      "height": 160,
+      "sha256": "08cb2e6f172b1099abbe86ebcc270e8f492c8c919a6250ea2da1713f35c57cbb",
+      "visibleBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 240,
+        "height": 160
+      },
+      "source": "graphics/region_map/kanto.bin",
+      "tileSize": 8,
+      "tilemapWidth": 30,
+      "mapSectionToPixel": {
+        "xOffset": 36,
+        "yOffset": 36,
+        "step": 8
+      }
+    },
+    {
+      "file": "kanto-region-map-cropped.png",
+      "width": 192,
+      "height": 144,
+      "sha256": "562c6fafafc90451bef127d1e780953b5b4f972ac0e3918c20f9203f01392a1c",
+      "visibleBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 192,
+        "height": 144
+      },
+      "source": "graphics/region_map/kanto.bin",
+      "sourceRect": [
+        24,
+        16,
+        192,
+        144
+      ],
+      "mapSectionToPixel": {
+        "xOffset": 12,
+        "yOffset": 20,
+        "step": 8
+      }
+    },
+    {
+      "file": "fence-frlg-horizontal.png",
+      "width": 16,
+      "height": 16,
+      "sha256": "98c9449e89c784d2b3262248e0994654f78163cd4e006543b8bb29d8bec8cf3a",
+      "visibleBounds": {
+        "x": 0,
+        "y": 2,
+        "width": 16,
+        "height": 14
+      },
+      "source": "data/tilesets/primary/general/metatiles.bin",
+      "metatile": 231,
+      "layer": 1,
+      "origin": {
+        "x": 0.5,
+        "y": 1
+      },
+      "scale": 2
+    },
+    {
+      "file": "fence-frlg-vertical.png",
+      "width": 16,
+      "height": 16,
+      "sha256": "0fd91e5facb21ae3a1ed5bad08f347ce4954d590365f74acc998c34266da22ff",
+      "visibleBounds": {
+        "x": 2,
+        "y": 0,
+        "width": 6,
+        "height": 16
+      },
+      "source": "data/tilesets/primary/general/metatiles.bin",
+      "metatile": 244,
+      "layer": 1,
+      "origin": {
+        "x": 0.5,
+        "y": 1
+      },
+      "scale": 2
+    },
+    {
+      "file": "fence-frlg-corner-nw.png",
+      "width": 16,
+      "height": 16,
+      "sha256": "d9e3e854396c34af87f922736234d3e037f10dd572b5266398bfe4703bfeb483",
+      "visibleBounds": {
+        "x": 8,
+        "y": 2,
+        "width": 8,
+        "height": 14
+      },
+      "source": "data/tilesets/primary/general/metatiles.bin",
+      "metatile": 238,
+      "layer": 1,
+      "origin": {
+        "x": 0.5,
+        "y": 1
+      },
+      "scale": 2
+    },
+    {
+      "file": "fence-frlg-corner-ne.png",
+      "width": 16,
+      "height": 16,
+      "sha256": "94e4b02a51ed07620addede1e524d066e9669a662f61e3ff27a10fc609da749c",
+      "visibleBounds": {
+        "x": 0,
+        "y": 2,
+        "width": 8,
+        "height": 14
+      },
+      "source": "data/tilesets/primary/general/metatiles.bin",
+      "metatile": 239,
+      "layer": 1,
+      "origin": {
+        "x": 0.5,
+        "y": 1
+      },
+      "scale": 2
+    },
+    {
+      "file": "fence-frlg-corner-sw.png",
+      "width": 16,
+      "height": 16,
+      "sha256": "00984855a49304c601386d39258c53f6f2b0bcb428051b247fab490f184f3dc0",
+      "visibleBounds": {
+        "x": 8,
+        "y": 0,
+        "width": 8,
+        "height": 16
+      },
+      "source": "data/tilesets/primary/general/metatiles.bin",
+      "metatile": 246,
+      "layer": 1,
+      "origin": {
+        "x": 0.5,
+        "y": 1
+      },
+      "scale": 2
+    },
+    {
+      "file": "fence-frlg-corner-se.png",
+      "width": 16,
+      "height": 16,
+      "sha256": "e2aba42feeb84e5cb1401f0417754744b071acd2f3c574d56a4463e8da67363b",
+      "visibleBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 8,
+        "height": 16
+      },
+      "source": "data/tilesets/primary/general/metatiles.bin",
+      "metatile": 247,
+      "layer": 1,
+      "origin": {
+        "x": 0.5,
+        "y": 1
+      },
+      "scale": 2
+    },
+    {
+      "file": "vermilion-reference.png",
+      "width": 768,
+      "height": 640,
+      "sha256": "124ae51c6b289df9a89721f3ee0c292ba75fa9e10fc0c76f1e235409febcb33e",
+      "visibleBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 768,
+        "height": 640
+      },
+      "source": "data/layouts/VermilionCity/map.bin"
+    }
+  ],
+  "sources": [
+    {
+      "path": "graphics/object_events/pics/people/worker_m.png",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/graphics/object_events/pics/people/worker_m.png",
+      "sha256": "2cea07c7b0e96fd2823415c65b7adec48a7daa2fdea707d7c5b8053ac0204366"
+    },
+    {
+      "path": "src/data/object_events/object_event_graphics_info.h",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/src/data/object_events/object_event_graphics_info.h",
+      "sha256": "fc19a22d4471e83653e80257145f08c3b6d0b59868974399541a8bc3119ef512"
+    },
+    {
+      "path": "src/data/object_events/object_event_pic_tables.h",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/src/data/object_events/object_event_pic_tables.h",
+      "sha256": "7210ac3a847600c1e2778d6dcd5896e641e3b19f1d203841c4911bfe50769995"
+    },
+    {
+      "path": "graphics/region_map/region_map.png",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/graphics/region_map/region_map.png",
+      "sha256": "7c402c5461d5547191cbfefb279727964e19c6dd60d33f5b0bb052ea20545184"
+    },
+    {
+      "path": "graphics/region_map/region_map.pal",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/graphics/region_map/region_map.pal",
+      "sha256": "9151a87908033522cf4c3ae2b54cf65f77f7609c353ac73ceae402a386245bc8"
+    },
+    {
+      "path": "graphics/region_map/kanto.bin",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/graphics/region_map/kanto.bin",
+      "sha256": "c9f38c5d52099958c18efe737a45ba04ce8101b0eb349e9d2243bf8324d82b49"
+    },
+    {
+      "path": "src/data/region_map/region_map_sections.json",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/src/data/region_map/region_map_sections.json",
+      "sha256": "82e456cbe86a57ebc4bd0d88d6e000e83e28340895ac038079c38d415bc6de5f"
+    },
+    {
+      "path": "src/data/region_map/region_map_layout_kanto.h",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/src/data/region_map/region_map_layout_kanto.h",
+      "sha256": "62b8f2e60891a97cb44bb16f52c2a1fb45be5f2caff5f0db86dd36dbe3b5c194"
+    },
+    {
+      "path": "src/region_map.c",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/src/region_map.c",
+      "sha256": "b761f02803a1c5aada4465b9a93bf2b02c5ef1118432e677a30a5a4a4b78e0cb"
+    },
+    {
+      "path": "data/tilesets/primary/general/tiles.png",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/tilesets/primary/general/tiles.png",
+      "sha256": "9ff889d1b9da5383a0cd0c85ac7b791812867804f3a38566b46172087419e0b9"
+    },
+    {
+      "path": "data/tilesets/primary/general/metatiles.bin",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/tilesets/primary/general/metatiles.bin",
+      "sha256": "8d950c1a1f151f5e1bded1ecee165b815c3a4d62b69a4a9cec4f676283f9041e"
+    },
+    {
+      "path": "data/tilesets/primary/general/palettes/00.pal",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/tilesets/primary/general/palettes/00.pal",
+      "sha256": "757529e794c7fb9c333b1c2ef83704f6b03bb0fe756443b80025b2bc55dbe7f0"
+    },
+    {
+      "path": "data/tilesets/primary/general/palettes/01.pal",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/tilesets/primary/general/palettes/01.pal",
+      "sha256": "baec95e65952c79e6ceb9cf8306995379982dc9253e67797b350556e1db83bfb"
+    },
+    {
+      "path": "data/tilesets/primary/general/palettes/02.pal",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/tilesets/primary/general/palettes/02.pal",
+      "sha256": "ea0310019345ea29e2196c4326182e32cbddf0e5fc2c4d010e8c40794c78852b"
+    },
+    {
+      "path": "data/tilesets/primary/general/palettes/03.pal",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/tilesets/primary/general/palettes/03.pal",
+      "sha256": "117156779971950f6693bbefa2e92c373662209f2e39e4716f1e37a4f72ba022"
+    },
+    {
+      "path": "data/tilesets/primary/general/palettes/04.pal",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/tilesets/primary/general/palettes/04.pal",
+      "sha256": "7fed8601788c83852288c2395afd84a2c9ca6717c1eb38b762ad8ae7a9d61c5d"
+    },
+    {
+      "path": "data/tilesets/primary/general/palettes/05.pal",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/tilesets/primary/general/palettes/05.pal",
+      "sha256": "f8497b9b541ebe7ba0a80b0ac865135410d9cf6324f13949f3285c70b1119e07"
+    },
+    {
+      "path": "data/tilesets/primary/general/palettes/06.pal",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/tilesets/primary/general/palettes/06.pal",
+      "sha256": "4d2d0cfdc068acb9bc2adc9d4d762bcee527fd0cf045c30728632e15b0590582"
+    },
+    {
+      "path": "data/tilesets/secondary/vermilion_city/metatiles.bin",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/tilesets/secondary/vermilion_city/metatiles.bin",
+      "sha256": "f5cd6bd96fd4715dd5c19d4adcec72fc36b65912023a7d2e5745f767fdbe229f"
+    },
+    {
+      "path": "data/tilesets/secondary/vermilion_city/tiles.png",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/tilesets/secondary/vermilion_city/tiles.png",
+      "sha256": "26ec1c0117ef105b99bb6b74318d881594ead10ed4ab365d69a8121d2bad847c"
+    },
+    {
+      "path": "data/tilesets/secondary/vermilion_city/palettes/07.pal",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/tilesets/secondary/vermilion_city/palettes/07.pal",
+      "sha256": "20494534aaf6f5a4eff8cea95dd87be250e10c3229c4f3e3003c43fc391e4b36"
+    },
+    {
+      "path": "data/tilesets/secondary/vermilion_city/palettes/09.pal",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/tilesets/secondary/vermilion_city/palettes/09.pal",
+      "sha256": "52e2b0c4ffb51d30c24fce9bf280a86f8b2ae5b159dd34d2567dc5912ae20961"
+    },
+    {
+      "path": "data/tilesets/secondary/vermilion_city/palettes/08.pal",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/tilesets/secondary/vermilion_city/palettes/08.pal",
+      "sha256": "c195014c7bdbe1aff91f5bece1fc64b6911536c2ca35a2645baf8e0f6b263532"
+    },
+    {
+      "path": "data/tilesets/secondary/vermilion_city/palettes/10.pal",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/tilesets/secondary/vermilion_city/palettes/10.pal",
+      "sha256": "443f732363b79dd59c860f0f6cce0b6189944cb69559a58e89d2b66d62a9546d"
+    },
+    {
+      "path": "data/tilesets/secondary/vermilion_city/palettes/11.pal",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/tilesets/secondary/vermilion_city/palettes/11.pal",
+      "sha256": "b1cfcf72f8222ce1ba5bdf4da09f549cc9b23a1c2ad1ce3aa7246a6e054ef18d"
+    },
+    {
+      "path": "data/tilesets/secondary/vermilion_city/palettes/12.pal",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/tilesets/secondary/vermilion_city/palettes/12.pal",
+      "sha256": "a873dc6d6af99efbd005f4fd93c0962a290137ffacc6d0f2969f1f0206f21d95"
+    },
+    {
+      "path": "data/layouts/layouts.json",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/layouts/layouts.json",
+      "sha256": "1e8fdf737b31d269d0b918d4ed88bec8c2701bc7b1cbae2b2e3938bdea3de394"
+    },
+    {
+      "path": "data/layouts/VermilionCity/map.bin",
+      "url": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/layouts/VermilionCity/map.bin",
+      "sha256": "2cfff972a1112b7b411063aae6d0032d308fd563d7c6aa82a0609f1aaef0a2ad"
+    }
+  ]
+}

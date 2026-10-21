@@ -1,0 +1,22 @@
+// Isolated QA fixtures, imported through the game's normal save UI on port 4175.
+import {newRun} from '../src/engine.ts';
+import {KANTO_STORY} from '../src/kanto-world-catalog.ts';
+import {envelope,validateState} from '../src/save.ts';
+import {writeFileSync} from 'node:fs';
+const save=(name:string,s:ReturnType<typeof newRun>)=>writeFileSync('qa/v6-'+name+'.json',JSON.stringify(envelope(validateState(s),1),null,2));
+const gate=newRun(1,'story',606,'red');
+Object.assign(gate.trainer,{x:0,y:-2280});
+Object.assign(gate.party[0],{x:-40,y:-2250});
+save('gate',gate);
+const town=newRun(1,'story',607,'kris');
+town.story.done=KANTO_STORY.slice(0,2).map(q=>q.id);
+town.story.unlocks=KANTO_STORY.slice(0,2).flatMap(q=>q.rewardUnlocks);
+town.level=8;town.time=200;town.trainer.hp=45;town.story.checkpoint='pewter';
+Object.assign(town.trainer,{x:0,y:-5200});
+Object.assign(town.party[0],{x:-45,y:-5200,level:7,xp:30,ranks:[3]});
+town.party.push({...structuredClone(town.party[0]),uid:town.nextId++,species:7,level:2,xp:5,ranks:[1],x:45,y:-5200});
+town.party.push({...structuredClone(town.party[0]),uid:town.nextId++,species:25,level:1,xp:0,ranks:[1],x:0,y:-5250});
+town.active.push(town.party[1].uid);town.caught=[1,7,25];town.balls=10;
+town.pickups.push({uid:town.nextId++,kind:'heal',value:12,x:80,y:-5200});
+town.pickups.push({uid:town.nextId++,kind:'stamina',value:25,x:-80,y:-5200});
+save('town',town);

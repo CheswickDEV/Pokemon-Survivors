@@ -1,0 +1,36 @@
+name: Source checks
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  source:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci --ignore-scripts
+      - run: npm audit --audit-level=low
+      - run: npm audit --audit-level=low
+        working-directory: tools/assets
+      - run: npm run check:release
+      - run: npm run check
+      - run: npm run test:available
+      - run: npm run build
+      - run: npm run release:source
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: source-snapshot-no-pokemon-media-${{ matrix.os }}
+          path: |
+            release/*-source.zip
+            release/SHA256SUMS.txt
+            release/manifest.json
+          retention-days: 14

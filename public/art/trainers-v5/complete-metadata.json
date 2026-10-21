@@ -1,0 +1,1068 @@
+{
+  "version": 1,
+  "frameWidth": 64,
+  "frameHeight": 64,
+  "columns": 9,
+  "rows": 8,
+  "order": [
+    "down",
+    "downRight",
+    "right",
+    "upRight",
+    "up",
+    "upLeft",
+    "left",
+    "downLeft"
+  ],
+  "trainers": {
+    "red": {
+      "sheet": "/art/trainers-v5/red-complete.png",
+      "baseline": 62,
+      "normalizationScale": 0.16101694915254236,
+      "cardinalSourceSize": [
+        1774,
+        887
+      ],
+      "cardinalSourcePoseBoxes": [
+        [
+          77,
+          59,
+          242,
+          293
+        ],
+        [
+          359,
+          59,
+          521,
+          294
+        ],
+        [
+          646,
+          57,
+          809,
+          293
+        ],
+        [
+          946,
+          57,
+          1111,
+          294
+        ],
+        [
+          1245,
+          57,
+          1408,
+          293
+        ],
+        [
+          1532,
+          58,
+          1695,
+          293
+        ],
+        [
+          79,
+          330,
+          242,
+          573
+        ],
+        [
+          366,
+          330,
+          528,
+          573
+        ],
+        [
+          653,
+          330,
+          817,
+          573
+        ],
+        [
+          948,
+          333,
+          1112,
+          573
+        ],
+        [
+          1244,
+          330,
+          1407,
+          573
+        ],
+        [
+          1531,
+          330,
+          1694,
+          573
+        ],
+        [
+          76,
+          611,
+          255,
+          843
+        ],
+        [
+          359,
+          611,
+          536,
+          847
+        ],
+        [
+          648,
+          612,
+          826,
+          847
+        ],
+        [
+          942,
+          613,
+          1121,
+          848
+        ],
+        [
+          1239,
+          612,
+          1418,
+          847
+        ],
+        [
+          1527,
+          611,
+          1705,
+          848
+        ]
+      ],
+      "groups": [
+        {
+          "direction": "down",
+          "availablePoses": 6,
+          "uniqueWalkPoses": 6,
+          "selectedSourceFrames": [
+            0,
+            0,
+            1,
+            2,
+            3,
+            3,
+            4,
+            5
+          ],
+          "idleSourceFrame": 1,
+          "wholePoseMirrorCorrections": []
+        },
+        {
+          "direction": "up",
+          "availablePoses": 6,
+          "uniqueWalkPoses": 6,
+          "selectedSourceFrames": [
+            0,
+            0,
+            1,
+            2,
+            3,
+            3,
+            4,
+            5
+          ],
+          "idleSourceFrame": 0,
+          "wholePoseMirrorCorrections": []
+        },
+        {
+          "direction": "right",
+          "availablePoses": 6,
+          "uniqueWalkPoses": 6,
+          "selectedSourceFrames": [
+            0,
+            0,
+            1,
+            2,
+            3,
+            3,
+            4,
+            5
+          ],
+          "idleSourceFrame": 1,
+          "wholePoseMirrorCorrections": []
+        }
+      ],
+      "sha256": "a484368d14c74eba872448deb3d6f37daf7ada0059e85b4fa85ffc42d2756d9a"
+    },
+    "leaf": {
+      "sheet": "/art/trainers-v5/leaf-complete.png",
+      "baseline": 62,
+      "normalizationScale": 0.15139442231075698,
+      "cardinalSourceSize": [
+        1774,
+        887
+      ],
+      "cardinalSourcePoseBoxes": [
+        [
+          83,
+          46,
+          272,
+          297
+        ],
+        [
+          370,
+          46,
+          555,
+          297
+        ],
+        [
+          653,
+          46,
+          840,
+          297
+        ],
+        [
+          932,
+          46,
+          1120,
+          297
+        ],
+        [
+          1212,
+          46,
+          1399,
+          297
+        ],
+        [
+          1499,
+          48,
+          1687,
+          295
+        ],
+        [
+          90,
+          320,
+          277,
+          571
+        ],
+        [
+          370,
+          319,
+          558,
+          571
+        ],
+        [
+          652,
+          323,
+          839,
+          571
+        ],
+        [
+          931,
+          319,
+          1117,
+          571
+        ],
+        [
+          1211,
+          321,
+          1399,
+          571
+        ],
+        [
+          1493,
+          320,
+          1680,
+          571
+        ],
+        [
+          84,
+          597,
+          272,
+          847
+        ],
+        [
+          370,
+          595,
+          558,
+          847
+        ],
+        [
+          645,
+          595,
+          838,
+          843
+        ],
+        [
+          926,
+          597,
+          1112,
+          847
+        ],
+        [
+          1207,
+          595,
+          1389,
+          847
+        ],
+        [
+          1486,
+          595,
+          1676,
+          847
+        ]
+      ],
+      "groups": [
+        {
+          "direction": "down",
+          "availablePoses": 6,
+          "uniqueWalkPoses": 6,
+          "selectedSourceFrames": [
+            0,
+            0,
+            1,
+            2,
+            3,
+            3,
+            4,
+            5
+          ],
+          "idleSourceFrame": 3,
+          "wholePoseMirrorCorrections": []
+        },
+        {
+          "direction": "up",
+          "availablePoses": 6,
+          "uniqueWalkPoses": 6,
+          "selectedSourceFrames": [
+            0,
+            0,
+            1,
+            2,
+            3,
+            3,
+            4,
+            5
+          ],
+          "idleSourceFrame": 0,
+          "wholePoseMirrorCorrections": []
+        },
+        {
+          "direction": "right",
+          "availablePoses": 6,
+          "uniqueWalkPoses": 6,
+          "selectedSourceFrames": [
+            0,
+            0,
+            1,
+            2,
+            3,
+            3,
+            4,
+            5
+          ],
+          "idleSourceFrame": 1,
+          "wholePoseMirrorCorrections": []
+        }
+      ],
+      "sha256": "b03da06d46821218009bc6cf3bc7eef12899214aed6af283666a84a86280158e"
+    },
+    "ethan": {
+      "sheet": "/art/trainers-v5/ethan-complete.png",
+      "baseline": 64,
+      "normalizationScale": 0.25396825396825395,
+      "cardinalSourceSize": [
+        1254,
+        1254
+      ],
+      "cardinalSourcePoseBoxes": [
+        [
+          37,
+          185,
+          203,
+          434
+        ],
+        [
+          243,
+          185,
+          406,
+          436
+        ],
+        [
+          443,
+          185,
+          607,
+          435
+        ],
+        [
+          645,
+          185,
+          807,
+          435
+        ],
+        [
+          849,
+          185,
+          1011,
+          436
+        ],
+        [
+          1050,
+          184,
+          1214,
+          436
+        ],
+        [
+          38,
+          504,
+          197,
+          756
+        ],
+        [
+          242,
+          506,
+          404,
+          756
+        ],
+        [
+          445,
+          504,
+          606,
+          756
+        ],
+        [
+          645,
+          504,
+          806,
+          756
+        ],
+        [
+          848,
+          504,
+          1009,
+          756
+        ],
+        [
+          1050,
+          505,
+          1211,
+          756
+        ],
+        [
+          40,
+          820,
+          209,
+          1066
+        ],
+        [
+          246,
+          819,
+          420,
+          1066
+        ],
+        [
+          453,
+          819,
+          626,
+          1063
+        ],
+        [
+          657,
+          820,
+          828,
+          1068
+        ],
+        [
+          864,
+          820,
+          1032,
+          1068
+        ],
+        [
+          1062,
+          820,
+          1233,
+          1066
+        ]
+      ],
+      "groups": [
+        {
+          "direction": "down",
+          "availablePoses": 6,
+          "uniqueWalkPoses": 6,
+          "selectedSourceFrames": [
+            0,
+            0,
+            1,
+            2,
+            3,
+            3,
+            4,
+            5
+          ],
+          "idleSourceFrame": 1,
+          "wholePoseMirrorCorrections": []
+        },
+        {
+          "direction": "up",
+          "availablePoses": 6,
+          "uniqueWalkPoses": 6,
+          "selectedSourceFrames": [
+            0,
+            0,
+            1,
+            2,
+            3,
+            3,
+            4,
+            5
+          ],
+          "idleSourceFrame": 0,
+          "wholePoseMirrorCorrections": []
+        },
+        {
+          "direction": "right",
+          "availablePoses": 6,
+          "uniqueWalkPoses": 6,
+          "selectedSourceFrames": [
+            0,
+            0,
+            1,
+            2,
+            3,
+            3,
+            4,
+            5
+          ],
+          "idleSourceFrame": 0,
+          "wholePoseMirrorCorrections": []
+        }
+      ],
+      "sha256": "d4738d5a32054fe1d0f8a3600a6eb75a843ce06f775046a89fab37ef390e1cc6"
+    },
+    "kris": {
+      "sheet": "/art/trainers-v5/kris-complete.png",
+      "baseline": 64,
+      "normalizationScale": 0.2397003745318352,
+      "cardinalSourceSize": [
+        1774,
+        887
+      ],
+      "cardinalSourcePoseBoxes": [
+        [
+          145,
+          40,
+          344,
+          307
+        ],
+        [
+          406,
+          41,
+          603,
+          308
+        ],
+        [
+          660,
+          40,
+          861,
+          307
+        ],
+        [
+          915,
+          40,
+          1113,
+          307
+        ],
+        [
+          1171,
+          40,
+          1369,
+          307
+        ],
+        [
+          1430,
+          40,
+          1631,
+          305
+        ],
+        [
+          144,
+          320,
+          345,
+          582
+        ],
+        [
+          408,
+          321,
+          603,
+          582
+        ],
+        [
+          663,
+          320,
+          861,
+          582
+        ],
+        [
+          912,
+          321,
+          1113,
+          582
+        ],
+        [
+          1171,
+          320,
+          1367,
+          582
+        ],
+        [
+          1428,
+          320,
+          1630,
+          581
+        ],
+        [
+          139,
+          593,
+          337,
+          858
+        ],
+        [
+          399,
+          593,
+          597,
+          856
+        ],
+        [
+          653,
+          593,
+          850,
+          857
+        ],
+        [
+          911,
+          594,
+          1107,
+          856
+        ],
+        [
+          1162,
+          593,
+          1361,
+          857
+        ],
+        [
+          1423,
+          593,
+          1616,
+          856
+        ]
+      ],
+      "groups": [
+        {
+          "direction": "down",
+          "availablePoses": 6,
+          "uniqueWalkPoses": 6,
+          "selectedSourceFrames": [
+            0,
+            0,
+            1,
+            2,
+            3,
+            3,
+            4,
+            5
+          ],
+          "idleSourceFrame": 1,
+          "wholePoseMirrorCorrections": []
+        },
+        {
+          "direction": "up",
+          "availablePoses": 6,
+          "uniqueWalkPoses": 6,
+          "selectedSourceFrames": [
+            0,
+            0,
+            1,
+            2,
+            3,
+            3,
+            4,
+            5
+          ],
+          "idleSourceFrame": 1,
+          "wholePoseMirrorCorrections": [
+            2,
+            4,
+            5
+          ]
+        },
+        {
+          "direction": "right",
+          "availablePoses": 6,
+          "uniqueWalkPoses": 6,
+          "selectedSourceFrames": [
+            0,
+            0,
+            1,
+            2,
+            3,
+            3,
+            4,
+            5
+          ],
+          "idleSourceFrame": 5,
+          "wholePoseMirrorCorrections": []
+        }
+      ],
+      "sha256": "c2469a1db71ca286ef25a26ec700c418bc21d2030739543d4c96234ae893cb4a"
+    },
+    "brendan": {
+      "sheet": "/art/trainers-v5/brendan-complete.png",
+      "baseline": 62,
+      "normalizationScale": 0.1564245810055866,
+      "cardinalSourceSize": [
+        1774,
+        887
+      ],
+      "cardinalSourcePoseBoxes": [
+        [
+          117,
+          26,
+          268,
+          297
+        ],
+        [
+          393,
+          26,
+          543,
+          297
+        ],
+        [
+          672,
+          26,
+          823,
+          297
+        ],
+        [
+          947,
+          27,
+          1099,
+          297
+        ],
+        [
+          1226,
+          27,
+          1377,
+          297
+        ],
+        [
+          1502,
+          26,
+          1653,
+          297
+        ],
+        [
+          114,
+          311,
+          267,
+          578
+        ],
+        [
+          390,
+          311,
+          545,
+          578
+        ],
+        [
+          671,
+          311,
+          827,
+          578
+        ],
+        [
+          946,
+          311,
+          1098,
+          578
+        ],
+        [
+          1223,
+          311,
+          1375,
+          578
+        ],
+        [
+          1501,
+          311,
+          1655,
+          578
+        ],
+        [
+          114,
+          593,
+          278,
+          857
+        ],
+        [
+          390,
+          592,
+          539,
+          862
+        ],
+        [
+          667,
+          592,
+          822,
+          862
+        ],
+        [
+          945,
+          592,
+          1094,
+          859
+        ],
+        [
+          1223,
+          592,
+          1389,
+          857
+        ],
+        [
+          1502,
+          592,
+          1652,
+          862
+        ]
+      ],
+      "groups": [
+        {
+          "direction": "down",
+          "availablePoses": 6,
+          "uniqueWalkPoses": 6,
+          "selectedSourceFrames": [
+            0,
+            0,
+            1,
+            2,
+            3,
+            3,
+            4,
+            5
+          ],
+          "idleSourceFrame": 1,
+          "wholePoseMirrorCorrections": []
+        },
+        {
+          "direction": "up",
+          "availablePoses": 6,
+          "uniqueWalkPoses": 6,
+          "selectedSourceFrames": [
+            0,
+            0,
+            1,
+            2,
+            3,
+            3,
+            4,
+            5
+          ],
+          "idleSourceFrame": 0,
+          "wholePoseMirrorCorrections": []
+        },
+        {
+          "direction": "right",
+          "availablePoses": 6,
+          "uniqueWalkPoses": 6,
+          "selectedSourceFrames": [
+            0,
+            0,
+            1,
+            2,
+            3,
+            3,
+            4,
+            5
+          ],
+          "idleSourceFrame": 1,
+          "wholePoseMirrorCorrections": []
+        }
+      ],
+      "sha256": "7c32df94b903410030347cdd3d1b065d312ebca18213a45e3f53e87e7472e9a1"
+    },
+    "may": {
+      "sheet": "/art/trainers-v5/may-complete.png",
+      "baseline": 62,
+      "normalizationScale": 0.1596806387225549,
+      "cardinalSourceSize": [
+        1774,
+        886
+      ],
+      "cardinalSourcePoseBoxes": [
+        [
+          126,
+          47,
+          282,
+          300
+        ],
+        [
+          381,
+          47,
+          549,
+          298
+        ],
+        [
+          675,
+          47,
+          836,
+          301
+        ],
+        [
+          931,
+          47,
+          1092,
+          301
+        ],
+        [
+          1219,
+          47,
+          1385,
+          298
+        ],
+        [
+          1482,
+          47,
+          1641,
+          294
+        ],
+        [
+          110,
+          319,
+          269,
+          572
+        ],
+        [
+          399,
+          319,
+          556,
+          572
+        ],
+        [
+          681,
+          318,
+          839,
+          572
+        ],
+        [
+          930,
+          319,
+          1090,
+          568
+        ],
+        [
+          1211,
+          321,
+          1369,
+          572
+        ],
+        [
+          1507,
+          320,
+          1662,
+          566
+        ],
+        [
+          125,
+          596,
+          290,
+          841
+        ],
+        [
+          396,
+          596,
+          562,
+          846
+        ],
+        [
+          680,
+          596,
+          843,
+          846
+        ],
+        [
+          948,
+          596,
+          1115,
+          842
+        ],
+        [
+          1223,
+          596,
+          1388,
+          844
+        ],
+        [
+          1506,
+          596,
+          1666,
+          846
+        ]
+      ],
+      "groups": [
+        {
+          "direction": "down",
+          "availablePoses": 6,
+          "uniqueWalkPoses": 6,
+          "selectedSourceFrames": [
+            0,
+            0,
+            1,
+            2,
+            3,
+            3,
+            4,
+            5
+          ],
+          "idleSourceFrame": 0,
+          "wholePoseMirrorCorrections": [
+            3,
+            4
+          ]
+        },
+        {
+          "direction": "up",
+          "availablePoses": 6,
+          "uniqueWalkPoses": 6,
+          "selectedSourceFrames": [
+            0,
+            0,
+            1,
+            2,
+            3,
+            3,
+            4,
+            5
+          ],
+          "idleSourceFrame": 0,
+          "wholePoseMirrorCorrections": [
+            0,
+            3,
+            4
+          ]
+        },
+        {
+          "direction": "right",
+          "availablePoses": 6,
+          "uniqueWalkPoses": 6,
+          "selectedSourceFrames": [
+            0,
+            0,
+            1,
+            2,
+            3,
+            3,
+            4,
+            5
+          ],
+          "idleSourceFrame": 0,
+          "wholePoseMirrorCorrections": []
+        }
+      ],
+      "sha256": "a51aafe8e2c851401e665e6726e18098e2e8434d69ec95a54de69b225aa320ac"
+    }
+  }
+}
