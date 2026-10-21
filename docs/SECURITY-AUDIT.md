@@ -1,107 +1,91 @@
-# Sicherheitsaudit und GitHub-Vorbereitung
+# Security audit and GitHub preparation
 
-Datum: **21. Oktober 2026**. Ausgangsstand: **1.0.0-rc.6.2**.
-Überarbeitete Fassung: **1.0.0-rc.6.3**.
+Date: **October 21, 2026**. Starting version: **1.0.0-rc.6.2**.
+Remediated version: **1.0.0-rc.6.3**.
 
-Historischer Auditbericht. Die spätere vollständige Entwicklerübergabe in
-rc.6.4 einschließlich Medien, bereinigter Bearbeitungsquellen und optionaler
-Werkzeuge ist in [DEVELOPER-VALIDATION.md](DEVELOPER-VALIDATION.md) dokumentiert.
-Die nachstehenden damaligen Medienausschlüsse gelten weiterhin für den kleinen
-Codeexport, nicht für das vollständige Entwicklerpaket.
+This is a historical audit. The later complete rc.6.4 developer distribution,
+including media, sanitized editing sources and optional tools, is covered in
+[DEVELOPER-VALIDATION.md](DEVELOPER-VALIDATION.md). Media exclusions below still
+apply to the smaller code export, not the full developer package.
 
-## Umfang und Vorgehen
+## Scope and method
 
-Quellcodeprüfung des lokalen HTTP-Servers, Browser-Eingaben und
-Spielstandimporte, Netzwerk-/Prozessaufrufe, npm-Abhängigkeiten, gepinnte
-Node-Laufzeit, Build, Quellcode-/Spielerexport, Lizenzen/Medienstatus und
-GitHub-Workflow. Dateinamen-/Inhaltsscan des vorgesehenen öffentlichen
-Quellbestands. Synthetische Angriffsfälle und Prüfung entpackter Pakete.
+Reviewed the local HTTP server, browser inputs and save imports, network and
+process calls, npm dependencies, pinned Node runtime, build, source/player
+exports, licenses/media status and GitHub workflow. Scanned filenames and
+contents of the intended public source set. Exercised synthetic attacks and
+checked extracted packages.
 
-Im Arbeitsordner gab es kein Git-Repository und damit keine lokale
-Commit-Historie oder Remote-Konfiguration zu prüfen. Der saubere Export ist
-ein neuer Snapshot. Der übergeordnete Projektordner, synchronisierte
-Referenzen, alte QA-Pakete und Cachebestände sind kein Uploadziel.
+At the time, the working directory had no Git repository, commit history or
+remote configuration to audit. The clean export was a new snapshot. The parent
+workspace, synced references, old QA packages and caches were not upload targets.
 
-## Nachgewiesene Befunde und Behebungen
+## Confirmed findings and fixes
 
-| ID | Einordnung | Nachweis / Wirkung | Behebung |
+| ID | Severity | Evidence / impact | Remediation |
 |---|---|---|---|
-| S-01 | Mittel, Datenoffenlegung bei Weitergabe des normalen Builds | Vite kopierte den gesamten `public/`-Baum nach `dist/`, darunter Promptdateien und Importwerkzeuge mit privaten Rechnerpfaden. Das bisherige Windows-Paket war bereits enger ausgewählt; der normale Build war es nicht. | `publicDir` abgeschaltet; Build und Entwicklungs-Medienroute verwenden ausschließlich die geprüfte Laufzeitliste. Der fertige Build wird auf unerwartete Dateien und sensible Inhalte geprüft. |
-| S-02 | Mittel, unvollständige Export-/Git-Grenze | Rekursiver Quellcodeexport nahm `scripts/__pycache__/*.pyc` mit. Diese Binärdateien wurden vom alten Textscan ausgelassen. `.gitignore` erfasste unter anderem `original-overworld` nicht. | Explizite Quellcode-Dateiliste, alle Dateiinhalte geprüft, Cache-/Secret-/Pfadregeln und Prüfung aller Pfadkomponenten auf Links. `public/` wird für Git standardmäßig ausgeschlossen; nur Font und fest benannte Lizenzdateien sind freigegeben. |
-| S-03 | Niedrig, importierter Spielstand kann spätere Spielfehler auslösen | Für Gegner wurde der String `constructor` als vorhandener Pokémon-Verweis akzeptiert; dieselbe Lücke betraf Begegnungen und gespeicherte Raumobjekte. | Nur ganzzahlige, eigene Pokémon-IDs zulässig. Negativtests für Prototypnamen, Strings, Brüche und IDs außerhalb des Katalogs, auch in Komplettsicherungen. |
+| S-01 | Medium: disclosure in ordinary builds | Vite copied the entire `public/` tree to `dist/`, including prompts/importers with private machine paths. The previous Windows package was already narrower. | Disabled `publicDir`; build and development media routes use the reviewed runtime allowlist. Verify built files for unexpected content and sensitive strings. |
+| S-02 | Medium: incomplete export/Git boundary | Recursive source export included `scripts/__pycache__/*.pyc`, skipped by the old text scanner. Git ignore rules missed content including original-overworld. | Explicit source file list, scan every file's contents, reject caches/secrets/private paths and links in all path components. The rc.6.3 code-only Git policy excluded `public/` except the font and named notices; rc.6.4 deliberately expands this to reviewed developer media. |
+| S-03 | Low: imported saves could cause later failures | Enemy species accepted the string `constructor` as an existing Pokémon reference; encounters and saved room objects shared the flaw. | Require integer own-property Pokémon IDs. Negative tests cover prototype names, strings, fractions and out-of-range IDs, including full backups. |
 
-Es wurde kein bestätigter Fall von entfernter Codeausführung oder
-Zugangsdatenabfluss gefunden. Das ist eine Aussage über diesen Prüfungsumfang,
-keine Garantie für das Fehlen weiterer Fehler.
+No confirmed remote code execution or credential exfiltration was found within
+this scope. This is not a guarantee that no other issue exists.
 
-## Zusätzliche Härtungen
+## Additional hardening
 
-- Server: exakter Loopback-Host samt tatsächlichem Port; fremde Origin- und
-  Cross-Site-Anfragen abgewiesen; GET/HEAD, restriktive CSP, Frame-/Berechtigungs-
-  Header und begrenzte Header-/Request-Zeiten. Traversal und Verzeichnislinks
-  aus dem Webroot werden geprüft. Keine Schreib-API.
-- Release: genau ein Modus, öffentliche Freigaben müssen echte boolesche
-  `true`-Werte sein. Spielerpaket verweigert fehlende Medien und veralteten
-  Build. Buildmetadaten binden die Version an den geprüften Quellbestand.
-- ZIP: relative Pfade ohne Traversal, Backslashes, Laufwerksangaben oder
-  Alternate-Data-Stream-Syntax. Bestehende private Arbeitsbestände werden nicht
-  pauschal als öffentliche Dateien übernommen.
-- Laufzeit: ausschließlich exakt erwartete `nodejs.org`-HTTPS-Adressen,
-  keine Weiterleitungen, Zeit-/Größenlimit und SHA-256-Prüfung. Keine
-  nachträglichen Downloads beim Spielen.
-- Abhängigkeiten: feste direkte Versionen, vollständiges Lockfile,
-  Registry-/Integritätsprüfung und deaktivierte Installationsskripte.
-- CI: ausschließlich Leserechte, keine gespeicherten Checkout-Zugangsdaten,
-  Aktionen an vollständige Commit-SHAs gebunden, Windows-/Linux-Prüfmatrix,
-  Abhängigkeitsaudit und Exportprüfung. Keine Veröffentlichung durch CI.
+- Server: exact loopback host and actual port, reject foreign origins/cross-site
+  requests, GET/HEAD only, restrictive CSP and frame/permission headers,
+  bounded header/request timeouts, traversal and webroot-link checks, no write API.
+- Release: exactly one mode; public gates require literal boolean `true`.
+  Reject missing media and stale builds. Build metadata ties version to reviewed source.
+- ZIP: relative paths only; reject traversal, backslashes, drive names and
+  alternate-data-stream syntax. Private workspace contents are not copied wholesale.
+- Runtime: exact expected `nodejs.org` HTTPS URLs, no redirects, size/time limits
+  and SHA-256 checks. No downloads during play.
+- Dependencies: exact direct versions, complete lockfile, registry/integrity checks,
+  installation scripts disabled.
+- CI: read-only permissions, no persisted checkout credentials, actions pinned
+  to full commit SHAs, Windows/Linux matrix, dependency and export checks,
+  no automatic publication.
 
-## Prüfprotokoll
+## Validation record
 
-Die Ausgangsprüfung bestand aus 141 erfolgreichen Kernprüfungen. Das npm-Audit
-meldete am Prüftag **0 bekannte Schwachstellen** in den gesperrten
-Abhängigkeiten (Produktion und Entwicklung). Die aktuelle Node-22-Linie wurde
-gegen den offiziellen Index geprüft: **22.23.3**; der Archiv-Pin stimmt mit
-den offiziellen Prüfsummen überein.
+Initial baseline: 141 passing core tests. npm audit reported **0 known
+vulnerabilities** in locked production/development dependencies on the audit
+date. The official Node index was checked for **22.23.3**, and the archive pin
+matched official checksums.
 
-Abschließend bestanden 160 vollständige lokale Tests, 149 Kernprüfungen im
-frisch entpackten Quellcode und 9 gezielte Sicherheits-/Servertests. Der
-Windows-Starter funktionierte aus einem Ordner mit Leerzeichen bei leerer
-PATH-Variable mit gebündelter Laufzeit. 1.482 Paketdateien wurden gegen ihre
-Hashes geprüft, davon 1.451 Webdateien zusätzlich über HTTP abgerufen und
-bytegleich bestätigt. Der zweite Start erkannte den laufenden Server.
+Final rc.6.3 checks: 160 full local tests, 149 core tests in freshly extracted
+source and nine targeted security/server tests passed. The Windows launcher
+worked from a path containing spaces with an empty PATH using the bundled runtime.
+Verified hashes for 1,482 package files, and fetched all 1,451 web files over
+HTTP with byte-for-byte matches. A second launch recognized the running server.
 
-Aktuelle abschließende Ergebnisse stehen in
-[`SECURITY-VALIDATION.json`](SECURITY-VALIDATION.json). Dazu gehören die
-Sicherheitstests, vollständigen lokalen Tests, Typprüfung, kontrollierter
-Build, Quellcodeinstallation aus einem frischen Export und der portable
-Paketstart. Ein grüner lokaler Lauf ist keine Behauptung, dass die neu
-vorbereitete GitHub-Matrix bereits auf GitHub ausgeführt wurde.
+[SECURITY-VALIDATION.json](SECURITY-VALIDATION.json) records security tests,
+full tests, type checking, controlled build, fresh source installation and
+portable launch. These local checks did not themselves establish a GitHub CI run.
 
-## Verbleibende Grenzen und Release-Hindernisse
+## Remaining limits at that audit
 
-1. Originale Pokémon-Medien besitzen in diesem Projekt weiterhin keine
-   dokumentierte öffentliche Weiterverteilungsfreigabe. Das öffentliche
-   Quellcodepaket enthält keine solchen Binärmedien und ist kein spielbarer
-   Download. Charaktere/Marken und generierte Darstellungen benötigen eine
-   eigene Betrachtung; dieses Audit erteilt keine Rechtsfreigabe.
-2. Eine unabhängige saubere Windows-Installation ohne Entwicklungstools,
-   ein vollständiger manueller Spieldurchlauf und längerfristige Spielabnahme
-   sind weiterhin offen. Der lokale Pakettest ersetzt sie nicht.
-3. Keine öffentliche Repository-/Release-Erstellung oder Upload ausgeführt.
-   Alte Testpakete werden durch dieses Audit nicht nachträglich freigegeben.
-4. Kein umfassender Fuzzer, formaler Beweis, externer Penetrationstest,
-   vollständiges Audit der optionalen Python-Medienpipeline oder Prüfung aller
-   transitiven Bibliotheksquelltexte. Secret-Erkennung ist musterorientiert;
-   unbekannte Tokenformate und sensible Freitexte können übersehen werden.
-5. Lokale Schadsoftware oder manipulierte Browsererweiterungen werden nicht
-   isoliert. Hashes erkennen Veränderungen, sind keine Paketsignatur.
+1. No documented public redistribution permission for original Pokémon media.
+   The then-public code export omitted those binaries and was not playable.
+   Characters, trademarks and generated depictions require separate consideration.
+2. Independent clean Windows installation, full manual playthrough and long-term
+   acceptance were outstanding; a local package test did not replace them.
+3. No repository/release upload had yet occurred. This historical point was
+   superseded by rc.6.4 publication; older test packages were not retroactively cleared.
+4. No comprehensive fuzzing, formal proof, external penetration test, full
+   optional Python-pipeline audit or audit of every transitive library's source.
+   Pattern-based secret scans can miss unknown token formats and sensitive prose.
+5. Same-user malware and malicious browser extensions are not isolated.
+   Hashes detect changes but are not package signatures.
 
-## Primärquellen
+## Primary references
 
 - [Node.js 22.23.3](https://nodejs.org/en/blog/release/v22.23.3),
-  [offizielle Prüfsummen](https://nodejs.org/dist/v22.23.3/SHASUMS256.txt)
-  und [Versionsindex](https://nodejs.org/dist/index.json).
-- [Vite: unterstützte Release-Linien](https://vite.dev/releases).
-- [GitHub: sichere Verwendung von Actions](https://docs.github.com/en/actions/reference/security/secure-use).
-- npm-Advisory-Ergebnis über `npm audit --json` am Prüftag; aktuelle Ergebnisse
-  können sich ändern. Medienquellen stehen separat in [ASSET-STATUS.md](ASSET-STATUS.md).
+  [official checksums](https://nodejs.org/dist/v22.23.3/SHASUMS256.txt),
+  [version index](https://nodejs.org/dist/index.json).
+- [Vite release support](https://vite.dev/releases).
+- [GitHub Actions security](https://docs.github.com/en/actions/reference/security/secure-use).
+- `npm audit --json` on the audit date; current results may differ.
+  Media sources are listed in [Asset status](ASSET-STATUS.md).

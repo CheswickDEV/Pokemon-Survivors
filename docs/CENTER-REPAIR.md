@@ -1,24 +1,41 @@
-# Pokémon-Center: Korrektur in 1.0.0-rc.6.1
+# Pokémon Center correction — 1.0.0-rc.6.1
 
-Die RC6-Vorschau zeigte weiterhin einen unvollständigen Empfang. Die damalige visuelle Abnahme war falsch: Joys Position und die Zeichenreihenfolge allein konnten die fehlenden Bestandteile nicht reparieren.
+The RC6 preview still showed an incomplete reception desk. Its visual acceptance
+was incorrect: changing Joy's position and draw order could not restore missing parts.
 
-## Ursache und Änderung
+## Cause and correction
 
-Der frühere Import der Heilungsstation enthielt nur die Vordergrundebene und einen verkürzten Ausschnitt. Dadurch fehlten unter anderem der Bildschirm, die Maschinenbasis, die seitlichen Rückbauten und der Boden des Arbeitsbereichs.
+The previous healing-station import contained only the foreground layer and a
+shortened crop. The screen, machine base, rear side sections and work-area floor
+were missing.
 
-Der neue Empfang übernimmt den vollständigen Bereich `(4, 0, 7, 4)` in Metatiles aus `PokemonCenter_1F_Layout`, einschließlich beider Bildebenen. Die resultierenden 112 × 64 Pixel stimmen exakt mit dem entsprechenden Ausschnitt der vorhandenen Originalreferenz überein. Grundlage bleibt der dokumentierte pokefirered-Stand `ce6406d8c2eaf46d543c8a2606de0c3cb1951982`; es wurden keine Originalpixel übermalt.
+The replacement uses the complete metatile region `(4, 0, 7, 4)` from
+`PokemonCenter_1F_Layout`, including both image layers. The resulting 112×64
+pixels exactly match that crop in the existing reference. The source remains
+pokefirered `ce6406d8c2eaf46d543c8a2606de0c3cb1951982`; no original pixels were painted over.
 
-Der Empfang schließt nun an die Nordwand an. Die irrtümlich darunter verwendete blaue Wohnhaus-Wandreihe entfällt. Joy steht zwischen dem hinteren Arbeitsbereich und der separat gezeichneten vorderen Tresenkante. Der gesamte Arbeitsbereich hat eine zusammenhängende Kollision; die Ansprechposition liegt davor. Diese gemeinsame Vorlage verwenden alle zehn Pokémon-Center.
+Reception meets the north wall, without the incorrect blue residential wall
+row underneath. Joy stands between the rear work area and separately drawn
+front counter edge. The work area has continuous collision and the interaction
+point is in front. All ten Centers use this template.
 
-Falls ein älterer Spielstand eine Figur innerhalb des nun geschlossenen Arbeitsbereichs enthält, wird sie beim Laden an eine freie Position vor dem Empfang gesetzt. Trainer-KP, Pokémon-Ausdauer und Fortschritt werden dabei nicht verändert. Volle Ausdauerbalken werden in friedlichen Innenräumen ausgeblendet; angeschlagene Pokémon und laufende Prüfungen behalten ihre Anzeige.
+Older saves placing a character inside the newly solid area move it to a free
+position in front when loaded. Trainer HP, Pokémon stamina and progress stay
+unchanged. Full stamina bars hide in peaceful interiors; injured Pokémon and
+active trials retain them.
 
-## Prüfung
+## Validation
 
-- Vollständige Testsuite: **150 bestanden, 0 fehlgeschlagen**. Enthalten sind die Laufwege aller 58 Innenräume sowie die Empfangskollision, Joys Ebenenreihenfolge und die Wiederherstellung alter Positionen in allen zehn Centern.
-- Exakter Pixelvergleich des neuen Empfangs mit dem vollständigen Originalausschnitt: bestanden.
-- Browserprüfung in Azuria mit dem tatsächlichen Spielrenderer: Frontansicht und linke Tresenseite visuell geprüft.
-- Schwester Joy im Browser angesprochen: Pokémon-Ausdauer **12 → 100**, Trainer-KP unverändert **37**.
+- **150 tests passed, zero failures**, including all 58 interior paths, reception
+  collision, Joy's layering and old-position recovery in all ten Centers.
+- Exact pixel comparison with the complete original crop passed.
+- Browser inspection in Cerulean using the actual renderer: front and left counter.
+- Nurse Joy interaction: Pokémon stamina **12 → 100**, trainer HP unchanged at **37**.
 
-Lokale Nachweise stehen unter `qa/center-fix-full-tests.log`, `qa/center-repair-asset.json`, `qa/center-repair-front.png` und `qa/center-repair-side.png`. Die Browserbilder stammen aus einer separaten Prüfszene mit demselben Spielrenderer, nicht aus einer bearbeiteten Vorschaugrafik. Der Spielstand des Nutzers wurde dafür nicht verwendet.
+Local evidence: `qa/center-fix-full-tests.log`, `qa/center-repair-asset.json`,
+`qa/center-repair-front.png`, `qa/center-repair-side.png`.
+Images came from a separate test scene using the actual game renderer, not an
+edited preview. The user's save was not used.
 
-Diese Korrektur betrifft den Empfang und seine Einbindung. Sie ersetzt die fehlerhafte visuelle RC6-Abnahme des Centers; die früheren Kampfprüfungen werden dadurch nicht zu neuen RC6.1-Durchläufen.
+This replaces the incorrect RC6 visual acceptance of reception. Earlier combat
+tests do not thereby become new rc.6.1 playthroughs.

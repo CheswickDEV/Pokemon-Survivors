@@ -1,12 +1,12 @@
-# Lokal weiterentwickeln
+# Local development
 
-Der vollständige Entwicklerdownload ist ein eigenständiges Arbeitsprojekt.
-Code, Tests, Spielmedien, Credits, Animations-XML, vorhandene Quellbilder,
-Paletten, Raumdaten und Importprogramme sind enthalten. Persönliche Caches,
-alte QA-Ausgaben und der ungenutzte historische Ordner `public/art/pokemon/`
-gehören nicht dazu. Ein normales Klonen/Entpacken benötigt kein Git LFS.
+The complete developer download is a standalone working project. It includes
+code, tests, game media, credits, animation XML, available source images,
+palettes, room data and import tools. Personal caches, old QA output and the
+unused historical `public/art/pokemon/` folder are excluded. Normal cloning
+or extraction does not require Git LFS.
 
-## Alltag
+## Everyday workflow
 
 ```text
 npm ci
@@ -14,67 +14,89 @@ npm run doctor -- --player
 npm run dev
 ```
 
-Zum Prüfen: `npm run check`, `npm test`, `npm run check:release`,
-`npm run check:developer`, `npm run build`. Mit `npm start` den gebauten Stand
-auf Port 4173 prüfen. Ein frisch entpacktes Paket kann mit Git verwaltet werden:
-`git init -b main`, anschließend vor `git add` die Dateiliste prüfen.
-Im bereits geklonten Repository ist keine neue Initialisierung nötig.
+Validate with `npm run check`, `npm test`, `npm run check:release`,
+`npm run check:developer` and `npm run build`. Use `npm start` to inspect the
+production build on port 4173. To track a newly extracted archive with Git,
+run `git init -b main` and inspect the file list before adding files.
+Do not reinitialize an already cloned repository.
 
-## Wo ändere ich was?
+## Code map
 
-| Bereich | Einstieg |
+| Area | Starting points |
 |---|---|
-| Start, Ansichten und Oberfläche | `src/main.ts`, `src/view.ts`, `src/ui-v2.ts`, CSS unter `src/` |
-| Spielablauf und Kampf | `src/engine.ts`, `src/combat.ts`, `src/weapon-system.ts` |
-| Welt und Innenräume | `src/world.ts`, `src/kanto-*.ts`, `src/interior-*.ts` |
-| Pokémon, Trainer und Animationen | `src/pokemon-motion.ts`, `src/pokemon-shiny.ts`, `src/trainer-*.ts` |
-| Fortschritt und Spielstände | `src/save.ts`, `src/progress.ts`, `src/quests.ts` |
-| Ton und Rufe | `src/audio.ts`, `src/cry-audio.ts`, `public/audio/` |
-| Bilder, Quellen und Credits | `public/art/`, `docs/asset-sources/` |
-| Tests | `tests/*.test.ts`; ergänzende Proben und Fixtures im selben Ordner |
-| Server, Build und Pakete | `server.mjs`, `vite.config.mjs`, `scripts/`, `release-config/` |
+| Startup, views and interface | `src/main.ts`, `src/view.ts`, `src/ui-v2.ts`, CSS in `src/` |
+| English/German localization | `src/i18n.ts`, `src/locales/en.json`, `src/settings.ts` |
+| Simulation and combat | `src/engine.ts`, `src/combat.ts`, `src/weapon-system.ts` |
+| World and interiors | `src/world.ts`, `src/kanto-*.ts`, `src/interior-*.ts` |
+| Pokémon, trainers and animation | `src/pokemon-motion.ts`, `src/pokemon-shiny.ts`, `src/trainer-*.ts` |
+| Progress and saves | `src/save.ts`, `src/progress.ts`, `src/quests.ts` |
+| Sounds and cries | `src/audio.ts`, `src/cry-audio.ts`, `public/audio/` |
+| Images, sources and credits | `public/art/`, `docs/asset-sources/` |
+| Tests | `tests/*.test.ts`; additional probes and fixtures in the same folder |
+| Server, build and packaging | `server.mjs`, `vite.config.mjs`, `scripts/`, `release-config/` |
 
-Die TypeScript-Dateien sind die bearbeitbaren Quellen, nicht das gebündelte
-JavaScript in `dist/`. Bilder können mit einem beliebigen geeigneten Bildeditor
-bearbeitet werden. Transparenz, Atlasmaße und Animationsmetadaten erhalten,
-wenn die bestehende Darstellung weiterverwendet wird.
+Edit the TypeScript sources, not bundled JavaScript in `dist/`. Use any suitable
+image editor. Preserve transparency, atlas dimensions and animation metadata
+when retaining the existing rendering layout.
 
-## Bilder und andere Laufzeitmedien ändern
+## Languages
 
-1. Gewünschte Datei unter `public/` bearbeiten. Herkunft und Lizenz neuer
-   Inhalte dokumentieren. PNGs und Quelldaten sind normale Repositorydateien.
-2. Neue Laufzeitdateien gezielt anmelden, zum Beispiel mit
-   `npm run assets:refresh -- art/mein-bild.png` (Pfad ohne `public/`).
-   Das trägt die Datei mit Hash und Bytezahl in beide Medienlisten ein.
-   Zusätzliche reine Bearbeitungsquellen, etwa XML oder Paletten, nur in
-   `release-config/developer-files.json` aufnehmen.
-3. `npm run assets:refresh` aktualisiert Bytezahlen und SHA-256 der gelisteten
-   Laufzeitmedien. Es nimmt keine beliebigen Dateien automatisch auf.
-4. Falls nötig Ladepfad/Atlasbeschreibung in `src/` anpassen.
-   `npm run doctor -- --player`, Tests und Build ausführen, Darstellung prüfen.
-5. Geänderte Bilder, Metadaten, Credits und Manifeste zusammen committen.
+English is the default. German remains selectable in camp and Settings, and
+`profile.settings.language` persists through normal saves and full backups.
+Old profiles default to English. Language changes do not change simulation
+IDs, stored quests, Pokémon IDs or save format.
 
-Die Positivlisten verhindern, dass persönliche Rohdateien unbemerkt im
-Spielerbuild landen. Der Entwicklerdownload enthält zusätzlich bewusst die
-bearbeitbaren Quellen und Werkzeuge; der Webserver liefert nur Spielmedien aus.
-Neue Code-/Dokumentationsdateien in `source-files.json` aufnehmen.
-Alle Listen verwenden relative Pfade mit `/`.
+Legacy German game text remains the canonical source for generated data and
+existing save messages. `src/locales/en.json` maps that text to English.
+`translateText` performs a longest-first, single-pass translation with word
+boundaries; it never translates its own replacements. Prefer complete messages
+over ambiguous short fragments. For dynamic messages, include all literal
+parts and check the resulting English sentence with real values.
 
-## Optionale Grafikwerkzeuge
+DOM localization runs at render boundaries and keeps original text in a
+WeakMap for reversible switching. It changes text and accessible labels only,
+never IDs, input values, data attributes, URLs or HTML structure. Phaser labels
+and canvas map text use the same translator. World labels are rebuilt when the
+language changes. Number formatting follows the selected locale. Pokédex search
+indexes both names.
 
-Bereits enthaltene Grafiken können direkt geändert werden. Die folgenden
-Werkzeuge werden nur für bewussten Neuimport oder erneutes Packen benötigt.
+When adding visible text, add its English entry, check both languages and
+extend the relevant tests. Do not send text to an online translation service
+at runtime. Preserve upstream credits, legal notices and source identifiers.
 
-**Node-Bildwerkzeuge:** In einem Terminal in `tools/assets/` ausführen:
+## Editing runtime media
+
+1. Edit a file under `public/`. Document the source and license of new content.
+   PNGs and editing sources are ordinary repository files.
+2. Register new runtime files explicitly, for example
+   `npm run assets:refresh -- art/my-image.png` (without `public/`).
+   This records the path, hash and byte count in both media lists. Add editing-only
+   sources such as XML and palettes to `release-config/developer-files.json`.
+3. Run `npm run assets:refresh` to refresh sizes and SHA-256 hashes of listed
+   runtime files. It does not recursively include arbitrary files.
+4. Update loading paths or atlas metadata in `src/` if needed. Run the doctor,
+   tests and build, and inspect the result in the browser.
+5. Commit images, metadata, credits and manifests together.
+
+Allowlists prevent personal raw files from entering the player build.
+The developer archive deliberately includes editing sources and tools, while
+the web server serves only runtime files. Add new code/documentation files to
+`release-config/source-files.json`. Lists use relative paths with `/`.
+
+## Optional image tools
+
+Included graphics can be edited directly. These tools are only needed for
+deliberately reimporting or repacking them.
+
+**Node tools:** open a terminal in `tools/assets/` and run:
 
 ```text
 npm ci
 npm audit
 ```
 
-Danach ins Projektverzeichnis zurückwechseln. `sharp` und seine nativen
-Bibliotheken bleiben isoliert unter `tools/assets/node_modules/`.
-Die drei portablen Importer verwenden diese lokale Installation:
+Return to the project root afterward. sharp and its native libraries stay in
+`tools/assets/node_modules/`. These portable importers use that installation:
 
 ```text
 node public/art/kanto-v6/import-buildings.mjs
@@ -82,14 +104,13 @@ node public/art/interiors-v7/import-assets.mjs
 node public/art/original-overworld/import-assets.mjs
 ```
 
-Der Gebäudeimport nutzt die mitgelieferten `generated/*.png`. Innenraum- und
-Weltimport nutzen gepinnte Quellstände; fehlende Rohdaten können von GitHub
-geladen werden. Die Befehle überschreiben ihre jeweiligen erzeugten Medien
-und Metadaten: vorher eigenen Arbeitsstand sichern, danach Änderungen prüfen
-und `npm run assets:refresh` ausführen.
+The building importer uses included `generated/*.png` sources. Interior and
+overworld importers use pinned source revisions and may download missing raw
+data from GitHub. They overwrite their generated media and metadata: back up
+your work first, inspect the changes, then run `npm run assets:refresh`.
 
-**Python-Bildwerkzeuge:** Python 3.12 oder neuer mit passender Pillow-Unterstützung
-separat bereitstellen. Unter Windows eine lokale Umgebung verwenden:
+**Python tools:** provide Python 3.12 or a compatible newer version with Pillow
+support. On Windows, use a local environment:
 
 ```text
 py -3.12 -m venv .venv
@@ -97,36 +118,32 @@ py -3.12 -m venv .venv
 .venv\Scripts\python scripts/import-trainer-diagonals.py
 ```
 
-Auf macOS/Linux entsprechend `python3 -m venv .venv` und
-`.venv/bin/python` verwenden. Aktivierung der Umgebung ist nicht erforderlich.
-Pillow ist in `requirements-assets.txt` festgelegt. Die übrigen Importer unter
-`scripts/` sowie Python-Importer in den Medienordnern beschreiben ihre Eingaben
-im Dateikopf. Der Kanto-Datenimport nutzt nur die Standardbibliothek.
+On macOS/Linux use `python3 -m venv .venv` and `.venv/bin/python`.
+Activation is unnecessary. Pillow is pinned in `requirements-assets.txt`.
+Other importers under `scripts/` and the media folders describe their inputs
+in their file headers. The Kanto data importer uses the standard library only.
 
-Die mitgelieferten generierten Quellbilder sind direkt bearbeitbar. Für sie
-besteht keine Abhängigkeit von einem KI-Konto; die historischen Prompts dienen
-der Herkunftsdokumentation, nicht als Zusage einer identischen Neugenerierung.
-Animationen liegen mit Credits und XML vor; ein erneuter Upstream-Import
-kann Internet benötigen. Die Python-Pipeline wurde in diesem Release nicht
-vollständig erneut ausgeführt.
+Included generated source images are directly editable; no AI account is
+required. Historical prompts document provenance, not a promise of identical
+regeneration. Animations include credits and XML; upstream reimport may need
+internet access. The entire Python pipeline has not been rerun for this release.
 
-## Pakete und Beiträge
+## Packages and contributions
 
-`npm run release:developer` erzeugt den vollständigen Entwicklerdownload.
-`npm run check:developer` prüft denselben Bestand ohne ZIP-Erzeugung.
-Beide verweigern fehlende/geänderte Laufzeitmedien, private Pfade, bekannte
-Secret-Muster und unzulässige Dateipfade.
+`npm run release:developer` creates the full developer archive;
+`npm run check:developer` checks the same files without creating a ZIP.
+Both reject missing/changed runtime media, private paths, known secret
+patterns and invalid file paths.
 
-`npm run release:source` ist ein zusätzlicher Codeexport ohne Pokémon-Bilder
-und Rufe. Dort laufen `npm run test:core` und ein Code-Build;
-`npm run test:available` wählt bei vollständigem Bestand sämtliche Tests.
-Ein Entwicklerpaket mit fehlenden Dateien bricht bei dieser Auswahl ab.
+`npm run release:source` creates the smaller export without Pokémon images or
+cries. It supports `npm run test:core` and a code build.
+`npm run test:available` runs all tests when the full media set is present;
+an incomplete developer package fails instead of silently falling back.
 
-`DEVELOPER-FILES.json` enthält die Prüfsummen des ausgelieferten Pakets. Nach
-eigenen Änderungen ist es ein historisches Inventar; erst der nächste Export
-erzeugt es neu. `DEVELOPER-PACKAGE.json` kennzeichnet den vollständigen Bestand
-und den getrennten Lizenzstatus.
+`DEVELOPER-FILES.json` records checksums at export time. After your edits it is
+a historical inventory; the next export regenerates it.
+`DEVELOPER-PACKAGE.json` identifies the full contents and separate license status.
 
-Die GitHub-CI prüft Code/Build auf Windows und Linux und erzeugt ausschließlich
-den kleinen Codeexport als CI-Artefakt. Sie lädt keine Originalmedien nach und
-veröffentlicht keinen Release. Für Pull Requests siehe [Mitmachen](../CONTRIBUTING.md).
+GitHub CI checks Windows and Linux and produces a smaller code-only artifact.
+It does not download original media or publish releases. See
+[Contributing](../CONTRIBUTING.md) for pull requests.

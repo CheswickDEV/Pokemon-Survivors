@@ -1,74 +1,134 @@
-# Spielanleitung
+# How to play
 
-## Fünf Laufarten
+English is the default. Select **English / Deutsch** in camp or Settings.
+The choice is saved locally and included in full backups.
 
-| Laufart | Ziel |
+## Five run modes
+
+| Mode | Objective |
 |---|---|
-| Lernlauf | 8 Minuten, danach Bisaflor innerhalb einer Minute besiegen; mehr EP |
-| Expedition | 20 Minuten, danach einen wechselnden Wächter innerhalb von zwei Minuten besiegen |
-| Endlos | Räumlich unendlicher Auenwald und wiederkehrende, stärkere Bosszyklen |
-| Kanto-Story | 27 Etappen, acht Orden, Team Rocket, Top Vier, Champion und Mewtu |
-| Bossansturm | 15 Bosse in der Prüfungsarena; je 2 Minuten auf Standard, 4 auf Veteran, 7 auf Meister; Dreierteam ab Start, Verbesserung nach jedem Sieg |
+| Learning Run | Survive 8 minutes, then defeat Venusaur within one minute; increased XP |
+| Expedition | Survive 20 minutes, then defeat a rotating guardian within two minutes |
+| Endless | An endless Auenwald landscape and recurring, stronger boss cycles |
+| Kanto Story | 27 stages, eight badges, Team Rocket, Elite Four, Champion and Mewtwo |
+| Boss Rush | 15 bosses in the Trial Arena; 2 minutes each on Standard, 4 on Veteran, 7 on Master; three active partners from the start and an upgrade after each victory |
 
-**Entspannt, Standard, Veteran und Meister** sind unabhängig von der Laufart wählbar. Höhere Stufen verstärken Gegner, Wellen und Bossdruck. Veteran/Meister geben zusätzliche Münzen aus Quests, Truhen und besonderen Gegnern. Die Einstellungen gelten ab einem neuen Lauf; Fortsetzen behält seine gespeicherte Schwierigkeit.
+Choose **Relaxed, Standard, Veteran or Master** independently of run mode.
+Higher settings increase enemy strength, waves and boss pressure. Veteran and
+Master award extra coins from quests, chests and special enemies. Changes apply
+to new runs; continuing preserves the saved difficulty.
 
-Bisaflor, Bibor, Onix, Turtok, Arkani, Gengar, Sichlor, Relaxo, Garados, Glurak, Arktos, Zapdos, Lavados, Dragoran und Mewtu besitzen unterschiedliche Angriffsmuster. Bei niedrigen KP greifen sie schneller an. Der genaue Gefahrenbereich bleibt auch bei reduzierten Effekten sichtbar. Das **Fortschrittsbuch** erklärt die Muster und hält zehn Erfolgsabzeichen fest.
+Venusaur, Beedrill, Onix, Blastoise, Arcanine, Gengar, Scyther, Snorlax, Gyarados,
+Charizard, Articuno, Zapdos, Moltres, Dragonite and Mewtwo have distinct attack
+patterns. Attacks accelerate at low HP. Exact danger areas remain visible with
+reduced effects. The Progress Journal explains patterns and records ten achievements.
 
-Bossphasen wechseln bei 65 % und 30 % KP: versetzte Folgeschläge und gerufene
-Verstärkung erhöhen den Druck. Levelaufstiege bieten drei zufällige, passende
-Verbesserungen aus Partnertraining, Entwicklungen und 18 Ausrüstungen; kürzlich
-angebotene Karten erscheinen seltener. Gewöhnlich/Selten/Episch vergeben 1/2/3 Ränge; konkrete Vorher-/Nachherwerte stehen auf der Karte. Acht zusätzliche Talente verändern den Spielablauf: Nachbild, Sammelwelle, Attacken-Echo, Typenresonanz, Mutiger Schritt sowie die legendären Zeitfalte, Phönixfeder und Dreiklang. Neue legendäre Angebote enthalten immer einen solchen Effekt. Drei Talentplätze; höherwertige Angebote können schwächere Talente ersetzen. Auslöser, Stärke und Abklingzeit stehen auf der Karte und im Teammenü.
+Boss phases change at 65% and 30% HP, adding staggered follow-up attacks and
+reinforcements. Level-ups offer three suitable random upgrades from partner
+training, evolutions and 18 equipment items. Recently offered cards appear less
+often. Common/Rare/Epic upgrades grant 1/2/3 ranks, with before/after values.
 
-**Shinys:** Neue wilde Pokémon und Fangbegegnungen haben eine Chance von 1:65.536
-auf ihre besondere Farbvariante. Nach dem Besiegen bleibt eine Fanggelegenheit.
-Ein gefangenes Shiny bleibt bei Entwicklung und Speichern erhalten und lässt
-sich im Pokédex als Shiny-Startpartner wählen. Es hat dieselben Kampfwerte.
+Eight talents add gameplay effects: Afterimage, Gathering Wave, Attack Echo,
+Type Resonance, Brave Step, Time Fold, Phoenix Feather and Triad. New legendary
+offers always contain such an effect. There are three talent slots; higher
+rarity offers may replace weaker talents. Cards and the team menu describe
+triggers, power and cooldowns.
 
-In Kanto erklären beaufsichtigte Baustellensperren noch fehlende Voraussetzungen.
-Wohnhäuser sind zugänglich; Arenen und die Liga benötigen ihren jeweiligen
-Fortschritt. Bereits erschienene Gegner verfolgen dich auch in Städte, während
-dort keine neuen Wildgegner entstehen. Prüfungen beginnen an deinem Standort.
+**Shinies:** new wild Pokémon and capture encounters have a 1 in 65,536 chance
+of a special color variant. Defeating one leaves a capture opportunity. Captured
+Shinies persist through evolution and saving and can be selected as starting
+partners in the Pokédex. Their combat stats are unchanged.
 
-## Steuerung und Spielaufbau
+Kanto's staffed construction barriers explain missing prerequisites. Homes are
+accessible; Gyms and the League depend on progress. Existing enemies can follow
+you into towns, but new wild enemies do not spawn there. Trials start at your position.
 
-| Taste | Aktion |
+## Controls and team building
+
+| Input | Action |
 |---|---|
-| WASD / Pfeile | Laufen |
-| Leertaste | Ausweichschritt mit 0,30 s Schutz, vier Sekunden Abklingzeit |
-| E | Tür, NPC, Fangangebot, Truhe oder Quest bedienen |
-| Tab | Team, Wechsel, Werte und Entwicklungen |
-| M | Originale Kanto-Regionskarte und Reisetagebuch; Mausrad zoomt, linkes Ziehen verschiebt |
-| Esc | Pause, Einstellungen und Speichern |
-| 1 / 2 / 3 | Verbesserung auswählen |
-| Gegner anklicken | Fokusziel setzen |
+| WASD / arrows | Move |
+| Space | Dodge with 0.30 s protection and a four-second cooldown |
+| E | Use a door, NPC, capture offer, chest or quest |
+| Tab | Team, switching, stats and evolutions |
+| M | Original Kanto region map and travel journal; wheel to zoom, left-drag to pan |
+| Esc | Pause, settings and saving |
+| 1 / 2 / 3 | Select an upgrade |
+| Click an enemy | Set the focused target |
 
-Beim Fensterwechsel läuft das Spiel weiter; **Esc pausiert bewusst**. Browser und Betriebssystem können Hintergrundtabs drosseln. Im Menü pausieren alle Kampfzeiten. HUD-Größe 70–150 %, Lautstärke und reduzierte Effekte sind einstellbar.
+The game continues when you switch windows; **press Esc to pause deliberately**.
+Browsers and operating systems may throttle background tabs. Menus pause all
+combat timers. Settings include HUD size (70–150%), volume and reduced effects.
 
-Alle **151 Pokémon**, **72 Entwicklungswege** und sechs Trainer aus Generation I–III sind enthalten. Jeder Partner besitzt eine charakteristische Attacke mit acht Rängen. Drei Partner kämpfen gleichzeitig, bis zu sechs reisen im Team. Im normalen Lauf öffnen Trainerlevel 4 und 8 die zusätzlichen Aktivplätze. Reservewechsel haben 20 Sekunden Sperrzeit.
+All **151 Pokémon**, **72 evolution paths** and six trainers from Generations
+I–III are included. Each partner has one signature move with eight ranks.
+Three partners fight at once; up to six travel on the team. Normal runs unlock
+extra active slots at trainer levels 4 and 8. Switching reserves has a 20-second
+cooldown.
 
-Aktive, einsatzfähige Pokémon sammeln eigene Kampf-EP; diese bestimmen ihre Entwicklung. Trainer-EP aus Kristallen liefern Verbesserungen. Entwicklungen bewahren Training und Größe. Steinentwicklungen brauchen ihren Stein, ausreichendes Pokémon-Level und Angriffsrang 3; Tauschentwicklungen verwenden eine Link-Marke. Das Teammenü zeigt die konkreten Bedingungen. In Kanto gilt zuerst Pokémon-Levelgrenze 16; die Orden erhöhen sie auf 22/28/34/40/46/52/58/70, der Championstatus auf 100. Jeder Orden gibt zusätzlich +3 % Team-Attackenschaden und 2 Prozentpunkte Schutz vor Trainer-Schaden. Bestehende höhere Level bleiben erhalten, wirken im Kampf aber nur bis zur aktuellen Grenze.
+Active partners that are fit to fight earn combat XP toward their own evolution.
+Trainer XP from crystals grants upgrades. Evolution preserves training and
+sprite size. Stone evolutions need their stone, sufficient Pokémon level and
+move rank 3; trade evolutions use a Link Token. The team menu shows requirements.
+Kanto starts with a Pokémon level cap of 16. Badges raise it to
+22/28/34/40/46/52/58/70; Champion status raises it to 100. Each badge also grants
++3% team move damage and two percentage points of trainer damage reduction.
+Existing higher levels are preserved but combat uses the current cap.
 
-Forschungsziele im Wald garantieren die erste Begegnung nach 24 Sekunden im Lernlauf bzw. einer Minute in der Expedition. Alle 151 Arten sind erreichbar. Besiege eine Begegnung, gehe hin und drücke E. Ein Ball garantiert den Fang; identische Teampartner lassen sich kostenlos erforschen. Gefangene Arten werden als Startpartner freigeschaltet.
+A forest research target guarantees the first encounter after 24 seconds in
+Learning Run or one minute in Expedition. All 151 species are available.
+Defeat an encounter, approach and press E. One ball guarantees the catch.
+Existing team species can be researched without a ball. Registered species
+become available as starting partners.
 
-18 passive Gegenstände konkurrieren um sechs Plätze und lassen sich fünfmal ausbauen. Hinzu kommen Pokébälle und sechs Entwicklungsmittel. Das Fortschrittsbuch erklärt die Werte, der Markt zeigt alle aktuell verfügbaren Gegenstände.
+18 passive items compete for six slots and have five ranks each. Poké Balls
+and six evolution items are separate. The Progress Journal explains stats;
+shops display their currently available items.
 
-## Quests, Welt und Heilung
+## Quests, world and healing
 
-Der Wald besitzt drei mehrstufige Aufgaben: verstreute Vorratskisten mit Wachen sichern, drei Blütenwellen schützen und Dornenherde samt Bibor-Wächter bezwingen. Belohnungen sind einmalig: Münzen, EP, Bälle, eine Auswahl und ein Laufsegen. Seltene Lichtungen und Eliten liefern Truhen. Die drei Hauptaufträge werden nicht in jeder Landschaftskachel wiederholt.
+The forest has three multi-stage quests: recover guarded supply crates, protect
+flowers through three waves, and destroy thorn nests plus a Beedrill guardian.
+Rewards are one-time coins, XP, balls, a reward choice and a run blessing.
+Rare clearings and elites provide chests. The three main quests do not repeat
+in every landscape tile.
 
-Alle 27 Storyprüfungen haben eigene Kampfprofile mit drei Phasen, versetzten Mustern und auf Meister angekündigten Angriffen vor die Laufrichtung. Ausweichen und Richtungswechsel sind entscheidend. Die Testmethoden und Ergebnisse stehen in der [RC6-Prüfung](RC6-VALIDATION.md).
+All 27 story trials have their own three-phase combat profiles, staggered
+patterns and, on Master, telegraphed attacks ahead of your movement.
+Dodging and direction changes matter. See [RC6 validation](RC6-VALIDATION.md).
 
-Kanto hat 51 Orte, 57 Verbindungen und 58 Gebäude. Center, Märkte und verfügbare Questgebäude sind betretbar. E an der Tür öffnet den Raum, E beim NPC erholt Pokémon, öffnet den Einkauf oder startet eine Prüfung. Arenakämpfe finden in den Arenen statt. Wege öffnen über Storyfortschritte. Die Karte ist eine zusammenhängende, verdichtete Echtzeit-Adaption; komplexe Dungeons sind keine vollständigen Nachbauten der Originalräume und Rätsel.
+Kanto has 51 locations, 57 connections and 58 buildings. Centers, Marts and
+available quest buildings are enterable. E at a door opens the room; E near an
+NPC restores Pokémon stamina, opens shopping or starts a trial. Gym battles
+take place indoors. Story progress opens routes. This is a connected, compressed
+real-time adaptation; complex dungeons do not recreate every original room or puzzle.
 
-Heilung bleibt knapp: normale Gegner haben 0,2 % Trankchance mit mindestens 60 Sekunden Abstand. Tränke heilen zehn Basis-KP. Heilattacken teilen eine Sperrzeit. Die Notversorgung kostet 75 Münzen, heilt zehn Basis-KP und ist auf zwei Käufe pro Lauf begrenzt. Bossflächen erschöpfen Partner nur, wenn der Trainer tatsächlich getroffen wird; eine Fläche allein auf einem automatisch folgenden Pokémon verursacht keinen Ausdauerverlust. Nach fünf Sekunden ohne Treffer regenerieren aktive Partner, im Bosskampf mit 2,5 Ausdauer pro Sekunde. Center füllen ausschließlich die Ausdauer aller Pokémon auf und beenden deren Erholungspause. Trainer-KP werden dort nicht geheilt. Der Neustart nach einer Niederlage bleibt eine eigene Wiederbelebung mit Münzverlust. Bossansturm regeneriert zwischen Prüfungen Team-Ausdauer, aber keine Trainer-KP.
+Healing is scarce. Ordinary enemies have a 0.2% potion chance, at least 60
+seconds apart. Potions heal ten base HP. Healing moves share a cooldown.
+Emergency Supplies cost 75 coins, heal ten base HP and are limited to two
+purchases per run. Boss areas drain partner stamina only when the trainer is
+actually hit; an area touching only an automatically following Pokémon does
+not. Active partners regenerate after five seconds without a hit, at
+2.5 stamina/second during a boss fight.
 
-## Sichern und Aktualisieren
+Centers restore all Pokémon stamina and end recovery pauses; they **do not
+heal trainer HP**. Restarting after a defeat is a separate revival with a coin
+loss. Boss Rush restores team stamina between trials, but not trainer HP.
 
-**Wald, Story und Bossansturm haben getrennte Speicherplätze**, jeweils mit zwei wechselnden Kopien. Autosave alle 15 Sekunden und nach Entscheidungen. Das Fortsetzen öffnet einen laufenden Kampf zunächst pausiert.
+## Saves and updates
 
-- **Alles sichern** im Camp bzw. **Alle Spielstände & Profil sichern** im Pausenmenü exportiert Pokédex, Fortschrittsbuch, Einstellungen und alle drei Laufstände.
-- **Spielstand importieren** erkennt vollständige Sicherungen und ältere Einzelrun-Dateien. Vor dem Ersetzen wird der Umfang angezeigt. Vollständige Wiederherstellung erfolgt in einer gemeinsamen Datenbanktransaktion.
-- Format 1–5 wird auf Format 6 übernommen. Alte Läufe erhalten Standard-Schwierigkeit. Alte Siege bekommen keine erfundene Schwierigkeitswertung.
-- Vor Browser-/Rechnerwechsel oder Update sichern. Daten liegen im jeweiligen Browserprofil und unter genau `127.0.0.1:4173`; andere Adressen, Ports und Browser haben getrennte Speicher. Es gibt keine Cloud-Synchronisierung.
-- Nur ein Tab darf gleichzeitig speichern. Beschädigte neueste Kopien fallen auf die vorherige gültige Kopie zurück. Prüfsummen erkennen Beschädigung, nicht absichtliche Manipulation.
+Forest, story and boss rush have **separate slots**, each with two alternating
+copies. Autosave runs every 15 seconds and after decisions. Continuing a saved
+battle initially pauses it.
 
+- **Back up everything** in camp or **Back up all saves & profile** in the pause
+  menu exports the Pokédex, journal, settings and all three slots.
+- **Import save** recognizes full backups and older single-run files. It shows
+  the replacement scope first. Full restore uses one database transaction.
+- Formats 1–5 migrate to format 6. Old runs use Standard difficulty; past wins
+  are not assigned invented difficulty ratings.
+- Back up before changing browsers/computers or updating. Storage belongs to
+  the browser profile and exact host/port, such as `127.0.0.1:4173`.
+  Other addresses, ports and browsers have separate storage. There is no cloud sync.
+- Only one tab can write saves. A damaged newest copy falls back to the previous
+  valid copy. Checksums detect corruption, not deliberate tampering.

@@ -1,116 +1,102 @@
-# Innenräume und Center — 1.0.0-rc.4
+# Interiors and Centers — 1.0.0-rc.4
 
-Geprüft am 20. Oktober 2026.
+Checked October 20, 2026. Historical report.
 
-**rc.6.2:** Alle 58 Räume mit laufender Engine, Trainer und Pokémon erneut vor und
-nach den Änderungen angesehen. Tresenpersonal, Teppichanschlüsse, NPC-Fußanker
-und die Oberflächenzuordnung wurden korrigiert. Die aktuelle Sichtprüfung mit
-Raumliste und Bildnachweisen steht in [Innenraumprüfung](INTERIOR-VISUAL-AUDIT.md).
+**rc.6.2:** all 58 rooms were inspected again before/after changes using the
+running engine, trainer and Pokémon. Counter staff, rugs, NPC foot anchors and
+surface selection were corrected. See [visual audit](INTERIOR-VISUAL-AUDIT.md).
 
-**rc.6.1:** Die frühere visuelle Freigabe der Center-Rezeption war unzureichend.
-Die vollständigen Originalkacheln ersetzen nun den unvollständigen Vordergrund.
-Aktuelle Beschreibung und Nachweise: [Center-Korrektur](CENTER-REPAIR.md).
+**rc.6.1:** the earlier visual acceptance of Center reception was insufficient.
+Complete original tiles replaced the incomplete foreground. See
+[Center repair](CENTER-REPAIR.md).
 
-**RC6-Nachprüfung:** Alle 58 Räume erneut im tatsächlichen Raumrenderer angesehen.
-Die Center-Rezeption hatte zusätzlich einen Tiefensortierfehler: Die Heilmaschine
-zeichnet jetzt die hinteren 32 Quellpixelzeilen hinter Joy und die unteren 16
-Zeilen vor ihr. Der Originalausschnitt bleibt unverändert. Joys Standpunkt und
-Bills Bücherregal wurden angepasst. Alle 88 NPC-Zugänge sind erreichbar; zehn
-Center erhalten Trainer-KP exakt. Ergebnisse: [RC6-Prüfung](RC6-VALIDATION.md).
+**RC6 follow-up:** inspected all rooms with the actual renderer. Splitting
+reception's rear 32 source rows and front 16 rows corrected depth ordering,
+with changes to Joy and Bill's bookcase. All 88 NPC approaches were reachable
+and ten Centers preserved trainer HP. This layering fix alone did not restore
+the missing reception parts, subsequently repaired in rc.6.1.
 
-## Center-Regel
+## Center rule
 
-Schwester Joy füllt ausschließlich die Ausdauer sämtlicher Team-Pokémon auf,
-einschließlich Reserven und erschöpfter Partner. Eine laufende Erholungspause
-endet. Die Trainer-KP bleiben exakt unverändert, auch mit Heilungsboni,
-wiederholtem Besuch oder Speichern/Laden. Die bestehende Sperrzeit von
-20 Sekunden, der Rastpunkt und einmalige Besuchsvorräte bleiben erhalten.
+Nurse Joy restores only the stamina of all team Pokémon, including reserves
+and exhausted partners, and ends recovery pauses. Trainer HP remains exactly
+unchanged, including with healing bonuses, repeated visits and save/load.
+The 20-second cooldown, rest point and one-time visit supplies remain.
 
-Der Neustart nach einer Niederlage ist weiterhin eine separate Wiederbelebung
-mit Münzverlust. Tränke, begrenzte Notversorgung und Kampfheilung behalten ihre
-bisherigen Regeln.
+Restarting after defeat is a separate revival with coin loss. Potions, limited
+Emergency Supplies and combat healing retain their rules.
 
-## Gefundene Darstellungsprobleme
+## Visual problems and corrections
 
-Die bisherigen Möbelbilder enthielten unterschiedlich große transparente Ränder.
-Beispielsweise belegte die Arenastatue nur die linke obere Hälfte ihres Bildes;
-Regale enthielten acht leere Pixel unter ihrem sichtbaren Boden. Das Bildzentrum
-und die Unterkante waren deshalb keine verlässlichen Anker. Zusätzliche,
-unterschiedliche Vergrößerungen verzerrten die Pixelgrößen.
+Furniture images had different transparent margins. The Gym statue occupied
+only the upper-left half; shelves had eight blank pixels beneath the visible
+base. Image centers/bottom edges were therefore unreliable anchors, and
+different magnifications distorted pixel size.
 
-Der Renderer verwendet jetzt die tatsächlichen sichtbaren Ausschnitte der
-unveränderten Quelldateien. Ein Quellpixel entspricht bei jedem Möbelstück zwei
-Weltpixeln. Bild, Standfläche, Tiefensortierung und Minimap greifen auf dieselben
-Maße zurück. In Centern wurden Tresen, Schwester Joy, Wartebereich und Teppich
-neu aufeinander abgestimmt. Der Teppich beginnt vor dem Tresen.
+Rendering now uses actual visible crops of unchanged sources. Every source
+pixel becomes two world pixels. Image, footprint, depth order and minimap share
+dimensions. Center counters, Joy, waiting areas and rugs are aligned; rugs start
+in front of the counter.
 
-## Inhaltsprüfung
+## Content
 
-Alle **58 Räume, 275 Möbel und 88 NPCs** sind inventarisiert. Alle zehn Center
-verwenden denselben korrigierten Raumplan, einschließlich Azuria.
+Inventoried **58 rooms, 275 props and 88 NPCs**. All ten Centers, including
+Cerulean, share the corrected layout.
 
-| Gebäude | Einrichtung und Ansprechpartner |
+| Building | Interior and resident |
 |---|---|
-| Dein Zuhause | Mama, Bett, Tisch und Regal; Hinweis auf getrennte Trainer-KP und Pokémon-Ausdauer |
-| Haus des Rivalen | Schwester des Rivalen, Wohneinrichtung und Teamwechsel-Hinweis |
-| Trainerschule | Lehrerin, Bücherregale und Unterrichtstisch; eigene Pokémon-Erfahrung |
-| Nidoran-Haus | Nidoran-Freundin mit Entwicklungshinweis |
-| Fahrradladen | Fahrradhändler, Verkaufstresen und vier Fahrräder statt Schlafzimmer; kein vorgetäuschter Fahrradkauf |
-| Überfallenes Haus | Bewohnerin, Regale und Tisch; Hinweis auf Team Rocket |
-| Mr. Fujis Haus | Betreuerin und gemeinschaftliche Sitztische |
-| Namensbewerter | Namensbewerter und Arbeitszimmer; Dialog, keine vorgetäuschte Umbenennungsfunktion |
-| Pokémon-Fanclub | Vorsitzender und mehrere Sitztische |
-| Haus des Anglers | Angler und Wohnraum; Hinweis auf Küsten und Surf |
-| Prismania-Hotel | Rezeption und zwei Betten |
-| Safari-Wärter | Wärter und Arbeitszimmer; Safari-Hinweis |
-| Nachahmerin | Eigene Bewohnerin und Wohnraum |
-| Bills Küstenhaus | Bill, Laborboden und Laborgeräte; bestehende Storyprüfung |
-| Märkte und Kaufhaus | Händler hinter dem Tresen, Warenregale; Vertanias Lieferant bleibt separat erreichbar |
-| Museum und Labore | Exponate beziehungsweise Arbeitsgeräte; Museumsführer oder Wissenschaftler |
-| Arenen und Liga | Leiter und Guide, korrigierte Statuen; freie Kampffläche |
-| Höhlen, Turm, Villa und Rocket-Versteck | Passende Randobjekte; Höhlen ohne Hausteppich, bestehende Prüfungen und freie Laufwege |
+| Your home | Mom, bed, table, shelf; explains separate trainer HP/Pokémon stamina |
+| Rival's house | Rival's sister, home furniture, switching advice |
+| Trainers' School | Teacher, bookshelves, teaching table; Pokémon's own XP |
+| Nidoran House | Nidoran fan with evolution advice |
+| Bike Shop | Owner, counter, four bicycles; no simulated bike purchase |
+| Burgled House | Resident, shelves/table, Team Rocket dialogue |
+| Mr. Fuji's House | Caretaker and shared seating |
+| Name Rater | Study and dialogue, no unimplemented renaming feature |
+| Pokémon Fan Club | Chairman and several tables |
+| Fishing Guru's House | Fisherman, home setting, coast/Surf advice |
+| Celadon Hotel | Reception and two beds |
+| Safari Warden's House | Warden, study, Safari advice |
+| Copycat's House | Distinct resident and home |
+| Bill's Sea Cottage | Bill, laboratory floor/equipment, existing story trial |
+| Marts/Department Store | Clerk behind counter, shelves; Viridian delivery worker separately reachable |
+| Museum/labs | Exhibits/equipment and guide/scientist |
+| Gyms/League | Leader, guide, corrected statues, clear combat area |
+| Caves/Tower/Mansion/Rocket Hideout | Suitable edge props; no residential rug in caves; existing trials and paths |
 
-Diese Prüfung ergänzt keine mehrstöckigen Originaldungeons oder bislang nicht
-implementierten Hausfunktionen.
+No additional original dungeon floors or unimplemented house functions are claimed.
 
-## Nachweise
+## Evidence
 
-- **128 Tests bestanden**, Typprüfung und Produktionsbuild bestanden.
-- Jede der 58 Einrichtungen wurde durch den tatsächlichen Spielrenderer
-  gezeichnet und in einer vollständigen Galerie gesichtet. Frischer
-  Galeriedurchlauf ohne erfasste Konsolenwarnungen oder Fehler.
-- Kollisionsprüfung flutet jeden Raum vom Eingang aus: alle NPC-Ansprechpunkte
-  und Ausgänge erreichbar. Möbel liegen innerhalb der Räume und überdecken
-  sich nicht. Sichtbare Bildmaße und Bodenanker sind geprüft.
-- Alle zwölf dateibasierten Möbelvarianten wurden gegen die tatsächlichen
-  Alpha-Grenzen ihrer PNGs geprüft; das Fahrrad entsteht lokal im Renderer.
-- Alle zehn Center mit 1, 37, 99 und 100 Trainer-KP, sechs Partnern, Reserven,
-  Erholungspausen, Heilungsbonus, Sperrzeit, erneutem Besuch und Sicherungen
-  getestet.
-- Im Browser in Azuria: Trainer vor und nach Joy **37/100 KP**, Schiggy von
-  Erholung mit 12 Ausdauer auf volle Ausdauer. Speichern und Fortsetzen
-  bewahren diese Werte.
+- **128 tests**, type check and production build passed.
+- All 58 interiors rendered and inspected in a complete gallery; fresh run
+  without captured console warnings/errors.
+- Flood-fill checks from each entrance reach every NPC approach and exit.
+  Props stay inside rooms without overlap; visible dimensions/anchors checked.
+- Twelve file-backed prop variants checked against PNG alpha bounds; bicycles
+  are drawn locally.
+- Ten Centers tested at trainer HP 1/37/99/100, with six partners, reserves,
+  recovery, healing bonus, cooldown, repeat visits and backups.
+- Cerulean browser interaction: trainer **37/100 → 37/100 HP**, Squirtle from
+  recovery/12 stamina to full. Saving/continuing preserved those values.
 
-Lokale Belege: `qa/interior-audit.json`, `qa/interior-art-check.json`,
+Local evidence: `qa/interior-audit.json`, `qa/interior-art-check.json`,
 `qa/interior-58-after.png`, `qa/interior-center-live-after.png`,
 `qa/interior-center-room-after.png`, `qa/interior-tests.txt`.
-Diese QA-Dateien gehören nicht zum öffentlichen Quellcodeexport.
+These QA files are excluded from the public export.
 
-## Auswirkung auf die Kanto-Balance
+## Campaign balance impact
 
-Die bisherigen erfolgreichen rc.3-Storysimulationen nutzten die jetzt entfernte
-Trainer-Heilung im Center und sind kein aktueller Durchspielnachweis.
-Die unveränderte Kampfsteuerung schafft auf Standard nun:
+Earlier rc.3 successes relied on the removed trainer healing and are not current
+completion evidence. The unchanged Standard combat agent then achieved:
 
-| Starter | Geschaffte Etappen | Niederlage |
+| Starter | Stages completed | Defeat |
 |---|---:|---|
-| Bisasam | 22 von 27 | Bruno |
-| Glumanda | 18 von 27 | Pyro |
-| Schiggy | 18 von 27 | Pyro |
+| Bulbasaur | 22/27 | Bruno |
+| Charmander | 18/27 | Blaine |
+| Squirtle | 18/27 | Blaine |
 
-Der Test überspringt Reisewege, kämpft mit gewöhnlicher Bewegung, wählt
-Verbesserungen und fängt Belohnungspartner. Er kauft keine Notversorgung und
-optimiert die Teamzusammenstellung nicht wie ein erfahrener Spieler.
-Die Heilregel wurde nicht durch zusätzliche Trainer-Heilung an anderer Stelle
-ausgeglichen. Ein vollständiger manueller Kanto-Durchlauf und die Abnahme der
-Langzeitbalance unter dieser Regel stehen weiterhin aus.
+Travel is skipped; movement, upgrades and reward captures use normal rules.
+The agent does not buy Emergency Supplies or optimize the team like an expert.
+The removed healing was not compensated elsewhere. A complete human campaign
+and long-term acceptance under this rule remained outstanding.

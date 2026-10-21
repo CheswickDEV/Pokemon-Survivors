@@ -1,6 +1,6 @@
 {
   "name": "pokemon-survivors-auenwald",
-  "version": "1.0.0-rc.6.4",
+  "version": "1.0.0-rc.6.5",
   "private": true,
   "type": "module",
   "scripts": {

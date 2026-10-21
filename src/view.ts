@@ -1,3 +1,4 @@
+import {translateText} from './i18n.ts';
 import {measureTrainerSize,type DirectionSize} from './trainer-size.ts';
 import {preloadGateArt} from './gate-art.ts';
 import {preloadInteriorArt} from './interior-view.ts';
@@ -125,7 +126,7 @@ export class ForestScene extends Phaser.Scene {
   return this.image(key,rendered.key,x,y,POKEMON_WORLD_SCALE[species]*scale,alpha,state.frame).setOrigin(rendered.originX,rendered.originY);
  }
  label(key:string,text:string,x:number,y:number,color='#ffffff',size=11){
-  let label=this.labels.get(key);
+  text=translateText(text);let label=this.labels.get(key);
   if(!label){label=this.add.text(x,y,text,{fontFamily:'Trebuchet MS',fontSize:size+'px',fontStyle:'bold',color,stroke:'#253d42',strokeThickness:3}).setOrigin(.5);this.labels.set(key,label);}
   label.setText(text).setPosition(x,y).setColor(color).setDepth(1000000002);
  }

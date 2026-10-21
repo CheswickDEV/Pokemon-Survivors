@@ -1,69 +1,73 @@
-# Pokémon Survivors — 1.0.0-rc.6.4
+# Pokémon Survivors — 1.0.0-rc.6.5
 
-Ein lokales Browser-Abenteuer: Bewege einen Trainer, stelle ein automatisch
-kämpfendes Pokémon-Team zusammen und erkunde Kanto im Survivors-Spielstil.
-Fünf Laufarten, vier Schwierigkeitsstufen, 151 Pokémon und getrennte Spielstände.
+A local browser adventure: move your trainer, build a team of automatically
+battling Pokémon, and explore Kanto with Survivors-style combat.
+Five run modes, four difficulty levels, 151 Pokémon, and separate save slots.
 
-**Das vollständige Entwicklerprojekt enthält den Spielcode, alle benötigten
-Spielmedien, Tests und Werkzeuge zur lokalen Weiterentwicklung.** Es braucht
-keine Konten, API-Schlüssel, kostenpflichtigen Programme oder installierten
-Pokémon-Spiele.
+**English is the default language.** Select **English / Deutsch** in the main
+menu or **Settings** to switch at any time. Your choice is saved locally and
+included in profile backups. Pokémon names, moves, story dialogue, menus and
+combat messages follow your selection. Pokédex search accepts either language.
 
-**Lizenz:** Eigener Code steht unter **GPL-3.0-only**. Die Pokémon-Grafiken,
-Rufe und andere Fremdinhalte behalten ihre eigenen Rechte. Das gesamte Spiel
-ist daher derzeit **nicht vollständig frei lizenziert**. Eine öffentliche
-Weiterverteilungsfreigabe für diese Medien ist noch nicht dokumentiert.
-[Medien und Lizenzen](docs/ASSET-STATUS.md) · [Drittanbieterhinweise](THIRD-PARTY-NOTICES.md)
+**The complete developer download includes the game code, all current media,
+tests and tools for local development.** No account, API key, paid tool or
+installed Pokémon game is required.
 
-[Vollständiger Download (Vorabversion)](https://github.com/CheswickDEV/Pokemon-Survivors/releases/tag/v1.0.0-rc.6.4) · [Repository](https://github.com/CheswickDEV/Pokemon-Survivors)
+**License:** original project code is **GPL-3.0-only**. Pokémon graphics, cries
+and other third-party content retain their respective rights. The entire game
+is **not fully freely licensed**: permission to redistribute those media has
+not been documented. [Asset status](docs/ASSET-STATUS.md) ·
+[Third-party notices](THIRD-PARTY-NOTICES.md)
 
-## In wenigen Schritten selbst starten
+[Complete download (prerelease)](https://github.com/CheswickDEV/Pokemon-Survivors/releases/tag/v1.0.0-rc.6.5) ·
+[Repository](https://github.com/CheswickDEV/Pokemon-Survivors)
 
-Voraussetzung: [Node.js 22.x](https://nodejs.org/en/download), mindestens
-**22.23.3**, mit npm; aktueller Edge oder Chrome. Git ist zum Beitragen hilfreich,
-für einen ZIP-Download aber nicht nötig.
+## Quick start
 
-1. Das vollständige **developer.zip** entpacken, oder das vollständige Repository
-   klonen. Ein Terminal im Ordner mit `package.json` öffnen.
-2. Einmalig installieren und prüfen:
+Install [Node.js 22.x](https://nodejs.org/en/download), **22.23.3 or later in the
+22.x line**, including npm. Use a current Edge or Chrome browser. Git is useful
+for contributing but is not required for a ZIP download.
+
+1. Extract the complete **developer.zip**, or clone the repository. Open a
+   terminal in the folder containing `package.json`.
+2. Install dependencies and check the game files:
 
 ```text
 npm ci
 npm run doctor -- --player
 ```
 
-3. Zum Entwickeln starten:
+3. Start the development server:
 
 ```text
 npm run dev
 ```
 
-Die im Terminal angezeigte lokale Adresse im Browser öffnen. Änderungen unter
-`src/` werden während der Entwicklung automatisch übernommen. Terminal zum
-Beenden mit **Strg+C** schließen. Nach der ersten Installation kann lokal ohne
-Internet entwickelt und gespielt werden.
+Open the local address printed in the terminal. Changes in `src/` appear
+automatically during development. Press **Ctrl+C** in the terminal to stop.
+After the initial installation, normal local development and play work offline.
 
-Für einen gebauten Spielstand ohne Entwicklungsserver:
+To run a production build:
 
 ```text
 npm run build
 npm start
 ```
 
-Dann **http://127.0.0.1:4173/** öffnen. Spielstände werden im Browser je Adresse
-und Port getrennt gespeichert; vor einem Wechsel im Camp **Alles sichern**.
+Open **http://127.0.0.1:4173/**. Browser saves are separate for each address and
+port; choose **Back up everything** in camp before moving to another one.
 
-## Weiterentwickeln und mitmachen
+## Develop and contribute
 
-- [Entwicklerhandbuch: Codeaufbau, Grafiken ändern, Tests](docs/DEVELOPMENT.md)
-- [Installation und Problemlösung](docs/INSTALLATION.md)
-- [Alle Abhängigkeiten und Netzwerkzugriffe](docs/DEPENDENCIES.md)
-- [Spielanleitung und Steuerung](docs/GAMEPLAY.md)
-- [Beiträge und Pull Requests](CONTRIBUTING.md)
-- [Sicherheitsaudit](docs/SECURITY-AUDIT.md) · [Entwicklerpaket-Prüfung](docs/DEVELOPER-VALIDATION.md)
-- [Änderungen](CHANGELOG.md) · [Sicherheitsmeldungen](SECURITY.md)
+- [Developer guide: code layout, editing assets, tests](docs/DEVELOPMENT.md)
+- [Installation and troubleshooting](docs/INSTALLATION.md)
+- [Dependencies and network access](docs/DEPENDENCIES.md)
+- [Gameplay and controls](docs/GAMEPLAY.md)
+- [Contributing and pull requests](CONTRIBUTING.md)
+- [Security audit](docs/SECURITY-AUDIT.md) · [Developer package validation](docs/DEVELOPER-VALIDATION.md)
+- [Changelog](CHANGELOG.md) · [Reporting security issues](SECURITY.md)
 
-Vor einem Beitrag:
+Before submitting a contribution:
 
 ```text
 npm run check
@@ -73,18 +77,18 @@ npm run check:developer
 npm run build
 ```
 
-## Welche Pakete gibt es?
+## Download types
 
-| Paket | Inhalt |
+| Package | Contents |
 |---|---|
-| **developer.zip** | Vollständiges bearbeitbares Projekt mit allen aktuellen Medien, Quellenhinweisen und optionalen Importwerkzeugen; Node.js separat erforderlich |
-| **source.zip** | Kleiner Codeexport ohne Pokémon-Bilder und Rufe; für Codeprüfung geeignet, alleine nicht spielbar |
-| **Windows-x64-LOCAL-ONLY.zip** | Lokales Spielerpaket mit Laufzeit; entpacken und **Spiel starten.cmd** doppelklicken |
+| **developer.zip** | Complete editable project with current media, source credits and optional import tools; install Node.js separately |
+| **source.zip** | Smaller code export without Pokémon images or cries; useful for code review, not playable on its own |
+| **Windows-x64-LOCAL-ONLY.zip** | Local player test package with a bundled runtime; extract and double-click **Start game.cmd** |
 
-Der GitHub-Release bietet das vollständige Entwicklerarchiv als Vorabversion
-zur lokalen Weiterentwicklung. Die separate Freigabe der Fremdmedien und eine
-unabhängige vollständige Spielabnahme sind damit nicht bestätigt.
-Das Windows-Paket bleibt ein lokales Testpaket. Eigene Pakete erzeugen:
+The GitHub release provides the complete developer archive as a prerelease
+for local development. Publishing it does not confirm third-party media
+permissions or an independent full playthrough. The Windows package remains
+a local test package. To create packages yourself:
 
 ```text
 npm run release:developer
@@ -92,8 +96,8 @@ npm run release:source
 npm run release:local
 ```
 
-Dateilisten und SHA-256-Prüfsummen liegen unter `release/`.
-[GitHub-Vorbereitung und Veröffentlichung](docs/GITHUB-RELEASE.md).
+File inventories and SHA-256 checksums are written to `release/`.
+See [Preparing and publishing on GitHub](docs/GITHUB-RELEASE.md).
 
-Inoffizielles Fanprojekt; nicht mit Nintendo, GAME FREAK, Creatures oder
-The Pokémon Company verbunden.
+Unofficial fan project. Not affiliated with Nintendo, GAME FREAK, Creatures,
+or The Pokémon Company.

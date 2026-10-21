@@ -1,22 +1,22 @@
-name: Spielfehler
-description: Einen reproduzierbaren Fehler melden
+name: Game bug
+description: Report a reproducible game issue
 body:
   - type: input
     id: version
     attributes:
-      label: Spielversion, Windows-Version und Browser
-      placeholder: 1.0.0-rc.1, Windows 11, Edge
+      label: Game version, operating system, browser and language
+      placeholder: 1.0.0-rc.6.5, Windows 11, Edge, English
     validations:
       required: true
   - type: textarea
     id: reproduction
     attributes:
-      label: Schritte, erwartetes und beobachtetes Ergebnis
-      description: Bitte Laufart, Schwierigkeit, Ort, Partner und Spielzeit nennen.
+      label: Steps, expected result and actual result
+      description: Include run mode, difficulty, location, partners and game time.
     validations:
       required: true
   - type: textarea
     id: evidence
     attributes:
-      label: Weitere Hinweise
-      description: Fehlermeldung oder Screenshot. Persönliche Browserdaten bitte entfernen.
+      label: Additional information
+      description: Error message or screenshot. Remove personal browser data first.

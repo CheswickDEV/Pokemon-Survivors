@@ -1,73 +1,161 @@
-# Auenwald und Kanto 0.8.0
+# Auenwald and Kanto 0.8.0
 
-## Auenwald ohne Rand
+Historical design notes for versions 0.6–0.8. Later release candidates change
+boss rotation, healing, access rules, save format and maps; consult
+[Gameplay](docs/GAMEPLAY.md) for current behavior.
 
-Alle Waldmodi erlauben Bewegung über die frühere 3072-Pixel-Grenze hinaus, auch in negative Koordinaten. 512-Pixel-Abschnitte entstehen aus dem Lauf-Seed. Nur die Umgebung wird dargestellt; beim Zurückkehren sieht ein Ort wieder gleich aus. Die drei bisherigen Waldaufträge stehen je einmal an ihren festen Orten. M zeigt Richtung und Entfernung.
+## An endless Auenwald
 
-Seltene Lichtungen erscheinen mit großen Abständen in 4096-Pixel-Sektoren. Ihr Wächter und ihre Belohnung werden je Lauf nur einmal ausgelöst. Der globale Gegnerplan hängt von der Zeit ab, nicht vom Wechsel zwischen Abschnitten. Zubat-Schwärme und Blütenringe ergänzen normale Wellen. Etwa alle 90 Sekunden erscheint eine Elite, solange ausreichend Platz für besondere Gegner vorhanden ist. Normale weit entfernte Gegner verschwinden ohne Kill- oder EP-Gutschrift.
+All forest modes extend beyond the former 3,072-pixel boundary, including
+negative coordinates. Seeded 512-pixel chunks generate as needed. Only nearby
+areas render; returning recreates the same scenery. The three forest quests
+each appear once at fixed locations. M shows direction/distance.
 
-Eliten lassen nach einem tatsächlichen Sieg eine Truhe zurück. Sie liefert Münzen, einen Ball und ein, drei oder fünf Trainings-/Entwicklungsfunde. Ein bereits vollständig ausgebautes Team erhält Ersatzmünzen. Entwicklung verlangt weiterhin die sichtbaren Voraussetzungen und vorhandene Mittel. Öffnen wird atomar gespeichert; Ort und Beute bleiben unabhängig von geladenen Landschaftsabschnitten erhalten. Bodenfunde werden bei hoher Anzahl wertgleich zusammengefasst.
+Rare clearings are widely spaced in 4,096-pixel sectors. Their guardians and
+rewards trigger once per run. Global enemy scheduling follows time, not chunk
+changes. Zubat swarms and flower rings supplement waves. An elite appears
+roughly every 90 seconds when special-enemy capacity permits. Distant ordinary
+enemies despawn without kill/XP credit.
 
-Lernlauf und Expedition behalten ihr zeitliches Ziel. **Endloser Auenwald** hat kein Zeitlimit: Bisaflor erscheint alle 20 Minuten, nach dem Sieg beginnt eine stärkere Runde. Weitere Fangbegegnungen werden danach regelmäßig aus allen 151 Arten gezogen.
+Defeated elites leave chests containing coins, a ball and one/three/five
+training/evolution finds. Fully trained teams receive replacement coins.
+Evolution still requires visible prerequisites and items. Opening saves
+atomically; positions/loot persist independently of loaded chunks.
+High pickup counts merge without losing value.
 
-## Eine zusammenhängende Kanto-Reise
+Learning Run/Expedition keep their time objectives. The historical Endless
+design spawned Venusaur every 20 minutes, then increased the round after victory;
+later releases rotate guardian species. Subsequent encounters draw from all 151 species.
 
-**Kanto-Story** startet in Alabastia. Der erste Weg führt über Route 1 nach Vertania zum Markt. M öffnet die zoombare Weltkarte, acht Orden und das Reisetagebuch. Das nächste Ziel steht außerdem im HUD. E am markierten Ort öffnet Auftrag und Belohnung; der Kampf beginnt erst nach Annahme. Alle Orte liegen in derselben Szene, ohne Kartenwechsel.
+## A connected Kanto journey
 
-51 Orte und 57 Verbindungen bilden die zehn Städte, alle 25 Routen, größere Höhlen, Kraftwerk, Pokémon-Turm, Safari-Zone, Rocket-Versteck, Silph Co., Villa und Liga ab. Landschaften unterscheiden Wald, Städte, Berge, Höhlen und Wasser. Stadtgebiete schützen vor gewöhnlichen Gegnern; aktive Prüfungen bleiben echte Kämpfe. Die Kartenmaße sind für dieses Echtzeitspiel verdichtet. Innenräume werden als zusammenhängende Außenbereiche dargestellt; dies ist eine Survivors-Adaption, keine kachelgenaue Kopie der Game-Boy-Karten.
+Story starts in Pallet Town, then Route 1 to Viridian's Mart. M opens the map,
+eight badges and travel journal; HUD also shows the next objective.
+E opens a task/reward prompt, and combat starts only after acceptance.
+Locations share one world scene.
 
-27 Etappen führen durch Eichs Paket, Mondberg, Bill und M.S. Anne, Felstunnel, Turm, Rocket-Versteck, Mr. Fuji, Safari-Zone, Silph Co., Villa, acht Arenen, Siegesstraße, Top Vier, Blau und Mewtu. Jede Arena verwendet das vollständige Rot/Blau-Team des Leiters in aufeinanderfolgenden Wellen. Die Liga verwendet alle fünf Mitglieder je Top-Vier-Team und Blaus sechsköpfiges Team. Storyorte vergeben Münzen, Bälle, Erfahrung und Fangmöglichkeiten; Arenen zusätzlich Orden und Entwicklungsmittel.
+51 locations and 57 connections represent ten towns, all 25 routes, major caves,
+Power Plant, Tower, Safari Zone, Rocket Hideout, Silph Co., Mansion and League.
+Terrain distinguishes forest, town, mountain, cave and water. Towns prevent
+ordinary ambient spawns, while trials remain combat. Scale is compressed for
+real-time play, not a tile-exact Game Boy reconstruction. The early outdoor-only
+representation of interiors was replaced by enterable rooms in 0.7.
 
-Pokédex, Orden, Zerschneider, Pokéflöte, Getränk für die Saffronia-Wachen, Surfer, Stärke und weitere Schlüssel öffnen feste Wege. Digdas westlicher Ausgang benötigt Zerschneider; Untergrundwege umgehen Saffronias verschlossene Tore. Voraussetzungen gelten auch nach Laden. Außerhalb der Prüfungszone wird eine aktive Prüfung abgebrochen und kann am selben Ort neu beginnen.
+27 stages cover Oak's Parcel, Mt. Moon, Bill, S.S. Anne, Rock Tunnel, Tower,
+Rocket Hideout, Mr. Fuji, Safari, Silph Co., Mansion, eight Gyms, Victory Road,
+Elite Four, Blue and Mewtwo. Gyms use complete Red/Blue leader teams in waves;
+Elite Four use five each and Blue six. Rewards include coins, balls, experience
+and captures; Gyms additionally grant badges/evolution items.
 
-Betritt das Pokémon-Center mit E an der Tür. Erst das Gespräch mit Schwester Joy im Inneren heilt das Team und setzt einen Rastpunkt. Der erste Besuch liefert drei Bälle und 20 Münzen. Alabastia besitzt die beiden Wohnhäuser und Eichs Labor; Mama bietet keine kostenlose Heilung mehr. Der erste reguläre Rastpunkt liegt in Vertania. Märkte und Prismanias Kaufhaus verkaufen am NPC im Innenraum Bälle, Entwicklungsmittel und Ausrüstung. Nach einer Niederlage setzt du im zuletzt besuchten Center fort, sonst im Center von Vertania; zehn Prozent der Münzen gehen verloren. Nach dem Champion-Finale kannst du Kanto weiter erkunden und die Azuria-Höhle mit Mewtu besuchen.
+Pokédex, badges, Cut, Poké Flute, the Saffron guards' drink, Surf, Strength and
+other keys open fixed routes. Diglett's western exit needs Cut; underground
+paths bypass Saffron gates. Prerequisites persist after loading. Leaving a trial
+zone cancels it so it can restart at the same place.
 
-## Speicherung und Quellen
+Enter Centers with E, then speak to Nurse Joy to restore Pokémon stamina and
+set a rest point. Current rules do not restore trainer HP there. First visits
+grant three balls and 20 coins. Pallet has two homes/Oak's Lab, no invented
+Center/Mart or free healing from Mom. The first normal rest point is Viridian.
+Marts/Celadon's Department Store sell balls, evolution items and equipment through
+their indoor clerks. After defeat, continue at the last visited Center, otherwise
+Viridian, losing 10% of coins. Champion completion allows further exploration
+and Cerulean Cave/Mewtwo.
 
-Wald und Story besitzen getrennte doppelte Sicherungen. Team, Orden, Zugänge, aktive Kampfwellen, RNG, Truhen, seltene Ereignisse und negative Weltpositionen werden vollständig gespeichert. Alte Waldstände werden beim Laden nach Format 5 übernommen; vorhandene Pokémon behalten das frühere gemeinsame Level einmalig als persönliches Ausgangslevel. Export und Import bleiben verfügbar.
+## Saving and sources
 
-Originalbefunde zu Vampire Survivors (`../analysis/VS-WORLD-RULES.md`, nur im lokalen Arbeitsbestand) · quellengebundene JSON-Auszüge (`../analysis/VS-WORLD-EVIDENCE.json`, nur im lokalen Arbeitsbestand) · Kanto-Vorlagen und bewusste Anpassungen (`../analysis/KANTO-WORLD-REFERENCES.md`, nur im lokalen Arbeitsbestand).
+The historical forest/story slots each had alternating backups. Team, badges,
+access, active waves, RNG, chests, rare events and negative positions are saved.
+Old forest saves migrated to format 5, assigning the former shared Pokémon level
+as each partner's initial personal level. Current releases use format 6 and a
+third Boss Rush slot. Export/import remain available.
 
-Das Original verwendet bei Mad Forest Kachelung und globale Zeitwellen, nicht generell eine ständig neu gewürfelte Welt. Unser Seed-Wald und die durchgängige Kanto-Kampagne sind bewusste Erweiterungen. Die Originalinstallation wurde nur gelesen.
+Local references: `../analysis/VS-WORLD-RULES.md`,
+`../analysis/VS-WORLD-EVIDENCE.json`, `../analysis/KANTO-WORLD-REFERENCES.md`.
+These are not public export files. Mad Forest uses tiling/global timed waves,
+not a universally rerolled world. Our seeded forest and connected campaign are
+deliberate extensions. The original installation was only read.
 
-## Stadtgestaltung, Kollision und Hinweise in 0.6
+## Towns, collision and notices in 0.6
 
-Zwölf zusammenhängende Gebäudesprites ersetzen die geometrischen Platzhalter: zwei Wohnhäuser, Labor/Museum, Center, Markt, Arena/Dojo, Kaufhaus, Silph-Gebäude, Pokémon-Turm, Villa, Liga und Höhleneingang. Feste, an den sichtbaren Fundamenten ausgerichtete Kollisionsflächen halten Trainer, Pokémon und Gegner auf; Türen bleiben erreichbar. Figuren werden nach ihrer Bodenposition gezeichnet. Neue Gegner entstehen außerhalb von Fundamenten. Bereits in einem neuen Hindernis stehende alte Speicherstände erlauben das Herausgehen.
+Twelve coherent building sprites replaced geometric placeholders: two homes,
+lab/museum, Center, Mart, Gym/Dojo, Department Store, Silph, Tower, Mansion,
+League and cave entrance. Solid visible-foundation-aligned footprints block
+trainer/partners/enemies while doors remain reachable. Depth follows ground
+position. Enemies spawn outside foundations. Old saves inside a new obstacle
+can move out.
 
-Jede Stadt hat eigene Anordnungen und charakteristische Gebäude. Schmale Wege, Grundstücke, Blumen, Baumreihen, Stadtpflaster, Hafendocks und Nugget-Brücke ersetzen die früheren einheitlichen Ortskreise. Alabastia hat keinen erfundenen Markt oder Center. Die Gebäude sind eigene, für das Projekt angepasste Pixelgrafiken; dies bleibt eine verdichtete Echtzeit-Adaption mit offenen Kampfplätzen, keine kachelgenaue Rekonstruktion aller Original-Innenräume.
+Towns have individual layouts, narrow paths, plots, flowers, tree rows, paving,
+docks and Nugget Bridge instead of uniform circles. The project-specific
+building artwork is a compressed adaptation with open combat space.
+Content was compared with map objects for
+[Pallet](https://github.com/pret/pokered/blob/master/data/maps/objects/PalletTown.asm),
+[Pewter](https://github.com/pret/pokered/blob/master/data/maps/objects/PewterCity.asm),
+[Celadon](https://github.com/pret/pokered/blob/master/data/maps/objects/CeladonCity.asm),
+[Vermilion](https://github.com/pret/pokered/blob/master/data/maps/objects/VermilionCity.asm)
+and [Saffron](https://github.com/pret/pokered/blob/master/data/maps/objects/SaffronCity.asm).
+Layout, scale and roads were adapted for this campaign.
 
-Die inhaltliche Orientierung wurde mit den Kartenobjekten von [Alabastia](https://github.com/pret/pokered/blob/master/data/maps/objects/PalletTown.asm), [Marmoria](https://github.com/pret/pokered/blob/master/data/maps/objects/PewterCity.asm), [Prismania](https://github.com/pret/pokered/blob/master/data/maps/objects/CeladonCity.asm), [Orania](https://github.com/pret/pokered/blob/master/data/maps/objects/VermilionCity.asm) und [Saffronia](https://github.com/pret/pokered/blob/master/data/maps/objects/SaffronCity.asm) abgeglichen. Anordnung, Größen und Wege wurden für die vorhandene Survivors-Kampagne angepasst.
+Small circular tree trunks allow sliding. Pursuers calculate detours around
+trunks/buildings and save those points. Tests cover eight approaches to trees
+and four to buildings, not arbitrarily dense obstacle combinations.
 
-Waldstämme besitzen kleine Kreisflächen. Figuren gleiten daran entlang; Verfolger berechnen bei Bedarf Umwegpunkte um Stämme und Hauswände. Diese Punkte bleiben beim Speichern erhalten. Die Prüfung deckt acht Anlaufrichtungen bei Bäumen und vier bei Gebäuden ab; sie ist kein allgemeiner Nachweis für beliebig dicht zusammengesetzte Hindernisse.
+Entering shows a short town/route notice. Blocked-route contact explains its
+key/source with limited repetition. Earlier ground-written names/requirements
+were removed. Historical empty-E hints later became silent interactions.
 
-Beim Betreten erscheint der Stadt-/Routenname kurz am oberen Bildschirmrand. Beim Anlaufen einer gesperrten Route erklärt dieselbe Anzeige den benötigten Schlüssel und dessen Herkunft. Wiederholungen sind zeitlich begrenzt. E ohne verfügbare Interaktion gibt einen hilfreichen Hinweis. Die früheren auf den Boden geschriebenen Ortsnamen und Schloss-Anforderungen sind entfernt.
+Purple potions replace red plus signs and show concrete HP values nearby.
+Blue Ether means stamina. Individual Pokémon XP bars appear in HUD/team.
+Only active fit partners receive combat XP; collecting trainer crystals later
+cannot redirect it to reserves.
 
-Heilfunde sind violette Trankflaschen statt roter Pluszeichen. In der Nähe steht der konkrete KP-Wert; blaue Ätherflaschen bezeichnen Ausdauer. Persönliche EP-Balken stehen im HUD und Teamfenster. Nur aktive, einsatzfähige Pokémon erhalten die Kampf-EP eines Sieges; nachträgliches Einsammeln eines Trainer-Kristalls kann sie nicht auf einen Reservepartner übertragen.
+## Enterable interiors in 0.7
 
-## Begehbare Innenräume in 0.7
+Every building has a bounded room with suitable props/NPCs: homes, Centers,
+Marts, labs, museum, Silph, Rocket, Tower, caves and League.
+All eight Gyms have their leader, type-colored arena, statues and guide.
+Layouts support Survivors movement, not every original floor/puzzle.
 
-Jedes Gebäude der vorhandenen Kanto-Karte besitzt einen eigenen, begrenzten Raum. Häuser erhalten Bett, Tisch, Regal und Bewohner; Center eine Heiltheke und Schwester Joy; Märkte Verkaufstheke, Regale und Verkäufer. Labore, Museum, Silph Co., Rocket-Versteck, Turm, Höhlen und Liga haben eigene Möbel-/NPC-Zusammenstellungen. Alle acht Arenen verwenden ihren Leiter, eine nach Typ gefärbte Kampffläche, Statuen und einen Guide. Die Raumlayouts sind für Survivors-Bewegung entworfen; sie bilden nicht sämtliche Etagen oder Rätsel der Originalgebäude nach.
+E at a leader/story NPC starts indoor trials; these no longer start outside.
+The full room is valid combat space. E at the exit abandons a running fight.
+Defeated waves, return point, outside enemies, loot and captures persist.
+Room loot remains when leaving; random outdoor encounters do not spawn inside.
 
-Mit E am Leiter beziehungsweise Story-NPC beginnt eine Prüfung. Außen können diese Gebäudekämpfe nicht mehr gestartet werden. Die Markierungen zeigen die Kampffläche; der ganze Innenraum ist gültig. E am Ausgang bricht einen noch laufenden Kampf ab. Besiegte Wellen, Rückkehrpunkt, Außenwelt-Gegner, Beute und Fangangebote bleiben im Speicherformat 5 erhalten. Beim Verlassen bleibt Raumbeute dort liegen. Zufällige Außenwelt-Begegnungen entstehen nicht in Innenräumen.
+43 interior assets were palette-faithful crops from pinned FireRed sources:
+`public/art/interiors-v7/SOURCES.md`. Exterior facades remain project-adapted art.
 
-Die Innenraumgrafiken sind lokale, palettengetreue Ausschnitte aus dem gepinnten FireRed-Referenzbestand: 43 Assets und Herkunft (`public/art/interiors-v7/SOURCES.md`, nur im lokalen Arbeitsbestand). Die Außenfassaden bleiben die für dieses Projekt angepassten Pixelgrafiken.
+At this revision, trainer collision around trees was wider/toward crowns;
+pursuers used smaller trunks/detours. Special trees also collide.
+New crowns/clearings avoid paths. Dead-end town roads terminate in clear space.
+Short dash presses survive render frames without simulation and buffer up to
+150 ms before cooldown completion.
 
-Die Trainerkollision um Bäume ist breiter und zur Baumkrone versetzt. Verfolger nutzen weiterhin die kleineren runden Stämme und berechnete Umwege. Auch besondere Bäume haben Kollisionsflächen. Neue Waldkronen und seltene Lichtungen halten Abstand zu Wegen; Stadtwege ohne Anschluss enden auf freier Fläche. Kurze Dash-Tastendrücke überleben Renderbilder ohne Simulationsschritt und werden kurz vor Ablauf der Sperre für maximal 150 ms vorgemerkt.
+The historical M map showed connected locations/routes, selectable places,
+zoom, objectives, access hints and distinct badges. Later versions replace
+that illustrated region overview with original FR/LG artwork and make forest
+maps terrain-faithful.
 
-Die M-Karte zeigt die tatsächlichen Orts-/Routenverbindungen auf einer illustrierten Kanto-Übersicht. Anklickbare Orte, Zoom, nächstes Storyziel, Zugangshinweise und acht unterschiedliche Ordenformen ersetzen die alte Punktübersicht. Die Waldkarte zeigt die festen Ziele und Trainerposition schematisch, ohne eine exakte Terrainkartierung vorzutäuschen.
+## World and navigation in 0.8
 
+Town width grew 720 → 960 world units; ordinary routes 190 → 380, with clear
+shoulders. Narrow tunnels keep their own shape. Roads form connected networks
+around foundations to actual exits/door platforms. Shared geometry drives
+walkability, forest/rock edges, barriers and minimap. Counts remain 51/57/58.
 
-## Welt und Orientierung in 0.8
+Closed routes use continuous checkpoints/rock barriers spanning their openings.
+Unlocking removes graphics and collision. Messages explain missing requirements.
+Road/cave/harbor access is connected; the harbor has a continuous deck/platform.
 
-Die Stadtflächen sind von 720 auf 960 Welteinheiten Breite gewachsen. Gewöhnliche Routen bieten 380 statt 190 Einheiten Bewegungsbreite, mit freien Wiesen neben dem eigentlichen Weg. Enge Tunnel behalten ihren eigenen Verlauf. Straßen werden als verbundenes Netz um die Gebäudefundamente geführt, bis zu den tatsächlichen Routenausgängen und Eingangspodesten. Eine gemeinsame Geländegeometrie steuert Begehbarkeit, Wald-/Felsränder, Sperren und Minimap. Die gesamte Karte umfasst weiterhin 51 Orte, 57 Verbindungen und 58 Gebäude.
+At 0.8, Centers/Marts stayed open while other buildings opened for available
+unfinished tasks or remaining loot/captures. Contentless buildings explained
+closure. Later rc.3 opened ordinary homes. Old indoor saves remain resumable/exitable.
 
-Geschlossene Routen erhalten massive, durchgehende Kontrollschranken oder Felsriegel. Ihre Kollisionslinien decken die ganze Öffnung ab; Freischalten entfernt sowohl Grafik als auch Hindernis. Die Meldung erklärt weiterhin, welche Aufgabe oder Reisehilfe fehlt. Straßen-, Höhlen- und Hafenzugänge sind verbunden; der Hafen besitzt einen durchgehenden begehbaren Holzsteg samt Plattform.
+Floors fit exact room dimensions. Walls/baseboards match collision; the bottom
+wall has a central exit. Marts use warm subtle stone tiles and a sage runner.
+Minimap shows actual terrain, streets, footprints, services, NPCs, barriers,
+objectives and facing.
 
-Center und Märkte bleiben offen. Andere Gebäude öffnen, wenn dort eine noch unerledigte, jetzt verfügbare Storyetappe wartet. Abgeschlossene Räume bleiben für noch liegende Beute und unbeanspruchte Fangangebote zugänglich. Gebäude ohne aktuellen Inhalt sind geschlossen und nennen bei E den Grund. Bestehende Spielstände innerhalb inzwischen geschlossener Gebäude lassen sich normal fortsetzen und verlassen.
+Losing focus releases held keys but does not pause. A background timer advances
+hidden tabs; menus/decisions still pause. Browser/OS suspension remains possible.
+Catch-up is capped at two seconds per tick after long suspension.
 
-Raumböden werden exakt auf die Innenmaße zugeschnitten. Wandfüße und Sockel stimmen mit dem Kollisionsrand überein; der untere Rand erhält eine geschlossene Wand mit mittigem Ausgang. Märkte verwenden warme, dezente Steinfliesen und einen salbeifarbenen Läufer. Die Minimap zeigt Gelände, Straßen, Grundrisse, Center/Markt/Arena, NPCs, Durchgangssperren, Zielrichtung und Trainer-Blickrichtung.
-
-Fokusverlust löst keine Pause mehr aus. Gedrückte Tasten werden freigegeben. Ein eigener Timer führt die Simulation bei verborgenem Browser-Tab weiter; geöffnete Menüs und Entscheidungen pausieren weiterhin. Browser-/Betriebssystemdrosselung bleibt möglich. Nach längerer vollständiger Aussetzung werden höchstens zwei Sekunden pro Timeraufruf nachgeholt, damit ein schlafender Rechner keinen minutenlangen Simulationssprung auslöst.
-
-Hinweis zum Quellcodeexport: Verweise auf lokale Bild-/Testbelege sind als Text
-markiert; die zugehörigen Dateien gehören nicht zum öffentlichen Snapshot.
+Named local QA/reference files are not part of the public snapshot.

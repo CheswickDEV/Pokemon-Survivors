@@ -1,3 +1,4 @@
+import {getLocale} from './i18n.ts';
 import {SPECIES,TYPE_NAME} from './data.ts';
 import {battleLevel,badgePower} from './badge-progress.ts';
 import type {RunState,Partner} from './engine.ts';
@@ -17,7 +18,7 @@ export function attackStats(s:RunState,p:Partner,_slot=0,requested=p.ranks[0]){
  heal:Math.min(2,m.healing*(1+.07*(rank-1))*(1+bonus('heal')*.08)),burn:m.burn,slow:m.slow,
  crit:Math.min(.4,.05+bonus('crit')*.04+(SPECIES[p.species].traitKind==='focus'?.08:0)),burnDuration:4*(1+bonus('status')*.08),slowDuration:2*(1+bonus('status')*.08),extraEvery:bonus('shots')>0?Math.max(1,6-bonus('shots')):0};
 }
-export const numberText=(value:number,digits=1)=>Number(value.toFixed(digits)).toLocaleString('de-DE',{maximumFractionDigits:digits});
+export const numberText=(value:number,digits=1)=>Number(value.toFixed(digits)).toLocaleString(getLocale(),{maximumFractionDigits:digits});
 export function attackDescription(s:RunState,p:Partner,slot=0,rank=p.ranks[0]){
  const a=attackStats(s,p,slot,rank),m=a.move;
  const details=[numberText(a.power)+' Schaden je Treffer','alle '+numberText(a.interval,2)+' s'];

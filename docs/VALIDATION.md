@@ -1,58 +1,51 @@
-# Prüfung des Release Candidate
+# Historical release-candidate validation
 
-Aktueller Stand: **1.0.0-rc.4**. TypeScript/Produktionsbuild und **128 Tests**
-bestanden. Alle 58 Räume, NPC-Laufwege und die neue Center-Regel geprüft:
-[INTERIORS-AND-CARE.md](INTERIORS-AND-CARE.md). Die bisherige erfolgreiche
-Kanto-Kampfsimulation gilt nach Entfall der Trainer-Heilung nicht mehr als
-aktueller Durchspielnachweis; die neuen Ergebnisse stehen im verlinkten Bericht.
+Recorded version **1.0.0-rc.4**: type check, production build and **128 tests**
+passed. All 58 rooms, NPC paths and the new Center rule were checked in
+[INTERIORS-AND-CARE.md](INTERIORS-AND-CARE.md). Removing Center trainer healing
+invalidated earlier campaign-success claims as evidence for the new rules.
 
-Vorheriger Stand **rc.3**: vollständige Wald-, Story- und Bossansturm-Simulationen,
-Shiny-Abdeckung und Browsernachweise: [WORLD-POLISH.md](WORLD-POLISH.md).
-Frisch entpackter Quellcode: 114 medienunabhängige Tests und Build bestanden.
-rc.3-Windows-Paket: Start mit enthaltener Runtime, 1.443 Medien über HTTP
-und sämtliche manifestierten Datei-Hashes geprüft.
+Previous **rc.3** simulations, Shiny checks and browser evidence:
+[WORLD-POLISH.md](WORLD-POLISH.md). Fresh code export passed 114 media-independent
+tests and build. Windows package used its runtime; 1,443 media files passed
+HTTP/hash checks, as did all manifest entries.
 
-## Vorheriger Paket- und Balanceprüfstand rc.2
+## rc.2 package and balance record
 
-Stand: 1.0.0-rc.2, 20. Oktober 2026. Die Nachweise liegen im lokalen `qa/`
-und werden nicht als persönliche Testdaten ins GitHub-Quellcodepaket übernommen.
+Date: October 20, 2026. Raw evidence remains local under `qa/`.
 
-| Prüfung | Ergebnis / Aussagegrenze |
+| Check | Result / limit |
 |---|---|
-| TypeScript und Produktionsbuild | Bestanden. Vite meldet weiterhin ein großes Phaser-/Spiel-Bundle; kein Buildfehler |
-| Gesamte Testsuite | 111 Tests bestanden, einschließlich Medien, Kanto-Verbindungen, Innenräumen, Entwicklungen, Speichern, Bossen und Server |
-| Frisch entpackter Quellcode | Abhängigkeiten separat installiert; Typprüfung, 101 medienunabhängige Tests und Build bestanden |
-| Paketintegrität | ZIP-CRC und SHA-256 der manifestierten Dateien geprüft |
-| Windows-Starter | Aus Ordner mit Leerzeichen mitgelieferte Laufzeit gestartet; PATH auf Windows-Systemordner begrenzt; kein globales Node.js verwendet |
-| Doppelstart | Erkennt laufenden lokalen Spielserver und endet erfolgreich; kein zweiter Server und kein fremder Prozess beendet |
-| Runtime | Offizielles Node.js 22.23.3-x64-ZIP gegen gepinnten und offiziellen SHA-256 geprüft; unveränderte node.exe mit gültiger OpenJS-Authenticode-Signatur |
-| Offline-Assets | Alle 839 vorgesehenen Bild-/Audio-/Fontdateien über den entpackten lokalen Server HTTP 200; Hashes stimmen überein |
-| Browser | rc.2: Wald-, Kanto- und Innenraumkarten sowie Import geprüft. Moduswahl, Bossansturm, Fortschrittsbuch und Komplettbackup bereits in rc.1 geprüft; keine erfassten Warnungen/Fehler |
-| Sicherung | Tatsächlich im Browser exportierte Sicherung enthält Profil, Wald, Story und Bossansturm. Wiederhergestellt; Bossstand behält Veteran-Schwierigkeit |
-| Bossdarstellung | 15 Profile in einer separaten Galerie mit denselben Renderfunktionen geprüft; mehrere Phasen und reduzierte Effekte ohne Konsolenfehler |
-| Ausweichbarkeit | Für alle 15 Profile und drei Phasen auf Meister im Testaufbau erreichbare sichere Positionen gefunden. Kein Beweis für jede mögliche Randposition oder Gegnerkombination |
-| Kanto-Kampfsimulation | Alle 27 Etappen mit Bisasam, Glumanda und Schiggy geschafft. Reisewege übersprungen; normale Bewegung, Attacken, Fänge, Verbesserungen und Center-Nutzung innerhalb der Kämpfe |
-| Bossansturm-Simulation | Drei Starterkonfigurationen je Stufe. Entspannt, Standard und Veteran jeweils 3/3 Siege; Meister 0/3, Niederlagen nach 12, 10 und 7 geschafften Prüfungen |
-| Wald-Simulation auf Standard | 15/15 Lernläufe und 13/15 Expeditionen; jeder Starter gewinnt beide Modi. Insgesamt 66 Waldläufe einschließlich Veteran, Meister und zwölf negativen Kontrollen. Details und Grenzen: [FOREST-BALANCE.md](FOREST-BALANCE.md) |
-| RPG-Karte | Tatsächliche generierte Wege, Landschaftsobjekte und Gebäude; geometrische Tests und Sichtprüfung in Wald, Kanto und Innenräumen |
-| Abhängigkeiten | `npm audit` meldete zum Prüfzeitpunkt keine bekannten Advisories; keine allgemeine Sicherheitsgarantie |
-| Öffentlicher Releasebau | Verweigert den Vollrelease bei offenen Freigaben; lokaler Test- und Quellcodeexport bleiben möglich |
+| Type check/build | Passed; large Phaser/game bundle warning is not a build failure |
+| Full suite | 111 tests passed, including media, world paths, interiors, evolution, saves, bosses and server |
+| Fresh code export | Separate dependency installation, type check, 101 media-independent tests and build passed |
+| Integrity | ZIP CRC and manifest SHA-256 checked |
+| Windows launcher | Path with spaces; bundled runtime with PATH restricted to Windows system folders; no global Node |
+| Second launch | Recognized running server and exited successfully; no extra server or unrelated process terminated |
+| Runtime | Official Node 22.23.3 x64 ZIP matched pinned/official SHA-256; unchanged executable had valid OpenJS Authenticode signature |
+| Offline media | All 839 expected image/audio/font files returned HTTP 200 with matching hashes |
+| Browser | rc.2 forest/Kanto/interior maps and import; rc.1 mode selection, boss rush, journal and backup; no captured warnings/errors |
+| Backup | Actual browser export included profile and all three slots; restored boss slot retained Veteran difficulty |
+| Boss rendering | 15 profiles in a separate gallery using actual rendering; phases/reduced effects without console errors |
+| Dodgeability | Reachable safe spots found for 15 profiles × three Master phases in tested setups; not proof for all edges/overlaps |
+| Kanto simulation | All 27 stages with three starters; travel skipped, ordinary fight rules and then-current Center use |
+| Boss Rush | Relaxed/Standard/Veteran 3/3 each; Master 0/3, ending after 12/10/7 trials |
+| Standard forest | Learning 15/15, Expedition 13/15; all starters won both. 66 total runs including harder levels and 12 controls; see [forest balance](FOREST-BALANCE.md) |
+| RPG map | Actual generated paths, objects and buildings; geometry and visual checks |
+| Dependencies | No known npm advisories at check time; not a general security guarantee |
+| Public package gate | Refused uncleared full releases; local/code exports remained available |
 
-Der Wald-Testtreiber wurde für rc.2 überarbeitet: tatsächliche Spieler-Hitbox,
-gezielte Fänge, Questschritte, Einkäufe und aktive Teamverbesserungen.
-Er gibt keine zusätzlichen Spielressourcen. Die früheren schlechten Quoten
-sind deshalb kein sauberer Vorher/Nachher-Vergleich. Die beiden verbliebenen
-Standard-Niederlagen und alle höheren Schwierigkeiten sind vollständig
-in [FOREST-BALANCE.md](FOREST-BALANCE.md) dokumentiert.
+The rc.2 forest agent was improved to use actual hitboxes, targeted captures,
+quest steps, shops and active training without extra resources. Earlier poor
+win rates therefore are not a clean before/after balance comparison.
+Remaining failures are documented, not excluded.
 
-## Verbleibende Abnahme
+## Outstanding acceptance
 
-Die portable Probe lief auf dem vorhandenen Windows-Rechner mit reduziertem
-PATH, nicht in einer frisch installierten VM. Ein fremder Rechner, längere
-manuelle Expeditionen, die durchgehende Kanto-Reise und schwächere Hardware
-stehen noch aus. Alle 151 Partner wurden strukturell geprüft, aber nicht jede
-Team-/Item-/Schwierigkeitskombination vollständig durchgespielt.
+Portable tests used the existing Windows machine with restricted PATH, not a
+fresh VM. Another computer, longer human expeditions, a continuous Kanto journey
+and weaker hardware remain outstanding. All 151 species were structurally
+checked, not every team/item/difficulty combination fully played.
 
-Ein zusätzlicher Projekt-Installer wurde nicht signiert; die gültige Signatur
-der gebündelten offiziellen Runtime ist keine Signatur des gesamten ZIPs.
-Die dokumentierte Medienfreigabe bleibt ein separater Blocker.
+No additional project installer was signed; the official runtime's valid
+signature does not sign the ZIP. Media permissions remain separate.

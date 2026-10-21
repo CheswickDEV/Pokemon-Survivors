@@ -58,7 +58,7 @@ test('Eevee UI exposes all three branches and each captured species is a starter
  const body=teamBody(e,null);for(const id of [134,135,136])assert.match(body,new RegExp(`data-target="${id}"`));
  const profile=defaultProfile();profile.caught=Object.values(SPECIES).map(p=>p.id);
  const html=homeMarkup({starter:151,trainer:'may',mode:'learn',profile,saved:null,ready:true,writable:true,assetsReady:true,error:''});
- const dex=dexMarkup(profile,'starter');for(const id of profile.caught)assert.match(dex,new RegExp('data-action="dex-starter" data-id="'+id+'"'));assert.ok(!html.includes('<select'));assert.equal((dex.match(/<article/g)??[]).length,151);
+ const dex=dexMarkup(profile,'starter');for(const id of profile.caught)assert.match(dex,new RegExp('data-action="dex-starter" data-id="'+id+'"'));assert.ok(!html.includes('id="extra-starter"'));assert.equal((dex.match(/<article/g)??[]).length,151);
  assert.ok(!html.includes('undefined'));
 });
 test('older saves retain their scheduled encounters and new targeting rejects invalid IDs',()=>{
@@ -67,9 +67,9 @@ test('older saves retain their scheduled encounters and new targeting rejects in
  assert.equal(old.encounterRoster,undefined);assert.throws(()=>encounterRoster(1,152));assert.throws(()=>validateState({...restored,encounterRoster:[1,1,1,1,1,1]}));
 });
 test('HUD and volume preferences are bounded and persist with the full Pokédex',async()=>{
- assert.deepEqual(normalizeSettings(undefined),{sound:true,effects:true,hudScale:1,volume:.55});
+ assert.deepEqual(normalizeSettings(undefined),{language:'en',sound:true,effects:true,hudScale:1,volume:.55});
  assert.equal(normalizeSettings({hudScale:Infinity}).hudScale,1);assert.equal(normalizeSettings({hudScale:5}).hudScale,1.5);assert.equal(normalizeSettings({hudScale:0}).hudScale,.7);
- const store=new SaveStore(),profile=defaultProfile();profile.caught=Object.keys(SPECIES).map(Number);profile.targetSpecies=151;profile.settings={sound:false,effects:false,hudScale:1.3,volume:.35};
+ const store=new SaveStore(),profile=defaultProfile();profile.caught=Object.keys(SPECIES).map(Number);profile.targetSpecies=151;profile.settings={language:'de',sound:false,effects:false,hudScale:1.3,volume:.35};
  store.get=async<T>()=>structuredClone(profile) as T;assert.deepEqual(await store.loadProfile(),profile);
 });
 test('walk cycles follow distance in all eight directions and attack cycles clamp at their end',()=>{

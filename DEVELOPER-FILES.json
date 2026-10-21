@@ -11,8 +11,8 @@
   },
   {
     "file": ".github/ISSUE_TEMPLATE/bug_report.yml",
-    "bytes": 676,
-    "sha256": "7aea120fae976e2033df5d260f2bdc19323831e84a1151902155926db3b9c3c8"
+    "bytes": 681,
+    "sha256": "bab57b53c278dac17d404f710fc54c090726e78fe3d7921c25b9fa7876419570"
   },
   {
     "file": ".github/workflows/check.yml",
@@ -36,23 +36,23 @@
   },
   {
     "file": "ART.md",
-    "bytes": 6978,
-    "sha256": "720de97c901f1ce2634def63cc15f17a4bd54efbb107ca7ff6272ab6fba802d1"
+    "bytes": 5575,
+    "sha256": "3b558faa4d627374effb894e8fb27c9c9b0e651207655d2bcd0367aa122a1c77"
   },
   {
     "file": "CHANGELOG.md",
-    "bytes": 9353,
-    "sha256": "90532b1133abe79c73ee7e4aa012b467d94270c55178463ce77baceefcd1fdb0"
+    "bytes": 7025,
+    "sha256": "f74ccd086974feb3cdc7907a936a549fb02d87bf8e334cd1ebd38e0567e7b757"
   },
   {
     "file": "CONTRIBUTING.md",
-    "bytes": 1984,
-    "sha256": "c1f96f0ac35472a45782a2d0303157a4d563a4fdf41307619abdda25584894da"
+    "bytes": 1909,
+    "sha256": "b7d6c7187ecbf3573191899f41cb0b125de36347ab0e63ddebc6146de633d1e4"
   },
   {
     "file": "DEVELOPER-PACKAGE.json",
     "bytes": 203,
-    "sha256": "3b4bd8289e187397ba04d2d0db2036f77d79c166c645137635d032443cbcc420"
+    "sha256": "19f46e5a4d5b1d6332bb29b4292a2de25e11e7b3c6386d79798da8a9a26b36c1"
   },
   {
     "file": "docs/asset-sources/cries-LICENSE",
@@ -81,8 +81,8 @@
   },
   {
     "file": "docs/asset-sources/forest-PROVENANCE.md",
-    "bytes": 3972,
-    "sha256": "0fbf875c05e5cf6d30ff9a83957ebc9e76b18f840070c05363776d845c8ebacc"
+    "bytes": 3454,
+    "sha256": "25cde77d0d0e61a3f29085653a50c52d41df4e5d708f55a98246f66c935e1f63"
   },
   {
     "file": "docs/asset-sources/interiors-v7-SOURCES.md",
@@ -121,8 +121,8 @@
   },
   {
     "file": "docs/asset-sources/pokemon-motion-PROVENANCE.md",
-    "bytes": 4194,
-    "sha256": "1a7e40ec8ae4e6c87f7d84a2c3bc9df429b6300b5c4279a3ebbb1158c3a3ef5b"
+    "bytes": 4144,
+    "sha256": "a7246c251ca5fd159c3b271520bdc05c16eec25a9c035e09df3760474082173e"
   },
   {
     "file": "docs/asset-sources/pokemon-shiny-credit_names.txt",
@@ -161,83 +161,83 @@
   },
   {
     "file": "docs/ASSET-STATUS.md",
-    "bytes": 4195,
-    "sha256": "35d38d9eb0fd12e7ab5eafb02133b9805b4917f51c87a82bba3765cf2876c522"
+    "bytes": 3886,
+    "sha256": "37c3fb2ed3a805b3b2b2a5a5b12dc1c53f11cd10d1fcb58b6ef3d71b5c18d5ec"
   },
   {
     "file": "docs/CENTER-REPAIR.md",
-    "bytes": 2810,
-    "sha256": "3668ec65f2f5ceac017a1652f7195ee7d13d317e2f82c40878c3c128f76e0884"
+    "bytes": 2088,
+    "sha256": "3a49fd5bd8aaa79329b1e3f9b66a2f43885c6a171858952af96d22b93c6f43c3"
   },
   {
     "file": "docs/DEPENDENCIES.md",
-    "bytes": 4305,
-    "sha256": "5d0b01174fb9f469d4fe909ba3e2f19f44ec80f619080574fee6d95c46335410"
+    "bytes": 4090,
+    "sha256": "7f16072e9640f911cb5f00ce469422b8f6aa89ab53823fcd31d7c7e723890b59"
   },
   {
     "file": "docs/DEVELOPER-VALIDATION.md",
-    "bytes": 4121,
-    "sha256": "414b19ae673c90342f5189504657576983c331176e48ac57c4d312486910ac89"
+    "bytes": 3925,
+    "sha256": "cb8278653f588b4e89c923ca095eae9bb1da45f817559aa84e030f9804e77a9e"
   },
   {
     "file": "docs/DEVELOPMENT.md",
-    "bytes": 6428,
-    "sha256": "34c6b5e38f38bb1984544832dcc3875100b0da1281f81e4b1856a5575f8ed342"
+    "bytes": 7082,
+    "sha256": "a602eba42d7c2f6886c95d89d4d0227f698c35eac6e777a21c654279fb7ad3e6"
   },
   {
     "file": "docs/FOREST-BALANCE.md",
-    "bytes": 6741,
-    "sha256": "1c4b0532ba91d4011eef798aa3fbc974c05b16cba518dccd934a7793f307ee6d"
+    "bytes": 4530,
+    "sha256": "7f36c590a519a39792c995ac8cedce11d9df262838a333812eebd1b31a7715f5"
   },
   {
     "file": "docs/GAMEPLAY.md",
-    "bytes": 8350,
-    "sha256": "be31c50cae4088aae3439add77bd18fbfa1edebaa10083e185824723c6637fd6"
+    "bytes": 7437,
+    "sha256": "5090afd10c01f36c11ca08a6e6a9eb76e2e7e697d4598f25955d6ee3ad48411c"
   },
   {
     "file": "docs/GITHUB-RELEASE.md",
-    "bytes": 3992,
-    "sha256": "422892e9e22eec8130dceae8bcc203060171627d325a0aae5b69d8bae3104424"
+    "bytes": 3638,
+    "sha256": "e6a926660cc943b398444afebc4b21c56ee5cbd8d952ca032b79ee30d09e392c"
   },
   {
     "file": "docs/INSTALLATION.md",
-    "bytes": 5273,
-    "sha256": "d8c60b8664bc35cc42a1adc40002f7e698e60d80297220b88da123c81597f355"
+    "bytes": 5123,
+    "sha256": "c563826c67d9f03d31a3f58118923b7f72ed4582044b4b147f7a9cc8f393f6cc"
   },
   {
     "file": "docs/INTERIOR-VISUAL-AUDIT.md",
-    "bytes": 10027,
-    "sha256": "e328dbe4d0007e8668cbfdf44bb066d92d9092cfbeff6b656a61089269a881a6"
+    "bytes": 8536,
+    "sha256": "9b1c65f081bf8a3fc3c7d451bf813cad9dca5dabd1e1f42c6342690ec0b7800f"
   },
   {
     "file": "docs/INTERIORS-AND-CARE.md",
-    "bytes": 6615,
-    "sha256": "11dcbfa376404260bf478ef0db6fd9d9204b6b2446565ca6bcbf65abbb4a76b3"
+    "bytes": 5024,
+    "sha256": "dfc6bf08ea32e69bc2d2ef903b3ea2baa506b4ee69224a51e8e9030254dc5289"
   },
   {
     "file": "docs/PLAYER-QUICKSTART.txt",
-    "bytes": 2364,
-    "sha256": "088c1ed27a874b473f636c8bcc43d2f64be56306da5637b15eba5a45f547d07e"
+    "bytes": 2188,
+    "sha256": "a2966c39d6631fa33a157a4f1c8fae2748675cc837a1edf8cb929bbf9f12d07f"
   },
   {
     "file": "docs/RC5-VALIDATION.md",
-    "bytes": 6339,
-    "sha256": "2f9937199b077a21e906bdaacfc4f60e4977742b9fcc06fdd3765b107a43e9c0"
+    "bytes": 4247,
+    "sha256": "469c15f48807e060c7703056303d60ce00f1414a7b96aba368483eb0f317d94c"
   },
   {
     "file": "docs/RC6-VALIDATION.md",
-    "bytes": 11936,
-    "sha256": "115e05250a535334ad44aca125b70d799679cd920a7c19f934d35f5052b43dca"
+    "bytes": 9282,
+    "sha256": "d203b1f5dfcfb3cb49c5d6907640d45eb3bb2ab106add75a9cecac301baf2c2c"
   },
   {
     "file": "docs/RELEASE-READINESS.md",
-    "bytes": 7540,
-    "sha256": "0a6c1e6bd6e6a82d0943b4e9ff07e1fafcb21bb74aa7bbf3c678fe19728d70b7"
+    "bytes": 5632,
+    "sha256": "b375f297dd23dfe4fdc2878ca48a46c78d948a0e2dadf3bf6da86d370260523f"
   },
   {
     "file": "docs/SECURITY-AUDIT.md",
-    "bytes": 7228,
-    "sha256": "68d61a32fbfcca558aa42ce70c4eb40b08a9c17fc35f10e0bf99bb446d89121f"
+    "bytes": 5864,
+    "sha256": "1884b467f79a6681f804f5a4d37c6a35fe41b01b923228c90e6aa69406c49d92"
   },
   {
     "file": "docs/SECURITY-VALIDATION.json",
@@ -246,23 +246,23 @@
   },
   {
     "file": "docs/VALIDATION.md",
-    "bytes": 5007,
-    "sha256": "f2bbe65fc558dea32ef3e534bdf038d4b8379e67e5e02c1c5cbc2e79c115cded"
+    "bytes": 3530,
+    "sha256": "c96a0e6614d9423e170ee8a54584f16988746337854a7c0619a32d64e860c4c2"
   },
   {
     "file": "docs/WORLD-POLISH.md",
-    "bytes": 8365,
-    "sha256": "a23e1dfed27a0b783c471c6dcd0e2a6ebc338d82620cbc311656fa76e4d99a47"
+    "bytes": 5653,
+    "sha256": "4f6daa98828524f6d4383827a3cc2ef97baab5cdf4eae39cf069063fe109c9f1"
   },
   {
     "file": "index.html",
     "bytes": 319,
-    "sha256": "66730de82918a31d621860689545f3a171685329613e5431d39b2b185949d30b"
+    "sha256": "70fbd4265ad6aabc010aac44057792fdaf416e87d140d7a26e0b47e6f26c193d"
   },
   {
     "file": "KANTO-CATALOG.md",
-    "bytes": 4884,
-    "sha256": "75287403f166dd55684eadf79d48345642dd4efedd05c674ac9f231ebd0a23cb"
+    "bytes": 3846,
+    "sha256": "568e94223fb5c262399cf05628d1d92e3254cc4fd434c60af84b26bba35b6582"
   },
   {
     "file": "LICENSE",
@@ -272,12 +272,12 @@
   {
     "file": "package-lock.json",
     "bytes": 26311,
-    "sha256": "6c0cd3756ea71ee81b84e1e35293698bf14362caf6061259bec0f040bdb7e618"
+    "sha256": "238e0e66b1c07732642d7ddb2706fe69fcc25a534f2f4be0f45ef2aef8236c5e"
   },
   {
     "file": "package.json",
     "bytes": 1377,
-    "sha256": "c203ab2aa04391a5d1adb6e2725fa54d13dd736658575e22265262674abbf714"
+    "sha256": "a182b8397108eb5cb1b53a5f5afc2082481c7d14a15c919e5c4e4bfe576b42d6"
   },
   {
     "file": "public/art/data/PokeAPI-LICENSE.txt",
@@ -346,8 +346,8 @@
   },
   {
     "file": "public/art/forest/PROVENANCE.md",
-    "bytes": 3936,
-    "sha256": "ca8e04bdaaf455c083c732279988d53a6136c7b16202a843c6dc12d90d2a9850"
+    "bytes": 3454,
+    "sha256": "25cde77d0d0e61a3f29085653a50c52d41df4e5d708f55a98246f66c935e1f63"
   },
   {
     "file": "public/art/forest/rock.png",
@@ -11881,13 +11881,13 @@
   },
   {
     "file": "QA.md",
-    "bytes": 5024,
-    "sha256": "9f0bb92e784bce7e4f8039d879c0acc8e47c89519158fb50b35eca2755dc3c4c"
+    "bytes": 3197,
+    "sha256": "cb5fcbeb03399ca287cb2dde58796c08b7cb510a5012b29d7879ae6252ea7c28"
   },
   {
     "file": "README.md",
-    "bytes": 3893,
-    "sha256": "fd3f0bcaf2894dbcb4be8eb1a377448ea0d9094bd3b083f38f87115da7dbc514"
+    "bytes": 3926,
+    "sha256": "d1edfff13142654ac04fb610d4af103685fe751cf9591a02437049187cfaf5e1"
   },
   {
     "file": "release-config/developer-files.json",
@@ -11906,13 +11906,13 @@
   },
   {
     "file": "release-config/source-files.json",
-    "bytes": 6451,
-    "sha256": "a32335c9c6e2b2b2528a5799121d2be3785c2cde3e8ee0980fc3b281af6beb07"
+    "bytes": 6545,
+    "sha256": "e31f29fd7c84323b88a91124e4599ef43e7ff676c5eec7bd20d434298e3fe030"
   },
   {
     "file": "release-config/status.json",
     "bytes": 519,
-    "sha256": "9ed2763e69af4a988f6afd920fa0a9e1fcb82bf4e52af6ac668a68df592e6b17"
+    "sha256": "31f8d97c6cf320cd16768fe757d0f194f4293ae7b978197228b8b86ea29dc27e"
   },
   {
     "file": "requirements-assets.txt",
@@ -11921,8 +11921,8 @@
   },
   {
     "file": "scripts/asset-tools.mjs",
-    "bytes": 357,
-    "sha256": "9f6b74e15dceacc2196a06ac7f8417aaab849bcc72d8dad9774a48aac5497433"
+    "bytes": 344,
+    "sha256": "cb8ddf781eee7dd777402003d42671a07c62ab8776cffcc9a78a99d7845e539f"
   },
   {
     "file": "scripts/build-kanto-catalog.py",
@@ -11941,8 +11941,8 @@
   },
   {
     "file": "scripts/doctor.mjs",
-    "bytes": 1870,
-    "sha256": "13db57175e4e47aa68bb2d55fffd02eba2e8fd0593f3c9ff9752952ba1164076"
+    "bytes": 1795,
+    "sha256": "b84e5077ec8161360c5eabab4d992984f0ef08d610dab7034abf02a9a5f1da56"
   },
   {
     "file": "scripts/import-gen1-cries.mjs",
@@ -11972,7 +11972,7 @@
   {
     "file": "scripts/release.mjs",
     "bytes": 4182,
-    "sha256": "3f9dbb8e906fe09ff7b91ab29d42f1ae490f9a279f34195e8d16c12332f2309b"
+    "sha256": "22324fa3dbd5614746415bff428b5f3e4b4dc26e7731adda1075d1326d7735d5"
   },
   {
     "file": "scripts/runtime.mjs",
@@ -12006,18 +12006,18 @@
   },
   {
     "file": "SECURITY.md",
-    "bytes": 2091,
-    "sha256": "a83e80a28b172676351cb09720eb4aa286ebc4616aced553d2999e5be4daa0e5"
+    "bytes": 1764,
+    "sha256": "21099a71582d49c72f1a87b87b36337bb6a18c5de3c20ce5b98737a6548c05cb"
   },
   {
     "file": "server.mjs",
-    "bytes": 5601,
-    "sha256": "4f9217c701c5d9ca9ddc0606ccd5a707ea30511544ffe698730af483698c0ff6"
+    "bytes": 5534,
+    "sha256": "5f6d84ac8606834a54bf89f2efdf09adf5cc385021e7751c7d37ddb72fb0d5c7"
   },
   {
     "file": "Spiel starten.cmd",
-    "bytes": 398,
-    "sha256": "ab3045d60f556c294733b29d39128673a39049e60844b3863e853dc467458bc3"
+    "bytes": 105,
+    "sha256": "8478e909257491b65f503ad0b85651290a1e18849c9321fc45ee80b02a1160f5"
   },
   {
     "file": "src/art.ts",
@@ -12066,8 +12066,8 @@
   },
   {
     "file": "src/combat.ts",
-    "bytes": 3903,
-    "sha256": "09e045bd85e596215e711ef0cf04b9280ab915e4541b23468c2993f911430fc4"
+    "bytes": 3944,
+    "sha256": "818ca4d1f471fa5e95c74005a5b7acd8a1c19b65070c788a843c9b7183cefa9e"
   },
   {
     "file": "src/cry-audio.ts",
@@ -12081,8 +12081,8 @@
   },
   {
     "file": "src/dex-ui.ts",
-    "bytes": 3614,
-    "sha256": "02fc1adee2e3fe0428aa5c8bd50cdc0c87f71fe0bf3af3621f2a7d4f20c01ae0"
+    "bytes": 3747,
+    "sha256": "12a4bbaa3bff756f2e2d50f7dbb13dc81d43ac855718f3a6c1ec8f080acec84d"
   },
   {
     "file": "src/difficulty.ts",
@@ -12123,6 +12123,11 @@
     "file": "src/gauntlet.ts",
     "bytes": 1372,
     "sha256": "d4d66c0b65c61c0644bcf927376e132bf014c1dc85f35cddad82977d0669dfe8"
+  },
+  {
+    "file": "src/i18n.ts",
+    "bytes": 3210,
+    "sha256": "a10fa23bf4ee074a31d7a8e0016877883ee716068f32796a864e674310dff715"
   },
   {
     "file": "src/interior-bounds.ts",
@@ -12196,13 +12201,18 @@
   },
   {
     "file": "src/local-map.ts",
-    "bytes": 13829,
-    "sha256": "7ac62e524a65ca36f27a0f681ad0b20e858fa39da5f93cea5abe5080d94dfcb2"
+    "bytes": 13936,
+    "sha256": "e99dac3fdee0bdd0e2a283eaf2811f129e08ff2eb48d32e0b8774798eb8fed02"
+  },
+  {
+    "file": "src/locales/en.json",
+    "bytes": 102787,
+    "sha256": "aa879471d23998a291cc339450ff4e3e6b35868977649d750e0c21dc89ab05ca"
   },
   {
     "file": "src/main.ts",
-    "bytes": 39609,
-    "sha256": "f79120ea28373321b82c0acad32a67d92b3c323c8ec70a66585483821ebc257e"
+    "bytes": 40330,
+    "sha256": "5f57a1ad7be5177c2f79a278ec5b2d09a2971b914c71da7806d2425351ac7030"
   },
   {
     "file": "src/map-controls.ts",
@@ -12276,8 +12286,8 @@
   },
   {
     "file": "src/settings.ts",
-    "bytes": 652,
-    "sha256": "eeaefc9b4bdfb340261206038ed327da72534ea964565b69970f3446abef5acb"
+    "bytes": 753,
+    "sha256": "1c4faf32da63cc8fa6e47b5f9c3d994aea332566de7187ca4bfcb9d0c45afab9"
   },
   {
     "file": "src/shiny.ts",
@@ -12346,18 +12356,18 @@
   },
   {
     "file": "src/ui-v2.css",
-    "bytes": 48215,
-    "sha256": "5356262acc81ccae149c6fc0cfc674e8ff9362dd6a72840805ea8dd15abedee0"
+    "bytes": 48643,
+    "sha256": "6e96fc8825ffff2980d3d5470df9832e3a3e0ae6a577136182a05a6f09e5a96f"
   },
   {
     "file": "src/ui-v2.ts",
-    "bytes": 19011,
-    "sha256": "1afb5264eb57bb027dc99926bdf59d6c3985371bf5b270ef53b0781eab7554f5"
+    "bytes": 19072,
+    "sha256": "e4b71acab8ffc394f3a0142a71fc984b9c4e28ded806237d4006ac55f4455a17"
   },
   {
     "file": "src/view.ts",
-    "bytes": 27835,
-    "sha256": "c84be609e72159889d474e5237f46fc46ae940c643d44dc785b8778692e6ab2c"
+    "bytes": 27901,
+    "sha256": "7baa768e6e95ec91ef0095efb3fc51f98687e0cde507b0b8db56995f094c8781"
   },
   {
     "file": "src/vite-env.d.ts",
@@ -12391,8 +12401,8 @@
   },
   {
     "file": "src/world-view.ts",
-    "bytes": 7102,
-    "sha256": "e6f2f410da131b5ad4b54fad6f00c6ed5d2fe0266ca9f14c340e843c58072f4b"
+    "bytes": 7284,
+    "sha256": "c87f88d3423bcc65b60517007fca12a534164188907462bc2ab229a7e30ece41"
   },
   {
     "file": "src/world.ts",
@@ -12400,9 +12410,14 @@
     "sha256": "7c676efc1fb256202a5321133a9ec7e2e6ff8ea3f17029771e9d0fa5618c0dc1"
   },
   {
+    "file": "Start game.cmd",
+    "bytes": 395,
+    "sha256": "2cbcbb94526dc56bd3fd30572372a37b97fa936e1b1f5749c911a62fd1918644"
+  },
+  {
     "file": "Start-Auenwald.cmd",
-    "bytes": 40,
-    "sha256": "2ac1c49fbed18f2aa857b4db056840314f0101c7f6dec8564a8dc7eeff169a3c"
+    "bytes": 39,
+    "sha256": "1424603728cd51742f3e7a9d565c7a3d0e08f080a3593f9386e1e4d95a806335"
   },
   {
     "file": "tests/developer-export.test.ts",
@@ -12425,6 +12440,11 @@
     "sha256": "4fd98d2252aee82133e301fe067e454132d62b5db93d8e9d81dcafaac2e319e1"
   },
   {
+    "file": "tests/i18n.test.ts",
+    "bytes": 3186,
+    "sha256": "82aee3f0f4aae532ab61fbcee1529519ef37f7dc5eaf2515aee1381ce15cc7d8"
+  },
+  {
     "file": "tests/interior-care.test.ts",
     "bytes": 7325,
     "sha256": "f70b176cf708d703c3208f5cd5a8ddf0652b88aa6b11b3efa93a5ff3ebc2d18b"
@@ -12436,8 +12456,8 @@
   },
   {
     "file": "tests/kanto-integration.test.ts",
-    "bytes": 7084,
-    "sha256": "01bf8ca171bcd4b422a0349871ddc1e57cddc44ea42b59866dd37284efdf0d6e"
+    "bytes": 7123,
+    "sha256": "4807c051d3c61224c261b3ce8f78fef988097c06d86967dac6b67faa3a9a17ff"
   },
   {
     "file": "tests/kanto-world-catalog.test.ts",
@@ -12516,8 +12536,8 @@
   },
   {
     "file": "tests/security.test.ts",
-    "bytes": 6474,
-    "sha256": "2169da77d0e8032037f5a49abce958e6460aba03afca2b23c897863861d1afac"
+    "bytes": 6473,
+    "sha256": "078400b47ec7793bc508dfae9065a953e1124dbde0692212adb284e2919979f5"
   },
   {
     "file": "tests/server.test.ts",
@@ -12581,8 +12601,8 @@
   },
   {
     "file": "THIRD-PARTY-NOTICES.md",
-    "bytes": 3617,
-    "sha256": "6ef6bcc0dbb34a65c9db596d09545690e055c3a6164c67bf547a252dbbd1b566"
+    "bytes": 3368,
+    "sha256": "f6232b559a9ce6628ae7d1da5432c012da2eab898d42c86a579c3e21f0387ac1"
   },
   {
     "file": "tools/assets/.npmrc",
@@ -12601,8 +12621,8 @@
   },
   {
     "file": "TRAINER-MOTION.md",
-    "bytes": 2182,
-    "sha256": "2da743dcb9503d29533c7399739cc36448b14e00f78adf6bda6ea043809049b9"
+    "bytes": 1728,
+    "sha256": "20c2bc56bf27fc9099cf1500f8b2fb79bea2b873e926c1ed34b937f7effbbd06"
   },
   {
     "file": "tsconfig.json",
@@ -12616,12 +12636,12 @@
   },
   {
     "file": "WEAPONS.md",
-    "bytes": 5688,
-    "sha256": "b5e96ea6c5adb306afb0310ebb65a849ec54fb0c1997816702e536543c14f081"
+    "bytes": 4593,
+    "sha256": "98f86c5adcc672375d014cc7fd61ee81a8a2e28d30bf680bb8a9e70836374888"
   },
   {
     "file": "WORLD-STORY.md",
-    "bytes": 12564,
-    "sha256": "e74a60d10f659a2e4a2842de67f18e5e2f62330d65de6e74fc1b90ea40e9ac1e"
+    "bytes": 8892,
+    "sha256": "79f17e28813a8ba7af0c7d0838c0c7346c8c9401e21ca2fe0ddf5c060f926e45"
   }
 ]

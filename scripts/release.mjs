@@ -14,14 +14,14 @@ if(version!==config.version)throw Error('Package and release status version diff
 const publicBuild=process.argv.includes('--public'),localBuild=process.argv.includes('--local');
 if(process.argv.length!==3||!['--source','--local','--public'].includes(process.argv[2]))throw Error('Choose exactly one: --source, --local or --public');
 if(publicBuild&&(config.publicReleaseApproved!==true||config.assetRedistributionCleared!==true||config.manualAcceptanceComplete!==true)){
- throw Error('Öffentlicher Vollrelease gesperrt. Offene Freigaben stehen in release-config/status.json und docs/RELEASE-READINESS.md.');
+ throw Error('Public player release blocked. Outstanding approvals are listed in release-config/status.json and docs/RELEASE-READINESS.md.');
 }
 if(!publicBuild&&!localBuild&&!process.argv.includes('--source'))throw Error('Choose --source, --local or --public');
 const sha=data=>createHash('sha256').update(data).digest('hex');
 const source=await collectSource(root);
 const files=localBuild||publicBuild?await verifyBuild(root,{requireAssets:true}):new Map();
 async function file(target,sourcePath=target,map=source){const bytes=await readSafe(root,sourcePath);scanPublicFile(target,bytes);map.set(target,bytes);}
-source.set('ASSETS-NOT-INCLUDED.txt',Buffer.from('Dieser Quellcode-Snapshot enthaelt keine Pokemon-Grafiken und Rufe. Er ist kein spielbarer Download. Es erfolgt kein automatischer Mediendownload. Siehe docs/ASSET-STATUS.md.\\n'.replace('\\n','\n')));
+source.set('ASSETS-NOT-INCLUDED.txt',Buffer.from('This code-only snapshot excludes Pokemon images and cries. It is not a playable download. No media is downloaded automatically. See docs/ASSET-STATUS.md.\\n'.replace('\\n','\n')));
 // No machine paths, credentials, private saves, original media or caches enter this positive-list export.
 for(const [name,bytes] of source)scanPublicFile(name,bytes);
 await mkdir(out,{recursive:true});
@@ -30,7 +30,7 @@ const wrap=(map,prefix)=>new Map([...map].map(([p,b])=>[prefix+'/'+p,b]));
 const sourceZip=makeZip(wrap(source,base+'-source'));await writeFile(path.join(out,sourceName),sourceZip);
 const artifacts=[{file:sourceName,bytes:sourceZip.length,sha256:sha(sourceZip),scope:'Own code under GPL-3.0-only, notices and metadata; Pokemon binary media excluded.'}];
 if(localBuild||publicBuild){
- for(const name of ['server.mjs','Spiel starten.cmd','LICENSE','THIRD-PARTY-NOTICES.md','SECURITY.md'])await file(name,name,files);
+ for(const name of ['server.mjs','Start game.cmd','Spiel starten.cmd','LICENSE','THIRD-PARTY-NOTICES.md','SECURITY.md'])await file(name,name,files);
  await file('BITTE ZUERST LESEN.txt','docs/PLAYER-QUICKSTART.txt',files);
  const runtime=await prepareRuntime(root);
  files.set('runtime/node.exe',runtime.exe);files.set('runtime/LICENSE',runtime.license);

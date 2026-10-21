@@ -1,39 +1,64 @@
-# Prüfung 0.8.0 — Kanto-Welt, Minimap und Innenräume
+# Validation 0.8.0 — Kanto world, minimap and interiors
 
-## Automatisierte Prüfungen
+Historical report; later versions supersede these version-specific results.
 
-`npm test`: **96 bestanden**, keine Fehler. `npm run build` einschließlich TypeScript-Prüfung erfolgreich. Die bekannte Größenwarnung des Phaser-Bündels bleibt. Tests (`qa/v8-tests-final.txt`, nur im lokalen Arbeitsbestand) · Build (`qa/v8-build.txt`, nur im lokalen Arbeitsbestand).
+## Automated checks
 
-- Alle **58 Gebäudetüren** gehören zu einem verbundenen Straßennetz. Straßenmittellinien bleiben außerhalb von Fundamenten und innerhalb begehbarer Flächen; auch die gezeichneten Übergänge werden geprüft.
-- Alle **57 Verbindungen**: durchgehend begehbare Mittellinien und breite Seitenstreifen nach Freischaltung. Fußwege an Küsten bleiben durchgängig Land oder Holzdeck.
-- Jede erzeugte Gebietssperre: gesamte Breite ohne Kollisionslücke, Bewegung/Dash gestoppt, nach Erhalt der Reisehilfe offen.
-- Gebäudezugang für jede der **27 Storyetappen**, einschließlich abgeschlossenem Inhalt, unbenutzten Häusern und noch abzuholender Beute.
-- Alle bestehenden Raumlayouts: Möbel, NPC-Erreichbarkeit, Ausgang und Speicher-Rundlauf. Alte Spielstände in heute geschlossenen Häusern bleiben verlassbar.
-- Hintergrundtakt: Zeitfortschritt ohne gehaltene Eingaben, Halt bei Entscheidungen, begrenztes Nachholen nach vollständiger Aussetzung.
-- Bisherige Regressionen für 151 Arten, Entwicklung, Kampagne, Speicherstände, Fang, Baumkollision, Dash und Heilversorgung bestehen weiter.
+**96 tests passed**, no failures; TypeScript/production build passed. The known
+large Phaser bundle warning remained. Local logs: `qa/v8-tests-final.txt`,
+`qa/v8-build.txt`.
 
-## Sichtprüfung und Spieltest
+- All **58 doors** connect to the road network. Centerlines avoid foundations
+  and stay walkable; drawn transitions are checked too.
+- All **57 connections** have continuous unlocked centerlines and broad shoulders.
+  Coastal paths remain land or wooden deck.
+- Every generated barrier covers its opening without a collision gap, blocks
+  walking/dashing and opens with its required travel item.
+- Access checks cover **27 story stages**, completed content, unused houses and
+  unclaimed loot.
+- Room furniture, NPC approaches, exits and save round-trips checked. Old saves
+  inside now-closed buildings can still leave.
+- Background time advances without held input, pauses for decisions and bounds
+  catch-up after suspension.
+- Existing species/evolution/campaign/save/capture/collision/dash/healing regressions pass.
 
-Getrennte Testadresse **4175**; reguläre Menüs, Bewegung und Spielstandimport. Spielstände auf **4173** wurden nicht ersetzt.
+## Visual and gameplay checks
 
-- Alle **51 Orte** in der gemeinsamen Gelände-/Minimap-Darstellung visuell verglichen: Städte (`qa/v8-atlas-1.png`, nur im lokalen Arbeitsbestand), Routen 2–13 (`qa/v8-atlas-2.png`, nur im lokalen Arbeitsbestand), Routen 14–25 (`qa/v8-atlas-3.png`, nur im lokalen Arbeitsbestand), Dungeons und letzte Ziele (`qa/v8-atlas-4.png`, nur im lokalen Arbeitsbestand). Prüfseite: `qa/v8-world-review.html` am Entwicklungsserver; nicht Bestandteil des Produktionsbuilds.
-- Alabastia: verbundene Hauspodeste, Straßen um Fundamente, neue Minimap mit Blickrichtung und Zielmarkierung. Spielansicht (`qa/v8-alabastia.png`, nur im lokalen Arbeitsbestand).
-- Haus ohne Auftrag: E belässt den Trainer draußen und zeigt den konkreten Schließhinweis. Beleg (`qa/v8-closed-house.png`, nur im lokalen Arbeitsbestand).
-- Vertanias nördliche Sperre reicht sichtbar von einem bewaldeten Rand zum anderen. Ansicht (`qa/v8-gate.png`, nur im lokalen Arbeitsbestand).
-- Markt über E betreten, zur Theke gelaufen, Verkäufer angesprochen und Handelsmenü geöffnet. Neue warme Fliesen und Innenraum-Minimap sichtbar. Spielansicht (`qa/v8-market.png`, nur im lokalen Arbeitsbestand).
-- Raumkanten, Sockel und Ausgang geprüft: Markt (`qa/v8-market-room.png`, nur im lokalen Arbeitsbestand), Center (`qa/v8-center-room.png`, nur im lokalen Arbeitsbestand), Arena (`qa/v8-arena-room.png`, nur im lokalen Arbeitsbestand).
-- Fokuswechsel: **00:56 → 01:35** bei rund 39 Sekunden Echtzeit; davor und danach kein Pausendialog. Messung (`qa/v8-focus.json`, nur im lokalen Arbeitsbestand). Esc pausiert weiterhin regulär.
-- Im Spiel-Browserprotokoll keine Warnungen/Fehler. Die separate Prüfseite erzeugte zunächst beim Verstecken ihres 3D-Zeichenbereichs einen Framebuffer-Fehler; der Prüfseitenwechsel wurde auf Pause und Verlagerung bei unveränderter Zeichenflächengröße korrigiert. Nach der Korrektur wurden alle 51 Ansichten ohne neue Browserfehler erzeugt (Nachprüfung (`qa/v8-world-review-fixed.json`, nur im lokalen Arbeitsbestand)). Diese Prüfseite wird nicht ausgeliefert. Protokoll (`qa/v8-browser-log.json`, nur im lokalen Arbeitsbestand).
+Separate port **4175**, normal menus/movement/import; user saves on **4173**
+were not replaced.
 
-## Auslieferung und Grenzen
+All **51 locations** were compared in shared terrain/minimap views:
+`qa/v8-atlas-1.png` (towns), `-2.png` (Routes 2–13), `-3.png` (Routes 14–25),
+`-4.png` (dungeons/final destinations). The local review page
+`qa/v8-world-review.html` is not in production.
 
-Der fertige Produktionsbuild wurde zusätzlich auf der getrennten Testadresse geladen; der gespeicherte Markt-Innenraum ließ sich regulär fortsetzen. Produktions-Browserprotokoll ohne Warnungen/Fehler (`qa/v8-production-browser-log.json`, nur im lokalen Arbeitsbestand).
+Pallet paths/foundations and minimap direction/objective were checked
+(`qa/v8-alabastia.png`). A house without an active task showed its then-current
+closure reason (`qa/v8-closed-house.png`). Viridian's northern barrier visibly
+spanned both wooded edges (`qa/v8-gate.png`). Entered a Mart with E, walked to
+the clerk and opened shopping; checked warm tiles and minimap
+(`qa/v8-market.png`). Room edges/baseboards/exits: `qa/v8-market-room.png`,
+`qa/v8-center-room.png`, `qa/v8-arena-room.png`.
 
-**http://127.0.0.1:4173/** liefert **0.8.0**. HTML, aktuelle JS-/CSS-Bündel und Innenraumgrafiken: **59 Dateien mit HTTP 200 und identischem lokalem Inhalt**. HTTP-Nachweis (`qa/v8-http.json`, nur im lokalen Arbeitsbestand).
+Focus switch: **00:56 → 01:35** over approximately 39 real seconds, without
+a pause dialog (`qa/v8-focus.json`). Esc still pauses.
 
-Die Kontrolle umfasst die gesamte definierte Karten-Geometrie und alle Ortsübersichten, nicht eine erneute manuell durchgespielte 27-Etappen-Kampagne. Die Kanto-Welt bleibt eine verdichtete Survivors-Adaption. Browser und Betriebssystem können Hintergrundausführung drosseln oder vollständig aussetzen; das Spiel selbst öffnet beim Fokusverlust keine Pause. Nach vollständiger Aussetzung werden pro Hintergrundtakt höchstens zwei Sekunden nachgeholt.
+No warnings/errors in the game browser log. The separate review page initially
+produced a framebuffer error when hiding its 3D canvas; it was changed to pause
+and move the canvas without resizing. All 51 views were regenerated without
+new browser errors (`qa/v8-world-review-fixed.json`, `qa/v8-browser-log.json`).
 
-Belege der vorherigen Fassung bleiben als `qa/v7-*` erhalten.
+## Package and limits
 
-Hinweis zum Quellcodeexport: Verweise auf lokale Bild-/Testbelege sind als Text
-markiert; die zugehörigen Dateien gehören nicht zum öffentlichen Snapshot.
+The production build was loaded separately and resumed a saved Mart interior.
+Its browser log had no warnings/errors (`qa/v8-production-browser-log.json`).
+At that check, port 4173 served 0.8.0: **59** HTML/JS/CSS/interior files returned
+HTTP 200 with identical bytes (`qa/v8-http.json`).
+
+This covers defined geometry and location overviews, not another manual
+27-stage campaign. Kanto remains a compressed adaptation. Browsers/OSes can
+throttle or suspend background execution; the game itself does not pause on
+focus loss. Catch-up is at most two seconds per background tick.
+
+Earlier `qa/v7-*` evidence remains local. Named QA images/logs are not included
+in the public snapshot.

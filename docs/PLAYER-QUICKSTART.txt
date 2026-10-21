@@ -1,45 +1,46 @@
-POKEMON SURVIVORS 1.0.0-rc.6.3 — LOKALE TESTFASSUNG
+POKEMON SURVIVORS 1.0.0-rc.6.5 — LOCAL PLAYER TEST BUILD
 
-1. Rechtsklick auf das ZIP -> Alle extrahieren.
-2. Im entpackten Ordner "Spiel starten.cmd" doppelklicken.
-3. Der Browser oeffnet http://127.0.0.1:4173/
-4. Partner, Trainer, Laufart und Schwierigkeit auswaehlen.
+1. Right-click the ZIP and choose Extract All.
+2. Double-click "Start game.cmd" in the extracted folder.
+3. Your browser opens http://127.0.0.1:4173/
+4. Choose your partner, trainer, run mode and difficulty.
+5. English is the default. Select Deutsch in camp or Settings for German.
 
-Keine Installation. Keine Administratorrechte. Kein Internet zum Spielen.
-Die benoetigte Laufzeit liegt unveraendert im Ordner runtime.
-Fuer Windows 10/11 mit 64-Bit-x64-Prozessor und aktuellem Edge oder Chrome.
-Tastatur und Maus erforderlich. Touch/Gamepad sind noch nicht unterstuetzt.
+No installation, administrator access or internet is needed to play.
+The unmodified runtime is included under runtime/.
+For Windows 10/11 on x64 with current Edge or Chrome.
+Keyboard and mouse required; touch/gamepad are not supported yet.
 
-Das Startfenster offen lassen. Nach "Speichern & ins Camp" das Startfenster
-schliessen oder Strg+C druecken. Ein erneuter Start erkennt eine bereits
-laufende Fassung. Wird Port 4173 von einem anderen Programm verwendet,
-beendet der Starter dieses Programm nicht.
+Keep the launch window open. After "Save & return to camp", close it or
+press Ctrl+C. A second launch detects a running copy. If another program
+uses port 4173, the launcher does not terminate it.
 
-STEUERUNG
-WASD / Pfeile: laufen. Leertaste: ausweichen. E: interagieren.
-Tab: Team / Entwicklungen. M: Karte. Esc: Pause / Speichern.
-Beim Raustabben laeuft das Spiel weiter. Zum sicheren Pausieren Esc.
+CONTROLS
+WASD / arrows: move. Space: dodge. E: interact.
+Tab: team / evolutions. M: map. Esc: pause / save.
+The game continues when switching windows. Press Esc to pause.
 
-SPEICHERSTAENDE
-Wald, Kanto und Bossansturm besitzen getrennte Speicherplaetze.
-Im Camp oder Pausenmenue "Alles sichern" / "Alle Spielstaende & Profil
-sichern" waehlen. Die JSON-Datei nimmt auch Pokedex und Einstellungen mit.
-In einem neuen Browser diese Sicherung importieren.
-Browserdaten loeschen oder andere Adresse/anderer Browser = anderer Speicher.
-Einfaches Ersetzen dieses Spielordners loescht den Browserspeicher nicht.
-Vor einem Versionswechsel trotzdem eine komplette Sicherung exportieren.
+SAVES
+Forest, Kanto and Boss Rush have separate save slots.
+Choose "Back up everything" in camp or "Back up all saves & profile"
+while paused. The JSON file also includes your Pokedex and settings.
+Import it when moving to another browser.
+Clearing browser data or changing browser/address uses different storage.
+Replacing the game folder does not delete browser saves.
+Still, export a complete backup before updating.
 
-PROBLEME
-Kein Browserfenster: http://127.0.0.1:4173/ manuell oeffnen.
-Port belegt: Altes Spiel-Startfenster schliessen und erneut starten.
-Fehlende Dateien: Das ganze ZIP erneut in einen neuen Ordner entpacken.
-Leere Bilder: Browserseite neu laden; nicht dist/index.html doppelklicken.
-Windows-Hinweis bei heruntergeladenen Programmen: Das Paket ist nicht
-zusaetzlich als Installer signiert. Sicherheitsfunktionen nicht abschalten.
+TROUBLESHOOTING
+No browser window: open http://127.0.0.1:4173/ manually.
+Port busy: close your previous game launch window, then try again.
+Missing files: extract the entire ZIP into a new folder.
+Missing images: reload the browser; do not double-click dist/index.html.
+Windows download warning: the overall package has no additional installer
+signature. Do not disable security features.
 
-VEROEFFENTLICHUNGSSTATUS
-Dieses Paket enthaelt Original-Pokemon-Medien, deren oeffentliche
-Weiterverteilungsfreigabe nicht dokumentiert ist. Es dient dem lokalen Test.
-Nicht als bereits freigegebenen Github-Release weiterverteilen.
-Eigener Code: GPL-3.0-only. Fremdmedien sind davon ausgenommen.
-Lizenz, Quellen und korrespondierender Code liegen im Paket.
+RELEASE STATUS
+This local player test package includes original Pokemon media for which
+public redistribution permission is not documented. It is not a cleared
+stable player release. The separately published developer prerelease includes
+the editable project and media for local development.
+Original code: GPL-3.0-only. Third-party media is excluded from that grant.
+Licenses, sources and corresponding code are included.

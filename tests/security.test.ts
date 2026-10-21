@@ -67,7 +67,7 @@ test('ambiguous release flags and unapproved public builds fail before packaging
   const run = (...args: string[]) => spawnSync(process.execPath, ['scripts/release.mjs', ...args], {cwd: root, encoding: 'utf8', windowsHide: true});
   assert.notEqual(run('--source', '--public').status, 0);
   const status = JSON.parse(await readSafe(root, 'release-config/status.json'));
-  if (!status.publicReleaseApproved || !status.assetRedistributionCleared || !status.manualAcceptanceComplete) assert.match(run('--public').stderr, /gesperrt/);
+  if (!status.publicReleaseApproved || !status.assetRedistributionCleared || !status.manualAcceptanceComplete) assert.match(run('--public').stderr, /blocked/);
 });
 test('build verification rejects extra raw files, changed source and missing player media', async () => {
   const dir = await mkdtemp(path.join(tmpdir(), 'survivors-build-'));

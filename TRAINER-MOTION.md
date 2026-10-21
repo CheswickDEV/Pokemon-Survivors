@@ -1,14 +1,30 @@
-# Trainerbewegung 0.5.0
+# Trainer movement 0.5.0
 
-Alle sechs Figuren (Rot, Blatt, Klarin, Kris, Brix, Maike) verwenden vollständige, neu erzeugte Pixelart-Figuren in acht Richtungen. Kein Bild wird aus Front- und Seitenstreifen zusammengesetzt. Auch die Kardinalansichten wurden passend neu erstellt, damit Detailgrad und Stil beim Drehen zusammenpassen. Ganze linke Ansichten sind Spiegelungen ganzer rechter Posen.
+All six characters (Red, Leaf, Ethan, Kris, Brendan and May) use complete,
+newly generated pixel-art figures in eight directions. Frames are not assembled
+from front/side strips. Cardinal views were also recreated for consistent
+detail while turning. Entire left-facing poses mirror entire right-facing poses.
 
-Jeder Atlas unter `public/art/trainers-v5/*-complete.png` enthält 9 × 8 Zellen à 64 Pixel: Ruhepose plus acht Zeitphasen. Pro Richtung existieren sechs bis acht unterschiedliche Laufposen. Alle 432 Zellen wurden auf Transparenz, Standhöhe und unterschiedliche Posen geprüft. Die Figurenhöhe bleibt beim Richtungswechsel stabil; die bisherigen Größenfaktoren gelten weiter.
+Each `public/art/trainers-v5/*-complete.png` atlas has 9 × 8 cells of 64 pixels:
+one idle pose and eight temporal phases. Each direction has six to eight
+distinct walking poses. All 432 cells were checked for transparency, ground
+height and distinct poses. Character height stays stable through turns;
+existing display scales remain.
 
-Der Rhythmus bleibt streckenabhängig: zwei Schritte pro etwa 0,857 Sekunden bei normalem Tempo, mindestens 0,72 Sekunden beim Ausweichen. Richtungswechsel behalten die Phase. Zwischen den Simulationsschritten bleibt das letzte Bild stehen; 120/144-Hz-Bildschirme erzeugen keine zusätzlichen Ruhebilder. Pause hält die Pose an, Stillstand läuft kurz aus. Schritte erklingen nur beim Fußkontakt während Bewegung.
+Cadence follows distance: two steps per roughly 0.857 seconds at normal speed,
+at least 0.72 seconds during a dash. Turns retain phase. The last frame persists
+between simulation steps; 120/144 Hz screens do not insert extra idle frames.
+Pause freezes the pose; stopping briefly settles. Footsteps sound only on foot
+contact while moving.
 
-Die neuen Figuren sind mit ImageGen erzeugte Fan-Art, keine zusätzlichen offiziellen Originalsprites. Genaue Prompts, unveränderte Ausgaben und Importmetadaten stehen in [SOURCES.md](docs/asset-sources/trainers-v5-SOURCES.md). Der reproduzierbare Importer liegt unter `scripts/import-trainer-diagonals.py`. Frühere Originalgrafiken bleiben erhalten und dienen noch als Menüpiktogramme bzw. Rangerfigur.
+These figures are generated fan art, not additional official original sprites.
+Prompts, unchanged outputs and import metadata are in
+[SOURCES.md](docs/asset-sources/trainers-v5-SOURCES.md).
+The reproducible importer is `scripts/import-trainer-diagonals.py`.
+Earlier original graphics remain as menu icons and the ranger sprite.
 
-Prüfung: `tests/trainer-motion.test.ts` prüft Kadenz, acht Richtungen, Zeitlücken und Fußkontakte. Acht Richtungen je Trainer (`qa/trainer-complete-v5.png`, nur im lokalen Arbeitsbestand) und alle Laufzyklen (`qa/trainer-complete-v5.gif`, nur im lokalen Arbeitsbestand) zeigen die neuen vollständigen Atlanten. Der Browser lädt diese unmittelbar; der alte Projektionsgenerator wird nicht mehr verwendet.
-
-Hinweis zum Quellcodeexport: Verweise auf lokale Bild-/Testbelege sind als Text
-markiert; die zugehörigen Dateien gehören nicht zum öffentlichen Snapshot.
+`tests/trainer-motion.test.ts` checks cadence, eight directions, time gaps and
+foot contacts. Local-only evidence includes `qa/trainer-complete-v5.png`
+(eight directions per trainer) and `qa/trainer-complete-v5.gif` (all cycles).
+The browser loads the complete atlases directly; the old projection generator
+is no longer used. These local QA images are not part of the public snapshot.

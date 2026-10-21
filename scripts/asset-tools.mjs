@@ -3,6 +3,6 @@ const require = createRequire(new URL('../tools/assets/package.json', import.met
 export function loadSharp() {
   try { return require('sharp'); }
   catch (error) {
-    throw new Error('Optionales Bildwerkzeug fehlt. Ein Terminal in tools/assets öffnen und dort npm ci ausführen.', {cause: error});
+    throw new Error('Optional image tool missing. Open a terminal in tools/assets and run npm ci there.', {cause: error});
   }
 }

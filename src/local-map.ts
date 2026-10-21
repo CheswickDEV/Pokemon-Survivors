@@ -1,3 +1,4 @@
+import {translateText,getLanguage} from './i18n.ts';
 import {kantoSurface} from './kanto-surface.ts';
 import {TRIAL_ARENA} from './trial-arena.ts';
 import type {RunState} from './engine.ts';
@@ -63,7 +64,7 @@ export function drawLocalMap(canvas:HTMLCanvasElement,s:RunState){
  const key=s.mode+':'+s.seed+':'+s.story.unlocks.join('|');if(key!==terrainKey){terrainKey=key;chunks.clear();objectChunks.clear();}
  c.clearRect(0,0,size,size);c.save();c.beginPath();c.roundRect(0,0,size,size,16);c.clip();
  c.fillStyle='#4b6b60';c.fillRect(0,0,size,size);c.lineJoin='round';c.lineCap='round';
- const staticKey=key+':'+size+':'+(room?.building.id??'outside')+':'+s.story.done.join(',')+':'+s.completed.join(',')+':'+s.quests.camp.collected.join(',')+':'+s.quests.camp.started+':'+s.quests.tree.started+':'+s.enemies.filter(f=>f.questId==='tree'&&f.objective!==undefined&&f.hp>0).map(f=>f.objective).join(',');
+ const staticKey=getLanguage()+key+':'+size+':'+(room?.building.id??'outside')+':'+s.story.done.join(',')+':'+s.completed.join(',')+':'+s.quests.camp.collected.join(',')+':'+s.quests.camp.started+':'+s.quests.tree.started+':'+s.enemies.filter(f=>f.questId==='tree'&&f.objective!==undefined&&f.hp>0).map(f=>f.objective).join(',');
  const anchor=room||s.mode==='bossrush'?center:{x:Math.round(center.x/128)*128,y:Math.round(center.y/128)*128};
  let base=staticBases.get(canvas);
  if(!base||base.key!==staticKey||base.x!==anchor.x||base.y!==anchor.y){
@@ -87,7 +88,7 @@ export function drawLocalMap(canvas:HTMLCanvasElement,s:RunState){
  const me=to(s.trainer);c.fillStyle='#fff9df99';c.beginPath();c.arc(me.x,me.y,12,0,7);c.fill();
  c.save();c.translate(me.x,me.y);c.rotate(Math.atan2(s.trainer.dy,s.trainer.dx)+Math.PI/2);c.beginPath();c.moveTo(0,-9);c.lineTo(7,7);c.lineTo(0,4);c.lineTo(-7,7);c.closePath();c.fillStyle='#c15859';c.strokeStyle='#fff9e9';c.lineWidth=2;c.fill();c.stroke();c.restore();
  c.fillStyle='#f8f1d8e8';c.beginPath();c.roundRect(size-34,9,24,30,5);c.fill();c.fillStyle='#4d6c60';c.font='bold 13px Trebuchet MS';c.textAlign='center';c.fillText('N',size-22,24);c.beginPath();c.moveTo(size-25,33);c.lineTo(size-19,33);c.lineTo(size-22,28);c.fill();
- if(!room){c.fillStyle='#f8f1d8dd';c.fillRect(12,size-34,82,24);c.strokeStyle='#52725e';c.lineWidth=2;c.beginPath();c.moveTo(18,size-17);c.lineTo(18+256*scale,size-17);c.stroke();c.font='11px Trebuchet MS';c.textAlign='left';c.fillStyle='#486751';c.fillText('8 Schritte',18,size-23);}
+ if(!room){c.fillStyle='#f8f1d8dd';c.fillRect(12,size-34,82,24);c.strokeStyle='#52725e';c.lineWidth=2;c.beginPath();c.moveTo(18,size-17);c.lineTo(18+256*scale,size-17);c.stroke();c.font='11px Trebuchet MS';c.textAlign='left';c.fillStyle='#486751';c.fillText(translateText('8 Schritte'),18,size-23);}
  c.restore();c.strokeStyle='#688b74';c.lineWidth=4;c.beginPath();c.roundRect(2,2,size-4,size-4,14);c.stroke();
 }
 const staticBases=new WeakMap<HTMLCanvasElement,{key:string;x:number;y:number;layer:HTMLCanvasElement}>();
@@ -129,7 +130,7 @@ function drawStaticMap(c:CanvasRenderingContext2D,s:RunState,size:number,center:
     c.fillStyle=b.kind==='center'||b.kind==='house-red'?'#bd777c':b.kind==='cave'?'#969785':'#7296ab';c.fillRect(p.x-w/2-1,p.y-h/2-1,w+2,h*.7);
     c.fillStyle='#ffffff55';c.fillRect(p.x-w/2+2,p.y-h/2+1,w-4,2);
     c.fillStyle='#486657';c.fillRect(p.x-2,p.y+h/2-5,4,5);
-    if(b.service||b.kind==='gym')marker(c,p.x,p.y-2,b.service==='heal'?'#ab646b':b.service==='shop'?'#577f9b':'#9c8051',b.service==='heal'?'C':b.service==='shop'?'M':'A');
+    if(b.service||b.kind==='gym')marker(c,p.x,p.y-2,b.service==='heal'?'#ab646b':b.service==='shop'?'#577f9b':'#9c8051',b.service==='heal'?'C':b.service==='shop'?'M':getLanguage()==='de'?'A':'G');
     if(!buildingAccess(s,b).open){c.fillStyle='#485e53';c.fillRect(p.x-6,p.y+h/2+1,12,4);}
    }
    for(const gate of routeGates(s.story.unlocks)){

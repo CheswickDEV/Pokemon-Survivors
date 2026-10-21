@@ -1,3 +1,4 @@
+import {localizeDom,setLanguage,getLocale,languagePicker} from './i18n.ts';
 import {mapControls,selectMapPlace} from './map-controls.ts';
 import {drawLocalMap} from './local-map.ts';
 import {difficulty,isDifficulty,type Difficulty} from './difficulty.ts';
@@ -26,6 +27,7 @@ import {applyHudScale,normalizeSettings} from './settings.ts';
 const app=document.querySelector<HTMLDivElement>('#app')!;
 app.innerHTML='<div id="world" aria-label="Spielfeld Auenwald"></div><div id="ui"></div><div id="modal"></div><div id="toast" role="status"></div><div id="announcer" class="sr-only" aria-live="polite"></div>';
 const ui=document.querySelector<HTMLDivElement>('#ui')!,modal=document.querySelector<HTMLDivElement>('#modal')!,toast=document.querySelector<HTMLDivElement>('#toast')!;
+localizeDom(app);
 const store=new SaveStore();
 let profile:Profile=defaultProfile(),saved:RunState|null=null,engine:Engine|null=null;
 let panel:'camp'|'none'|'team'|'pause'|'dex'|'help'|'settings'|'confirm'|'map'|'import-confirm'|'journal'='camp',previousPanel:'camp'|'pause'='camp';
@@ -42,18 +44,19 @@ const esc=(s:unknown)=>String(s).replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;'
 const time=(n:number)=>`${Math.floor(n/60).toString().padStart(2,'0')}:${Math.floor(n%60).toString().padStart(2,'0')}`;
 const btn=(action:string,text:string,cls='',attrs='')=>`<button type="button" data-action="${action}" class="${cls}" ${attrs}>${text}</button>`;
 const image=(id:number,cls='')=>pokemonImage(id,cls,true);
-function announce(text:string){document.querySelector('#announcer')!.textContent=text;}
-function message(text:string,duration=3500){toast.textContent=text;window.clearTimeout(toastTimer);toastTimer=window.setTimeout(()=>toast.textContent='',duration);announce(text);}
+function announce(text:string){const node=document.querySelector('#announcer')!;node.textContent=text;localizeDom(node);}
+function message(text:string,duration=3500){toast.textContent=text;localizeDom(toast);window.clearTimeout(toastTimer);toastTimer=window.setTimeout(()=>toast.textContent='',duration);announce(text);}
 function dialog(title:string,subtitle:string,body:string,foot='',cls=''){
  modal.innerHTML=`<div class="veil"><section class="dialog ${cls}" role="dialog" aria-modal="true" aria-label="${esc(title)}"><div class="dialog-head"><div><div class="eyebrow">Pokémon Survivors · ${engine?.s.mode==='bossrush'?'Prüfungsarena':engine?.s.mode==='story'?'Kanto':'Auenwald'}</div><h2>${title}</h2><p>${subtitle}</p></div>${panel==='none'?'':btn('close','✕','close','aria-label="Fenster schließen"')}</div>${body}${foot?`<div class="dialog-foot">${foot}</div>`:''}</section></div>`;
+ localizeDom(modal);
  modal.querySelector<HTMLElement>('button:not(:disabled)')?.focus({preventScroll:true});
 }
 function home(){
  modal.innerHTML='';
- ui.innerHTML=homeMarkup({starter:selectedStarter,shiny:selectedStarterShiny,trainer:selectedTrainer,mode,difficulty:selectedDifficulty,profile,saved,ready,writable,assetsReady,error:saveError});
+ ui.innerHTML=homeMarkup({starter:selectedStarter,shiny:selectedStarterShiny,trainer:selectedTrainer,mode,difficulty:selectedDifficulty,profile,saved,ready,writable,assetsReady,error:saveError});localizeDom(ui);
 }
-function hud(){if(engine)ui.innerHTML=hudMarkup(engine.s);}
-function updateHud(){if(engine&&panel!=='camp')updateHudDom(engine);}
+function hud(){if(engine){ui.innerHTML=hudMarkup(engine.s);localizeDom(ui);}}
+function updateHud(){if(engine&&panel!=='camp'){updateHudDom(engine);localizeDom(ui);}}
 function showTeam(){
  if(!engine)return;
  const s=engine.s,locked=s.time<s.swapReady;
@@ -69,7 +72,7 @@ function showDex(){
 }
 function showSettings(){
  dialog('Deine Einstellungen','Passe die Anzeigen und Spielklänge an. Änderungen werden lokal gespeichert.',
- `<div class="stack"><label class="range-setting"><span>HUD-Größe <output id="hud-scale-value">${Math.round(profile.settings.hudScale*100)} %</output></span><input aria-label="HUD-Größe" type="range" min="70" max="150" step="5" value="${profile.settings.hudScale*100}" data-setting="hudScale"><small>70 % · kompakt <span>150 % · groß</span></small></label><label class="settings-row"><span>Spielklänge & Pokémon-Rufe</span><input type="checkbox" data-setting="sound" ${profile.settings.sound?'checked':''}></label><label class="range-setting"><span>Lautstärke <output id="volume-value">${Math.round(profile.settings.volume*100)} %</output></span><input aria-label="Lautstärke" type="range" min="0" max="100" step="5" value="${profile.settings.volume*100}" data-setting="volume"></label><label class="settings-row"><span>Volle Kampfeffekte</span><input type="checkbox" data-setting="effects" ${profile.settings.effects?'checked':''}></label>${btn('preview-sound','Spielklang & Pikachu-Ruf anhören','small')}<p class="muted">Klassische Pokémon-Rufe und neue mehrstimmige Spielklänge im Handheld-Stil. Die HUD-Größe betrifft Lebenspunkte, Team, Erfahrung und Karte.</p></div>`,btn('close','Fertig','primary'),'narrow');
+ `<div class="stack">${languagePicker()}<label class="range-setting"><span>HUD-Größe <output id="hud-scale-value">${Math.round(profile.settings.hudScale*100)} %</output></span><input aria-label="HUD-Größe" type="range" min="70" max="150" step="5" value="${profile.settings.hudScale*100}" data-setting="hudScale"><small>70 % · kompakt <span>150 % · groß</span></small></label><label class="settings-row"><span>Spielklänge & Pokémon-Rufe</span><input type="checkbox" data-setting="sound" ${profile.settings.sound?'checked':''}></label><label class="range-setting"><span>Lautstärke <output id="volume-value">${Math.round(profile.settings.volume*100)} %</output></span><input aria-label="Lautstärke" type="range" min="0" max="100" step="5" value="${profile.settings.volume*100}" data-setting="volume"></label><label class="settings-row"><span>Volle Kampfeffekte</span><input type="checkbox" data-setting="effects" ${profile.settings.effects?'checked':''}></label>${btn('preview-sound','Spielklang & Pikachu-Ruf anhören','small')}<p class="muted">Klassische Pokémon-Rufe und neue mehrstimmige Spielklänge im Handheld-Stil. Die HUD-Größe betrifft Lebenspunkte, Team, Erfahrung und Karte.</p></div>`,btn('close','Fertig','primary'),'narrow');
 }
 function showHelp(){
  dialog('Zusammen durch den Wald.','Du bewegst den Trainer. Deine aktiven Pokémon greifen automatisch an.',
@@ -144,7 +147,7 @@ function queueSave(){
  if(!engine||!ready||!writable)return saveChain;
  const snapshot=JSON.parse(JSON.stringify(engine.s)) as RunState;
  saveChain=saveChain.catch(()=>{}).then(async()=>{
-  try{await store.saveRun(snapshot);saved=snapshot;lastSaved=new Date().toLocaleTimeString('de-DE',{hour:'2-digit',minute:'2-digit'});saveError='';}
+  try{await store.saveRun(snapshot);saved=snapshot;lastSaved=new Date().toLocaleTimeString(getLocale(),{hour:'2-digit',minute:'2-digit'});saveError='';}
   catch(e){saveError='Speichern fehlgeschlagen: '+(e as Error).message;message(saveError,7000);}
  });
  return saveChain;
@@ -225,8 +228,8 @@ document.addEventListener('click',async event=>{
  const target=(event.target as HTMLElement).closest<HTMLElement|SVGElement>('[data-action]');if(!target||target instanceof HTMLButtonElement&&target.disabled)return;
  const action=target.dataset.action!,id=target.dataset.id,uid=Number(target.dataset.uid),slot=Number(target.dataset.slot),s=engine?.s;
  await gameAudio.unlock();
- if(action==='backup'){await queueSave();await saveChain;const data=await store.backup(),a=document.createElement('a');a.href=URL.createObjectURL(new Blob([JSON.stringify(data)],{type:'application/json'}));a.download='Pokemon-Survivors-Komplettsicherung-'+new Date().toISOString().slice(0,10)+'.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000);message('Vollständige Sicherung erstellt.');return;}
- if(action==='accept-backup'&&pendingBackup&&writable){await saveChain;await store.restoreBackup(pendingBackup);profile=await store.loadProfile();saved=await store.loadRun();pendingBackup=null;pendingImport=null;engine=null;panel='camp';mode=saved?.mode??'learn';selectedDifficulty=saved?.difficulty??'standard';selectedTrainer=profile.trainerId;selectedStarter=1;applyHudScale(profile.settings.hudScale);gameAudio.updateVolume();render();message('Profil und alle Laufstände wiederhergestellt.');return;}
+ if(action==='backup'){await queueSave();await saveChain;const data=await store.backup(),a=document.createElement('a');a.href=URL.createObjectURL(new Blob([JSON.stringify(data)],{type:'application/json'}));a.download='Pokemon-Survivors-Backup-'+new Date().toISOString().slice(0,10)+'.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000);message('Vollständige Sicherung erstellt.');return;}
+ if(action==='accept-backup'&&pendingBackup&&writable){await saveChain;await store.restoreBackup(pendingBackup);profile=await store.loadProfile();setLanguage(profile.settings.language);localizeDom(app);saved=await store.loadRun();pendingBackup=null;pendingImport=null;engine=null;panel='camp';mode=saved?.mode??'learn';selectedDifficulty=saved?.difficulty??'standard';selectedTrainer=profile.trainerId;selectedStarter=1;applyHudScale(profile.settings.hudScale);gameAudio.updateVolume();render();message('Profil und alle Laufstände wiederhergestellt.');return;}
  if(action==='difficulty'&&isDifficulty(id)){selectedDifficulty=id;home();return;}
  if(action==='journal'){previousPanel=engine?'pause':'camp';panel='journal';render();return;}
  if(action==='cry'){sound('cry:'+id);return;}
@@ -261,7 +264,7 @@ document.addEventListener('click',async event=>{
  if(action==='import'){if(writable)importRun();return;}
  if(!engine||!s)return;
  if(action==='pause'){panel='pause';void queueSave();}
- if(action==='map-place'&&id){selectedMapPlace=id;selectMapPlace(modal,id,placeCardMarkup(engine!.s,id));return;}
+ if(action==='map-place'&&id){selectedMapPlace=id;selectMapPlace(modal,id,placeCardMarkup(engine!.s,id));localizeDom(modal);return;}
  if(action==='map-plus'||action==='map-minus'){activeMap?.setZoom(mapZoom+(action==='map-plus'?.5:-.5));return;}
  if(action==='map'&&s.screen==='play'){panel='map';view.scene.resetKeys();}
  if(action==='start-story')engine.startStory(id!);
@@ -297,9 +300,14 @@ document.addEventListener('change',event=>{
  const target=event.target as HTMLInputElement;
  if(target.id==='extra-starter'){if(SPECIES[Number(target.value)])selectedStarter=Number(target.value);sound('cry:'+selectedStarter);home();}
  if(target.id==='research-target'&&writable){profile.targetSpecies=SPECIES[Number(target.value)]?Number(target.value):null;void store.put('profile',profile);}
+ if(target.dataset.setting==='language'){
+  profile.settings=normalizeSettings({...profile.settings,language:target.value as 'en'|'de'});
+  setLanguage(profile.settings.language);localizeDom(app);hud();render();
+  document.querySelector<HTMLElement>('[data-setting="language"]')?.focus();
+ }
  if(target.dataset.setting==='effects')profile.settings.effects=target.checked;
  if(target.dataset.setting==='sound'){profile.settings.sound=target.checked;void gameAudio.unlock().then(()=>sound('select'));gameAudio.updateVolume();}
- if(target.dataset.setting&&writable)void store.put('profile',profile);
+ if(target.dataset.setting&&writable)void store.put('profile',profile).catch(()=>message('Einstellungen konnten nicht gespeichert werden.'));
 });
 document.addEventListener('input',event=>{
  const target=event.target as HTMLInputElement,key=target.dataset.setting;
@@ -308,7 +316,7 @@ document.addEventListener('input',event=>{
   applyHudScale(profile.settings.hudScale);gameAudio.updateVolume();
   const output=document.getElementById(key==='hudScale'?'hud-scale-value':'volume-value');if(output)output.textContent=Math.round(profile.settings[key]*100)+' %';
  }
- if(target.id==='dex-search'||target.id==='dex-caught-only'){const term=(document.getElementById('dex-search') as HTMLInputElement)?.value.trim().toLocaleLowerCase('de')??'',caught=(document.getElementById('dex-caught-only') as HTMLInputElement)?.checked;document.querySelectorAll<HTMLElement>('.dex-card').forEach(card=>card.hidden=!card.dataset.search?.includes(term)||!!caught&&card.dataset.caught!=='true');}
+ if(target.id==='dex-search'||target.id==='dex-caught-only'){const term=(document.getElementById('dex-search') as HTMLInputElement)?.value.trim().toLocaleLowerCase()??'',caught=(document.getElementById('dex-caught-only') as HTMLInputElement)?.checked;document.querySelectorAll<HTMLElement>('.dex-card').forEach(card=>card.hidden=!card.dataset.search?.includes(term)||!!caught&&card.dataset.caught!=='true');}
 });
 document.addEventListener('keydown',ev=>{
  if(ev.key==='Escape'&&['dex','help','settings'].includes(panel)){panel=previousPanel;render();return;}
@@ -337,7 +345,7 @@ window.addEventListener('pageshow',event=>{if(event.persisted)window.location.re
 window.addEventListener('unhandledrejection',ev=>{console.error(ev.reason);message('Ein Fehler ist aufgetreten. Bitte den Lauf exportieren und neu laden.',7000);});
 async function boot(){
  try{
-  await store.open();profile=await store.loadProfile();selectedTrainer=trainerById(profile.trainerId).id;applyHudScale(profile.settings.hudScale);
+  await store.open();profile=await store.loadProfile();setLanguage(profile.settings.language);localizeDom(app);selectedTrainer=trainerById(profile.trainerId).id;applyHudScale(profile.settings.hudScale);
   try{saved=await store.loadRun();if(saved){mode=saved.mode;selectedDifficulty=saved.difficulty;}if(store.recovered)saveError='Die vorherige gültige Laufkopie wurde wiederhergestellt.';}catch(e){saveError=(e as Error).message;}
   if(navigator.locks){
    await new Promise<void>(resolve=>{void navigator.locks.request('auenwald-save-writer',{ifAvailable:true},async lock=>{writable=!!lock;resolve();if(lock)await new Promise<void>(release=>releaseLock=release);});});

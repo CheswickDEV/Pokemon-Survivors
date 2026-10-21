@@ -12,7 +12,7 @@ direction; their walking and attacking sequences are fully animated. Beedrill
 (#015) and Dragonair (#148) use their own Walk animation as Idle, as specified by
 the source XML. These are source-defined behaviors, not missing-asset substitutes.
 All source sheets, XML data, credits and output hashes are listed in
-manifest.json (`manifest.json`, nur im lokalen Arbeitsbestand). validation.json (`validation.json`, nur im lokalen Arbeitsbestand) records the
+manifest.json (`manifest.json`, local working evidence only). validation.json (`validation.json`, local working evidence only) records the
 completed frame, direction and image-dimension checks.
 
 ## Attribution
@@ -20,12 +20,12 @@ completed frame, direction and image-dimension checks.
 Original Pokémon Mystery Dungeon art is attributed in the upstream credit files
 to **CHUNSOFT**; additional contributors are recorded verbatim in each species'
 `credits.txt`. The upstream contributor registry is included as
-credit_names.txt (`credit_names.txt`, nur im lokalen Arbeitsbestand). Pokémon characters and original game artwork
+credit_names.txt (`credit_names.txt`, local working evidence only). Pokémon characters and original game artwork
 belong to their respective rights holders, including Nintendo, Creatures,
 GAME FREAK and the credited game developers. This is not original Auenwald artwork.
 
 The repository supplies [LICENSE.md](pokemon-motion-LICENSE.md), CC BY-NC 4.0, and distinguishes
-official sprites from contributed work in UPSTREAM-README.md (`UPSTREAM-README.md`, nur im lokalen Arbeitsbestand).
+official sprites from contributed work in UPSTREAM-README.md (`UPSTREAM-README.md`, local working evidence only).
 These records are retained without treating the repository license as a new grant
 of ownership over the underlying Pokémon characters.
 
@@ -65,5 +65,4 @@ smaller than the trainer while larger species retain their source size differenc
 Use nearest-neighbor sampling for pixel edges. Movement animation should advance
 only while moving, and its direction should follow actual displacement.
 
-Hinweis zum Quellcodeexport: Verweise auf lokale Bild-/Testbelege sind als Text
-markiert; die zugehörigen Dateien gehören nicht zum öffentlichen Snapshot.
+Code-export note: local image/test evidence is referenced as text; those files are not part of the public snapshot.

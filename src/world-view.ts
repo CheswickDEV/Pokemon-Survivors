@@ -1,3 +1,4 @@
+import {translateText,getLanguage} from './i18n.ts';
 import {sceneryChunk} from './kanto-scenery.ts';
 import {drawWorksite} from './gate-art.ts';
 import {drawWorldGround} from './world-ground.ts';
@@ -17,13 +18,14 @@ import {routeGates,terrainDistance,kantoWater,kantoDeck} from './kanto-terrain.t
 /** Only the visible neighbourhood owns textures. Coordinates and generated objects are stable on return. */
 export class WorldView {
  chunks=new Map<string,{texture:string;objects:Phaser.GameObjects.GameObject[]}>();
- landmarks:Phaser.GameObjects.GameObject[]=[];key='';serial=0;
+ landmarks:Phaser.GameObjects.GameObject[]=[];key='';serial=0;language=getLanguage();
  constructor(public scene:Phaser.Scene){}
  clear(){for(const c of this.chunks.values()){c.objects.forEach(o=>o.destroy());this.scene.textures.remove(c.texture);}this.chunks.clear();this.landmarks.forEach(o=>o.destroy());this.landmarks=[];}
  label(x:number,y:number,text:string,color='#fff6d7'){
-  return this.scene.add.text(x,y,text,{fontFamily:'Trebuchet MS',fontSize:'12px',fontStyle:'bold',color,backgroundColor:'#284c42e8',padding:{x:8,y:5},align:'center'}).setOrigin(.5).setDepth(y+120);
+  return this.scene.add.text(x,y,translateText(text),{fontFamily:'Trebuchet MS',fontSize:'12px',fontStyle:'bold',color,backgroundColor:'#284c42e8',padding:{x:8,y:5},align:'center'}).setOrigin(.5).setDepth(y+120);
  }
  update(s:RunState|undefined,p:Point,width:number,height:number,canPrefetch=true){
+  if(this.language!==getLanguage()){this.clear();this.key='';this.language=getLanguage();}
   if(s?.mode==='bossrush'){if(this.key!=='trial-arena'){this.clear();this.key='trial-arena';this.scene.cameras.main.setBackgroundColor('#294744');this.landmarks.push(drawTrialArena(this.scene));}return;}
   const room=s&&activeRoom(s);
   if(room){const roomKey='room:'+room.building.id;if(this.key!==roomKey){this.clear();this.key=roomKey;this.scene.cameras.main.setBackgroundColor('#263d40');this.chunks.set('room',drawInterior(this.scene,room,'world-room-'+(++this.serial)));}return;}

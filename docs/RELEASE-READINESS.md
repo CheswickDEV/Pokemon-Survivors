@@ -1,102 +1,89 @@
-# Abnahme für 1.0
+# Acceptance for 1.0
 
-**Stand: 1.0.0-rc.6.4. Veröffentlichung als Entwickler-Vorabversion beauftragt;
-keine vollständige stabile 1.0-Abnahme.**
+**Current version: 1.0.0-rc.6.5. Published as a developer prerelease;
+not a fully accepted stable 1.0.**
 
-Der vollständige Entwicklerdownload enthält inzwischen alle aktuellen Medien
-und vorhandenen Bearbeitungsquellen. Siehe [Entwicklerhandbuch](DEVELOPMENT.md)
-und [Übergabeprüfung](DEVELOPER-VALIDATION.md). Die technische Vollständigkeit
-und die unten dokumentierten offenen Medienrechte werden getrennt behandelt.
+The full developer download includes current media and available editing sources.
+See the [developer guide](DEVELOPMENT.md) and
+[handover validation](DEVELOPER-VALIDATION.md). Technical completeness and
+unresolved media rights are tracked separately.
 
-Die Inhaltsmenge reicht für einen klar begrenzten ersten Desktop-Release.
-Die wichtigste Lücke war nicht eine größere Pokédex-Zahl, sondern
-abwechslungsreiche Herausforderungen, verlässliches Sichern und ein einfacher
-Start. Diese Fassung ergänzt die entsprechenden Systeme. Sie erhebt keinen
-Anspruch, sämtliche Inhalte oder Regeln von Vampire Survivors nachzubauen.
+The scope supports a bounded first desktop release. Priorities were varied
+challenges, dependable saving and easy startup, rather than a larger Pokédex.
+This project does not claim to reproduce all Vampire Survivors features/rules.
 
-## Inhaltsprüfung
+## Content review
 
-| Bereich | Vorher | Release Candidate / Bewertung |
-|---|---|---|
-| Modi | Lernlauf, Expedition, Endlos, Kanto | Zusätzlich Bossansturm mit 15 Prüfungen; fünf klar beschriebene Modi |
-| Schwierigkeit | Vor allem an Lernlauf/Expedition gekoppelt | Entspannt, Standard, Veteran, Meister unabhängig von der Laufart; gespeicherte Regeln |
-| Bosse | Waldendkampf immer Bisaflor, andere Gegner mit wenigen gemeinsamen Effekten | 15 Bossprofile mit eigenen Sequenzen; Wechsel im Wald/Endlos; passende Muster für Storygegner; Warn-, Treffer- und Ausklangphase |
-| Pokémon | 151 Arten, 72 Entwicklungen | Vollständig im bestehenden Gen-1-Scope; ein Signaturangriff mit acht Rängen je Art; alle 151 mit seltenen Shiny-Varianten |
-| Items | Zwölf Passiva, sechs Entwicklungsmittel, Bälle und seltene Heilfunde | Jetzt 18 Passiva, zufällige Levelangebote mit Wiederholungsschutz und acht zusätzliche Talente, drei Talentplätze und legendäre Spieleffekte; Training +1 bis +3 Ränge; Ausrüstungslexikon, Markt, sechs Plätze und fünf Ränge je Passiv |
-| Waldquests | Drei mehrstufige Aufgaben und seltene Lichtungen | Vorhanden und getrennt von Bossansturm; Belohnung einmalig; Erfolgsabzeichen dauerhaft |
-| Story | 27 Etappen, acht Arenen, Rocket, Liga, Mewtu | Alle 27 Etappen im Meister-Kampagnentest mit drei Starter-Konstellationen durchlaufen; reguläre Niederlagen/Wiederholungen. Reisen und Training vorbereitet, manuelle Vollreise weiterhin offen. Siehe [RC6-Prüfung](RC6-VALIDATION.md) |
-| Karten | Räumlich unendlicher Auenwald, Kanto mit 51 Orten/57 Verbindungen/58 Gebäuden | Originale FR/LG-Regionskarte; eigene geländetreue RPG-Minimap, Mauszoom und Verschieben. Zusätzlich feste Prüfungsarena. Keine Zusage einer originalgetreuen Vollrekonstruktion: komplexe Gebäude bleiben verdichtete Räume |
-| Langzeitziele | Pokédex und einfache Siegzahl | Fortschrittsbuch mit zehn Abzeichen, Bossbuch, Entwicklungssammlung und Siegen je Modus/Schwierigkeit |
-| Speicher | Zwei wechselnde Kopien für Wald und Story; Einzelrun-Export | Dritter eigener Boss-Slot; vollständiger Export/Import von Profil und allen Slots; Format 1–5 wird auf 6 übernommen |
-| Installation | Node.js musste installiert sein | Windows-x64-ZIP mit mitgelieferter, hashgeprüfter Laufzeit; Doppelklick startet lokalen Browser |
-| GitHub | Kein geregelter Export und kein CI | Positivlisten-Export, GPL-3.0-only, Drittanbietertexte, CI für Quellcode, Bugvorlage, Changelog, Hashes; kein automatischer öffentlicher Medienupload |
+| Area | Release candidate status |
+|---|---|
+| Modes | Learning Run, Expedition, Endless, Kanto Story and 15-trial Boss Rush |
+| Difficulty | Relaxed, Standard, Veteran and Master, independent of mode and saved with the run |
+| Bosses | 15 profiles with distinct sequences, rotating forest/endless bosses, story patterns and visible warning/impact/recovery phases |
+| Pokémon | 151 species, 72 evolution paths, one eight-rank signature move each, rare Shiny variants for all species |
+| Items | 18 passives, six slots/five ranks each, randomized level offers with repetition protection, eight talents/three slots, legendary gameplay effects, training +1 to +3 ranks, equipment encyclopedia and shops |
+| Forest quests | Three multi-stage quests plus rare clearings; one-time rewards and persistent achievements |
+| Story | 27 stages, eight Gyms, Rocket, League and Mewtwo; three prepared Master combat campaigns completed with ordinary defeats/retries; manual full travel still outstanding |
+| Maps | Endless forest; Kanto with 51 locations, 57 connections and 58 buildings; original FR/LG region map, terrain-faithful local minimap, zoom/pan and fixed Trial Arena. Complex buildings remain compressed rooms. |
+| Long-term progress | Ten achievements, boss journal, evolution collection and wins by mode/difficulty |
+| Saves | Separate forest/story/boss slots, alternating copies, full profile/slot backup, formats 1–5 migrate to 6 |
+| Installation | Local Windows x64 test ZIP with hash-verified runtime and double-click launcher; developer archive with full sources/media |
+| GitHub | Reviewed allowlists, GPL-3.0-only code, third-party notices, Windows/Linux CI, bug form, changelog and checksums |
+| Languages | English by default; German selectable and saved locally; English public documentation |
 
-Die vier Schwierigkeitsstufen sind eine eigene Designentscheidung. Das Original
-hat auch eigene Modifikatoren wie Hyper und Inverse; diese sind nicht mit
-unseren vier Stufen gleichzusetzen. Die offizielle
-[Adventures-FAQ](https://poncle.games/adventures-faq) beschreibt separate
-Kapitelziele und solche freischaltbaren Modi. Unsere Echtzeit-Kanto-Kampagne
-bleibt ein eigener Entwurf.
+The four difficulty settings are this project's design choice, not equivalents
+of Vampire Survivors' Hyper/Inverse modifiers. Its official
+[Adventures FAQ](https://poncle.games/adventures-faq) describes separate chapter
+objectives and unlockable modes. This real-time Kanto campaign is a separate design.
 
-## Tatsächliche Blocker vor dem öffentlichen Vollrelease
+## Outstanding stable player-release requirements
 
-1. **Medienrechte:** Die Weiterverteilung aktiver Originalgrafiken und Rufe ist
-   nicht dokumentiert freigegeben. Rechte klären oder den betroffenen Bestand
-   vollständig ersetzen; Branding/Charaktere mitprüfen. Details:
-   [Assetstatus](ASSET-STATUS.md). Ein Fanprojekt-Hinweis hebt das nicht auf.
-2. **Unabhängige Spielabnahme:** Ein vollständiger Durchlauf auf einer sauberen
-   Windows-Installation ohne vorhandenes Node.js, eine echte Kanto-Reise mit
-   Wegen/Gebäuden und längere manuelle Balance-Tests stehen aus. Automatisierte
-   Kampfsimulationen überspringen teilweise Reisewege und sind dafür kein Ersatz.
-   Die RC6-Stichprobe auf Standard ergab 18 Siege in 18 Waldläufen. Drei
-   vorbereitete Meister-Kampfketten erreichten Mewtu mit jeweils zwei Niederlagen
-   und regulärer Wiederaufnahme. Stillstehen verliert alle 81 Einzeltests.
-   Manuelle menschliche Spieltests bleiben zusätzlich nötig. Aktuelle Ergebnisse:
-   [RC6-VALIDATION.md](RC6-VALIDATION.md).
-   Frühere Vergleichswerte: [FOREST-BALANCE.md](FOREST-BALANCE.md)
-   und [VALIDATION.md](VALIDATION.md).
-3. **Publikationsfreigabe erteilt:** Der Projektinhaber hat am 21. Oktober 2026
-   den öffentlichen Upload des vollständigen Projekts inklusive aller Medien
-   und einen Download-Release ausdrücklich beauftragt. Die Vorabversion dient
-   der lokalen Weiterentwicklung; die beiden fachlichen Punkte oben bleiben
-   als Grenzen dokumentiert. Die Freigabe des Uploads ersetzt keine Fremdlizenz.
+1. **Media rights:** permission to redistribute active original images/cries is
+   not documented. Obtain rights or replace affected assets; examine character
+   depictions/branding too. [Asset status](ASSET-STATUS.md). A fan-project notice
+   does not resolve this.
+2. **Independent gameplay acceptance:** a clean Windows installation without
+   development tools, full Kanto journey on regular routes and longer manual
+   balance tests remain outstanding. Automated combat skips some travel.
+   RC6 Standard forest sampling won 18/18 runs; three prepared Master campaigns
+   reached Mewtwo with two ordinary defeats/recoveries each. Stationary play
+   lost all 81 individual tests. These are not substitutes for human playtests.
+   See [RC6](RC6-VALIDATION.md), [forest balance](FOREST-BALANCE.md) and
+   [earlier validation](VALIDATION.md).
+3. **Publication approval was granted:** the owner explicitly requested public
+   upload of the entire project, all media and a download release on
+   October 21, 2026. The developer prerelease supports local development;
+   this approval does not replace third-party licensing or the two limits above.
 
-`release-config/status.json` hält diese offenen Punkte maschinenlesbar fest.
-`npm run release:public` verweigert das Vollpaket, solange ein Gate offen ist.
-Die normalen lokalen Tests und der Quellcodeexport bleiben nutzbar.
+`release-config/status.json` records these separately. `release:public`
+refuses a cleared player package while a gate remains open. Local testing and
+developer/code exports remain available.
 
-## Sinnvolle spätere Erweiterungen, keine verdeckten 1.0-Zusagen
+## Possible later work, not promises for 1.0
 
-- Separate Survival-Biome mit eigenen Questketten, statt nur farbiger Waldkopien.
-- Mehrstöckige Dungeons und handgebaute Rätsel; die vorhandene Kanto-Karte ist
-  eine verdichtete Survivors-Adaption.
-- Gamepad, Touch, mobile Bildschirme, Linux-/macOS-Spielerpakete.
-- Weitere Relikte, Run-Modifikatoren, gezieltes Verbannen von Levelangeboten,
-  zusätzliche Team-Synergien und Mehrsprachigkeit.
-- Umfassende Balance-Matrix für alle 151 Startpartner, Vierer-Schwierigkeiten
-  und späte Endloszyklen. Keine Behauptung, alle Kombinationen seien gleich stark.
+- Distinct survival biomes and quest chains.
+- Multi-floor dungeons and handcrafted puzzles.
+- Gamepad, touch, mobile layouts and Linux/macOS player packages.
+- Additional relics, run modifiers, targeted upgrade banishing and team synergies.
+- Languages beyond English/German.
+- A broad balance matrix across all 151 starters, four difficulties and late
+  endless cycles; no claim that every combination is equally strong.
 
-## Manuelle Abnahme
+## Manual acceptance checklist
 
-- [ ] Frisches Windows-x64-Benutzerprofil, kein Node.js im PATH: ZIP entpacken,
-  starten, spielen, sichern, schließen, erneut starten, fortsetzen.
-- [ ] Zweiter Start öffnet denselben lokalen Server; fremder Portdienst bleibt
-  unangetastet; Start aus einem Ordner mit Leerzeichen.
-- [ ] Komplette Sicherung in einem anderen Browser importieren; Pokédex,
-  Einstellungen und alle drei Laufstände vergleichen.
-- [ ] Lernlauf und Expedition auf Standard gewinnen; Veteran/Meister mit
-  verschiedenen Teams bewerten, nicht nur mit dem Ausweichbot.
-- [ ] Alle 15 Bossmuster visuell und mit reduzierten Effekten prüfen; keine
-  unsichtbaren Treffer oder unentrinnbaren Flächen an Arenarändern.
-- [ ] Kanto vom Start bis zur Liga und Mewtu auf regulären Wegen durchspielen;
-  Rastpunkte, Türen, Sperren, Markt, Questbelohnungen und Wiederaufnahme testen.
-- [ ] Mindestens 60 Minuten Endlos auf einem schwächeren Rechner; Speicher,
-  Bildrate und Gegner-/Beutegrenzen beobachten.
+- [ ] Fresh Windows x64 user profile, no Node on PATH: extract, start, play,
+  save, close, restart and continue.
+- [ ] Second launch uses the same server; an unrelated port service remains
+  untouched; launch from a path containing spaces.
+- [ ] Restore a full backup in another browser; compare Pokédex, settings and
+  all three slots.
+- [ ] Win Standard Learning Run/Expedition; assess Veteran/Master with different
+  teams through human play, not only the dodge bot.
+- [ ] Inspect all 15 boss patterns with full/reduced effects; no invisible hits
+  or unavoidable areas at arena edges.
+- [ ] Travel through Kanto to the League and Mewtwo using regular paths; check
+  rest points, doors, barriers, shops, rewards and continuation.
+- [ ] Play at least 60 minutes of Endless on weaker hardware; monitor memory,
+  frame rate and enemy/pickup caps.
 
-Aktuelle Regel-, Kampf- und Leistungsprüfung: [RC6-Prüfung](RC6-VALIDATION.md).
-
-## Sicherheits- und Exportprüfung rc.6.3
-
-Aktuelle Behebungen und Prüfgrenzen: [SECURITY-AUDIT.md](SECURITY-AUDIT.md).
-Installation und Voraussetzungen: [INSTALLATION.md](INSTALLATION.md) und
-[DEPENDENCIES.md](DEPENDENCIES.md). Die drei Freigaben oben bleiben offen.
+Security/export work: [SECURITY-AUDIT.md](SECURITY-AUDIT.md).
+Setup: [INSTALLATION.md](INSTALLATION.md), [DEPENDENCIES.md](DEPENDENCIES.md).

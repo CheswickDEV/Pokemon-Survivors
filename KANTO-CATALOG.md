@@ -1,77 +1,68 @@
-# Kanto-Katalog: 151 spielbare Pokémon
+# Kanto catalog: 151 playable Pokémon
 
-> Historischer Stammdatenkatalog der Fassung 0.3. Die 604 damaligen Attackenplätze werden ab 0.4 im Spiel durch genau eine Signaturwaffe pro Pokémon ersetzt. Aktuelle Waffenregeln und Ditto-Adaption: [WEAPONS.md](WEAPONS.md). Arten, Typen und Entwicklungskanten dieses Katalogs bleiben aktiv.
+> Historical catalog from version 0.3. Since 0.4, its 604 move slots have been
+> replaced in gameplay by one signature weapon per species. See [WEAPONS.md](WEAPONS.md)
+> for current weapon rules and Ditto's adaptation. Species, types and evolution
+> edges remain active.
 
-`src/kanto-catalog.ts` enthält lückenlos die National-Pokédex-Nummern 001–151,
-604 Attackenplätze und alle 72 Entwicklungskanten, deren Ausgang und Ziel zu
-diesen 151 Pokémon gehören. Der Spielbetrieb lädt hierfür keine externen Daten.
-Der Katalog enthält sechs Bewegungsarten: Gehen, Hüpfen, Fliegen, Schweben,
-Schlängeln und Schwimmen.
+`src/kanto-catalog.ts` covers National Pokédex numbers 001–151, 604 historical
+move slots and all 72 evolution edges with both endpoints among those species.
+Gameplay loads no external data. Six locomotion types are represented:
+walking, hopping, flying, floating, slithering and swimming.
 
-## Quelle und Reproduzierbarkeit
+## Source and reproducibility
 
-Datengrundlage ist das primäre CSV-Repository des PokeAPI-Projekts:
-[PokeAPI/pokeapi, Snapshot 6fd69dfe90465ba96534f6816fc817737d1f97f6](https://github.com/PokeAPI/pokeapi/tree/6fd69dfe90465ba96534f6816fc817737d1f97f6/data/v2/csv).
-PokeAPI ist ein unabhängiges Datenprojekt und keine Veröffentlichung von Nintendo.
-Die vollständige BSD-3-Clause-Lizenz liegt unter
-`public/art/data/PokeAPI-LICENSE.txt` und wird lokal mit ausgeliefert.
+Source: the primary CSV repository of
+[PokeAPI/pokeapi, revision 6fd69dfe90465ba96534f6816fc817737d1f97f6](https://github.com/PokeAPI/pokeapi/tree/6fd69dfe90465ba96534f6816fc817737d1f97f6/data/v2/csv).
+PokeAPI is independent, not a Nintendo publication. Its full BSD-3-Clause text
+is included at `public/art/data/PokeAPI-LICENSE.txt`.
 
-`scripts/build-kanto-catalog.py` liest daraus deutsche Pokémon- und Attackennamen,
-Typen einschließlich historischer Änderungen, die Lernlisten von Rot/Blau/Gelb,
-Entwicklungsbedingungen und die Typentabelle. Der Generator speichert die Dateien
-zum Wiederholen unter `.cache/kanto-data/`; er führt heruntergeladene Inhalte
-nicht aus. `qa/kanto-catalog-audit.json` enthält den Quell-Commit, alle Datei-URLs,
-SHA-256-Prüfsummen, ausgewählte Attacken-IDs und verworfene Attackenvorschläge.
-Eine erneute Erzeugung verwendet denselben dort gecachten Snapshot.
+`scripts/build-kanto-catalog.py` reads German Pokémon/move names, types including
+historical changes, Red/Blue/Yellow learnsets, evolution requirements and the
+type chart. It caches inputs in `.cache/kanto-data/` without executing them.
+The local `qa/kanto-catalog-audit.json` records the revision, URLs, SHA-256 hashes,
+selected move IDs and rejected suggestions. Rebuilding uses that cached snapshot.
+English display names are supplied separately by `src/locales/en.json`.
 
-## Gen-I-Regeln
+## Generation I rules
 
-- Genau 15 Typen; kein Stahl, Unlicht oder Fee.
-- Magnetilo und Magneton haben nur Elektro. Piepi, Pixi, Pummeluff und Knuddeluff
-  sind Normal; Pantimos ist Psycho.
-- Biss, Windstoß, Karateschlag und Sandwirbel verwenden ihren damaligen Normal-Typ.
-- Entwicklungen zu später eingeführten Pokémon sind nicht enthalten. Das gilt
-  auch für spätere Babys, regionale Formen und Evoli-Ziele außerhalb von Kanto.
-- Evoli kann mit dem passenden Stein zu Aquana, Blitza oder Flamara werden.
-- Simsala, Machomei, Geowaz und Gengar verwenden eine Link-Marke statt eines
-  externen Tauschs.
-- Die Typentabelle berücksichtigt die vier historischen Abweichungen innerhalb
-  dieser 15 Typen: Gift gegen Käfer und Käfer gegen Gift jeweils 2×, Geist gegen
-  Psycho 0×, Eis gegen Feuer 1×. Das Spiel kann anschließend seine bestehenden,
-  abgeschwächten Survivors-Multiplikatoren anwenden.
+- Exactly 15 types; no Steel, Dark or Fairy.
+- Magnemite/Magneton are Electric only. Clefairy, Clefable, Jigglypuff and
+  Wigglytuff are Normal; Mr. Mime is Psychic.
+- Bite, Gust, Karate Chop and Sand Attack retain their historical Normal type.
+- No later-generation evolutions, babies, regional forms or non-Kanto Eevee branches.
+- Eevee evolves into Vaporeon, Jolteon or Flareon with the appropriate stone.
+- Alakazam, Machamp, Golem and Gengar use a Link Token instead of external trading.
+- Historical type-chart differences: Poison → Bug and Bug → Poison are 2×,
+  Ghost → Psychic is 0×, Ice → Fire is 1×. The game can then apply its existing
+  reduced Survivors multipliers.
 
-## Bewusste Anpassungen für den Auenwald-Lauf
+## Deliberate prototype adaptations
 
-Die deutschen Attackennamen und ihre ursprüngliche Lernbarkeit stammen aus den
-Rot-/Blau-/Gelb-Lernlisten. Eine Entwicklung darf Attacken ihrer Vorentwicklung
-behalten. Vier thematisch passende Attacken wurden pro Familie ausgewählt;
-zahlreiche Endformen besitzen eigene Zusammenstellungen. Fernkampf, Fächer,
-Flächenangriff, Sprungstoß, Heilung und Umlauf bilden diese Attacken in den sechs
-Spielmechaniken des Prototyps ab.
+German move names and original availability come from Red/Blue/Yellow learnsets.
+Evolved forms may retain earlier moves. Four thematic moves were selected per
+family; many final forms had their own combinations. Ranged shots, fans, area
+attacks, leaps, healing and orbiting effects represented the prototype's six
+mechanics.
 
-Schaden, Reichweite, Abklingzeiten und Entwicklungsebenen sind für den kurzen
-Survivors-Lauf neu abgestimmt. Heilattacken wie Absorber, Blutsauger und
-Traumfresser versorgen hier den Trainer. Statusattacken wie Donnerwelle,
-Schlafpuder, Gesang, Schwerttanz oder Barriere werden als thematische Angriffs-
-und Flächeneffekte umgesetzt; der Katalog behauptet dadurch keine vollständige
-Nachbildung ihres rundenbasierten Originaleffekts. K.-o.-Soforttreffer, Selbst-K.-o.
-und die zufällige Attackenauswahl von Metronom werden nicht ausgelöst.
+Damage, range, cooldown and evolution levels were retuned for short runs.
+Absorb, Leech Life and Dream Eater heal the trainer. Thunder Wave, Sleep Powder,
+Sing, Swords Dance and Barrier became thematic attack/area effects; this was
+not a complete reproduction of turn-based effects. Instant KOs, self-KOs and
+Metronome's random move selection were not activated.
 
-Raupy, Safcon, Hornliu, Kokuna, Karpador und Ditto besitzen im Original zu wenige
-verschiedene passende Angriffe für vier Survivors-Slots. Ihre zusätzlichen
-Slots sind deshalb ausdrücklich benannte Varianten der eigenen Angriffe, etwa
-„Fadenschuss · Ring“ oder „Platscher · Welle“. Karpador erhält funktionierende
-Treffer statt eines wirkungslosen Platschers. Dittos vier Wandler-Varianten sind
-eigenständige Kopierangriffe; sie ändern weder dauerhaft seine Art noch kopieren
-sie die komplette Gegnerlogik. Jeder Eintrag hat in Slot 0 einen schädigenden
-Angriff, damit auch neu gefangene Unterstützer sofort kämpfen können.
+Caterpie, Metapod, Weedle, Kakuna, Magikarp and Ditto originally had too few
+suitable moves for four slots, so additional slots were explicitly named
+variants such as “String Shot · Ring” or “Splash · Wave”. Magikarp's Splash
+dealt damage. Ditto's four Transform variants were independent copy attacks,
+not permanent species changes or copies of complete enemy logic. Every species
+had a damaging slot-0 move so newly caught supporters could fight immediately.
 
-Die bisherigen Entwicklungsgrenzen bleiben erhalten: Starter 8/16, Raupy und
-Hornliu 4/8, Rattfratz 10, Pikachu 8 plus Donnerstein. Die übrigen Level werden
-aus den ursprünglichen Anforderungen abgeleitet und auf 4–18 begrenzt.
-Steinentwicklungen benötigen Level 8 plus den Stein, Tausch-Endformen Level 14
-plus Link-Marke. Pokémon aus einstufigen oder zweistufigen Familien bekommen
-keine erfundenen weiteren Entwicklungen.
+Original project evolution thresholds were retained: starters 8/16,
+Caterpie/Weedle 4/8, Rattata 10, Pikachu 8 plus Thunder Stone. Other levels derive
+from original requirements and are clamped to 4–18. Stone evolutions require
+level 8 and their stone; trade final forms require level 14 and a Link Token.
+No extra evolutions were invented for shorter families.
 
-`role`, `traitKind` und `locomotion` sind eigens für diesen Prototyp entworfene
-Spielangaben, keine Behauptung historischer Pokémon-Fähigkeiten.
+`role`, `traitKind` and `locomotion` are project gameplay metadata, not claims
+about historical Pokémon abilities.

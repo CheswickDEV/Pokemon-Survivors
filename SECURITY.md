@@ -1,38 +1,34 @@
-# Sicherheit
+# Security
 
-Die aktuelle Fassung ist **1.0.0-rc.6.4**. Ergebnisse, konkrete
-Behebungen und Prüfgrenzen: [Sicherheitsaudit rc.6.3](docs/SECURITY-AUDIT.md)
-und [Prüfung des vollständigen Entwicklerprojekts](docs/DEVELOPER-VALIDATION.md).
-Ältere lokale Testpakete werden nicht als aktuell geprüfte Downloads angeboten.
+The current version is **1.0.0-rc.6.5**. Findings, fixes and limits are recorded
+in the [rc.6.3 security audit](docs/SECURITY-AUDIT.md) and
+[developer package validation](docs/DEVELOPER-VALIDATION.md).
+Older local test packages are not presented as currently audited downloads.
 
-Das Spiel läuft im Browser. Sein Dateiserver bindet ausschließlich
-`127.0.0.1`, akzeptiert GET/HEAD und schreibt keine Spielstände auf den Server.
-Spielstände und Einstellungen liegen lokal im Browserprofil. Keine Anmeldung,
-Telemetrie, Cloud-Synchronisierung, Installation eines Dienstes oder
-Administratorrechte sind für den Spielstart vorgesehen.
+The game runs in a browser. Its file server listens only on `127.0.0.1`,
+accepts GET/HEAD and does not write game saves to the server. Saves and settings
+stay in the browser profile. Normal startup requires no account, telemetry,
+cloud sync, service installation or administrator access.
 
-## Eine Schwachstelle melden
+## Report a vulnerability
 
-Falls im späteren GitHub-Repository unter **Security → Advisories → Report a
-vulnerability** eine private Meldung angeboten wird, diese verwenden.
-Andernfalls zunächst ein Issue mit der Bitte um einen privaten Meldeweg
-eröffnen, ohne Angriffscode, Zugangsdaten oder persönliche Spielstände
-anzuhängen. Ein privater Kontaktkanal wird hier erst genannt, sobald er
-tatsächlich eingerichtet ist.
+Use [GitHub private vulnerability reporting](https://github.com/CheswickDEV/Pokemon-Survivors/security/advisories/new).
+If that option is unavailable, open an issue asking for a private reporting
+channel without attaching exploit code, credentials or personal saves.
 
-Bitte Version, betroffene Komponente, Voraussetzungen, beobachtete Auswirkung
-und möglichst eine kleine synthetische Reproduktion nennen. Ein normaler
-Spielfehler gehört in die Bugvorlage. Keine Garantie für eine feste
-Reaktionszeit; dieses Projekt besitzt noch keinen professionellen Support.
+Include the version, affected component, prerequisites, observed impact and,
+if possible, a small synthetic reproduction. Report ordinary gameplay bugs
+through the bug template. No fixed response time is promised; this project
+does not have professional support.
 
-## Grenzen
+## Limits
 
-- Eine fehlerfreie Abhängigkeitsprüfung ist keine Garantie für Fehlerfreiheit.
-- Importierte JSON-Dateien werden geprüft; ihre Prüfsumme erkennt Beschädigung,
-  stellt aber keine Signatur oder Vertrauensbestätigung dar.
-- Lokale Programme mit Zugriff auf denselben Benutzer, bösartige
-  Browsererweiterungen und manipulierte Betriebssysteme sind keine durch dieses
-  Spiel isolierten Angreifer. Der lokale Server ist kein Internetdienst.
-- Die Node-Laufzeit wird gegen einen festen SHA-256 und offizielle
-  HTTPS-Prüfsummen geprüft. Das gesamte ZIP erhält dadurch keine Codesignatur.
-- Veröffentlichung und Medienrechte bleiben getrennte Voraussetzungen.
+- A clean dependency scan does not guarantee the absence of vulnerabilities.
+- Imported JSON is validated. Its checksum detects corruption; it is not a
+  signature or proof that the file is trustworthy.
+- Programs running as the same user, malicious browser extensions and a
+  compromised operating system are outside the game's isolation boundary.
+  The local server is not an internet-facing service.
+- The bundled Node runtime is checked against a pinned SHA-256 and official
+  HTTPS checksums. This does not code-sign the complete ZIP.
+- Publication approval and third-party media rights are separate matters.

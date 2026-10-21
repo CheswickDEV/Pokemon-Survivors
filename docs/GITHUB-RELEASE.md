@@ -1,13 +1,13 @@
-# Vollständiges Projekt für GitHub vorbereiten
+# Preparing and publishing the complete project
 
-Das gewünschte Repository enthält **Code, Tests, aktive Spielmedien und
-vorhandene Bearbeitungsquellen**. Als Basis den vollständigen Entwicklerexport
-verwenden, nicht den kleinen Codeexport. Medien und eigene Software behalten
-die getrennten Lizenzen aus [ASSET-STATUS.md](ASSET-STATUS.md).
+The repository includes **code, tests, active game media and available editing
+sources**. Use the complete developer export, not the smaller code-only export.
+Media and original software retain the separate licenses described in
+[Asset status](ASSET-STATUS.md).
 
-## Repository erstellen
+## Repository workflow
 
-1. Im vollständigen Arbeitsprojekt prüfen:
+1. Validate the complete working project:
 
 ```text
 npm ci
@@ -20,60 +20,58 @@ npm run build
 npm run release:developer
 ```
 
-2. Das erzeugte `Pokemon-Survivors-…-developer.zip` in einen eigenen Ordner
-   entpacken. Es enthält den vollständigen geprüften Bestand. Der übergeordnete
-   private Arbeitsordner mit `sources/`, `analysis/`, Caches und QA-Archiven
-   ist kein Uploadziel.
-3. Im vorbereiteten Repository Dateiliste und Änderungen prüfen. Falls noch
-   kein Git-Repository besteht, `git init -b main` ausführen. Mit der eigenen
-   Git-Identität committen; anschließend ein GitHub-Repository erstellen,
-   dessen tatsächliche URL als Remote eintragen und den Branch übertragen.
-   Es ist keine alte private Git-Historie im Export enthalten.
-4. Beschreibung: **Vollständig bearbeitbares Pokémon-Fanprojekt; eigener Code
-   GPL-3.0-only, Medien mit separaten Rechten.** Das Gesamtpaket nicht als
-   uneingeschränkt frei lizenziert darstellen. Der offene Medienstatus muss
-   auch bei einem vollständigen Upload sichtbar bleiben.
-5. Auf GitHub den ersten CI-Lauf prüfen. Private Sicherheitsmeldungen sowie
-   Secret Scanning/Push Protection aktivieren, soweit verfügbar.
-   Die lokale Vorbereitung aktiviert keine GitHub-Einstellungen.
-6. Pull Requests können anschließend mit den Schritten aus
-   [CONTRIBUTING.md](../CONTRIBUTING.md) lokal bearbeitet werden.
+2. Extract `Pokemon-Survivors-…-developer.zip` into a separate folder. It contains
+   the reviewed project files. The parent private workspace, including
+   `sources/`, `analysis/`, caches and QA archives, is not an upload target.
+3. Review the file list and changes. If necessary, initialize a new repository
+   with `git init -b main`. Commit with your intended public Git identity,
+   configure the actual repository URL and push. The export contains no old
+   private Git history. For an existing repository, preserve its history.
+4. Describe it as a complete editable Pokémon fan project with GPL-3.0-only
+   original code and separate media rights. Do not describe the complete media
+   set as unrestricted open source.
+5. Check CI on GitHub. Enable private vulnerability reporting and available
+   secret scanning/push protection. Local preparation alone does not enable
+   repository settings.
+6. Contributors can follow [CONTRIBUTING.md](../CONTRIBUTING.md).
 
-Zielrepository: [CheswickDEV/Pokemon-Survivors](https://github.com/CheswickDEV/Pokemon-Survivors).
-Die Veröffentlichung des vollständigen Entwicklerprojekts einschließlich aller
-aktuellen Medien wurde am 21. Oktober 2026 ausdrücklich beauftragt. rc.6.4 ist
-eine Vorabversion für lokale Weiterentwicklung. Der tatsächliche Uploadstand
-und die angebotenen Dateien sind auf der GitHub-Releaseseite sichtbar.
+Repository: [CheswickDEV/Pokemon-Survivors](https://github.com/CheswickDEV/Pokemon-Survivors).
+Publication of the full developer project and current media was explicitly
+requested on October 21, 2026. rc.6.4 was published as a prerelease for local
+development. rc.6.5 adds English by default with selectable German and English
+public documentation. The release page lists the actual uploaded files.
 
-## Download anbieten
+## Downloads
 
-Der Entwicklerdownload ist `release/*-developer.zip`; dessen Prüfsumme steht
-in `release/DEVELOPER-SHA256SUMS.txt` und `developer-manifest.json`.
-GitHubs **Code → Download ZIP** enthält beim vollständigen Repository ebenfalls
-die Medien, benötigt aber Node.js zur Entwicklung. Git LFS ist nicht nötig.
+The developer download is `release/*-developer.zip`. Its checksum is in
+`release/DEVELOPER-SHA256SUMS.txt` and `developer-manifest.json`.
+GitHub's **Code → Download ZIP** also includes media in the full repository,
+but Node.js must be installed separately. Git LFS is not needed.
 
-Ein fertiges lokales Windows-Spielerpaket entsteht mit
-`npm run release:local`. Es enthält Build, Laufzeit, Starter und
-korrespondierenden Code. Der vollständige Entwicklerdownload wird separat
-angeboten, damit auch sämtliche Medienquellen und Werkzeuge zugänglich sind.
+`npm run release:local` creates the local Windows player test package with
+build, runtime, launcher and corresponding code. The separate developer
+archive also includes all available editing sources and tools.
 
-Für einen als öffentlich freigegeben gekennzeichneten Spielerrelease sind die
-offenen Punkte in [RELEASE-READINESS.md](RELEASE-READINESS.md) zu klären.
-`release:public` prüft diese Statusfelder. Der Entwicklerexport ist bereits
-lokal vollständig möglich und setzt diese Felder nicht stillschweigend um.
+The open items in [Release readiness](RELEASE-READINESS.md) must be resolved
+before labeling a player release as publicly cleared. `release:public`
+checks those status fields. Creating a complete developer export does not
+silently change them.
 
-Die CI prüft auf Windows und Linux, wählt im vollständigen Entwicklercheckout
-alle Tests und erzeugt lediglich ein zusätzliches medienloses Codeartefakt.
-Sie erstellt keine öffentlichen Releases und lädt keine Medien nach.
-Dependabot schlägt Updates vor, führt sie aber nicht selbst zusammen.
+CI checks Windows and Linux, runs all tests for a full developer checkout,
+and produces an additional code-only artifact. It does not publish releases
+or download media. Dependabot proposes updates but does not merge them.
 
-## Vor einer neuen Version
+## New versions
 
-Version in `package.json`, `package-lock.json`, `release-config/status.json`
-und dem Standardwert in `server.mjs` gemeinsam aktualisieren. Changelog und
-Prüfbericht anpassen, aktuelle Abhängigkeiten prüfen, erneut bauen und
-exportieren. Hashes des ZIPs und Dateiinventar kontrollieren. Alte Pakete
-werden nicht automatisch Teil des neuen Releases.
+Update `package.json`, both root version entries in `package-lock.json`,
+`release-config/status.json`, the server default version and the displayed
+game version together. Update the changelog and validation report, check
+dependencies, rebuild and export. Verify archive hashes and file inventories.
+Old archives do not automatically belong to the new release.
 
-Das Windows-Paket bezieht die exakt gepinnte offizielle Node-Laufzeit beim
-Paketbau und prüft ihren SHA-256. Der Spielstart lädt nichts nach.
+Commit and push the reviewed changes, wait for CI on that exact commit, then
+create a new version tag and prerelease with English release notes. Do not move
+an already published version tag to disguise changed download contents.
+
+Windows package generation downloads the pinned official Node runtime if
+necessary and checks its SHA-256. Launching the game downloads nothing.

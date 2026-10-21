@@ -1,142 +1,106 @@
-# Welt, Kämpfe und Shinys — 1.0.0-rc.3
+# World, combat and Shinies — 1.0.0-rc.3
 
-Historischer Prüfstand: rc.4 entfernt die Trainer-Heilung im Center.
-Die hier dokumentierten erfolgreichen Storyläufe sind dadurch überholt.
-Aktuelle Ergebnisse: [Innenräume und Center](INTERIORS-AND-CARE.md).
+Historical check, October 20, 2026. **rc.4 removed Center trainer healing**,
+so successful campaigns below are superseded as current evidence.
+See [Interiors and Centers](INTERIORS-AND-CARE.md).
 
-Geprüft am 20. Oktober 2026. Dieser Stand ersetzt für aktuelle Läufe die
-garantierte Rangkarte und Bosswerte aus rc.2. Alte Spielstände bleiben lesbar;
-Shiny-Sammlung und Angebotsverlauf werden bei fehlenden Feldern leer ergänzt.
+This revision replaced rc.2 guaranteed rank offers and boss values.
+Old saves remain readable; missing Shiny/history fields become empty.
 
-## Spielverhalten
+## Behavior
 
-- Route-Sperren folgen über ihre volle Breite derselben Kollisionslinie wie
-  die Karte. Hölzerne Warnzäune, Bauarbeiter und Schilder ersetzen die
-  provisorischen Fels-/Seilsperren. Beim Gegenlaufen erscheint die konkrete
-  Fortschrittsvoraussetzung. E in leerer Umgebung bleibt still.
-- Wohnhäuser und andere gewöhnliche Innenräume sind frei zugänglich.
-  Echte Arenen und die Liga benötigen ihre Voraussetzungen; erledigte Arenen
-  bleiben offen. Türvorplätze und die zusätzlichen Eingangsflächen entfallen.
-- Bereits gespawnte Gegner werden beim Stadtwechsel nicht gelöscht.
-  Die Stadt verhindert nur neue Umgebungswellen. Eine aktiv gestartete
-  Arenaprüfung erzeugt selbstverständlich ihre eigenen Gegner.
-- Ein Prüfungsstart verändert weder Trainer- noch Partnerpositionen.
-- Zwischen Bäumen liegt wieder heller Grasboden. Dunkle quadratische Flecken
-  wurden durch unregelmäßige Grashalme ersetzt. Wege verwenden interpolierte
-  Konturen der wirklichen Straßen statt grober Kachelmasken. Minimap und Welt
-  greifen auf dasselbe Straßennetz und dieselben Landschaftsobjekte zurück.
-- Alle drei Levelkarten sind zufällig. Bereits kürzlich angebotene Optionen
-  werden seltener gezogen; unpassende/maximierte Ausrüstung erscheint nicht.
-  Kraftband, Dauerstein, Windfeder, Sprintband, Forscherheft und Ausdauergurt
-  ergänzen die bisherigen zwölf Ausrüstungen. Sechs Slots und fünf Ränge
-  bleiben das Limit. Ein Partner behält seine eine charakteristische Attacke.
+- Full-width route barriers follow the same collision line as the map.
+  Wooden warning fences, workers and signs replace provisional rock/rope barriers.
+  Contact explains progress requirements; E in empty space stays silent.
+- Ordinary homes/interiors open freely. Gyms/League require progress; completed
+  Gyms remain open. Extra door platforms are removed.
+- Existing enemies follow into towns. Towns stop new ambient spawns, not active
+  trial enemies. Starting a trial does not teleport trainer/partners.
+- Bright grass between trees, irregular blades instead of dark squares and
+  interpolated road contours. Minimap and world share actual roads/scenery.
+- All three level cards are random with recent-offer protection; invalid/maxed
+  items are excluded. Power Band, Duration Stone, Wind Feather, Sprint Band,
+  Research Journal and Stamina Belt join twelve items. Six slots/five ranks;
+  one signature move per partner.
 
-## Shinys und Kampflesbarkeit
+## Shinies and readability
 
-Alle 151 Arten besitzen eigene Shiny-Porträts und Lauf-, Leerlauf- und
-Angriffsatlanten in acht Richtungen: 453 Atlanten, 26.472 Animationsframes,
-604 Laufzeit-PNGs. Der Import hat jeden übernommenen RGBA-Frame gegen die
-gepinnten Originaldaten geprüft. Keine pauschale Farbfilterung.
+151 individual Shiny portraits and eight-direction Walk/Idle/Attack sets:
+453 atlases, 26,472 frames, **604 runtime PNGs**. Every imported RGBA frame was
+compared against pinned source data; no generic color filter.
 
-Die Chance beträgt **1:65.536 je neuem wilden Pokémon beziehungsweise
-Fanggegner**. Die Identität der Begegnung legt das Ergebnis fest, damit
-Speichern/Laden kein neues Los erzeugt und das Kampf-Zufallssystem unverändert
-bleibt. Besiegte wilde Shinys hinterlassen ein Fangangebot. Bei bereits
-vorhandener normaler Art ersetzt der Shiny-Fang deren Farbvariante unter
-Erhalt von Training, Level und Teamplatz. Entwicklung, Profil, Sicherungen
-und Startpartnerauswahl bewahren den Shiny-Status. Kampfwerte sind identisch.
+Chance **1:65,536** per new wild Pokémon/capture opponent. Encounter identity
+fixes the result, so save/load cannot reroll and combat RNG stays unchanged.
+Defeated wild Shinies leave capture offers. Catching a Shiny of an existing
+team species replaces its color variant while retaining training, level and
+slot. Evolution, profile, backups and starter selection preserve it.
+Combat stats are identical.
 
-Fokusziele erhalten helle Eckklammern, einen Bodenring und eine FOKUS-Aufschrift.
-Auch gewöhnliche Wildgegner können gezielt markiert werden. Ein besiegtes
-Fokusziel wird entfernt.
+Focus uses corner brackets, a ground ring and label, including ordinary enemies;
+defeated focus targets clear. Shared weapon rendering was reviewed: curved wind
+trails, rotating faceted rocks, stepped beams, calmer chains, correct motion
+trails, distinct cones and organic fields. Native attacks use their own timing.
+Visual effects do not enlarge hits/range/dodge areas; partner evolution does
+not enlarge sprites.
 
-Die gemeinsamen Renderpfade der 151 Signaturattacken wurden überprüft:
-Windklingen mit gekrümmten Spuren, facettierte rotierende Felsbrocken, gestufte
-Wasser-/Energiestrahlen, ruhigere Kettenblitze, korrekte seitliche
-Bewegungsspuren, unterschiedliche Kegel und organische Wirkflächen.
-Native Angriffssprites verwenden ihre eigenen Ablaufzeiten. Treffer,
-Reichweiten und Ausweichflächen werden durch rein visuelle Effekte nicht
-vergrößert. Eigene Partner wachsen bei Entwicklungen weiterhin nicht.
+## Boss pressure
 
-## Bossdruck
+Scales: ordinary 1, elite 1.25, story leader 1.7, boss 2.15.
+Forest boss base HP: 3,500 Learning Run, 7,600 Expedition.
+Boss Rush: 780 + 205 per round index. Three phases: above 65%, down to 30%,
+final 30%. Later phases accelerate patterns, add fixed telegraphed staggered
+strikes and summon two suitable helpers once. All 15 profiles retain distinct
+patterns; concurrent bosses have independent animation.
 
-- Wildgegner: Maßstab 1; Elite: 1,25; Storyanführer: 1,7; große Bosse: 2,15.
-- Wald-Endboss: 3.500 KP im Lernlauf, 7.600 KP in der Expedition vor
-  Schwierigkeitsfaktoren. Bossansturm: 780 + 205 je Rundenindex.
-- Drei KP-Phasen: oberhalb 65 %, bis 30 %, letzte 30 %.
-  Spätere Phasen beschleunigen die Muster, ergänzen versetzte, fest
-  angekündigte Zielschläge und rufen einmal zwei passende Helfer.
-- Die 15 Bossprofile behalten ihre eigenen Muster. Jeder Gegner spielt
-  seine eigene Angriffsanimation; parallele Bosse teilen keine globale
-  Animationsquelle.
-- Storyanführer skalieren mit dem Fortschritt stärker. Die letzten Wellen
-  von Mondberg, Felstunnel, Rocket-Versteck, Turmrettung, Silph Co.,
-  Pokémon-Villa, Siegesstraße und Mewtu enthalten einen echten Anführer.
+Story leaders scale with progress. Final waves in Mt. Moon, Rock Tunnel,
+Rocket Hideout, tower rescue, Silph Co., Mansion, Victory Road and Mewtwo
+include a real leader.
 
-## Prüfungen
+## Validation
 
-**125/125 automatisierte Tests** bestanden, einschließlich:
-aller 27 Startpositionen, Häuser-/Arena-Zugang, Stadtverfolgung,
-stiller Interaktion, Zufallsauswahl und Sicherungswiederholung,
-realer Wirkung neuer Ausrüstung, Shiny-Fang/Entwicklung/Profil,
-Fokusauswahl, Bossgrößen und einmaliger Phasenverstärkung nach Laden.
-Alle 151 normalen und Shiny-Animationssätze wurden strukturell geprüft.
-Alle gemeinsamen Angriffsmuster wurden bei vollen/reduzierten Effekten
-auf endliche, begrenzte Zeichenkoordinaten getestet.
+**125/125 tests** passed, covering 27 start positions, access, town pursuit,
+silent interaction, random offers/save replay, equipment effects, Shiny
+capture/evolution/profile, focus, scales and one-time reinforcements after load.
+All normal/Shiny animations were structurally checked; shared attack patterns
+used finite bounded drawing coordinates with full/reduced effects.
 
-Für jedes der 15 Bossprofile wurden in drei KP-Phasen erreichbare sichere
-Positionen gefunden. Das belegt die untersuchten Aufstellungen, nicht jede
-denkbare Überlagerung mit anderen Gegnern oder jede Randposition.
+Safe reachable spots were found for 15 profiles × three phases in tested
+setups, not every possible overlap or arena-edge arrangement.
 
-| Vollständige Simulation | Resultat |
+| Completed simulation | Result |
 |---|---|
-| Standard-Lernlauf, drei Starter × Seeds 123/456/789 | 9/9 Siege; Rest-KP 7–100 |
-| Standard-Expedition, dieselben Kombinationen | 9/9 Siege; Rest-KP 25–100 |
-| Veteran, Seed 123, drei Starter × beide Waldmodi | 5/6 Siege; Schiggy verliert Lernlauf bei 476 s |
-| Meister, dieselben sechs Kombinationen | 0/6 Siege; Niederlagen zwischen 131 und 262 s |
-| Stillstehen, Standard, drei Starter × beide Modi | 0/6 Siege; Niederlagen zwischen 25 und 29 s |
-| Nur Umherlaufen ohne Fänge/Quests, gleiche sechs Kombinationen | 0/6 Siege; vier Niederlagen und zwei Boss-Zeitlimits |
-| Bossansturm, drei Starter je Stufe | Entspannt 3/3, Standard 3/3, Veteran 2/3, Meister 0/3 |
-| Kanto, drei Starter, alle 27 Etappen | 81/81 Etappen bestanden |
+| Standard Learning, three starters × seeds 123/456/789 | 9/9 wins; 7–100 HP left |
+| Standard Expedition, same combinations | 9/9; 25–100 HP |
+| Veteran, seed 123, three starters × both modes | 5/6; Squirtle loses Learning at 476 s |
+| Master, same six | 0/6; defeats at 131–262 s |
+| Stationary Standard, same six | 0/6; defeats at 25–29 s |
+| Wandering without captures/quests, same six | 0/6; four deaths, two boss timeouts |
+| Boss Rush, three starters per difficulty | Relaxed 3/3, Standard 3/3, Veteran 2/3, Master 0/3 |
+| Kanto, three starters × 27 stages | 81/81 stages |
 
-Im Bossansturm verliert Veteran-Schiggy nach zehn Prüfungen; Meister endet
-nach neun, fünf und neun Prüfungen. Mewtu benötigt im Standard-Storytest
-68/58/80 Sekunden; Bisasam/Glumanda/Schiggy behalten 36/41/13 KP.
+Veteran Squirtle loses Boss Rush after ten trials; Master ends after 9/5/9.
+Standard story Mewtwo: 68/58/80 s and 36/41/13 HP for Bulbasaur/Charmander/Squirtle.
 
-Die Waldsimulation nutzt normale Bewegung, tatsächliche Kollisionskörper,
-gezielte Fänge, aktive Teamplätze, verfügbare Verbesserungen, Questschritte,
-Einkäufe und erlaubte Entwicklungen. Es werden keine Kampfressourcen,
-Unverwundbarkeit oder günstigen Begegnungslisten zugeschaltet. Sie behält
-den gewählten Starter und seine Entwicklungslinie im Team.
-Beim Storytest werden Reisewege übersprungen; die Kämpfe selbst verwenden
-normale Regeln. Diese automatisierten Strategien sind keine menschlichen
-Gewinnquoten und ersetzen keine unabhängige durchgehende Spielabnahme.
+Forest runs use ordinary movement, hitboxes, captures, active slots, upgrades,
+quests, shops and evolutions, retaining the starter line. No bonus resources,
+invulnerability or favorable roster injection. Story travel is skipped.
+These agents do not establish human win rates or independent full acceptance.
 
-Browser-Sichtprüfungen auf einem separaten lokalen Testport:
-Bauzaun/Bauarbeiter und Kollisionshinweis, Wohnhaustür ohne aktive Quest,
-Fokus auf Onix, Taubsi-/Onix-/Wasser-Effekte, Shiny-Pikachu-Fang,
-Ballverbrauch, Teamansicht, Speicherung und freigeschaltete Shiny-Auswahl.
-Die gezielt erzeugten visuellen Teststände haben keinen Beweiswert für
-Shiny-Häufigkeit oder Balance. Keine erfassten Konsolenwarnungen/-fehler.
+Separate-port browser checks covered barriers/workers, home access, Onix focus,
+Pidgey/Onix/water effects, Shiny Pikachu capture, ball use, team, persistence and
+Shiny starter unlock. Synthetic fixtures do not measure Shiny rarity/balance.
+No captured console warnings/errors. Local raw evidence: `qa/rc3-*`.
 
-Die lokalen Rohbelege stehen unter `qa/rc3-*`; sie werden nicht mit
-Spielerständen verwechselt oder im Quellcodepaket ausgeliefert. Das
-Spielerpaket bleibt eine lokale Testfassung. Unabhängige Langzeittests,
-schwächere Hardware und die öffentliche Medienfreigabe bleiben offen.
+## Package checks
 
-## Paketprüfung
+Fresh code export: locked dependencies installed, 114 media-independent tests
+and production build passed. No Pokémon binaries in that smaller export.
+An initial offline installation failed because the npm cache lacked packages;
+first setup requires the normal registry dependencies. Player ZIPs do not.
 
-Frisch entpackter Quellcode: Abhängigkeiten aus der festgeschriebenen Liste
-installiert, 114 medienunabhängige Tests und Produktionsbuild bestanden.
-Das Quellcodepaket enthält erwartungsgemäß keine Pokémon-Bild-/Audiodateien.
-Die erste Offline-Installation scheiterte an fehlendem lokalen npm-Cache;
-der Quellcode benötigt für die erstmalige Einrichtung die üblichen
-Entwicklungsabhängigkeiten aus dem Registry. Das fertige Spielerpaket
-benötigt diesen Schritt nicht.
+Extracted Windows package launched using bundled runtime with PATH restricted
+to Windows system folders. **1,443 runtime media** returned HTTP 200 and matching
+hashes. Both ZIPs passed CRC; all **1,475 player inventory files** matched hashes.
+The production server on 4173 served that revision at check time.
 
-Das entpackte Windows-Paket startete mit der enthaltenen Runtime bei auf
-Windows-Systemordner beschränktem PATH. Sämtliche 1.443 Laufzeitmedien
-lieferten HTTP 200 und die erwarteten SHA-256-Hashes. Beide ZIPs bestanden
-die CRC-Prüfung; alle 1.475 Dateien des Spieler-Manifests stimmten mit ihren
-Hashes überein. Der bestehende Spielserver auf Port 4173 liefert den
-aktuellen Produktionsbuild. Ein Neuladen übernimmt die neue Fassung.
+Independent long-term playtests, weaker hardware and media permissions remained open.

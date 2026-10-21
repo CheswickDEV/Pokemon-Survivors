@@ -1,94 +1,109 @@
-# Sichtprüfung der Innenräume – 1.0.0-rc.6.2
+# Interior visual audit — 1.0.0-rc.6.2
 
-Alle 58 vorhandenen Innenräume wurden vor und nach der Korrektur im Browser angesehen. Die Prüfung umfasst jeden Markt, jede Arena, das Kampf-Dojo, die Liga, alle NPC-Häuser sowie die übrigen Story-Räume und die Center.
+All 58 interiors were inspected in the browser before and after correction:
+every Mart, Gym, Fighting Dojo, League, NPC home, other story room and Center.
 
-Die Prüfansicht verwendet zwei laufende Instanzen der tatsächlichen `Engine` und von `createView`/`ForestScene`. Die Räume werden über `enterBuilding` betreten; Trainer, Partner, NPCs und Einrichtung werden mit dem Spielrenderer dargestellt. Die Übersichtskamera zeigt jeweils zwei vollständige Räume. In der zweiten Runde steht der Trainer an der Ansprechposition des ersten NPCs. Markt und Arena wurden zusätzlich in normaler Spielgröße betrachtet.
+The review uses two running instances of the actual `Engine` and
+`createView`/`ForestScene`. Rooms are entered through `enterBuilding`;
+trainer, partners, NPCs and furniture use the game renderer. The overview camera
+shows two whole rooms. On the second pass, the trainer stands at the first
+NPC's approach point. Mart/Gym were also inspected at normal gameplay scale.
 
-Dies ist eine visuelle Innenraumprüfung mit separaten Testzuständen, kein erneuter Kampagnendurchlauf. Der Nutzer-Spielstand wurde nicht geladen oder verändert. Die Übersichtskamera ersetzt die normale Verfolgungskamera ausschließlich in der lokalen Prüfansicht.
+This is an interior visual check using separate states, not another campaign.
+The user's save was not loaded or changed. Only the local review scene replaces
+the normal follow camera with an overview.
 
-## Gefunden und korrigiert
+## Findings and fixes
 
-- Die Mitarbeiter aller zehn Märkte, die Hotelangestellte und der Fahrradhändler standen zu hoch hinter ihren Tresen. Ihre unteren Körperteile werden jetzt passend von der Tresenkante verdeckt.
-- Ein bis zwei transparente Pixelreihen unter den NPC-Füßen erzeugten einen unnötigen Abstand zum Boden. Der Sprite-Anker berücksichtigt nun die sichtbare Fußposition.
-- Die Läufer in den Märkten und im Fahrradladen endeten teilweise unter Möbeln. Sie beginnen jetzt mit Abstand vor dem Tresen. Die Fahrräder stehen vollständig neben dem Mittelgang.
-- Die Oberflächenwahl hing fälschlich davon ab, ob ein Raum eine Story-Prüfung enthielt. Deshalb sah das Dojo wie ein Wohnhaus aus, während Turm, Villa und Rocket-Versteck Arenaböden erhielten. Die Oberflächen richten sich jetzt nach der Gebäudefunktion.
-- Arenen, Dojo und Liga haben eine eingefasste Standfläche unter dem Leiter statt eines isolierten Farbbalkens hinter ihm.
-- Höhlen verwendeten Haus- oder Arenatapeten. Sie erhalten geschlossene Felsränder aus der vorhandenen Felsgrafik. Ein in der Nachprüfung entdeckter Überstand der letzten Kachel wurde ebenfalls behoben; alle sechs Höhlen wurden danach erneut angesehen.
+- Staff in all ten Marts, the hotel and Bike Shop stood too high behind counters.
+  Counter edges now appropriately occlude their lower bodies.
+- One or two transparent rows below NPC feet caused a visible gap. Anchors now
+  use the actual visible foot position.
+- Mart/Bike Shop rugs extended beneath furniture. They now stop before the
+  counter; bicycles stay entirely beside the central aisle.
+- Surface choice incorrectly depended on story-trial presence: Dojo looked
+  residential while Tower/Mansion/Rocket Hideout received arena floors.
+  Surfaces now follow building function.
+- Gyms, Dojo and League have bordered leader platforms instead of isolated bars.
+- Caves used home/arena wallpaper. Existing rock graphics now form closed edges.
+  A final-tile overhang found during review was fixed, then all six caves rechecked.
 
-Die Bett-, Regal- und übrigen Möbelgrafiken wurden gegen die vorhandenen Originalreferenzen geprüft. Ihre sichtbaren Ausschnitte sind vollständig. Die Originalgrafiken und der originale Hausboden wurden beibehalten.
+Beds, shelves and other furniture were compared with available original
+references; visible crops were complete. Original graphics and house floors remain.
 
-## Nachweise
+## Evidence
 
-- **152 Tests bestanden**, einschließlich der Laufwege aller Innenräume, erreichbarer Ansprechpositionen, Teppich-/Möbelüberschneidungen und der Raumzuordnung.
-- Je 29 Vorher- und Nachher-Aufnahmen unter `qa/interior-tour/`, insgesamt 58 Übersichtsbilder. Jede Aufnahme enthält zwei benannte Räume; beide wurden angesehen.
-- Nahansicht: `qa/interior-tour/market-arena-detail.png`.
-- Raumprotokoll: `qa/interior-tour-audit.json`.
-- Die Bilder sind lokale Prüfnachweise und gehören nicht zum medienfreien Quellcodepaket.
+**152 tests passed**, including interior paths, NPC approaches, rug/prop overlap
+and room classification. There are 29 before and 29 after images in
+`qa/interior-tour/`, each showing two named rooms; both were inspected.
+Detail: `qa/interior-tour/market-arena-detail.png`.
+Room log: `qa/interior-tour-audit.json`.
+Images are local evidence excluded from the code-only package.
 
-Die folgende Liste ordnet jedem Raum seine Nachher-Aufnahme zu. Die Dateipfade beziehen sich auf den lokalen Projektordner.
+The following table preserves each room's local after-image reference.
 
 <!-- ROOM_TABLE -->
 
-| Nr. | Ort | Raum | Nachher-Aufnahme |
-| --- | --- | --- | --- |
-| 1 | Alabastia | Dein Zuhause | Bild (`../qa/interior-tour/after-01.png`, nur im lokalen Arbeitsbestand) |
-| 2 | Alabastia | Haus deines Rivalen | Bild (`../qa/interior-tour/after-01.png`, nur im lokalen Arbeitsbestand) |
-| 3 | Alabastia | Professor Eichs Labor | Bild (`../qa/interior-tour/after-02.png`, nur im lokalen Arbeitsbestand) |
-| 4 | Vertania City | Pokémon-Center | Bild (`../qa/interior-tour/after-02.png`, nur im lokalen Arbeitsbestand) |
-| 5 | Vertania City | Pokémon-Markt | Bild (`../qa/interior-tour/after-03.png`, nur im lokalen Arbeitsbestand) |
-| 6 | Vertania City | Arena · Giovanni | Bild (`../qa/interior-tour/after-03.png`, nur im lokalen Arbeitsbestand) |
-| 7 | Vertania City | Trainerschule | Bild (`../qa/interior-tour/after-04.png`, nur im lokalen Arbeitsbestand) |
-| 8 | Marmoria City | Wissenschaftsmuseum | Bild (`../qa/interior-tour/after-04.png`, nur im lokalen Arbeitsbestand) |
-| 9 | Marmoria City | Arena · Rocko | Bild (`../qa/interior-tour/after-05.png`, nur im lokalen Arbeitsbestand) |
-| 10 | Marmoria City | Pokémon-Markt | Bild (`../qa/interior-tour/after-05.png`, nur im lokalen Arbeitsbestand) |
-| 11 | Marmoria City | Pokémon-Center | Bild (`../qa/interior-tour/after-06.png`, nur im lokalen Arbeitsbestand) |
-| 12 | Marmoria City | Nidoran-Haus | Bild (`../qa/interior-tour/after-06.png`, nur im lokalen Arbeitsbestand) |
-| 13 | Azuria City | Pokémon-Center | Bild (`../qa/interior-tour/after-07.png`, nur im lokalen Arbeitsbestand) |
-| 14 | Azuria City | Arena · Misty | Bild (`../qa/interior-tour/after-07.png`, nur im lokalen Arbeitsbestand) |
-| 15 | Azuria City | Fahrradladen | Bild (`../qa/interior-tour/after-08.png`, nur im lokalen Arbeitsbestand) |
-| 16 | Azuria City | Pokémon-Markt | Bild (`../qa/interior-tour/after-08.png`, nur im lokalen Arbeitsbestand) |
-| 17 | Azuria City | Überfallenes Haus | Bild (`../qa/interior-tour/after-09.png`, nur im lokalen Arbeitsbestand) |
-| 18 | Lavandia | Pokémon-Center | Bild (`../qa/interior-tour/after-09.png`, nur im lokalen Arbeitsbestand) |
-| 19 | Lavandia | Mr. Fujis Haus | Bild (`../qa/interior-tour/after-10.png`, nur im lokalen Arbeitsbestand) |
-| 20 | Lavandia | Pokémon-Markt | Bild (`../qa/interior-tour/after-10.png`, nur im lokalen Arbeitsbestand) |
-| 21 | Lavandia | Namensbewerter | Bild (`../qa/interior-tour/after-11.png`, nur im lokalen Arbeitsbestand) |
-| 22 | Orania City | Pokémon-Center | Bild (`../qa/interior-tour/after-11.png`, nur im lokalen Arbeitsbestand) |
-| 23 | Orania City | Pokémon-Fanclub | Bild (`../qa/interior-tour/after-12.png`, nur im lokalen Arbeitsbestand) |
-| 24 | Orania City | Arena · Major Bob | Bild (`../qa/interior-tour/after-12.png`, nur im lokalen Arbeitsbestand) |
-| 25 | Orania City | Pokémon-Markt | Bild (`../qa/interior-tour/after-13.png`, nur im lokalen Arbeitsbestand) |
-| 26 | Orania City | Haus des Anglers | Bild (`../qa/interior-tour/after-13.png`, nur im lokalen Arbeitsbestand) |
-| 27 | Prismania City | Kaufhaus | Bild (`../qa/interior-tour/after-14.png`, nur im lokalen Arbeitsbestand) |
-| 28 | Prismania City | Pokémon-Center | Bild (`../qa/interior-tour/after-14.png`, nur im lokalen Arbeitsbestand) |
-| 29 | Prismania City | Arena · Erika | Bild (`../qa/interior-tour/after-15.png`, nur im lokalen Arbeitsbestand) |
-| 30 | Prismania City | Prismania-Hotel | Bild (`../qa/interior-tour/after-15.png`, nur im lokalen Arbeitsbestand) |
-| 31 | Fuchsania City | Pokémon-Markt | Bild (`../qa/interior-tour/after-16.png`, nur im lokalen Arbeitsbestand) |
-| 32 | Fuchsania City | Arena · Koga | Bild (`../qa/interior-tour/after-16.png`, nur im lokalen Arbeitsbestand) |
-| 33 | Fuchsania City | Pokémon-Center | Bild (`../qa/interior-tour/after-17.png`, nur im lokalen Arbeitsbestand) |
-| 34 | Fuchsania City | Haus des Safari-Wärters | Bild (`../qa/interior-tour/after-17.png`, nur im lokalen Arbeitsbestand) |
-| 35 | Zinnoberinsel | Pokémon-Center | Bild (`../qa/interior-tour/after-18.png`, nur im lokalen Arbeitsbestand) |
-| 36 | Zinnoberinsel | Pokémon-Markt | Bild (`../qa/interior-tour/after-18.png`, nur im lokalen Arbeitsbestand) |
-| 37 | Zinnoberinsel | Arena · Pyro | Bild (`../qa/interior-tour/after-19.png`, nur im lokalen Arbeitsbestand) |
-| 38 | Zinnoberinsel | Pokémon-Labor | Bild (`../qa/interior-tour/after-19.png`, nur im lokalen Arbeitsbestand) |
-| 39 | Saffronia City | Pokémon-Center | Bild (`../qa/interior-tour/after-20.png`, nur im lokalen Arbeitsbestand) |
-| 40 | Saffronia City | Pokémon-Markt | Bild (`../qa/interior-tour/after-20.png`, nur im lokalen Arbeitsbestand) |
-| 41 | Saffronia City | Arena · Sabrina | Bild (`../qa/interior-tour/after-21.png`, nur im lokalen Arbeitsbestand) |
-| 42 | Saffronia City | Kampf-Dojo | Bild (`../qa/interior-tour/after-21.png`, nur im lokalen Arbeitsbestand) |
-| 43 | Saffronia City | Haus der Nachahmerin | Bild (`../qa/interior-tour/after-22.png`, nur im lokalen Arbeitsbestand) |
-| 44 | Indigo-Plateau | Pokémon-Liga | Bild (`../qa/interior-tour/after-22.png`, nur im lokalen Arbeitsbestand) |
-| 45 | Indigo-Plateau | Pokémon-Center | Bild (`../qa/interior-tour/after-23.png`, nur im lokalen Arbeitsbestand) |
-| 46 | Indigo-Plateau | Pokémon-Markt | Bild (`../qa/interior-tour/after-23.png`, nur im lokalen Arbeitsbestand) |
-| 47 | Mondberg | Mondberg | Bild (`../qa/interior-tour/after-24.png`, nur im lokalen Arbeitsbestand) |
-| 48 | Digdas Höhle | Digdas Höhle | Bild (`../qa/interior-tour/after-24.png`, nur im lokalen Arbeitsbestand) |
-| 49 | Felstunnel | Felstunnel | Bild (`../qa/interior-tour/after-25.png`, nur im lokalen Arbeitsbestand) |
-| 50 | Pokémon-Turm | Pokémon-Turm | Bild (`../qa/interior-tour/after-25.png`, nur im lokalen Arbeitsbestand) |
-| 51 | Rocket-Versteck | Spielhalle · Rocket-Versteck | Bild (`../qa/interior-tour/after-26.png`, nur im lokalen Arbeitsbestand) |
-| 52 | Silph Co. | Silph Co. | Bild (`../qa/interior-tour/after-26.png`, nur im lokalen Arbeitsbestand) |
-| 53 | Seeschauminseln | Seeschauminseln | Bild (`../qa/interior-tour/after-27.png`, nur im lokalen Arbeitsbestand) |
-| 54 | Pokémon-Villa | Pokémon-Villa | Bild (`../qa/interior-tour/after-27.png`, nur im lokalen Arbeitsbestand) |
-| 55 | Kraftwerk | Kraftwerk | Bild (`../qa/interior-tour/after-28.png`, nur im lokalen Arbeitsbestand) |
-| 56 | Siegesstraße | Siegesstraße | Bild (`../qa/interior-tour/after-28.png`, nur im lokalen Arbeitsbestand) |
-| 57 | Azuria-Höhle | Azuria-Höhle | Bild (`../qa/interior-tour/after-29.png`, nur im lokalen Arbeitsbestand) |
-| 58 | Bills Küstenhaus | Bills Küstenhaus | Bild (`../qa/interior-tour/after-29.png`, nur im lokalen Arbeitsbestand) |
+| No. | Location | Room | After image |
+|---|---|---|---|
+| 1 | Pallet Town | Your home | Image (`../qa/interior-tour/after-01.png`, local evidence only) |
+| 2 | Pallet Town | Your rival's house | Image (`../qa/interior-tour/after-01.png`, local evidence only) |
+| 3 | Pallet Town | Professor Oak's Lab | Image (`../qa/interior-tour/after-02.png`, local evidence only) |
+| 4 | Viridian City | Pokémon Center | Image (`../qa/interior-tour/after-02.png`, local evidence only) |
+| 5 | Viridian City | Poké Mart | Image (`../qa/interior-tour/after-03.png`, local evidence only) |
+| 6 | Viridian City | Gym · Giovanni | Image (`../qa/interior-tour/after-03.png`, local evidence only) |
+| 7 | Viridian City | Trainers' School | Image (`../qa/interior-tour/after-04.png`, local evidence only) |
+| 8 | Pewter City | Museum of Science | Image (`../qa/interior-tour/after-04.png`, local evidence only) |
+| 9 | Pewter City | Gym · Brock | Image (`../qa/interior-tour/after-05.png`, local evidence only) |
+| 10 | Pewter City | Poké Mart | Image (`../qa/interior-tour/after-05.png`, local evidence only) |
+| 11 | Pewter City | Pokémon Center | Image (`../qa/interior-tour/after-06.png`, local evidence only) |
+| 12 | Pewter City | Nidoran House | Image (`../qa/interior-tour/after-06.png`, local evidence only) |
+| 13 | Cerulean City | Pokémon Center | Image (`../qa/interior-tour/after-07.png`, local evidence only) |
+| 14 | Cerulean City | Gym · Misty | Image (`../qa/interior-tour/after-07.png`, local evidence only) |
+| 15 | Cerulean City | Bike Shop | Image (`../qa/interior-tour/after-08.png`, local evidence only) |
+| 16 | Cerulean City | Poké Mart | Image (`../qa/interior-tour/after-08.png`, local evidence only) |
+| 17 | Cerulean City | Burgled House | Image (`../qa/interior-tour/after-09.png`, local evidence only) |
+| 18 | Lavender Town | Pokémon Center | Image (`../qa/interior-tour/after-09.png`, local evidence only) |
+| 19 | Lavender Town | Mr. Fuji's House | Image (`../qa/interior-tour/after-10.png`, local evidence only) |
+| 20 | Lavender Town | Poké Mart | Image (`../qa/interior-tour/after-10.png`, local evidence only) |
+| 21 | Lavender Town | Name Rater | Image (`../qa/interior-tour/after-11.png`, local evidence only) |
+| 22 | Vermilion City | Pokémon Center | Image (`../qa/interior-tour/after-11.png`, local evidence only) |
+| 23 | Vermilion City | Pokémon Fan Club | Image (`../qa/interior-tour/after-12.png`, local evidence only) |
+| 24 | Vermilion City | Gym · Lt. Surge | Image (`../qa/interior-tour/after-12.png`, local evidence only) |
+| 25 | Vermilion City | Poké Mart | Image (`../qa/interior-tour/after-13.png`, local evidence only) |
+| 26 | Vermilion City | Fishing Guru's House | Image (`../qa/interior-tour/after-13.png`, local evidence only) |
+| 27 | Celadon City | Department Store | Image (`../qa/interior-tour/after-14.png`, local evidence only) |
+| 28 | Celadon City | Pokémon Center | Image (`../qa/interior-tour/after-14.png`, local evidence only) |
+| 29 | Celadon City | Gym · Erika | Image (`../qa/interior-tour/after-15.png`, local evidence only) |
+| 30 | Celadon City | Celadon Hotel | Image (`../qa/interior-tour/after-15.png`, local evidence only) |
+| 31 | Fuchsia City | Poké Mart | Image (`../qa/interior-tour/after-16.png`, local evidence only) |
+| 32 | Fuchsia City | Gym · Koga | Image (`../qa/interior-tour/after-16.png`, local evidence only) |
+| 33 | Fuchsia City | Pokémon Center | Image (`../qa/interior-tour/after-17.png`, local evidence only) |
+| 34 | Fuchsia City | Safari Warden's House | Image (`../qa/interior-tour/after-17.png`, local evidence only) |
+| 35 | Cinnabar Island | Pokémon Center | Image (`../qa/interior-tour/after-18.png`, local evidence only) |
+| 36 | Cinnabar Island | Poké Mart | Image (`../qa/interior-tour/after-18.png`, local evidence only) |
+| 37 | Cinnabar Island | Gym · Blaine | Image (`../qa/interior-tour/after-19.png`, local evidence only) |
+| 38 | Cinnabar Island | Pokémon Lab | Image (`../qa/interior-tour/after-19.png`, local evidence only) |
+| 39 | Saffron City | Pokémon Center | Image (`../qa/interior-tour/after-20.png`, local evidence only) |
+| 40 | Saffron City | Poké Mart | Image (`../qa/interior-tour/after-20.png`, local evidence only) |
+| 41 | Saffron City | Gym · Sabrina | Image (`../qa/interior-tour/after-21.png`, local evidence only) |
+| 42 | Saffron City | Fighting Dojo | Image (`../qa/interior-tour/after-21.png`, local evidence only) |
+| 43 | Saffron City | Copycat's House | Image (`../qa/interior-tour/after-22.png`, local evidence only) |
+| 44 | Indigo Plateau | Pokémon League | Image (`../qa/interior-tour/after-22.png`, local evidence only) |
+| 45 | Indigo Plateau | Pokémon Center | Image (`../qa/interior-tour/after-23.png`, local evidence only) |
+| 46 | Indigo Plateau | Poké Mart | Image (`../qa/interior-tour/after-23.png`, local evidence only) |
+| 47 | Mt. Moon | Mt. Moon | Image (`../qa/interior-tour/after-24.png`, local evidence only) |
+| 48 | Diglett's Cave | Diglett's Cave | Image (`../qa/interior-tour/after-24.png`, local evidence only) |
+| 49 | Rock Tunnel | Rock Tunnel | Image (`../qa/interior-tour/after-25.png`, local evidence only) |
+| 50 | Pokémon Tower | Pokémon Tower | Image (`../qa/interior-tour/after-25.png`, local evidence only) |
+| 51 | Rocket Hideout | Game Corner · Rocket Hideout | Image (`../qa/interior-tour/after-26.png`, local evidence only) |
+| 52 | Silph Co. | Silph Co. | Image (`../qa/interior-tour/after-26.png`, local evidence only) |
+| 53 | Seafoam Islands | Seafoam Islands | Image (`../qa/interior-tour/after-27.png`, local evidence only) |
+| 54 | Pokémon Mansion | Pokémon Mansion | Image (`../qa/interior-tour/after-27.png`, local evidence only) |
+| 55 | Power Plant | Power Plant | Image (`../qa/interior-tour/after-28.png`, local evidence only) |
+| 56 | Victory Road | Victory Road | Image (`../qa/interior-tour/after-28.png`, local evidence only) |
+| 57 | Cerulean Cave | Cerulean Cave | Image (`../qa/interior-tour/after-29.png`, local evidence only) |
+| 58 | Bill's Sea Cottage | Bill's Sea Cottage | Image (`../qa/interior-tour/after-29.png`, local evidence only) |
 
-Hinweis zum Quellcodeexport: Verweise auf lokale Bild-/Testbelege sind als Text
-markiert; die zugehörigen Dateien gehören nicht zum öffentlichen Snapshot.
+Local QA references are text references; those evidence files are not part of
+the public snapshot.

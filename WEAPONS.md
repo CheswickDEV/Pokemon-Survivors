@@ -1,48 +1,87 @@
-# Signaturwaffen der 151 Pokémon
+# Signature weapons for all 151 Pokémon
 
-Jedes Pokémon besitzt genau **eine automatische, bis Rang 8 trainierbare Waffe**. Es gibt keine austauschbaren Attackenplätze und kein standardmäßiges Paket aus Fern-, Flächen- und Heilattacke. Die Identität entsteht aus Bewegungsmuster, Reichweite, Form, Tempo, Trefferzahl, Durchdringung und Nebeneffekt.
+Each Pokémon has exactly **one automatic weapon trainable to rank 8**.
+There are no interchangeable move slots or default packages of ranged, area and
+healing moves. Identity comes from movement, range, shape, speed, hit count,
+piercing and secondary effects.
 
-Die Daten stehen in `src/signature-weapons.ts`. `src/kanto-catalog.ts` bleibt die Quelle für Namen, Typen und Entwicklungslinien. Die Attackennamen greifen auf diesen bereits geprüften Katalog und bekannte Attacken der ersten Generation zurück. Es handelt sich um ausdrücklich auf das Echtzeitspiel angepasste Waffen, nicht um eine Simulation der Game-Boy-Kampfregeln.
+Data lives in `src/signature-weapons.ts`; `src/kanto-catalog.ts` supplies
+canonical names, types and evolution lines. Move names draw on that reviewed
+catalog and familiar Generation I moves. These are deliberate real-time
+adaptations, not a simulation of Game Boy battle rules. The English catalog
+translates displayed names while German source names remain available.
 
-## Waffenfamilien
+## Weapon families
 
-| Beispiel | Spielweise | Besonderer Ausbau |
+| Example | Play style | Special upgrades |
 |---|---|---|
-| Bisasam-Linie | Zurückkehrende Rasierblätter | Mehr Blätter |
-| Glumanda-Linie | Gerichteter Flammenkegel | Größerer Treffbereich |
-| Schiggy-Linie | Schmaler durchdringender Wasserstrahl | Mehr Durchdringung |
-| Pikachu-Linie | Kettenblitz zwischen Gegnern | Mehr Sprungziele |
-| Sandan-Linie | Erdhügel als Kontaktfallen | Mehr Fallen |
-| Rattfratz-Linie | Kurzer Ruckzuckhieb | Kürzere Pausen |
-| Onix | Eng kreisende Felsen | Mehr Felsen |
-| Tragosso-Linie | Knochen auf Hin- und Rückweg | Mehr Durchdringung |
-| Nebulak-Linie | Saugender Nebeltreffer | Höheres Tempo |
-| Relaxo | Schwerer Aufprall rundum | Größerer Einschlag |
+| Bulbasaur line | Returning Razor Leaves | More leaves |
+| Charmander line | Directional flame cone | Larger hit area |
+| Squirtle line | Narrow piercing water beam | More piercing |
+| Pikachu line | Lightning chaining between enemies | More jump targets |
+| Sandshrew line | Mounds as contact traps | More traps |
+| Rattata line | Short Quick Attack | Shorter cooldown |
+| Onix | Tightly orbiting rocks | More rocks |
+| Cubone line | Bone hitting outward and on return | More piercing |
+| Gastly line | Draining mist hit | Faster attacks |
+| Snorlax | Heavy circular impact | Larger impact |
 
-Alle 16 Muster sind vertreten: Einzelgeschoss, Fächer, zeitversetzte Salve, Strahl, Kettenblitz, Orbit, Rundwelle, Kegel, Nahkampfschnitt, schneller Vorstoß, Bumerang, Kontaktfalle, Dauerfeld, Saugtreffer, Ansturm und abprallendes Geschoss. Muster dürfen zwischen Familien vorkommen; ihre Kombination aus Zahlen, Form und Nebeneffekten unterscheidet die Familien.
+All 16 patterns are represented: single shot, fan, staggered volley, beam,
+chain lightning, orbit, radial wave, cone, melee slash, quick lunge, boomerang,
+contact trap, persistent field, draining hit, charge and bouncing projectile.
+Families may share patterns; their numbers, shapes and effects distinguish them.
 
-Reguläre Entwicklungslinien behalten ihr Muster und ihren Ausbauschwerpunkt. Die Attacke kann dabei einen passenderen Namen oder Typ erhalten. Zwei bewusst große Veränderungen bleiben erhalten: **Karpador wird vom kleinen Platscher-Kreis zum Hydropumpen-Strahl**, und **Evolis drei Entwicklungen erhalten jeweils Wasserfeld, Nadelfächer oder Flammenkegel**. Der erreichte Waffenrang soll beim Entwickeln erhalten bleiben. Die Größe des Pokémon-Sprites ist von Waffenwerten unabhängig.
+Normal evolution lines retain their pattern and upgrade focus, sometimes with
+a more suitable move name/type. Two intentional exceptions are **Magikarp's
+small Splash circle becoming a Hydro Pump beam**, and **Eevee's branches gaining
+a water field, needle fan or flame cone**. Weapon rank survives evolution.
+Sprite size is independent of weapon stats.
 
-## Ränge und Balancevertrag
+## Ranks and balance contract
 
-- Rang 1 ist bei allen 151 Arten offensiv spielbar. Heilung bleibt ein sekundärer Effekt.
-- Jeder weitere Rang erhöht den Grundschaden um 16 Prozentpunkte gegenüber Rang 1 und verkürzt die Grundpause um 4 Prozentpunkte.
-- Auf Rang 3, 5 und 8 kommt der jeweilige Schwerpunkt hinzu: ein weiteres Geschoss bzw. ein weiterer Treffer, eine weitere Durchdringung, ein weiteres Sprungziel, 12 % mehr Trefferfläche, 20 % mehr Wirkungsdauer oder zusätzlich 7 % weniger Pause.
-- Die Zahl der Angriffe pro Auslösung ist auf acht begrenzt. Die höchste Grundzahl ist fünf, sodass alle drei Meilensteine wirksam bleiben.
-- Die acht `rankNotes` sind unmittelbar aus diesem Vertrag abgeleitet. Sie beschreiben den Grundwert-Ausbau, bevor Teamstufe, Entwicklung, Typvorteil und Ausrüstung einfließen.
+- Rank 1 is offensively usable for all 151 species. Healing is secondary.
+- Each rank adds 16 percentage points of base damage relative to rank 1 and
+  removes four percentage points of base cooldown.
+- Ranks 3, 5 and 8 add the family's focus: an extra projectile/hit, piercing
+  target or chain target; 12% more hit area; 20% more duration; or another
+  7% cooldown reduction.
+- Attacks per activation are capped at eight. The highest initial count is
+  five, so all three milestones remain effective.
+- Eight `rankNotes` derive directly from this contract, before team level,
+  evolution, type advantage and equipment.
 
-`power` meint **Schaden je Treffer**, nicht Schaden pro Sekunde. Dauerfelder sind für eine Trefferpause von ungefähr 0,65 Sekunden pro Gegner abgestimmt; kreisende Waffen für ungefähr 0,75 Sekunden. Kleine Geschosse benötigen eine Treffermenge pro Gegner, damit derselbe Treffer nicht in jedem Bild erneut zählt. Zurückkehrende Geschosse dürfen nach der Umkehr erneut treffen. Die Root-Engine begrenzt sekundäre Heilung auf insgesamt zwei KP pro Auslösung.
+`power` means **damage per hit**, not DPS. Persistent fields use roughly
+0.65 seconds between hits on the same enemy; orbiting weapons roughly
+0.75 seconds. Small projectiles track targets to prevent hitting every frame.
+Returning projectiles can hit again after turning. The engine caps secondary
+healing at two HP per activation.
 
-Bei Rang 8 liegt der reine Grundschadensfaktor bei 2,12 und die normale Pausenlänge bei 0,72 des Ausgangswerts. Zusätzliche Projektile erhöhen vor allem die Gruppenabdeckung; Nahkampfsalven können gegen große Einzelziele überdurchschnittlich stark werden. Diese Fälle benötigen bei späteren Balance-Runden besondere Beachtung. Das sind Spielwerte, keine Behauptung über einen bereits durchgeführten Langzeittest.
+At rank 8, base damage is 2.12× and normal cooldown is 0.72× its initial value.
+Extra projectiles mostly improve group coverage; melee volleys can be unusually
+strong against large single targets. These deserve later balance attention.
+These numbers do not imply a completed long-term playtest.
 
-## Darstellung und Maße
+## Rendering and units
 
-Entfernungen und Größen sind Weltpixel, Zeitwerte Sekunden, Winkel Radiant. `bounces` zählt zusätzliche Ziele. Bei Feldern/Fallen ist `size` der Radius, bei Strahlen die halbe Breite und bei Geschossen der Kontaktradius. Bei Nahkampf und Kegel geben `range` und `arc` Reichweite und Öffnungswinkel an.
+Distances and sizes are world pixels, times are seconds, angles are radians.
+`bounces` counts additional targets. `size` is the radius for fields/traps,
+half-width for beams, and contact radius for projectiles. Melee and cones use
+`range` and `arc` for reach and opening angle.
 
-Die Basisgrößen werden im Katalog begrenzt: bewegte Projektile höchstens 12 Pixel Radius, Felder und Fallen 45–80 Pixel, Rundwellen 65–110 Pixel. Kreisende Waffen bleiben 45–80 Pixel vom Trainer entfernt und haben 10–17 Pixel Kontaktradius. Die Grenzen helfen, den Trainer und gegnerische Warnzeichen auch mit mehreren Partnern zu erkennen.
+Catalog limits: moving projectile radius ≤12 pixels; field/trap radius 45–80;
+radial waves 65–110. Orbiting weapons stay 45–80 pixels from the trainer with
+10–17 pixel contact radii. Limits preserve trainer and warning visibility.
 
-## Bewusste Survivors-Anpassungen
+## Deliberate Survivors adaptations
 
-Fadenschuss, Schlafpuder, Pilzspore, Gesang, Hypnose und Barriere verursachen in dieser Fassung Schaden, damit ihr Pokémon als alleiniger Startpartner funktionieren kann. Panzerschutz wird als kreisender Wasserpanzer dargestellt. Platscher verursacht einen kleinen Kontaktschaden. Chaneiras Eierbombe verbindet Angriff und geringe Heilung. Wandler ist ein elastisches, abprallendes Geschoss und übernimmt **keine** gegnerische Attacke. Metronom hat feste Stern-/Lichtmuster; es würfelt keine fremden Waffen aus. Frühe Formen dürfen die für ihre Linie nötige Signaturattacke bereits vor den originalen Lernstufen einsetzen. Diese Regeln sind Teil des Spielentwurfs und werden nicht als Originalverhalten ausgegeben.
+String Shot, Sleep Powder, Spore, Sing, Hypnosis and Barrier deal damage so
+their Pokémon work as sole starters. Withdraw becomes an orbiting water shell.
+Splash deals minor contact damage. Chansey's Egg Bomb combines attack and small
+healing. Transform is an elastic bouncing projectile and **does not copy enemy
+moves**. Metronome uses fixed star/light patterns, not random foreign weapons.
+Early forms can use their line's signature move before original learn levels.
+These are design choices, not claims of original behavior.
 
-Die separaten Katalogtests prüfen vollständige 151er-Abdeckung, alle 15 Typen und 16 Muster, offensive Startwerte, acht Ranghinweise, wirkungsvolle Meilensteine, Entwicklungskohärenz und lesbare Basisgrößen.
+Catalog tests check all 151 species, 15 types and 16 patterns, offensive starting
+values, eight rank notes, effective milestones, evolution consistency and
+readable base sizes.

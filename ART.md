@@ -1,49 +1,93 @@
-# Auenwald 0.3: Grafik, Bewegung und Klang
+# Auenwald 0.3: artwork, movement and sound
 
-Alle Laufzeitdateien liegen lokal im Build. Es gibt keine externen Bild-, Schrift- oder Audioanfragen während des Spiels.
+All runtime files are local. Gameplay makes no external image, font or audio
+requests. This document records the historical art pipeline and later additions.
 
-## Figuren und Welt
+## Characters and world
 
-- **151 Pokémon:** Eigene Lauf-, Ruhe- und Angriffsfolgen in acht Richtungen aus dem gepinnten [PMDCollab/SpriteCollab-Archiv](https://github.com/PMDCollab/SpriteCollab/tree/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab). 453 Atlanten, 151 Porträts und 26.472 Frames. Alle 1.208 Laufrichtungen enthalten mindestens drei unterschiedliche Bewegungsbilder. Der Import richtet Frames am Bodenkontakt aus; sichtbare Pixel wurden bytegleich gegen die Quellen geprüft. Aktionsursprünge und Framezeiten bleiben erhalten. [Quellen und Künstler-Credits](docs/asset-sources/pokemon-motion-PROVENANCE.md), [Import](scripts/import-pokemon-motion.py).
-- **Laden:** Kleine Porträts werden vorgeladen; Bewegungsatlanten für Startteam, Begegnungsliste, Gegner und neue Entwicklungen bei Bedarf nachgeladen. So muss nicht sofort der gesamte dekodierte Bestand von rund 141 MiB im Grafikspeicher liegen. PNG-Dateien insgesamt rund 4,89 MB.
-- **Animation:** Laufphase aus tatsächlicher Wegstrecke, Richtung aus Bewegungsvektor; Angriffsrichtung zum Ziel. Ruhe- und Angriffszeiten folgen der Simulation. Menüs pausieren den Kampf. Snobilikat und Arkani haben statische Ruheposen; Bibor und Dragonir verweisen für Ruhe auf ihre eigene Laufsequenz. Lauf und Angriff sind bei allen 151 Arten animiert.
-- **Trainer (0.5.0):** Rot, Klarin, Kris, Brix, Maike und Blatt verwenden je einen vollständig neu gezeichneten Acht-Richtungs-Atlas mit Ruhepose plus acht Zeitphasen. Keine zusammengesetzten Ansichten; ganze linke Posen werden gespiegelt. Der gleichmäßige Schrittzyklus bleibt bei 0,86 Sekunden, Sprint mindestens 0,72 Sekunden. [Darstellung und Prüfung](TRAINER-MOTION.md), [ImageGen-Herkunft und Prompts](docs/asset-sources/trainers-v5-SOURCES.md).
-- **Wald:** Feuerrot-Kacheln und Paletten, neu angeordnete Karte mit Wiese, Wegen, Bäumen, Hütte, Schildern und animierten Blumen. [Quellen](docs/asset-sources/forest-PROVENANCE.md).
-- **Schrift:** Silkscreen Regular, lokal, SIL OFL 1.1. [Quelle](docs/asset-sources/fonts-SOURCE.md), [Lizenz](public/art/fonts/OFL.txt).
+- **151 Pokémon:** individual eight-direction Walk, Idle and Attack sequences
+  from [pinned SpriteCollab](https://github.com/PMDCollab/SpriteCollab/tree/0d0eb9d415a3f648c0df49de72a24a6d46ce3fab):
+  453 atlases, 151 portraits, 26,472 frames. All 1,208 walking directions have
+  at least three distinct poses. Import aligns ground anchors and compares visible
+  pixels byte-for-byte with sources. Action origins/timing are preserved.
+  [Credits](docs/asset-sources/pokemon-motion-PROVENANCE.md),
+  [importer](scripts/import-pokemon-motion.py).
+- **Loading:** preload small portraits; load movement atlases for starting teams,
+  encounters, enemies and evolutions on demand. This avoids decoding the entire
+  roughly 141 MiB set immediately. PNG files total approximately 4.89 MB.
+- **Animation:** walking follows actual distance/direction; attacks face targets.
+  Idle/attack timing follows simulation. Menus pause combat. Persian and Arcanine
+  have static idle poses; Beedrill and Dragonair use their own Walk as Idle.
+  All species have animated Walk/Attack.
+- **Trainers (0.5.0):** Red, Ethan, Kris, Brendan, May and Leaf each have a complete
+  generated eight-direction atlas: idle plus eight phases. Whole left poses mirror
+  right poses. Step cycle approximately 0.86 s, dash minimum 0.72 s.
+  [Details](TRAINER-MOTION.md), [sources/prompts](docs/asset-sources/trainers-v5-SOURCES.md).
+- **Forest:** FireRed tiles/palettes in a new layout with grass, paths, trees,
+  cabin, signs and animated flowers. [Sources](docs/asset-sources/forest-PROVENANCE.md).
+- **Font:** local Silkscreen Regular, SIL OFL 1.1.
+  [Source](docs/asset-sources/fonts-SOURCE.md), [license](public/art/fonts/OFL.txt).
 
-Die älteren 18 Schwarz/Weiß-Animationen unter public/art/pokemon/ bleiben als historischer Bestand erhalten. Die aktive Welt verwendet die Bewegungsatlanten mit acht Richtungen.
+The old 18 Black/White animations in `public/art/pokemon/` are historical local
+material excluded from the developer export. The active world uses eight-direction atlases.
 
-## Kampfeffekte und Oberfläche
+## Combat effects and interface
 
-Eigene sechsphasige Pixelgeschosse für alle 15 Typen: Blätter, Feuer, Wasser, Blitze, Eis, Kampfstöße, Gift, Erde, Wind, Psycho, Käfer, Fels, Geist, Drachenenergie und Normal. Dazu kommen passende Flächenmuster, Schweife, Trefferzahlen, Heilung, Pokéballwurf, Entwicklung und rotierende EP-Kristalle. Das sind eigene Effekte im Code, keine extrahierten Attackenfilme.
+Original six-phase pixel effects represent all 15 types: leaves, fire, water,
+lightning, ice, fighting, poison, earth, wind, psychic, bug, rock, ghost, dragon
+energy and Normal. Additional effects include areas, trails, damage numbers,
+healing, ball throws, evolution and rotating XP crystals. These are code-drawn
+effects, not extracted move videos.
 
-Maximal 180 kurzlebige Effekte, begrenzte Schadenszahlen und Aussparung unsichtbarer Figuren. Zusätzliche Partikel können reduziert werden; Bosswarnungen bleiben sichtbar. Grafik verbraucht keine Simulationszufallszahlen und wird nicht gespeichert.
+At most 180 short-lived effects, bounded damage labels and offscreen culling.
+Reduced particles retain boss warnings. Rendering consumes no simulation random
+numbers and is not saved. Light dialogs, type colors, ranks and before/after
+values remain readable. HUD health/team/XP/map scale from 70–150%; menus retain
+their normal readable size. Since rc.6.5, labels follow English/German selection.
 
-Helle Dialoge, Typfarben, Angriffsränge und Vorher-/Nachher-Werte bleiben erhalten. Das HUD einschließlich Lebenspunkten, Team, EP und Karte ist zwischen 70 und 150 Prozent skalierbar; Menüs behalten ihre lesbare Größe.
+## Sound
 
-## Klang
+- **151 classic cries:** local Ogg from [pinned PokeAPI/cries](https://github.com/PokeAPI/cries/tree/b3a9044bb839b5e3152aaa536c7b463a0fcf0140).
+  IDs, containers and individual hashes checked; approximately 917 KB.
+  [Provenance](docs/asset-sources/cries-PROVENANCE.md),
+  [importer](scripts/import-gen1-cries.mjs).
+- **New effects:** original layered pulse/triangle/noise synthesis, pitch curves
+  and short melodies for 15 attack types, steps, dash, damage, capture, level,
+  evolution, rewards, bosses and results. References:
+  `public/audio/SYNTHESIS-REFERENCES.md`. These are not original game recordings.
+- Volume/mute share a limited output bus. Simultaneous voices and attack sound
+  frequency are bounded. Cries load/play after user interaction.
 
-- **151 klassische Pokémon-Rufe:** Lokal als Ogg aus dem Legacy-Bestand von [PokeAPI/cries](https://github.com/PokeAPI/cries/tree/b3a9044bb839b5e3152aaa536c7b463a0fcf0140). Alle IDs, Container und individuellen Hashes geprüft; rund 917 KB. [Provenienz](docs/asset-sources/cries-PROVENANCE.md), [Import](scripts/import-gen1-cries.mjs).
-- **Neue Spielklänge:** Eigene mehrstimmige Puls-/Dreieck-/Rausch-Synthese mit Tonhöhenverläufen und kurzen Melodien. Verschiedene Klänge für 15 Angriffstypen, Schritte, Ausweichen, Schaden, Fang, Level, Entwicklung, Belohnung, Boss und Ergebnis. Synthese-Referenzen (`public/audio/SYNTHESIS-REFERENCES.md`, nur im lokalen Arbeitsbestand). Diese neu komponierten Effekte sind keine Originalaufnahmen aus den Spielen.
-- Lautstärke und Stummschaltung wirken über einen gemeinsamen Ausgang mit Dynamikbegrenzung. Gleichzeitige Stimmen und Attackenfrequenz sind begrenzt. Rufe werden nach Benutzerinteraktion geladen und abgespielt.
+Pokémon characters and source artwork belong to their respective rights holders.
+Provenance does not grant additional redistribution rights.
 
-Pokémon-Charaktere und Quellgrafiken gehören ihren jeweiligen Rechteinhabern. Herkunftsnachweise sind keine zusätzliche Lizenz zur Weiterveröffentlichung. Diese Fassung wurde lokal erstellt.
+## Additions in 0.4
 
-## Ergänzungen in 0.4
+- `pokemon-size.ts`: measured visible alpha bounds, maximum common footprint
+  of 36 world pixels for ordinary Pokémon; evolution adds no scale. Boss factor 1.9.
+- `boss-art.ts`: animated thorns, charging Solar Beam with moving core/particles,
+  pollen rings and spores; danger boundaries survive reduced effects.
+- `weapon-art.ts`: chains, beams, slashes, cones, charges, orbiting leaves/flames/
+  rocks, traps and fields. Bonemerang is a rotating bone, Pay Day a coin, Egg Bomb
+  marked eggs.
+- XP crystals scaled from at least 0.42 to 0.57; coins from 10×12 to 13×16 world pixels.
+- Full 151-card searchable/filterable Pokédex, eight-rank paths, quest treasures,
+  securing rings, map markers and reward sparks.
+- New effects use project Canvas/Phaser geometry; no new external art/audio downloads.
 
-- `pokemon-size.ts`: sichtbare Alpha-Grenzen aller Lauf-/Ruheframes ausgemessen; ein gemeinsamer maximaler Fußabdruck von 36 Weltpixeln für alle normalen Pokémon. Entwicklung bewirkt keinen zusätzlichen Größenfaktor. Der eigenständige Bossfaktor beträgt 1,9.
-- `boss-art.ts`: animierte Dornenranken, aufladender Solarstrahl mit bewegtem Kern und Lichtpartikeln, Pollenring und Giftsporen. Gameplay-Gefahrenränder bleiben auch bei reduzierten Effekten erhalten.
-- `weapon-art.ts`: Sprungblitze, Strahlen, gerichtete Hiebe, Kegel, Anstürme, kreisende Blätter/Flammen/Steine, Fallen und anhaltende Felder. Knochmerang erscheint als rotierender Knochen, Zahltag als Münze; Eierbomben als markierte Eier.
-- EP-Kristalle von mindestens 0,42 auf 0,57 skaliert; Münzen von 10 × 12 auf 13 × 16 Weltpixel vergrößert.
-- Großer Pokédex mit allen 151 Karten, Suche und Registriert-Filter; achtstufige Angriffspfade. Questschätze, Bergungsringe, Kartenmarkierungen und Belohnungsfunken ergänzen die Waldaufträge.
-- Alle neuen Effekte sind im Projekt gezeichnete Canvas-/Phaser-Geometrie. Keine neuen externen Grafik- oder Audiodownloads für 0.4.
+## Additions in 0.6
 
-## Ergänzungen in 0.6
+- Twelve complete transparent Kanto building sprites matching the landscape.
+  Generated images with cleaned palettes, integer sizes and ground/door anchors.
+  [Provenance](docs/asset-sources/kanto-v6-SOURCES.md). Local evidence:
+  `public/art/kanto-v6/contact-sheet.png`, `metadata.json`, `validation.json`.
+- All twelve PNGs have true transparency, clear margins, nonempty content and
+  dimensions matching metadata. Rendering and collisions share foundation data.
+- All six trainer anchors use the actual lowest visible pixel row, consistently
+  for standing/dashing, with ground shadows directly below.
+- Potion/Ether bottles, Pokémon XP bars, unlock tiles and location notices.
+  Bottles are original Phaser geometry, not imported item sprites.
 
-- Zwölf neue vollständige, transparente Kanto-Gebäude im Stil der vorhandenen Landschaft. Eigene ImageGen-Bilder, bereinigte Palette, ganzzahlige Größen und dokumentierte Boden-/Türanker. Kontaktbogen (`public/art/kanto-v6/contact-sheet.png`, nur im lokalen Arbeitsbestand), [Herkunft](docs/asset-sources/kanto-v6-SOURCES.md), Metadaten (`public/art/kanto-v6/metadata.json`, nur im lokalen Arbeitsbestand), Validierung (`public/art/kanto-v6/validation.json`, nur im lokalen Arbeitsbestand).
-- Alle zwölf PNGs haben echte Transparenz, freien Rand, nichtleeren Bildinhalt und zu den Metadaten passende Maße. Die Laufzeit richtet Sprite und Kollision aus denselben Fundamentdaten aus.
-- Fußanker aller sechs Trainer auf die tatsächliche unterste sichtbare Pixelzeile gesetzt; Stand- und Dashbilder verwenden denselben Anker. Bodenschatten direkt darunter.
-- Trank- und Ätherflaschen sowie eigene Pokémon-EP-Balken, Freischaltkacheln und Ortshinweise ergänzen die Darstellung. Die Flaschen sind eigene Phaser-Geometrie, keine importierten Originalgegenstände.
-
-Hinweis zum Quellcodeexport: Verweise auf lokale Bild-/Testbelege sind als Text
-markiert; die zugehörigen Dateien gehören nicht zum öffentlichen Snapshot.
+Historical QA evidence named here is not necessarily included in the public
+snapshot; runtime assets and available editing sources are explicitly listed
+in the release manifests.

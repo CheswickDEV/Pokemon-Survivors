@@ -1,44 +1,47 @@
-# Lizenz- und Quellenhinweise
+# Licenses and source notices
 
-Der eigene Spielcode steht auf Wunsch des Projektinhabers unter **GPL-3.0-only**.
-Copyright © 2026 Pokémon Survivors contributors. Der vollständige Text steht in
-`LICENSE`. Abweichend lizenzierte Daten und Bibliotheken behalten ihre Lizenzen.
-Die GPL erteilt keine Rechte an Pokémon-Figuren, Marken, Musik oder Fremdgrafiken.
-Aus Fremdquellen erzeugte Stammdaten, Animationsmetadaten und Quellenverweise
-werden ebenfalls nicht als neu geschaffener eigener Code umlizenziert; ihre
-Herkunft bleibt in den betreffenden Dateien und Provenienztexten genannt.
+Original game code is **GPL-3.0-only**, at the project owner's request.
+Copyright © 2026 Pokémon Survivors contributors. The complete text is in
+`LICENSE`. Separately licensed data and libraries retain their own licenses.
+The GPL grants no rights to Pokémon characters, trademarks, music or
+third-party graphics. Derived catalog data, animation metadata and source
+references are not relicensed as newly authored code; their origins remain
+documented in the relevant files and provenance notices.
 
-| Bestandteil | Herkunft / Lizenz | Geltungsbereich |
+| Component | Source / license | Scope |
 |---|---|---|
-| Phaser 3.90.0 | Photon Storm Ltd., MIT | Engine-Code; Text in `docs/asset-sources/phaser-LICENSE.md` |
-| eventemitter3 | primus, MIT | Abhängigkeit von Phaser; Text separat |
-| Node.js 22.23.3 | OpenJS Foundation und Mitwirkende; MIT und mitgelieferte Drittanbietertexte | Nur Windows-Spielerpaket; vollständiger Text unter `runtime/LICENSE` |
-| Silkscreen | The Silkscreen Project Authors, SIL OFL 1.1 | Font; OFL separat |
-| Pokémon-Stammdaten | PokeAPI; BSD-3-Clause | Stammdatenauszug und Lizenz in `public/art/data/PokeAPI-LICENSE.txt` |
-| Bewegte Pokémon | PMDCollab/SpriteCollab, verwendete Originalsprite-Credits CHUNSOFT | Repository-CC-BY-NC-4.0 ist keine pauschale Freigabe fremder Originalgrafiken |
-| Shiny-Varianten aller 151 Arten | Gepinnte Shiny-Sheets aus demselben SpriteCollab-Stand; Originalfarben, acht Richtungen und Zeitdaten erhalten | 604 zusätzliche Laufzeit-PNGs. Lizenz, Provenienz, Namensregister und Einzelcredits unter `docs/asset-sources/pokemon-shiny-*`; dieselbe getrennte Medienfreigabe |
-| Außenwelt, Innenräume und NPCs | Aus Pokémon FireRed, nachgewiesen über pret/pokefirered | Öffentliche Weiterverteilung ungeklärt |
-| Originaltrainerbilder und Pokémon-Rufe | Pokémon / Nintendo / GAME FREAK / Creatures; Quellen über pret und PokeAPI | Öffentliche Weiterverteilung ungeklärt |
-| Neue Gebäude / Trainerdiagonalen | Für dieses Projekt erzeugte Bilder | Keine pauschale Rechtefreigabe für abgebildete Figuren oder Marken |
-| Synthetische Spieleffekte | Eigener Code in `src/audio.ts` | GPL-3.0-only für den Code; externe Originalrufe ausgenommen |
+| Phaser 3.90.0 | Photon Storm Ltd., MIT | Engine code; `docs/asset-sources/phaser-LICENSE.md` |
+| eventemitter3 | primus, MIT | Phaser dependency; separate license text |
+| Node.js 22.23.3 | OpenJS Foundation and contributors; MIT and bundled third-party notices | Windows player package only; complete text in `runtime/LICENSE` |
+| Silkscreen | The Silkscreen Project Authors, SIL OFL 1.1 | Font; separate OFL text |
+| Pokémon catalog data | PokeAPI, BSD-3-Clause | Data extract; `public/art/data/PokeAPI-LICENSE.txt` |
+| Animated Pokémon | PMDCollab/SpriteCollab; used original sprites credit CHUNSOFT | Repository CC-BY-NC-4.0 is not blanket permission for third-party original graphics |
+| Shiny variants of all 151 species | Pinned Shiny sheets from the same SpriteCollab revision; original colors, eight directions and timing retained | 604 additional runtime PNGs; license, provenance, author registry and individual credits under `docs/asset-sources/pokemon-shiny-*`; same separate media permissions |
+| Overworld, interiors and NPCs | Pokémon FireRed, traced through pret/pokefirered | Public redistribution permission unresolved |
+| Original trainer images and Pokémon cries | Pokémon / Nintendo / GAME FREAK / Creatures; sources through pret and PokeAPI | Public redistribution permission unresolved |
+| New buildings / diagonal trainers | Images generated for this project | No blanket clearance of depicted characters or trademarks |
+| Synthesized game effects | Original code in `src/audio.ts` | GPL-3.0-only for the code; external original cries excluded |
 
-`docs/ASSET-STATUS.md` beschreibt den aktuellen Medien- und Lizenzstatus.
-Das vollständige Entwicklerpaket enthält die Medien samt vorhandenen
-Bearbeitungsquellen, Importwerkzeugen und Credits. Nur der zusätzliche kleine
-`source.zip`-Export lässt Pokémon-Bild- und Audiodateien aus.
-Das lokale Spielerpaket enthält korrespondierenden Code unter `source/` und
-separate Lizenz-/Provenienztexte unter `notices/`. Die vollständige technische
-Übergabe erteilt keine zusätzlichen Rechte an Fremdinhalten.
+[Asset status](docs/ASSET-STATUS.md) documents the current media and license
+position. The complete developer package includes media, available editing
+sources, import tools and credits. Only the smaller additional `source.zip`
+omits Pokémon image and audio files.
 
-Optionale Bearbeitungswerkzeuge werden separat installiert: sharp 0.35.5
-(Apache-2.0 samt gesonderten nativen Bibliotheken) über
-`tools/assets/package-lock.json`, Pillow 13.0.0 (HPND) über
-`requirements-assets.txt`. Deren Binärpakete werden nicht in den Entwickler-
-Quellbestand kopiert. Lizenztexte bleiben in den installierten Paketen.
+The local player package includes corresponding code under `source/` and
+separate license/provenance texts under `notices/`. A complete technical
+handover grants no additional rights to third-party content.
 
-Dieses inoffizielle Fanprojekt ist nicht mit den genannten Rechteinhabern
-verbunden oder von ihnen bestätigt.
+Optional tools are installed separately: sharp 0.35.5 (Apache-2.0 and separate
+native-library licenses) through `tools/assets/package-lock.json`, and Pillow
+13.0.0 (HPND) through `requirements-assets.txt`. Their binaries are not copied
+into the developer source distribution. Licenses remain in installed packages.
 
-## Originale FR/LG-Weltgrafiken (rc.5)
+This unofficial fan project is not affiliated with or endorsed by the named
+rights holders.
 
-Bauarbeiter, Zaun-Metatiles und Kanto-Regionskarte: Nintendo / Game Freak / Creatures, rekonstruiert aus dem gepinnten pret/pokefirered-Quellstand. Herkunft: [Original-Weltgrafiken](docs/asset-sources/original-overworld.md). Diese Medien sind nicht durch die GPL-Lizenz des eigenen Codes freigegeben.
+## Original FR/LG overworld graphics (rc.5)
+
+Workers, fence metatiles and the Kanto region map: Nintendo / Game Freak /
+Creatures, reconstructed from the pinned pret/pokefirered revision.
+[Overworld provenance](docs/asset-sources/original-overworld.md).
+These media are not covered by the original code's GPL license.

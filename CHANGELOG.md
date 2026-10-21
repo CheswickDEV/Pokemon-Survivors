@@ -1,119 +1,112 @@
-# Änderungen
+# Changelog
+
+## 1.0.0-rc.6.5
+
+- English by default, with a persistent English/German selector in camp and Settings.
+- English Pokémon/move names, story dialogue, menus, combat labels and accessible text; bilingual Pokédex search.
+- Existing saves retain their game IDs and progress. Full backups include language preferences.
+- English README, installation/developer guides, historical reports, launch messages and GitHub text.
+- English `Start game.cmd` launcher; legacy launcher names remain compatible.
+- Regression tests for language defaults, legacy profiles, backups, dynamic messages and search.
 
 ## 1.0.0-rc.6.4
 
-- Vollständiger Entwicklerdownload mit sämtlichen aktuellen Spielmedien, vorhandenen Bearbeitungsquellen, Tests und Importwerkzeugen.
-- Rechnerabhängige Grafikimporte und private Promptpfade bereinigt; optionale sharp-Werkzeuge mit eigenem Lockfile.
-- Entwicklerhandbuch, Anleitung für lokale Änderungen und vollständige Installation, sichere Aktualisierung der Medienlisten.
-- Zusätzliche Tests für den Entwicklerexport; CI prüft im vollständigen Checkout alle Tests.
-- Eigener GPL-Code und Fremdinhalte klar getrennt ausgewiesen; bestehende Medienrechte bleiben erhalten.
+- Full developer download with current game media, available editing sources, tests and import tools.
+- Portable graphic imports and sanitized private prompt paths; optional sharp tools with a separate lockfile.
+- Developer guide, complete installation/local editing workflow and safe media-list updates.
+- Developer-export tests; full-checkout CI runs every test.
+- Original GPL code and third-party media rights clearly distinguished.
 
 ## 1.0.0-rc.6.3
 
-- Sicherheitsprüfung, explizite Exportdateiliste und Schutz vor privaten Pfaden, Cachedateien und Credential-Mustern.
-- Normaler Build enthält ausschließlich geprüfte Laufzeitmedien; keine Prompts oder Importquellen im Webroot.
-- Ungültige Pokémon-IDs beim Import werden abgewiesen; Server, Laufzeitdownload und GitHub-CI gehärtet.
-- Kurze README, Installationshilfe, vollständige Abhängigkeitsübersicht, Sicherheitsmeldungen und Diagnoseskript.
-- Öffentliche Medienfreigabe und unabhängige Windows-/Spielabnahme bleiben offen.
+- Security audit, explicit export allowlist and protection against private paths, caches and credential patterns.
+- Ordinary builds include only verified runtime media, excluding prompts/import sources from the webroot.
+- Invalid imported Pokémon IDs rejected; server, runtime download and GitHub CI hardened.
+- README, installation help, dependency overview, security reporting and doctor script.
+- Media permission and independent Windows/gameplay acceptance remain outstanding.
 
 ## 1.0.0-rc.6.2
 
-- Alle 58 Innenräume vor und nach der Änderung mit laufendem Spielrenderer visuell geprüft; Raumliste und Bildnachweise: [Innenraumprüfung](docs/INTERIOR-VISUAL-AUDIT.md).
-- Verkäufer, Fahrradhändler und Hotelpersonal stehen korrekt hinter der Tresenkante. NPC-Füße berücksichtigen die transparenten Ränder ihrer Originalgrafiken.
-- Teppiche enden vor den Möbeln; Fahrräder stehen neben dem Mittelgang. Dojo, Villa, Turm, Rocket-Versteck und Höhlen verwenden passende Raumvorlagen unabhängig von Storyprüfungen.
-- Arenaleiter erhalten eingefasste Standflächen. Felswände ersetzen Haustapeten in Höhlen und werden an Raumgrenzen sauber abgeschnitten.
-- 152 Tests einschließlich aller Innenraum-Laufwege bestanden.
+- All 58 interiors inspected before/after using the running renderer:
+  [visual audit](docs/INTERIOR-VISUAL-AUDIT.md).
+- Shop, bike and hotel staff correctly occluded by counters; NPC foot anchors account for transparent margins.
+- Rugs stop before furniture; bicycles leave the aisle clear. Room surfaces follow building function.
+- Bordered Gym leader platforms; correctly clipped rock walls in caves.
+- 152 tests passed, including all interior paths.
 
 ## 1.0.0-rc.6.1
 
-- Center-Rezeption tatsächlich korrigiert: vollständige Originalkacheln mit beiden Ebenen, Rückwand, Bildschirm, Arbeitsboden und Maschinenbasis. Die RC6-Vordergrundgrafik war weiterhin unvollständig.
-- Passende Center-Wand ohne zusätzliche blaue Wohnhaus-Kachel. Joy steht hinter dem Tresen; Arbeitsbereich und Maschinen sind solide. Alte Positionen darin werden beim Laden vor den Tresen gesetzt, ohne KP oder Ausdauer zu verändern.
-- Gesunde Pokémon zeigen in friedlichen Innenräumen keinen frei schwebenden Ausdauerbalken mehr.
-- 150 Tests bestanden; Originalpixelvergleich und neue Browseransichten: [Center-Korrektur](docs/CENTER-REPAIR.md).
+- Complete original Center reception tiles with both layers, rear wall, screen, floor and machine base; RC6 foreground was still incomplete.
+- Correct Center wall, Joy behind the counter, solid work area. Legacy positions relocate safely without changing HP/stamina.
+- Healthy Pokémon hide floating stamina bars in peaceful interiors.
+- 150 tests, pixel comparison and browser checks: [Center repair](docs/CENTER-REPAIR.md).
 
 ## 1.0.0-rc.6
 
-- Alle 27 Kanto-Etappen mit eigenen Boss-KP-Budgets und Prüfungsmechaniken, einschließlich acht Arenen, Top Vier, Champion und Mewtu. Meister ergänzt sichtbare Vorhalte-Angriffe gegen gleichmäßiges Kreislaufen.
-- Acht echte Talente mit Auslösern und Abklingzeiten; drei Plätze und Aufwertung durch höherwertigen Ersatz. Neue legendäre Angebote enthalten Zeitfalte, Phönixfeder oder Dreiklang statt Rangpaketen.
-- Bossflächen kosten Pokémon nur bei angenommenem Trainer-Treffer Ausdauer. Trefferfreie Zeit regeneriert aktive Partner; Dash und Trainer-Unverwundbarkeit schützen auch vor zusätzlichem Teamverlust.
-- Center-Rezeption aus unveränderten Originalbildzeilen in Rückwand und Vorderkante getrennt; Joy steht korrekt dazwischen. Alle 58 Innenräume und 88 NPC-Zugänge geprüft.
-- Gemeinsame Rastpunkt-Wiederaufnahme für Oberfläche und Kampagnentest; Münzverlust und verbrauchte Rettungstalente bleiben erhalten.
-- 149 Tests, drei vollständige automatisierte Meister-Kampfketten mit regulären Wiederholungen und ergänzende Stillstands-/Kreis-/Talenttests. Grenzen und Ergebnisse: [RC6-Prüfung](docs/RC6-VALIDATION.md).
+- Distinct HP budgets/mechanics for all 27 Kanto stages; visible Master predictive attacks counter constant circling.
+- Eight triggered/cooldown talents, three slots, higher-rarity replacement; new legendary offers are Time Fold, Phoenix Feather or Triad.
+- Boss areas drain partner stamina only on accepted trainer hits; hit-free regeneration and shared dash/invulnerability protection.
+- Reception layering/Joy adjustments and 58-room/88-NPC access checks; missing artwork later corrected in rc.6.1.
+- Shared rest-point recovery for UI/campaign tests; coin loss and used rescue talents persist.
+- 149 tests, three automated Master combat chains with ordinary retries, stationary/circle/talent controls:
+  [RC6 validation](docs/RC6-VALIDATION.md).
 
 ## 1.0.0-rc.5
 
-- Originale FR/LG-Bauarbeiter und Zäune; originale Kanto-Regionskarte mit Ortsauswahl, Mausrad-Zoom und Ziehen ohne Neuaufbau.
-- Dash-Schutz für die ganze Bewegung plus kurze Austrittsfrist. Alle sechs Trainer behalten ihre diagonalen Animationen; größere gerade Ansichten werden angeglichen.
-- Kleinere, runde Stammkollisionen, gemeinsam erzeugte Bäume für Welt, Kollision und Minimap. Die Minimap aktualisiert bewegte Marker mit der Darstellung und puffert das Gelände.
-- Orden erhöhen Pokémon-Levelgrenzen und geben jeweils +3 % Team-Schaden sowie 2 Prozentpunkte Schadensschutz. Bestehende höhere Pokémon-Level bleiben gespeichert, ihre Kampfwirkung wird begrenzt.
-- Gewöhnliche, seltene, epische und legendäre Levelangebote vergeben 1/2/3/4 Ränge; Werte und erreichte Meilensteine werden vorher angezeigt.
-- Umlaufende und angeheftete Angriffe folgen ihrem Pokémon. Salven starten auch während Bewegung am ausführenden Partner; Flächen und Fallen haben einen sichtbaren Flug vom Pokémon zum Einsatzort.
-- Mehrphasige Questwächter, deutlich längere Arena-/Meisterkämpfe, Standort-Einschläge und versetzte Folgemuster. Veteran/Meister bekommen längere Zeitfenster für Wald- und Bossansturm-Prüfungen.
-- Prüfverfahren und gemessene Grenzen: [RC5-Prüfung](docs/RC5-VALIDATION.md).
+- Original FR/LG workers/fences and Kanto map with selection, wheel zoom and panning without rebuilding.
+- Full-dash protection plus exit grace; diagonal trainer animations preserved, cardinal views normalized.
+- Smaller circular trunk collisions; shared trees across world/collision/minimap; cached terrain with live markers.
+- Badge level caps, +3% team damage and two percentage points of protection per badge; higher saved levels retained but combat-capped.
+- Common/Rare/Epic/Legendary offers grant 1/2/3/4 ranks with previews (new legendary rules changed in RC6).
+- Orbiting/attached attacks follow their partner; moving volleys originate there; visible travel to fields/traps.
+- Multi-phase guardians, longer arena/Master battles, fixed-position impacts and staggered patterns; longer harder-mode boss timers.
+- [RC5 validation](docs/RC5-VALIDATION.md).
 
 ## 1.0.0-rc.4
 
-- Center füllen nur Pokémon-Ausdauer auf und beenden Erholungspausen.
-  Trainer-KP bleiben unverändert; Hinweise und Spielhilfe erklären die Regel.
-- Korrekte sichtbare Möbelrahmen, einheitliche Pixelgrößen und passende
-  Standflächen in allen 58 Innenräumen. Azurias Center und die übrigen Center
-  erhalten abgestimmte Tresen-, NPC- und Teppichpositionen.
-- Alle 14 benannten Häuser mit passenden Bewohnern und Einrichtung,
-  einschließlich Fahrradladen, Hotel, Trainerschule und Bills Labor.
-- 128 Tests bestanden; vollständige Raumgalerie und Heiltest im Browser.
-  Die spätere Kanto-Balance benötigt nach Entfall der Center-KP-Heilung eine
-  neue Spielabnahme. Details: [Innenraumprüfung](docs/INTERIORS-AND-CARE.md).
+- Centers restore Pokémon stamina/end recovery only; trainer HP unchanged.
+- Correct furniture bounds, consistent pixel scales and footprints in 58 interiors; aligned Center counters/NPCs/rugs.
+- Fourteen named homes with appropriate residents/furniture, including Bike Shop, Hotel, School and Bill's Lab.
+- 128 tests, full gallery and browser healing check. Campaign balance required revalidation after removing trainer healing:
+  [Interiors](docs/INTERIORS-AND-CARE.md).
 
 ## 1.0.0-rc.3
 
-- Kanto-Sperren als durchgehende Bauzäune mit Bauarbeitern; Wohnhäuser frei zugänglich,
-  Arenen weiterhin an Voraussetzungen gebunden. Überflüssige Türvorplätze entfernt.
-- Heller Grasboden zwischen Bäumen, unregelmäßige Grashalme statt dunkler Quadrate,
-  weichere Wegekonturen aus der tatsächlichen Geometrie, passende RPG-Minimap.
-- Bereits gespawnte Gegner bleiben in Städten; dort entstehen keine neuen Wildgegner.
-  Prüfungen starten am aktuellen Standort. Leeres E zeigt keinen Fehler.
-- Zufällige Levelangebote mit Wiederholungsschutz und sechs zusätzlichen Ausrüstungen.
-  Keine garantierte Rangkarte; weiterhin eine charakteristische Attacke pro Partner.
-- Alle 151 Arten als sehr seltene Shiny-Varianten (1:65.536), einschließlich Bewegungen,
-  Fang, Entwicklung, Sicherung und freischaltbarer Shiny-Startpartner im Pokédex.
-- Klare Fokusklammern auch für Wildgegner. Überarbeitete Windklingen, Felsen,
-  Strahlen, Kettenblitze, Kegel, Flächen, Bewegungsspuren und native Angriffstaktung.
-- Größere Bosse mit mehr KP, drei KP-Phasen, versetzten Folgeschlägen und Verstärkung.
-  Acht späte Storyfinale erhalten echte Anführer, einschließlich Mewtu.
-- 125 automatisierte Tests bestanden. Aktuelle Simulationen und Grenzen:
-  [Welt- und Kampfprüfung](docs/WORLD-POLISH.md).
+- Continuous worker/fence route barriers; ordinary homes open, Gym prerequisites retained; extra door platforms removed.
+- Bright grass, irregular blades, smooth actual-road contours and matching minimap.
+- Existing enemies follow into towns; no new ambient town spawns. Trials keep current position; empty E is silent.
+- Random offers with repetition protection, six added items, no guaranteed rank card; one signature move per partner.
+- All 151 species have 1:65,536 Shiny variants with animations, capture, evolution, saves and starter unlocks.
+- Clear focus brackets; improved wind/rock/beam/chain/cone/field/trail rendering and native attack timing.
+- Larger tougher three-phase bosses, staggered attacks/reinforcements, eight late story leaders including Mewtwo.
+- 125 tests: [World/combat validation](docs/WORLD-POLISH.md).
 
 ## 1.0.0-rc.2
 
-- Schiggys Wasserstrahl etwas breiter und schneller; bleibt ein gerader Durchdringungsangriff.
-- EP-Zusammenfassung erhält lokale Fundorte und den vollständigen Wert.
-- Garantierte Rangangebote und Truhentraining bevorzugen trainierbare aktive Partner.
-- Gemeinsame Grenze für automatische Elitekämpfe und Lichtungen; zusätzlicher Hornliu-Timer entfernt. Veteran/Meister behalten höhere Grenzen und ihre Schwierigkeitsskalierung.
-- Spezialschwärme berücksichtigen jetzt ebenfalls die Geschwindigkeitsstufe. Heilfunde bleiben selten.
-- RPG-Minimap mit geglätteten Wegen, tatsächlichen Bäumen, Felsen, Gebäuden, Sperren, Gegnern und Questzielen. Innenräume zeigen Einrichtung und NPCs.
-- Große Waldkarte nutzt dieselben Weltkoordinaten statt erfundener Dekoration.
-- 66 abgeschlossene Waldsimulationen, zusätzliche Kanto-/Bossregressionen und geometrische Kartentests. Details: `docs/FOREST-BALANCE.md`.
+- Wider/faster Squirtle beam, still straight and piercing.
+- Pickup merging preserves local positions and total XP.
+- Guaranteed training/chests preferred trainable active partners at this revision.
+- Shared automatic elite/clearing cap; separate Weedle timer removed; harder-mode scaling retained.
+- Special swarms respect speed settings; healing stays rare.
+- RPG minimap shows actual paths/scenery/buildings/barriers/enemies/quests; interiors show props/NPCs.
+- Large forest map uses real coordinates.
+- 66 completed forest simulations plus campaign/boss/map regressions:
+  [Forest balance](docs/FOREST-BALANCE.md).
 
 ## 1.0.0-rc.1
 
-Lokaler Release Candidate, öffentliche Medienfreigabe offen.
+Local release candidate; media clearance outstanding.
 
-- Vier Schwierigkeitsgrade unabhängig von der Laufart.
-- 15 Bossprofile mit unterschiedlichen Angriffen, Effekten und letzter Phase.
-- Bossansturm in einer eigenen Arena mit 15 Prüfungen, vorbereiteten Partnern,
-  Verbesserungen zwischen Kämpfen und eigenem Speicherplatz.
-- Wechselnde Wächter in Expedition/Endlos und passende Story-Bossattacken.
-- Fortschrittsbuch mit zehn Abzeichen, Bossmustern und Ausrüstungslexikon.
-- Vollständige Sicherung und geprüfte, atomare Wiederherstellung von Profil
-  und drei Speicherplätzen. Spielstände bis Format 5 bleiben lesbar.
-- Markt zeigt alle verfügbaren Ausrüstungstypen.
-- Windows-x64-Testpaket ohne vorausgesetzte Node-Installation; Server erkennt
-  Doppelstarts, bleibt auf Loopback und verändert keine fremden Prozesse.
-- GPL-3.0-only für eigenen Code, GitHub-CI, nachvollziehbarer Export und
-  explizite Veröffentlichungsgates.
+- Four difficulties independent of mode; 15 distinct boss profiles and final phases.
+- Dedicated 15-trial Boss Rush with prepared partners, between-fight upgrades and separate saves.
+- Rotating Expedition/Endless guardians and appropriate story boss attacks.
+- Progress Journal with ten achievements, boss patterns and equipment encyclopedia.
+- Full profile/three-slot backup and validated atomic restore; saves through format 5 remain readable.
+- Shops show every available equipment type.
+- Windows x64 test ZIP with bundled Node; loopback server handles second launches without touching other processes.
+- GPL-3.0-only original code, GitHub CI, traceable export and explicit publication gates.
 
 ## 0.8.0
 
-Überarbeitete Minimap, offene Routen, verbundene Wege und klare Sperren,
-passende Innenraumböden, bedingter Gebäudezutritt und Weiterlaufen beim
-Fensterwechsel.
+Reworked minimap, open routes, connected paths and clear barriers; suitable
+interior floors, conditional building access and continued play on focus loss.
