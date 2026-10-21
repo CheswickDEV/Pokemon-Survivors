@@ -22,6 +22,10 @@ not been documented. [Asset status](docs/ASSET-STATUS.md) ·
 [Complete download (prerelease)](https://github.com/CheswickDEV/Pokemon-Survivors/releases/tag/v1.0.0-rc.6.5) ·
 [Repository](https://github.com/CheswickDEV/Pokemon-Survivors)
 
+## Gameplay trailer
+
+https://github.com/user-attachments/assets/88b72665-3c82-41e2-a44c-75c042f15f34
+
 ## Play on Windows — no installation
 
 Download **Pokemon-Survivors-1.0.0-rc.6.5-Windows-x64.zip** from the
